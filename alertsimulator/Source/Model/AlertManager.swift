@@ -25,16 +25,75 @@
 
 import OSLog
 
+import Foundation
+
+func drawRandomElement<T>(elements: [T], probabilities: [Double]) -> T? {
+    // Ensure the input arrays have the same size
+    guard elements.count == probabilities.count, !elements.isEmpty else {
+        print("Error: Elements and probabilities must have the same non-zero length.")
+        return nil
+    }
+    
+    // Normalize probabilities if they don't sum to 1
+    let totalProbability = probabilities.reduce(0, +)
+    let normalizedProbabilities = probabilities.map { $0 / totalProbability }
+    
+    // Compute cumulative probabilities
+    var cumulativeProbabilities: [Double] = []
+    var cumulativeSum = 0.0
+    for probability in normalizedProbabilities {
+        cumulativeSum += probability
+        cumulativeProbabilities.append(cumulativeSum)
+    }
+    
+    // Generate a random number between 0 and 1
+    let randomValue = Double.random(in: 0...1)
+    
+    // Find the corresponding element based on the random value
+    for (index, cumulativeProbability) in cumulativeProbabilities.enumerated() {
+        if randomValue <= cumulativeProbability {
+            return elements[index]
+        }
+    }
+    
+    return nil // Should never reach here if probabilities are correct
+}
+
 struct AlertManager {
     var available = SimulatedAlert.available
+    
+    var lastAlerts: [SimulatedAlert] = []
     init() {
     }
    
     var sampleAlert: SimulatedAlert {
-        let one = SimulatedAlert(category: .abnormal, action: .simulate, priority: .high, alertType: .Situation, message: "No more fuel", description: "empty")
+        let one = SimulatedAlert(category: .abnormal, action: .simulate, alertType: .Situation, message: "No more fuel") 
         return one
     }
     func nextAlert() -> SimulatedAlert {
         SimulatedAlert.available.randomElement() ?? self.sampleAlert
+    }
+    
+    func computeProbabilities(alerts : [SimulatedAlert]) -> [Double] {
+        typealias Priority = SimulatedAlert.Priority
+        let categoryCount = Dictionary(grouping: self.available, by: { $0.priority }).mapValues({$0.count})
+        let multiplier : [Priority : Double] = [
+            .low : 1.0,
+            .medium : 5.0,
+            .high : 10.0,
+            .none : 0.0
+        ]
+        let total : Double = categoryCount.reduce(0) { $0 + Double($1.value) * (multiplier[$1.key] ?? 0.0)}
+        let probabilities : [Double] = alerts.map { (multiplier[$0.priority] ?? 0.0) / total}
+        return probabilities
+    }
+    
+    func drawNextAlert() -> SimulatedAlert {
+        return self.drawAlert(alerts: self.available)
+    }
+    func drawAlert(alerts : [SimulatedAlert]) -> SimulatedAlert{
+       let probabilities = self.computeProbabilities(alerts: alerts)
+       let next = drawRandomElement(elements: alerts, probabilities: probabilities)
+        return next ?? self.sampleAlert
     }
 }

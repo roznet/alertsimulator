@@ -13,6 +13,14 @@ struct SimulatedAlert : Codable {
         case abnormal = "abnormal"
         case emergency = "emergency"
         case normal = "normal"
+        
+        var uniqueIdentifier: String {
+            switch self {
+            case .abnormal: return "ab"
+            case .emergency: return "em"
+            case .normal: return "no"
+            }
+        }
     }
     
     enum Action : String, Codable {
@@ -31,6 +39,13 @@ struct SimulatedAlert : Codable {
     enum AlertType : String, Codable {
         case cas = "cas"
         case Situation = "situation"
+        
+        var uniqueIdentifier: String {
+            switch self {
+            case .cas: return "cas"
+            case .Situation: return "situ"
+            }
+        }
     }
     
     let category : Category
@@ -38,10 +53,30 @@ struct SimulatedAlert : Codable {
     let priority : Priority
     let alertType : AlertType
     let message : String?
+    let submessage : String? // to distinguish for two identical message
     let description : String?
+    
+    init(category: Category, action: Action, alertType: AlertType, message: String?, submessage: String? = nil, description: String? = nil, priority: Priority = .medium) {
+        self.category = category
+        self.action = action
+        self.priority = priority
+        self.alertType = alertType
+        self.message = message
+        self.submessage = submessage
+        self.description = description
+    }
     
     var title : String {
         return "\(category) \(alertType)"
+    }
+    
+    var uniqueIdentifier: String {
+        let message = self.message ?? ""
+        var submessage = self.submessage ?? ""
+        if !submessage.isEmpty {
+           submessage = "-\(message)"
+        }
+        return "\(category.uniqueIdentifier)-\(alertType.uniqueIdentifier)-\(message)\(submessage)"
     }
     
     static var available: [SimulatedAlert] = {

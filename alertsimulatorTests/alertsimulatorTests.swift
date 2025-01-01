@@ -15,6 +15,11 @@ struct alertsimulatorTests {
         
         let manager = AlertManager()
         #expect(manager.available.count > 0)
+        for _ in 1...5 {
+            let alert = manager.drawNextAlert( )
+            print( alert )
+        }
+        
     }
 
 }

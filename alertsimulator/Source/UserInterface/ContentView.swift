@@ -41,7 +41,7 @@ struct ContentView: View {
                     Text("Cancel All Alert")
                 }
                 Button(action: {
-                    let alert = AlertSimulatorApp.alertManager.nextAlert()
+                    let alert = AlertSimulatorApp.alertManager.drawNextAlert()
                     AlertSimulatorApp.notificationManager.startNext(alert: alert)
                 }) {
                     Text("Schedule Alert")
