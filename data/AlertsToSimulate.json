@@ -1,0 +1,686 @@
+[
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "AVIONICS OFF",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "review",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "FUEL LOW TOTAL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "review",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "FLAPS OVERSPEED",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "review",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE SPEED",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "START ENGAGED",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ALT AIR OPEN",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "M BUS 1",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "M BUS 2",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "BATT 1",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ALT 1",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ALT 2",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN RQD",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE TEMP",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE PRESS",
+        "description": "Tail pressure is low"
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE PRESS",
+        "description": "Pressure is high"
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE HEAT",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "AOA FAIL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "OIL PRESS",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "OIL TEMP",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "MAN PRESSURE",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "PFD FAN FAIL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "MFD FAN FAIL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "PITOT HEAT FAIL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL IMBALANCE",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL IMBALANCE",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "PITOT HEAT REQD",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "TAKEOFF FLAPS",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FLAPS CLIMB",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "BRAKE TEMP",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN QTY",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN LEFT ON",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "CHECK OXYGEN",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE QTY",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE LEVEL",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "PARK BRAKE ",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Electric Trim Failure",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Autopilot Failure",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Failed Brakes",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Flat Tire",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Windshield ice but not wings",
+        "description": ""
+    },
+    {
+        "category": "abnormal",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Lift Transducer has ice",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "TIT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "RPM",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "M BUS 1",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "M BUS 2",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "ESS BUS",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN FAULT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "AOA OVERHEAT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE CTL",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE QTY",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "BRAKE TEMP",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "low",
+        "aircraft": "S22TG6",
+        "message": "START ENGAGED",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "OIL PRESS",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "OIL TEMP",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "CHT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "MAN PRESSURE",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "HIGH FUEL FLOW",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "CO LVL HIGH",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "FLAPS ICE",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL LOW LEFT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL LOW RIGHT",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL LOW TOTAL",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "FUEL IMBALANCE",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN QTY",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "OXYGEN RQD",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "ANTI ICE QTY",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "cas",
+        "action": "ignore",
+        "priority": "none",
+        "aircraft": "S22TG6",
+        "message": "SPIN SPIN SPIN",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "review",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "Anti-Ice System Failure",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "review",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "AHRS Failure",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "review",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "ADC Failure",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "Engine Failure In Flight",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "Partial Power Loss",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "high",
+        "aircraft": "S22TG6",
+        "message": "Manifold Pressure is dropping",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Cabin Fire",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Engine Fire",
+        "description": ""
+    },
+    {
+        "category": "emergency",
+        "alertType": "situation",
+        "action": "simulate",
+        "priority": "medium",
+        "aircraft": "S22TG6",
+        "message": "Wing Fire",
+        "description": ""
+    }
+]

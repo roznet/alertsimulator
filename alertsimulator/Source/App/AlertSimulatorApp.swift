@@ -28,6 +28,7 @@ import SwiftUI
 @main
 struct AlertSimulatorApp: App {
     public static let worker = DispatchQueue(label: "net.ro-z.alertsimulator.worker")
+    public static let notificationManager = NotificationManager()
     public static let alertManager = AlertManager()
     
     var body: some Scene {

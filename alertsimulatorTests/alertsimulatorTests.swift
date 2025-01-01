@@ -6,11 +6,15 @@
 //
 
 import Testing
+@testable import alertsimulator
 
 struct alertsimulatorTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+        
+        let manager = AlertManager()
+        #expect(manager.available.count > 0)
     }
 
 }

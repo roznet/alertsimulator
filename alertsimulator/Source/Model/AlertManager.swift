@@ -1,8 +1,8 @@
 //  MIT License
 //
-//  Created on 28/12/2024 for alertsimulator
+//  Created on 01/01/2025 for alertsimulator
 //
-//  Copyright (c) 2024 Brice Rosenzweig
+//  Copyright (c) 2025 Brice Rosenzweig
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,59 +23,18 @@
 //  SOFTWARE.
 //
 
-import Foundation
-import UserNotifications
 import OSLog
 
-class AlertManager : NSObject, UNUserNotificationCenterDelegate {
-    private let center = UNUserNotificationCenter.current()
-    
-    override init () {
-        super.init( )
-        UNUserNotificationCenter.current().delegate = self
-    }
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        // always display even if the app is up
-        completionHandler([.banner,.sound,.badge])
+struct AlertManager {
+    var available = SimulatedAlert.available
+    init() {
     }
    
-    private func checkAuthorization(completion: @escaping (Bool) -> Void) {
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { success, _ in
-            completion(success)
-        }
+    var sampleAlert: SimulatedAlert {
+        let one = SimulatedAlert(category: .abnormal, action: .simulate, priority: .high, alertType: .Situation, message: "No more fuel", description: "empty")
+        return one
     }
-    public func cancelAll() {
-        center.removeAllPendingNotificationRequests()
-    }
-    
-    public func startNextAlert() {
-        let simulatedAlert = SimulatedAlert(title: "Alert", message: "This is a test alert")
-        self.scheduleNext(alert: simulatedAlert)
-    }
-    public func scheduleNext(alert : SimulatedAlert) {
-        checkAuthorization() { success in
-            guard success else {
-                Logger.app.error("No authorization")
-                return
-            }
-            
-            let time : TimeInterval = 1
-            let random = Double.random(in: 1...5)
-            let delay : TimeInterval = time + random
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
-            Logger.app.info("Scheduling alert for \(delay) seconds")
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: alert.notificationContent, trigger: trigger)
-            self.center.add(request) { error in
-                if let error = error {
-                    Logger.app.error("Error adding request \(error)")
-                }
-            }
-        }
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        Logger.app.info("didReceive response: \(response)")
-        completionHandler()
+    func nextAlert() -> SimulatedAlert {
+        SimulatedAlert.available.randomElement() ?? self.sampleAlert
     }
 }

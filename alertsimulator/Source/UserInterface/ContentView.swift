@@ -36,12 +36,13 @@ struct ContentView: View {
             DurationTextFieldView()
             HStack {
                 Button(action: {
-                    AlertSimulatorApp.alertManager.cancelAll()
+                    AlertSimulatorApp.notificationManager.cancelAll()
                 }) {
                     Text("Cancel All Alert")
                 }
                 Button(action: {
-                    AlertSimulatorApp.alertManager.startNextAlert()
+                    let alert = AlertSimulatorApp.alertManager.nextAlert()
+                    AlertSimulatorApp.notificationManager.startNext(alert: alert)
                 }) {
                     Text("Schedule Alert")
                 }

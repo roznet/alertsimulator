@@ -11,7 +11,7 @@
 		42DAD7622D200DBD00BEC3C2 /* RZUtilsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7612D200DBD00BEC3C2 /* RZUtilsSwift */; };
 		42DAD7642D200DBD00BEC3C2 /* RZUtilsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7632D200DBD00BEC3C2 /* RZUtilsSwiftUI */; };
 		42DAD7662D200DBD00BEC3C2 /* RZUtilsUniversal in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7652D200DBD00BEC3C2 /* RZUtilsUniversal */; };
-		42DAD7D32D206D6400BEC3C2 /* AlertsToSimulate.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42DAD7D12D206D6400BEC3C2 /* AlertsToSimulate.csv */; };
+		42DAD7DB2D25843200BEC3C2 /* AlertsToSimulate.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		42DAD7302D20097D00BEC3C2 /* alertsimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertsimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42DAD7D12D206D6400BEC3C2 /* AlertsToSimulate.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlertsToSimulate.csv; sourceTree = "<group>"; };
+		42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlertsToSimulate.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -109,7 +109,7 @@
 		42DAD7D22D206D6400BEC3C2 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				42DAD7D12D206D6400BEC3C2 /* AlertsToSimulate.csv */,
+				42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DAD7D32D206D6400BEC3C2 /* AlertsToSimulate.csv in Resources */,
+				42DAD7DB2D25843200BEC3C2 /* AlertsToSimulate.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

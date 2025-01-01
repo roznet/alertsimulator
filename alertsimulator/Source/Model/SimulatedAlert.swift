@@ -1,34 +1,65 @@
-//  MIT License
 //
-//  Created on 28/12/2024 for alertsimulator
+//  Alert.swift
+//  alertsimulator
 //
-//  Copyright (c) 2024 Brice Rosenzweig
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in all
-//  copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//  SOFTWARE.
+//  Created by Brice Rosenzweig on 28/12/2024.
 //
 
 import Foundation
 import UserNotifications
 
 struct SimulatedAlert : Codable {
-    let title: String
-    let message: String
+    enum Category : String, Codable {
+        case abnormal = "abnormal"
+        case emergency = "emergency"
+        case normal = "normal"
+    }
+    
+    enum Action : String, Codable {
+        case simulate = "simulate"
+        case ignore = "ignore"
+        case review = "review"
+    }
+    
+    enum Priority : String, Codable {
+        case high = "high"
+        case medium = "medium"
+        case low = "low"
+        case none = "none"
+    }
+    
+    enum AlertType : String, Codable {
+        case cas = "cas"
+        case Situation = "situation"
+    }
+    
+    let category : Category
+    let action : Action
+    let priority : Priority
+    let alertType : AlertType
+    let message : String?
+    let description : String?
+    
+    var title : String {
+        return "\(category) \(alertType)"
+    }
+    
+    static var available: [SimulatedAlert] = {
+            // Attempt to load and decode the JSON file
+            guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
+                print("Default JSON file not found.")
+                return []
+            }
+            
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                return try decoder.decode([SimulatedAlert].self, from: data)
+            } catch {
+                print("Error decoding JSON: \(error)")
+                return []
+            }
+        }()
 }
 
 extension SimulatedAlert {
@@ -36,7 +67,7 @@ extension SimulatedAlert {
         let content = UNMutableNotificationContent()
         
         content.title = title
-        content.body = message
+        content.body = message ?? ""
         
         return content
     }
