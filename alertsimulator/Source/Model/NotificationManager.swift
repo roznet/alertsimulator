@@ -51,24 +51,24 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     public func startNext(alert simulatedAlert: SimulatedAlert) {
         self.scheduleNext(alert: simulatedAlert)
     }
-    public func scheduleNext(alert : SimulatedAlert) {
+    public func scheduleNext(alert : SimulatedAlert, delay : TimeInterval = 1) {
         checkAuthorization() { success in
             guard success else {
                 Logger.app.error("No authorization")
                 return
             }
-            
-            let time : TimeInterval = 1
-            let random = Double.random(in: 1...5)
-            let delay : TimeInterval = time + random
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
-            Logger.app.info("Scheduling alert for \(delay) seconds")
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: alert.notificationContent, trigger: trigger)
-            self.center.add(request) { error in
-                if let error = error {
-                    Logger.app.error("Error adding request \(error)")
+           
+            if delay > 0 {
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
+                Logger.app.info("Scheduling alert for \(delay) seconds")
+                let request = UNNotificationRequest(identifier: UUID().uuidString, content: alert.notificationContent, trigger: trigger)
+                self.center.add(request) { error in
+                    if let error = error {
+                        Logger.app.error("Error adding request \(error)")
+                    }
                 }
+            }else{
+                Logger.app.error( "Delay must be greater than zero")
             }
         }
     }

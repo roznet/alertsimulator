@@ -40,11 +40,20 @@ struct ContentView: View {
                 }) {
                     Text("Cancel All Alert")
                 }
+                Spacer()
                 Button(action: {
                     let alert = AlertSimulatorApp.alertManager.drawNextAlert()
                     AlertSimulatorApp.notificationManager.startNext(alert: alert)
                 }) {
                     Text("Schedule Alert")
+                }
+                .padding()
+                Button(action: {
+                    let alert = AlertSimulatorApp.alertManager.drawNextAlert()
+                    AlertSimulatorApp.notificationManager.scheduleNext(alert: alert, delay: 3.0)
+                    
+                }) {
+                    Text("Run One Now")
                 }
             }
         }
