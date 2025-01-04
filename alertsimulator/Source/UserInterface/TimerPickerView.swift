@@ -25,53 +25,72 @@
 import SwiftUI
 
 struct TimerPickerView: View {
-    @State private var selectedHours = 0
-    @State private var selectedMinutes = 0
+    @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
-        VStack {
-            Text("Set Timer")
-                .font(.largeTitle)
-                .bold()
-                .padding(.bottom, 20)
-            
-            HStack(spacing: 0) {
-                // Hours Picker
-                Picker(selection: $selectedHours, label: Text("Hours")) {
-                    ForEach(0..<24) { hour in
-                        Text("\(hour)").tag(hour)
-                    }
-                }
-                .pickerStyle(WheelPickerStyle())
-                .frame(width: 100, height: 200)
-                .clipped()
-                
-                Text("h")
+        HStack {
+            VStack {
+                Text("Set Flight Duration")
                     .font(.title)
-                    .bold()
-                    .frame(width: 40)
                 
-                // Minutes Picker
-                Picker(selection: $selectedMinutes, label: Text("Minutes")) {
-                    ForEach(0..<60) { minute in
-                        Text("\(minute)").tag(minute)
+                HStack(spacing: 0) {
+                    // Hours Picker
+                    Picker(selection: $alertViewModel.selectedDurationHours, label: Text("Hours")) {
+                        ForEach(0..<10) { hour in
+                            Text("\(hour)").tag(hour)
+                        }
                     }
+                    .pickerStyle(WheelPickerStyle())
+                    .frame(width: 100)
+                    .clipped()
+                    
+                    Text("h")
+                        .font(.title)
+                        .frame(width: 40)
+                    
+                    // Minutes Picker
+                    Picker(selection: $alertViewModel.selectedDurationMinutes, label: Text("Minutes")) {
+                        ForEach(0..<12) { minute in
+                            Text("\(minute*5)").tag(minute*5)
+                        }
+                    }
+                    .pickerStyle(WheelPickerStyle())
+                    .frame(width: 100)
+                    .clipped()
+                    
+                    Text("m")
+                        .font(.title)
+                        .frame(width: 40)
                 }
-                .pickerStyle(WheelPickerStyle())
-                .frame(width: 100, height: 200)
-                .clipped()
-                
-                Text("m")
+            }
+            Spacer()
+            VStack {
+                Text("Set Alert Interval")
                     .font(.title)
-                    .bold()
-                    .frame(width: 40)
+                
+                HStack(spacing: 0) {
+                    // Hours Picker
+                    Picker(selection: $alertViewModel.selectedIntervalMinutes, label: Text("Minutes")) {
+                        ForEach(0..<12) { minutes in
+                            Text("\(minutes*5)").tag(minutes*5)
+                        }
+                    }
+                    .pickerStyle(WheelPickerStyle())
+                    .frame(width: 100)
+                    .clipped()
+                    
+                    Text("m")
+                        .font(.title)
+                        .frame(width: 40)
+                    
+                }
             }
             
-            Spacer()
+            //Spacer()
             
-            Text("Selected Duration: \(selectedHours) hours \(selectedMinutes) minutes")
-                .font(.headline)
-                .padding(.top, 20)
+            /*Text("Selected Duration: \(selectedHours) hours \(selectedMinutes) minutes")
+             .font(.headline)
+             .padding()*/
         }
         .padding()
     }
@@ -79,6 +98,12 @@ struct TimerPickerView: View {
 
 struct TimerPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerPickerView()
+        TimerPickerView(alertViewModel: createViewModel())
+    }
+    
+    static func createViewModel() -> AlertViewModel {
+        
+        let viewModel = AlertViewModel()
+        return viewModel
     }
 }

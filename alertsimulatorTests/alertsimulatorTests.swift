@@ -52,10 +52,6 @@ struct alertsimulatorTests {
                 #expect(abs((value1 - value2)) < tolerance)
             }
         }
-
-     
-        
-        
     }
 
 }

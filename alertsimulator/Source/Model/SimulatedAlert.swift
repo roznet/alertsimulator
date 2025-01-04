@@ -69,7 +69,10 @@ struct SimulatedAlert : Codable {
     var title : String {
         return "\(category) \(alertType)"
     }
-    
+   
+    var casMessage : CASMessage {
+        return CASMessage(category: self.category, message: self.message ?? "Alert", submessage: self.submessage ?? "")
+    }
     var uniqueIdentifier: String {
         let message = self.message ?? ""
         var submessage = self.submessage ?? ""

@@ -27,13 +27,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var alertViewModel: AlertViewModel = .init()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             Text("Configure Flight Alerts")
-            DurationTextFieldView()
+                .font(.largeTitle)
+                .bold()
+            TimerPickerView(alertViewModel: alertViewModel)
             HStack {
                 Button(action: {
                     AlertSimulatorApp.notificationManager.cancelAll()
@@ -47,6 +47,7 @@ struct ContentView: View {
                 }) {
                     Text("Schedule Alert")
                 }
+                .standardButton()
                 .padding()
                 Button(action: {
                     let alert = AlertSimulatorApp.alertManager.drawNextAlert()
@@ -55,9 +56,23 @@ struct ContentView: View {
                 }) {
                     Text("Run One Now")
                 }
+                .standardButton()
             }
         }
         .padding()
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                VStack {
+                    CASView(casMessage: $alertViewModel.casMessage.wrappedValue)
+                }
+                .frame(height: geometry.size.height / 3)
+                .frame(maxWidth: .infinity)
+                .background(Color.brown)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
