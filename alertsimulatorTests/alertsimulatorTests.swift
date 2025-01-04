@@ -32,19 +32,25 @@ struct alertsimulatorTests {
         
         let oneHour = TimeInterval(3600)
         let oneMinute = TimeInterval(60)
-        let interval = oneHour/4
-        let offset = 0.10
-        var flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: oneMinute * 10, protectedEnd: oneMinute * 10)
-        var times = flight.computeAlertTimes(randomOffsetRange: offset )
-        #expect(times.count > 0)
-        let intervals = times.map { ($0.timeIntervalSince(date) - oneMinute * 10) / interval}
-        let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0))
-        let tolerance = interval * offset + 0.00001
-        print(times)
-        print(intervals)
-        print(expected)
-        for (value1, value2) in zip(intervals, expected) {
-            #expect(abs((value1 - value2)) < tolerance)
+        let tests : [(TimeInterval,TimeInterval,TimeInterval)] = [
+            (oneHour/4, 0.0,   0.0),
+            (oneHour/4, 2.0 * oneMinute,   0.0),
+            (oneHour/4, 2.0 * oneMinute,   10.0*oneMinute),
+            (oneHour/4, 0.0,   10.0*oneMinute),
+            (oneHour/2, 2.0 * oneMinute,   10.0 * oneMinute),
+        ]
+        for (interval,offset,protected) in tests {
+            let flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
+            let times = flight.computeAlertTimes(randomOffsetRange: offset )
+            let intervals = times.map { ($0.timeIntervalSince(date) - protected) / interval}
+            let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0)).map { $0 + 1.0}
+            let tolerance = offset + 0.00001
+            
+            #expect(times.count > 0)
+            #expect(intervals.count == expected.count)
+            for (value1, value2) in zip(intervals, expected) {
+                #expect(abs((value1 - value2)) < tolerance)
+            }
         }
 
      

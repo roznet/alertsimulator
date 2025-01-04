@@ -41,12 +41,12 @@ struct FlightManager {
         self.end = self.start.addingTimeInterval(duration)
         self.duration = duration
         self.averageAlertInterval = interval
-        self.protectedStart = protectedStart ?? duration * 0.05
-        self.protectedEnd = protectedEnd ?? duration * 0.05
+        self.protectedStart = protectedStart ?? 0.0
+        self.protectedEnd = protectedEnd ?? 0.0
     }
    
     // This should compute the next
-    func computeAlertTimes(randomOffsetRange : Double = 0.1) -> [Date] {
+    func computeAlertTimes(randomOffsetRange : TimeInterval = 0.0) -> [Date] {
 
         let protectedStartDate = start.addingTimeInterval(protectedStart)
         let protectedEndDate = end.addingTimeInterval(-protectedEnd)
@@ -55,11 +55,11 @@ struct FlightManager {
 
         var alertTimes: [Date] = []
         if effectiveDuration > 0 {
-            var currentTime = protectedStartDate
-            let offsetRange = averageAlertInterval * randomOffsetRange
+            var currentTime = protectedStartDate.addingTimeInterval(self.averageAlertInterval)
+            let offsetRange = randomOffsetRange
             
             while currentTime < protectedEndDate {
-                let randomOffset = TimeInterval.random(in: 0.0...offsetRange)
+                let randomOffset = TimeInterval.random(in: -offsetRange...offsetRange)
                 
                 // Add the random offset to the current alert time
                 let randomAlertTime = currentTime.addingTimeInterval(randomOffset)
