@@ -55,8 +55,9 @@ struct SimulatedAlert : Codable {
     let message : String?
     let submessage : String? // to distinguish for two identical message
     let description : String?
+    let uid : Int
     
-    init(category: Category, action: Action, alertType: AlertType, message: String?, submessage: String? = nil, description: String? = nil, priority: Priority = .medium) {
+    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, description: String? = nil, priority: Priority = .medium) {
         self.category = category
         self.action = action
         self.priority = priority
@@ -64,6 +65,7 @@ struct SimulatedAlert : Codable {
         self.message = message
         self.submessage = submessage
         self.description = description
+        self.uid = uid
     }
     
     var title : String {
@@ -74,12 +76,12 @@ struct SimulatedAlert : Codable {
         return CASMessage(category: self.category, message: self.message ?? "Alert", submessage: self.submessage ?? "")
     }
     var uniqueIdentifier: String {
-        let message = self.message ?? ""
-        var submessage = self.submessage ?? ""
-        if !submessage.isEmpty {
-           submessage = "-\(message)"
+        var vals : [String] = ["\(self.uid)", category.uniqueIdentifier, alertType.uniqueIdentifier]
+        if let message = message {
+            vals.append(message)
         }
-        return "\(category.uniqueIdentifier)-\(alertType.uniqueIdentifier)-\(message)\(submessage)"
+
+        return vals.joined(separator: "-")
     }
     
     static var available: [SimulatedAlert] = {
@@ -98,6 +100,12 @@ struct SimulatedAlert : Codable {
                 return []
             }
         }()
+    static func alert(for uniqueIdentifier: String) -> SimulatedAlert? {
+        for alert in available where alert.uniqueIdentifier == uniqueIdentifier {
+            return alert
+        }
+        return nil
+    }
 }
 
 extension SimulatedAlert {

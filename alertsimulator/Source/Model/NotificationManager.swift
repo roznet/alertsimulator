@@ -61,7 +61,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
             if delay > 0 {
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
                 Logger.app.info("Scheduling alert for \(delay) seconds")
-                let request = UNNotificationRequest(identifier: UUID().uuidString, content: alert.notificationContent, trigger: trigger)
+                let request = UNNotificationRequest(identifier: alert.uniqueIdentifier, content: alert.notificationContent, trigger: trigger)
                 self.center.add(request) { error in
                     if let error = error {
                         Logger.app.error("Error adding request \(error)")
@@ -74,7 +74,11 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        Logger.app.info("didReceive response: \(response)")
+        if let alert = SimulatedAlert.alert(for: response.notification.request.identifier) {
+            Logger.app.info("didReceive alert: \(alert)")
+        }else {
+            Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")
+        }
         completionHandler()
     }
 }

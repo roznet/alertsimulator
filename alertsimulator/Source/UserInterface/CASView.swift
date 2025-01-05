@@ -52,17 +52,25 @@ struct CASView: View {
                     .padding([.bottom,.top])
 
             }
-            VStack {
+            VStack() {
                 Text("Alerts")
                     .foregroundColor(.white)
                 Divider()
                     .background(Color.white)
                     .padding([.bottom])
-                Text($casMessage.wrappedValue.submessage)
-                    .casSubMessage(category: $casMessage.wrappedValue.category)
-                    .frame(maxWidth: .infinity,alignment: .leading)
+                if !$casMessage.wrappedValue.submessage.isEmpty {
+                    Text($casMessage.wrappedValue.message + " - " + $casMessage.wrappedValue.submessage)
+                        .casSubMessage(category: $casMessage.wrappedValue.category)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                }else {
+                    Text($casMessage.wrappedValue.submessage)
+                        .casSubMessage(category: $casMessage.wrappedValue.category)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+
+                }
             }
             .background(.black)
+            //.frame(maxWidth:.infinity, alignment: .trailing)
             .cornerRadius(10)
             .overlay( RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
             .padding([.leading,.top,.bottom])
