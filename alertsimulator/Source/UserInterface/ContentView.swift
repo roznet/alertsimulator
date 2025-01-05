@@ -25,6 +25,7 @@
 
 
 import SwiftUI
+import OSLog
 
 struct ContentView: View {
     @StateObject var alertViewModel: AlertViewModel = .init()
@@ -64,7 +65,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 VStack {
-                    CASView(casMessage: $alertViewModel.casMessage.wrappedValue)
+                    CASView(casMessage: $alertViewModel.casMessage)
                 }
                 .frame(height: geometry.size.height / 3)
                 .frame(maxWidth: .infinity)
@@ -72,6 +73,19 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.all)
+            .onAppear {
+                NotificationCenter.default.addObserver(forName: .didReceiveSimulatedAlert, object: nil, queue: nil){ notification in
+                    if let simulatedAlert = notification.object as? SimulatedAlert{
+                        Logger.app.info("Processing \(simulatedAlert)")
+                        DispatchQueue.main.async {
+                            self.alertViewModel.casMessage = simulatedAlert.casMessage
+                        }
+                    }
+                }
+            }
+            .onDisappear {
+                NotificationCenter.default.removeObserver(self)
+            }
         }
     }
 }

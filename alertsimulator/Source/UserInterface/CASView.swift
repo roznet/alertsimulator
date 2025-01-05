@@ -41,7 +41,7 @@ class CASViewModel : ObservableObject {
     }
 }
 struct CASView: View {
-    @State var casMessage: CASMessage
+    @Binding var casMessage: CASMessage
     
     var body: some View {
         VStack {
@@ -59,7 +59,7 @@ struct CASView: View {
                     .background(Color.white)
                     .padding([.bottom])
                 if !$casMessage.wrappedValue.submessage.isEmpty {
-                    Text($casMessage.wrappedValue.message + " - " + $casMessage.wrappedValue.submessage)
+                    Text($casMessage.wrappedValue.detailedMessage)
                         .casSubMessage(category: $casMessage.wrappedValue.category)
                         .frame(maxWidth: .infinity,alignment: .leading)
                 }else {
@@ -85,9 +85,17 @@ struct CASView: View {
 
 
 #Preview {
-    CASView(casMessage: SampleLoader.sampleCAS(category: .abnormal).first!)
+    @Previewable @State var casMessage1: CASMessage = SampleLoader.sampleCAS(category: .abnormal).first!
+    @Previewable @State var casMessage2: CASMessage = SampleLoader.sampleCAS(category: .emergency).first!
+    @Previewable @State var casMessage3: CASMessage = CASMessage()
+    @Previewable @State var casMessage4: CASMessage = SampleLoader.sampleCAS(category: .abnormal, type:.Situation).first!
+    
+    CASView(casMessage: $casMessage1)
         .padding(.bottom)
-    CASView(casMessage: SampleLoader.sampleCAS(category: .emergency).first!)
+    CASView(casMessage: $casMessage2)
         .padding(.bottom)
-    CASView(casMessage: CASMessage())
+    CASView(casMessage: $casMessage3)
+        .padding(.bottom)
+    CASView(casMessage: $casMessage4)
+        .padding(.bottom)
 }

@@ -28,12 +28,12 @@
 import Foundation
 
 struct SampleLoader {
-    static func sampleCAS(category : CASMessage.Category) -> [CASMessage] {
+    static func sampleCAS(category : CASMessage.Category, type : SimulatedAlert.AlertType = .cas) -> [CASMessage] {
         let available = SimulatedAlert.available
         var samples: [CASMessage] = []
         
         for alert in available {
-            if alert.category == category {
+            if alert.category == category && alert.alertType == type{
                 samples.append(alert.casMessage)
             }
         }

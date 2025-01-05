@@ -73,7 +73,11 @@ struct SimulatedAlert : Codable {
     }
    
     var casMessage : CASMessage {
-        return CASMessage(category: self.category, message: self.message ?? "Alert", submessage: self.submessage ?? "")
+        if self.alertType == .cas {
+            return CASMessage(category: self.category, message: self.message ?? "Alert", submessage: self.submessage ?? "")
+        }else{
+            return CASMessage(category: self.category, message: "", submessage: self.message ?? "")
+        }
     }
     var uniqueIdentifier: String {
         var vals : [String] = ["\(self.uid)", category.uniqueIdentifier, alertType.uniqueIdentifier]

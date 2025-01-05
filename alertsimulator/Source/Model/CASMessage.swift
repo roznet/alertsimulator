@@ -42,6 +42,17 @@ struct CASMessage {
         }
     }
     
+    var detailedMessage: String {
+        var parts : [String] = []
+        if !message.isEmpty {
+            parts.append(self.message)
+        }
+        if !submessage.isEmpty {
+            parts.append(self.submessage)
+        }
+        return parts.joined(separator: " - ")
+    }
+    
     init (category: Category = .normal, message: String = "", submessage: String = "") {
         self.category = category
         self.message = message

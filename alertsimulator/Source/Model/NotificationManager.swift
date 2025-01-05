@@ -27,6 +27,10 @@ import Foundation
 import UserNotifications
 import OSLog
 
+extension Notification.Name {
+    static let didReceiveSimulatedAlert = Notification.Name("didReceiveSimulatedAlert")
+}
+
 class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     private let center = UNUserNotificationCenter.current()
     
@@ -76,6 +80,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if let alert = SimulatedAlert.alert(for: response.notification.request.identifier) {
             Logger.app.info("didReceive alert: \(alert)")
+            NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: alert)
         }else {
             Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")
         }
