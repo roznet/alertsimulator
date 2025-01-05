@@ -35,5 +35,63 @@ class AlertViewModel: ObservableObject {
     @Published var selectedDurationMinutes: Int = 0
     @Published var selectedIntervalMinutes: Int = 0
     
+    @Published var nextAlertTime : Date = Date()
+    
     @Published var casMessage : CASMessage = CASMessage()
+    
+    var duration : TimeInterval {
+        return TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
+    }
+    var interval : TimeInterval {
+        return TimeInterval( 60.0 * Double(selectedIntervalMinutes))
+    }
+    
+    func fromSettings() {
+        let duration = Settings.shared.currentFlightDuration
+        let interval = Settings.shared.currentFlightInterval
+        
+        let hours = Int(duration / 60.0 / 60.0)
+        let minutes = Int(duration / 60.0) % 60
+        
+        let intervalMinutes = Int(interval / 60.0) % 60
+        
+        selectedDurationHours = hours
+        self.selectedDurationMinutes = minutes
+        selectedIntervalMinutes = intervalMinutes
+        self.alertTimes = Settings.shared.currentFlightAlertTimes
+        self.nextAlert()
+    }
+    
+    func toSettings() {
+        
+        let duration = TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
+        let interval = TimeInterval( 60.0 * Double(selectedIntervalMinutes))
+        
+        Settings.shared.currentFlightDuration = duration
+        Settings.shared.currentFlightInterval = interval
+        Settings.shared.currentFlightStart = self.flight.start
+        Settings.shared.currentFlightAlertTimes = self.alertTimes
+    }
+   
+    var flight : FlightManager = FlightManager(duration: Settings.shared.currentFlightDuration, interval: Settings.shared.currentFlightInterval, start: Settings.shared.currentFlightStart)
+    
+    var alertTimes : [Date] = []
+    
+    func startFlight() {
+        self.flight = FlightManager(duration: duration, interval: interval, start: Date())
+        self.alertTimes = self.flight.computeAlertTimes(randomOffsetRange: self.interval/10.0)
+        self.toSettings()
+        self.nextAlert()
+    }
+    
+    func nextAlert() -> Date? {
+        let current = Date()
+        for alertTime in alertTimes {
+            if alertTime > current {
+                self.nextAlertTime = alertTime
+                return alertTime
+            }
+        }
+        return nil
+    }
 }

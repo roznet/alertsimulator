@@ -67,7 +67,7 @@ struct AlertManager {
     }
    
     var sampleAlert: SimulatedAlert {
-        let one = SimulatedAlert(category: .abnormal, action: .simulate, alertType: .Situation, message: "No more fuel", uid: -1)
+        let one = SimulatedAlert(category: .abnormal, action: .simulate, alertType: .situation, message: "No more fuel", uid: -1)
         return one
     }
     func nextAlert() -> SimulatedAlert {

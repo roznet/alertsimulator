@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-struct SimulatedAlert : Codable {
+struct SimulatedAlert : Codable, CustomStringConvertible {
     enum Category : String, Codable {
         case abnormal = "abnormal"
         case emergency = "emergency"
@@ -38,12 +38,12 @@ struct SimulatedAlert : Codable {
     
     enum AlertType : String, Codable {
         case cas = "cas"
-        case Situation = "situation"
+        case situation = "situation"
         
         var uniqueIdentifier: String {
             switch self {
             case .cas: return "cas"
-            case .Situation: return "situ"
+            case .situation: return "situ"
             }
         }
     }
@@ -54,17 +54,31 @@ struct SimulatedAlert : Codable {
     let alertType : AlertType
     let message : String?
     let submessage : String? // to distinguish for two identical message
-    let description : String?
     let uid : Int
     
-    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, description: String? = nil, priority: Priority = .medium) {
+    var description: String {
+       var parts: [String] = [
+        "uid: \(uid)",
+        "category: .\(category)",
+        "action: .\(action)",
+        "priority: .\(priority)",
+        "alertType: .\(alertType)",
+        ]
+        if let message = message {
+            parts.append("message: \"\(message)\"")
+        }
+        if let submessage = submessage, !submessage.isEmpty {
+            parts.append("submessage: \"\(submessage)\"")
+        }
+        return "SimulatedAlert(" + parts.joined(separator: ", ") + ")"
+    }
+    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, priority: Priority = .medium) {
         self.category = category
         self.action = action
         self.priority = priority
         self.alertType = alertType
         self.message = message
         self.submessage = submessage
-        self.description = description
         self.uid = uid
     }
     

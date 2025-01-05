@@ -29,6 +29,13 @@ import OSLog
 
 struct ContentView: View {
     @StateObject var alertViewModel: AlertViewModel = .init()
+    
+    func startAlerts() {
+        self.alertViewModel.startFlight()
+    }
+    func stopAlerts() {
+        AlertSimulatorApp.notificationManager.cancelAll()
+    }
     var body: some View {
         VStack {
             Text("Configure Flight Alerts")
@@ -37,16 +44,15 @@ struct ContentView: View {
             TimerPickerView(alertViewModel: alertViewModel)
             HStack {
                 Button(action: {
-                    AlertSimulatorApp.notificationManager.cancelAll()
+                    self.stopAlerts()
                 }) {
                     Text("Cancel All Alert")
                 }
                 Spacer()
                 Button(action: {
-                    let alert = AlertSimulatorApp.alertManager.drawNextAlert()
-                    AlertSimulatorApp.notificationManager.startNext(alert: alert)
+                    self.startAlerts()
                 }) {
-                    Text("Schedule Alert")
+                    Text("Start Flight")
                 }
                 .standardButton()
                 .padding()
@@ -58,6 +64,15 @@ struct ContentView: View {
                     Text("Run One Now")
                 }
                 .standardButton()
+            }
+            HStack {
+                Text("Next Alert Status")
+                    .font(.body)
+                if $alertViewModel.nextAlertTime.wrappedValue > Date(){
+                    Text($alertViewModel.nextAlertTime.wrappedValue.formatted(date: .abbreviated, time: .standard))
+                } else {
+                    Text("No Date Available")
+                }
             }
         }
         .padding()

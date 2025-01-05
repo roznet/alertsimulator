@@ -88,7 +88,7 @@ struct CASView: View {
     @Previewable @State var casMessage1: CASMessage = SampleLoader.sampleCAS(category: .abnormal).first!
     @Previewable @State var casMessage2: CASMessage = SampleLoader.sampleCAS(category: .emergency).first!
     @Previewable @State var casMessage3: CASMessage = CASMessage()
-    @Previewable @State var casMessage4: CASMessage = SampleLoader.sampleCAS(category: .abnormal, type:.Situation).first!
+    @Previewable @State var casMessage4: CASMessage = SampleLoader.sampleCAS(category: .abnormal, type:.situation).first!
     
     CASView(casMessage: $casMessage1)
         .padding(.bottom)

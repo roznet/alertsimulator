@@ -34,15 +34,24 @@ struct Settings {
     enum Key : String {
         case aircraft_type = "aircraft_type"
         case current_flight_start = "current_flight_start"
-        case current_flight_end = "current_flight_end"
+        case current_flight_interval = "current_flight_interval"
+        case current_flight_duration = "current_flight_duration"
+        case current_flight_alert_times = "current_flight_alert_times"
         
     }
     
     @UserStorage(key: Key.current_flight_start, defaultValue: Date())
     var currentFlightStart : Date
     
-    @UserStorage(key: Key.current_flight_end, defaultValue: Date())
-    var currentFlightEnd : Date
+    @UserStorage(key: Key.current_flight_interval, defaultValue: 0.0)
+    var currentFlightInterval : TimeInterval
+    
+    @UserStorage(key: Key.current_flight_duration, defaultValue: 0.0)
+    var currentFlightDuration : TimeInterval
+    
+    @UserStorage(key: Key.current_flight_alert_times, defaultValue: [])
+    var currentFlightAlertTimes : [Date]
+    
     
     
 }

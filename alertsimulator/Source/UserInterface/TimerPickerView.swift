@@ -85,12 +85,13 @@ struct TimerPickerView: View {
                     
                 }
             }
+            .onAppear {
+                self.alertViewModel.fromSettings()
+            }
+            .onDisappear {
+                self.alertViewModel.toSettings()
+            }
             
-            //Spacer()
-            
-            /*Text("Selected Duration: \(selectedHours) hours \(selectedMinutes) minutes")
-             .font(.headline)
-             .padding()*/
         }
         .padding()
     }

@@ -30,6 +30,7 @@ struct AlertSimulatorApp: App {
     public static let worker = DispatchQueue(label: "net.ro-z.alertsimulator.worker")
     public static let notificationManager = NotificationManager()
     public static let alertManager = AlertManager()
+    public static let flightMaaanager = FlightManager(duration: Settings.shared.currentFlightDuration, interval: Settings.shared.currentFlightInterval)
     
     var body: some Scene {
         WindowGroup {

@@ -54,7 +54,7 @@ struct FlightManager {
         let effectiveDuration = duration - (protectedStart + protectedEnd)
 
         var alertTimes: [Date] = []
-        if effectiveDuration > 0 {
+        if effectiveDuration > 0 && averageAlertInterval > 0 {
             var currentTime = protectedStartDate.addingTimeInterval(self.averageAlertInterval)
             let offsetRange = randomOffsetRange
             
