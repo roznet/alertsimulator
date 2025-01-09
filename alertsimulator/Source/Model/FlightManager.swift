@@ -35,6 +35,12 @@ struct FlightManager {
     
     let start : Date
     let end : Date
+    
+    var alertTimes : [Date]
+    
+    var isRunning : Bool {
+        return !alertTimes.isEmpty
+    }
    
     init(duration : TimeInterval, interval : TimeInterval, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil) {
         self.start = start ?? Date()
@@ -43,8 +49,26 @@ struct FlightManager {
         self.averageAlertInterval = interval
         self.protectedStart = protectedStart ?? 0.0
         self.protectedEnd = protectedEnd ?? 0.0
+    
+        self.alertTimes = []
+    }
+    
+  
+    mutating func start(randomOffsetRange : TimeInterval = 0.0) {
+        self.alertTimes = self.computeAlertTimes(randomOffsetRange: randomOffsetRange)
     }
    
+    mutating func finish() {
+        self.alertTimes = []
+    }
+    
+    func nextAlertTime(after : Date) -> Date? {
+        if let nextAlertTime = alertTimes.first(where: { $0 > after }) {
+            return nextAlertTime
+        } else {
+           return nil
+        }
+    }
     // This should compute the next
     func computeAlertTimes(randomOffsetRange : TimeInterval = 0.0) -> [Date] {
 

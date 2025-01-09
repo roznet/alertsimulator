@@ -40,7 +40,7 @@ struct alertsimulatorTests {
             (oneHour/2, 2.0 * oneMinute,   10.0 * oneMinute),
         ]
         for (interval,offset,protected) in tests {
-            let flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
+            var flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
             let times = flight.computeAlertTimes(randomOffsetRange: offset )
             let intervals = times.map { ($0.timeIntervalSince(date) - protected) / interval}
             let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0)).map { $0 + 1.0}
@@ -51,7 +51,20 @@ struct alertsimulatorTests {
             for (value1, value2) in zip(intervals, expected) {
                 #expect(abs((value1 - value2)) < tolerance)
             }
+            
+            flight.start(randomOffsetRange: offset)
+            #expect(flight.isRunning)
+            var nextDate : Date? = flight.nextAlertTime(after: date)
+            var extractedDates : [Date] = []
+            while let runningDate = nextDate {
+                    extractedDates.append(runningDate)
+                nextDate = flight.nextAlertTime(after: runningDate)
+            }
+            #expect(extractedDates.count == times.count)
+            // if random offset value won't match
+            if offset == 0.0 {
+                #expect(extractedDates == times)
+            }
         }
     }
-
 }

@@ -77,6 +77,14 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
+    func checkPendingNotification() {
+        center.getPendingNotificationRequests { requests in
+            requests.forEach { request in
+                Logger.app.info("Pending notification: \(request)")
+            }
+        }
+    }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if let alert = SimulatedAlert.alert(for: response.notification.request.identifier) {
             Logger.app.info("didReceive alert: \(alert)")
