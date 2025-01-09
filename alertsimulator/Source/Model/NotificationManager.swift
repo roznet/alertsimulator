@@ -55,13 +55,15 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     public func startNext(alert simulatedAlert: SimulatedAlert) {
         self.scheduleNext(alert: simulatedAlert)
     }
-    public func scheduleNext(alert : SimulatedAlert, delay : TimeInterval = 1) {
+    public func scheduleNext(alert : SimulatedAlert, date : Date? = nil) {
+        guard let date = date else { return }
+        
         checkAuthorization() { success in
             guard success else {
                 Logger.app.error("No authorization")
                 return
             }
-           
+            let delay = date.timeIntervalSinceNow
             if delay > 0 {
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
                 Logger.app.info("Scheduling alert for \(delay) seconds")
@@ -84,6 +86,16 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
             }
         }
     }
+    
+    func scheduleNext(flightManager : FlightManager, alertManager : AlertManager)  {
+        center.removeAllPendingNotificationRequests()
+        
+        for date in flightManager.alertTimes {
+            let alert = alertManager.drawNextAlert()
+            self.scheduleNext(alert: alert, date: date)
+        }
+    }
+    
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if let alert = SimulatedAlert.alert(for: response.notification.request.identifier) {

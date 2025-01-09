@@ -42,7 +42,8 @@ struct FlightManager {
         return !alertTimes.isEmpty
     }
    
-    init(duration : TimeInterval, interval : TimeInterval, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil) {
+    init(duration : TimeInterval, interval : TimeInterval, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil,
+         alertTimes : [Date] = []) {
         self.start = start ?? Date()
         self.end = self.start.addingTimeInterval(duration)
         self.duration = duration
@@ -50,7 +51,7 @@ struct FlightManager {
         self.protectedStart = protectedStart ?? 0.0
         self.protectedEnd = protectedEnd ?? 0.0
     
-        self.alertTimes = []
+        self.alertTimes = alertTimes
     }
     
   

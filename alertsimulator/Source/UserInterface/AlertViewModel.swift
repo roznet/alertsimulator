@@ -58,8 +58,7 @@ class AlertViewModel: ObservableObject {
         selectedDurationHours = hours
         self.selectedDurationMinutes = minutes
         selectedIntervalMinutes = intervalMinutes
-        self.alertTimes = Settings.shared.currentFlightAlertTimes
-        self.nextAlert()
+        self.flight = FlightManager(duration: duration, interval: interval, start: Settings.shared.currentFlightStart, alertTimes: Settings.shared.currentFlightAlertTimes)
     }
     
     func toSettings() {
@@ -70,28 +69,16 @@ class AlertViewModel: ObservableObject {
         Settings.shared.currentFlightDuration = duration
         Settings.shared.currentFlightInterval = interval
         Settings.shared.currentFlightStart = self.flight.start
-        Settings.shared.currentFlightAlertTimes = self.alertTimes
+        Settings.shared.currentFlightAlertTimes = self.flight.alertTimes
     }
    
-    var flight : FlightManager = FlightManager(duration: Settings.shared.currentFlightDuration, interval: Settings.shared.currentFlightInterval, start: Settings.shared.currentFlightStart)
-    
-    var alertTimes : [Date] = []
+    var flight : FlightManager = FlightManager(duration: 0.0, interval: 0.0)
     
     func startFlight() {
         self.flight = FlightManager(duration: duration, interval: interval, start: Date())
-        self.alertTimes = self.flight.computeAlertTimes(randomOffsetRange: self.interval/10.0)
+        self.flight.start()
         self.toSettings()
-        self.nextAlert()
+        AlertSimulatorApp.notificationManager.scheduleNext(flightManager: self.flight, alertManager: AlertSimulatorApp.alertManager)
     }
     
-    func nextAlert() -> Date? {
-        let current = Date()
-        for alertTime in alertTimes {
-            if alertTime > current {
-                self.nextAlertTime = alertTime
-                return alertTime
-            }
-        }
-        return nil
-    }
 }

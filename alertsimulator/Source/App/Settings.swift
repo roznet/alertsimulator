@@ -52,6 +52,9 @@ struct Settings {
     @UserStorage(key: Key.current_flight_alert_times, defaultValue: [])
     var currentFlightAlertTimes : [Date]
     
-    
+    var currentFlight : FlightManager? {
+        guard currentFlightInterval > 0 && currentFlightDuration > 0 else { return nil }
+        return FlightManager(duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, alertTimes: self.currentFlightAlertTimes)
+    }
     
 }

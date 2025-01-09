@@ -58,7 +58,8 @@ struct ContentView: View {
                 .padding()
                 Button(action: {
                     let alert = AlertSimulatorApp.alertManager.drawNextAlert()
-                    AlertSimulatorApp.notificationManager.scheduleNext(alert: alert, delay: 3.0)
+                    let when = Date().addingTimeInterval(3.0)
+                    AlertSimulatorApp.notificationManager.scheduleNext(alert: alert, date: when)
                     
                 }) {
                     Text("Run One Now")
@@ -72,6 +73,17 @@ struct ContentView: View {
                     Text($alertViewModel.nextAlertTime.wrappedValue.formatted(date: .abbreviated, time: .standard))
                 } else {
                     Text("No Date Available")
+                }
+                Button(action: {
+                    UNUserNotificationCenter.current().getPendingNotificationRequests() { requests in
+                        
+                        Logger.app.info("Req Count: \(requests.count)")
+                        for request in requests {
+                            Logger.app.info("Req: \(request)")
+                        }
+                    }
+                }) {
+                    Text( "Check Notifications")
                 }
             }
         }
