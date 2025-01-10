@@ -37,6 +37,7 @@ struct Settings {
         case current_flight_interval = "current_flight_interval"
         case current_flight_duration = "current_flight_duration"
         case current_flight_alert_times = "current_flight_alert_times"
+        case current_tracked_notifications = "current_tracked_notifications"
         
     }
     
@@ -51,6 +52,9 @@ struct Settings {
     
     @UserStorage(key: Key.current_flight_alert_times, defaultValue: [])
     var currentFlightAlertTimes : [Date]
+    
+    @CodableStorage(key: Key.current_tracked_notifications, defaultValue: [:])
+    var currentTrackedNotifications : [String:NotificationManager.TrackedNotification]
     
     var currentFlight : FlightManager? {
         guard currentFlightInterval > 0 && currentFlightDuration > 0 else { return nil }

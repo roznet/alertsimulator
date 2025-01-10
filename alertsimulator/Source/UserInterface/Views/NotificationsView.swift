@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Created on 04/01/2025 for alertsimulator
+//  Created on 10/01/2025 for alertsimulator
 //
 //  Copyright (c) 2025 Brice Rosenzweig
 //
@@ -26,13 +26,31 @@
 
 
 import SwiftUI
+import OSLog
 
-struct AlertProcessingView: View {
+struct NotificationsView: View {
+    @ObservedObject var alertViewModel: AlertViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Next Alert Status")
+                .font(.body)
+            if $alertViewModel.nextAlertTime.wrappedValue > Date(){
+                Text($alertViewModel.nextAlertTime.wrappedValue.formatted(date: .abbreviated, time: .standard))
+            } else {
+                Text("No Date Available")
+            }
+            Button(action: {
+                self.alertViewModel.checkNotifications()
+                
+            }) {
+                Text( "Check Notifications")
+            }
+        }
     }
 }
 
 #Preview {
-    AlertProcessingView()
+    @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
+    
+    NotificationsView(alertViewModel: alertViewModel)
 }

@@ -29,9 +29,17 @@ import OSLog
 
 extension Notification.Name {
     static let didReceiveSimulatedAlert = Notification.Name("didReceiveSimulatedAlert")
+    static let notificationWereUpdated = Notification.Name("notificationWereUpdated")
 }
 
 class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
+    struct TrackedNotification : Codable {
+        let identifier: String
+        let date: Date
+        let alert : SimulatedAlert
+    }
+    private var trackedNotifications: [String: TrackedNotification] = [:]
+    
     private let center = UNUserNotificationCenter.current()
     
     override init () {
@@ -42,6 +50,34 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         // always display even if the app is up
         completionHandler([.banner,.sound,.badge])
     }
+    
+    func fromSettings() {
+        let tracked = Settings.shared.currentTrackedNotifications
+        Logger.app.info("Setting retrieved \(tracked.count) tracked notifications")
+        center.getPendingNotificationRequests { requests in
+            var newTrackedNotifications: [String: TrackedNotification] = [:]
+            requests.forEach { request in
+                if let notification = tracked[request.identifier] {
+                    newTrackedNotifications[notification.identifier] = notification
+                }
+                else if let notification = self.trackedNotifications[request.identifier]  {
+                    newTrackedNotifications[notification.identifier] = notification
+                }
+                else{
+                    Logger.app.error("Unknown notification \(request.identifier)")
+                }
+            }
+            self.trackedNotifications = newTrackedNotifications
+            Logger.app.info("Found \(tracked.count) valid tracked notifications")
+        }
+    }
+    func toSettings() {
+        Settings.shared.currentTrackedNotifications = self.trackedNotifications
+        Logger.app.info("Saving \(self.trackedNotifications.count) notifications")
+        let check = Settings.shared.currentTrackedNotifications
+        Logger.app.info("Saved \(check.count) notifications")
+
+    }
    
     private func checkAuthorization(completion: @escaping (Bool) -> Void) {
         center.requestAuthorization(options: [.alert, .sound, .badge]) { success, _ in
@@ -50,6 +86,8 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     }
     public func cancelAll() {
         center.removeAllPendingNotificationRequests()
+        self.trackedNotifications = [:]
+        Logger.app.info("Cancelled all notifications")
     }
     
     public func startNext(alert simulatedAlert: SimulatedAlert) {
@@ -66,12 +104,15 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
             let delay = date.timeIntervalSinceNow
             if delay > 0 {
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
+                let tracked = TrackedNotification(identifier: UUID().uuidString, date: date, alert: alert)
+                self.trackedNotifications[tracked.identifier] = tracked
                 Logger.app.info("Scheduling alert for \(delay) seconds")
-                let request = UNNotificationRequest(identifier: alert.uniqueIdentifier, content: alert.notificationContent, trigger: trigger)
+                let request = UNNotificationRequest(identifier: tracked.identifier, content: alert.notificationContent, trigger: trigger)
                 self.center.add(request) { error in
                     if let error = error {
                         Logger.app.error("Error adding request \(error)")
                     }
+                    self.toSettings()
                 }
             }else{
                 Logger.app.error( "Delay must be greater than zero")
@@ -79,10 +120,16 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
-    func checkPendingNotification() {
+    func getPendingNotifications(completionHandler : @escaping ([TrackedNotification]) -> Void) {
         center.getPendingNotificationRequests { requests in
             requests.forEach { request in
-                Logger.app.info("Pending notification: \(request)")
+                var trackedNotifications : [TrackedNotification] = []
+                if let tracked = self.trackedNotifications[request.identifier] {
+                    trackedNotifications.append(tracked)
+                }else{
+                    Logger.app.error( "Could not find tracked notification for \(request.identifier)")
+                }
+                completionHandler(trackedNotifications)
             }
         }
     }
@@ -98,9 +145,9 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if let alert = SimulatedAlert.alert(for: response.notification.request.identifier) {
-            Logger.app.info("didReceive alert: \(alert)")
-            NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: alert)
+        if let tracked = self.trackedNotifications[response.notification.request.identifier] {
+            Logger.app.info("didReceive alert: \(tracked.alert)")
+            NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: tracked.alert)
         }else {
             Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")
         }

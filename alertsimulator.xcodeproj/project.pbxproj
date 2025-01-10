@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4244DDA72D31285300B691AD /* rzutils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = rzutils; path = ../rzutils; sourceTree = SOURCE_ROOT; };
 		42DAD7302D20097D00BEC3C2 /* alertsimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertsimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +89,7 @@
 		42DAD7272D20097D00BEC3C2 = {
 			isa = PBXGroup;
 			children = (
+				4244DDA72D31285300B691AD /* rzutils */,
 				42DAD7D22D206D6400BEC3C2 /* data */,
 				42DAD7442D20097E00BEC3C2 /* alertsimulatorTests */,
 				42DAD74E2D20097E00BEC3C2 /* alertsimulatorUITests */,

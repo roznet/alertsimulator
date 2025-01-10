@@ -34,7 +34,7 @@ struct ContentView: View {
         self.alertViewModel.startFlight()
     }
     func stopAlerts() {
-        AlertSimulatorApp.notificationManager.cancelAll()
+        self.alertViewModel.stopFlight()
     }
     var body: some View {
         VStack {
@@ -57,35 +57,20 @@ struct ContentView: View {
                 .standardButton()
                 .padding()
                 Button(action: {
-                    let alert = AlertSimulatorApp.alertManager.drawNextAlert()
-                    let when = Date().addingTimeInterval(3.0)
-                    AlertSimulatorApp.notificationManager.scheduleNext(alert: alert, date: when)
+                    self.alertViewModel.generateSingleAlert()
                     
                 }) {
                     Text("Run One Now")
                 }
                 .standardButton()
             }
-            HStack {
-                Text("Next Alert Status")
-                    .font(.body)
-                if $alertViewModel.nextAlertTime.wrappedValue > Date(){
-                    Text($alertViewModel.nextAlertTime.wrappedValue.formatted(date: .abbreviated, time: .standard))
-                } else {
-                    Text("No Date Available")
-                }
-                Button(action: {
-                    UNUserNotificationCenter.current().getPendingNotificationRequests() { requests in
-                        
-                        Logger.app.info("Req Count: \(requests.count)")
-                        for request in requests {
-                            Logger.app.info("Req: \(request)")
-                        }
-                    }
-                }) {
-                    Text( "Check Notifications")
-                }
-            }
+            NotificationsView(alertViewModel: self.alertViewModel)
+        }
+        .onAppear(){
+            self.alertViewModel.fromSettings()
+        }
+        .onDisappear {
+            self.alertViewModel.toSettings()
         }
         .padding()
         GeometryReader { geometry in

@@ -46,6 +46,11 @@ class AlertViewModel: ObservableObject {
         return TimeInterval( 60.0 * Double(selectedIntervalMinutes))
     }
     
+    var flight : FlightManager = FlightManager(duration: 0.0, interval: 0.0)
+    var alertManager : AlertManager = AlertManager()
+    var notificationManager : NotificationManager = NotificationManager()
+    
+    
     func fromSettings() {
         let duration = Settings.shared.currentFlightDuration
         let interval = Settings.shared.currentFlightInterval
@@ -59,6 +64,8 @@ class AlertViewModel: ObservableObject {
         self.selectedDurationMinutes = minutes
         selectedIntervalMinutes = intervalMinutes
         self.flight = FlightManager(duration: duration, interval: interval, start: Settings.shared.currentFlightStart, alertTimes: Settings.shared.currentFlightAlertTimes)
+        self.notificationManager.fromSettings()
+        Logger.app.info("Settings loaded")
     }
     
     func toSettings() {
@@ -70,15 +77,35 @@ class AlertViewModel: ObservableObject {
         Settings.shared.currentFlightInterval = interval
         Settings.shared.currentFlightStart = self.flight.start
         Settings.shared.currentFlightAlertTimes = self.flight.alertTimes
+        self.notificationManager.toSettings()
+        Logger.app.info("Settings updated")
     }
-   
-    var flight : FlightManager = FlightManager(duration: 0.0, interval: 0.0)
     
     func startFlight() {
         self.flight = FlightManager(duration: duration, interval: interval, start: Date())
         self.flight.start()
         self.toSettings()
-        AlertSimulatorApp.notificationManager.scheduleNext(flightManager: self.flight, alertManager: AlertSimulatorApp.alertManager)
+        self.notificationManager.scheduleNext(flightManager: self.flight, alertManager: self.alertManager)
+    }
+    
+    func stopFlight() {
+        self.notificationManager.cancelAll()
+    }
+    
+    func generateSingleAlert() {
+        let alert = self.alertManager.drawNextAlert()
+        let when = Date().addingTimeInterval(2.0)
+        self.notificationManager.scheduleNext(alert: alert, date: when)
+    }
+    
+    func checkNotifications() {
+        self.notificationManager.getPendingNotifications() {
+            notifications in
+            for notification in notifications {
+                Logger.app.info("at \(notification.date): \(notification.alert)")
+            }
+            
+        }
     }
     
 }

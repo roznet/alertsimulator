@@ -25,6 +25,8 @@
 import SwiftUI
 
 struct TimerPickerView: View {
+    let minuteInterval : Int = 1
+    let numberOfMinuteChoices : Int = 60
     @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
@@ -71,8 +73,8 @@ struct TimerPickerView: View {
                 HStack(spacing: 0) {
                     // Hours Picker
                     Picker(selection: $alertViewModel.selectedIntervalMinutes, label: Text("Minutes")) {
-                        ForEach(0..<12) { minutes in
-                            Text("\(minutes*5)").tag(minutes*5)
+                        ForEach(0..<numberOfMinuteChoices) { minutes in
+                            Text("\(minutes*minuteInterval)").tag(minutes*minuteInterval)
                         }
                     }
                     .pickerStyle(WheelPickerStyle())
