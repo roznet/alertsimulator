@@ -37,6 +37,13 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         let identifier: String
         let date: Date
         let alert : SimulatedAlert
+        
+        var isExpired: Bool { date < Date() }
+        
+        var summaryDescription : String {
+            let message = alert.message ?? ""
+            return "\(identifier) - \(date) - \(alert.alertType) \(message)"
+        }
     }
     private var trackedNotifications: [String: TrackedNotification] = [:]
     
@@ -53,22 +60,18 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     
     func fromSettings() {
         let tracked = Settings.shared.currentTrackedNotifications
-        Logger.app.info("Setting retrieved \(tracked.count) tracked notifications")
         center.getPendingNotificationRequests { requests in
-            var newTrackedNotifications: [String: TrackedNotification] = [:]
+            var newTrackedNotifications: [String: TrackedNotification] = tracked
             requests.forEach { request in
-                if let notification = tracked[request.identifier] {
+                if let notification = self.trackedNotifications[request.identifier]  {
                     newTrackedNotifications[notification.identifier] = notification
-                }
-                else if let notification = self.trackedNotifications[request.identifier]  {
-                    newTrackedNotifications[notification.identifier] = notification
-                }
-                else{
-                    Logger.app.error("Unknown notification \(request.identifier)")
                 }
             }
             self.trackedNotifications = newTrackedNotifications
-            Logger.app.info("Found \(tracked.count) valid tracked notifications")
+            Logger.app.info("Found \(newTrackedNotifications.count)/\(tracked.count) valid tracked notifications")
+            for notification in self.trackedNotifications.values {
+                Logger.app.info("loaded \(notification.summaryDescription)")
+            }
         }
     }
     func toSettings() {
@@ -76,7 +79,9 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         Logger.app.info("Saving \(self.trackedNotifications.count) notifications")
         let check = Settings.shared.currentTrackedNotifications
         Logger.app.info("Saved \(check.count) notifications")
-
+        for notification in Settings.shared.currentTrackedNotifications.values {
+            Logger.app.info("saved \(notification.summaryDescription)")
+        }
     }
    
     private func checkAuthorization(completion: @escaping (Bool) -> Void) {
@@ -143,11 +148,15 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
+   
+    var lastNotification : TrackedNotification? = nil
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if let tracked = self.trackedNotifications[response.notification.request.identifier] {
-            Logger.app.info("didReceive alert: \(tracked.alert)")
+            Logger.app.info("didReceive alert: \(tracked.summaryDescription)")
+            self.lastNotification = tracked
             NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: tracked.alert)
+            self.trackedNotifications.removeValue(forKey: tracked.identifier)
         }else {
             Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")
         }

@@ -48,9 +48,24 @@ class AlertViewModel: ObservableObject {
     
     var flight : FlightManager = FlightManager(duration: 0.0, interval: 0.0)
     var alertManager : AlertManager = AlertManager()
-    var notificationManager : NotificationManager = NotificationManager()
+    var notificationManager : NotificationManager = AlertSimulatorApp.notificationManager
     
-    
+    init() {
+        if let last = self.notificationManager.lastNotification {
+            self.casMessage = last.alert.casMessage
+        }
+        NotificationCenter.default.addObserver(forName: .didReceiveSimulatedAlert, object: nil, queue: nil){ notification in
+            if let simulatedAlert = notification.object as? SimulatedAlert{
+                Logger.app.info("Processing \(simulatedAlert)")
+                DispatchQueue.main.async {
+                    self.casMessage = simulatedAlert.casMessage
+                }
+            }
+        }
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     func fromSettings() {
         let duration = Settings.shared.currentFlightDuration
         let interval = Settings.shared.currentFlightInterval
@@ -98,9 +113,16 @@ class AlertViewModel: ObservableObject {
         self.notificationManager.scheduleNext(alert: alert, date: when)
     }
     
+    func clearAlerts() {
+        self.casMessage = CASMessage()
+    }
+    
     func checkNotifications() {
         self.notificationManager.getPendingNotifications() {
             notifications in
+            if notifications.isEmpty {
+                Logger.app.info("No notifications")
+            }
             for notification in notifications {
                 Logger.app.info("at \(notification.date): \(notification.alert)")
             }

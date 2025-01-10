@@ -32,6 +32,17 @@ extension Button {
     func standardButton() -> some View {
         return self.buttonStyle(.bordered)
     }
+    
+    func destructiveButton() -> some View {
+        return self.buttonStyle(.borderedProminent)
+    }
+    
+    func casButton() -> some View {
+        return self.buttonStyle(.bordered)
+            .foregroundColor(Color.white)
+            .background(Color.black)
+            .border(Color.white, width: 1)
+    }
 }
 struct RoundedCornerShape: Shape {
     var corners: UIRectCorner

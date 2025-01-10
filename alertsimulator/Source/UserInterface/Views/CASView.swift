@@ -52,28 +52,34 @@ struct CASView: View {
                     .padding([.bottom,.top])
 
             }
-            VStack() {
-                Text("Alerts")
-                    .foregroundColor(.white)
-                Divider()
-                    .background(Color.white)
-                    .padding([.bottom])
-                if !$casMessage.wrappedValue.submessage.isEmpty {
-                    Text($casMessage.wrappedValue.detailedMessage)
-                        .casSubMessage(category: $casMessage.wrappedValue.category)
-                        .frame(maxWidth: .infinity,alignment: .leading)
-                }else {
-                    Text($casMessage.wrappedValue.submessage)
-                        .casSubMessage(category: $casMessage.wrappedValue.category)
-                        .frame(maxWidth: .infinity,alignment: .leading)
-
+            Spacer()
+            HStack {
+                Spacer()
+                VStack() {
+                    Text("Alerts")
+                        .foregroundColor(.white)
+                    Divider()
+                        .background(Color.white)
+                        .padding([.bottom])
+                    if !$casMessage.wrappedValue.submessage.isEmpty {
+                        Text($casMessage.wrappedValue.detailedMessage)
+                            .casSubMessage(category: $casMessage.wrappedValue.category)
+                            .lineLimit(2)
+                            .frame(maxWidth: .infinity,alignment: .leading)
+                    }else {
+                        Text($casMessage.wrappedValue.submessage)
+                            .casSubMessage(category: $casMessage.wrappedValue.category)
+                            .frame(maxWidth: .infinity,alignment: .leading)
+                        
+                    }
                 }
+                .background(.black)
+                .frame(maxWidth:600, alignment: .trailing)
+                .cornerRadius(10)
+                .overlay( RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
+                .padding([.leading,.top,.bottom])
             }
-            .background(.black)
-            //.frame(maxWidth:.infinity, alignment: .trailing)
-            .cornerRadius(10)
-            .overlay( RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
-            .padding([.leading,.top,.bottom])
+            
             Text($casMessage.wrappedValue.categoryDescription)
                 .casAnnuciation(category: $casMessage.wrappedValue.category)
                 .frame(maxWidth: .infinity,alignment: .trailing)

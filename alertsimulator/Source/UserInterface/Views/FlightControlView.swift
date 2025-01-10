@@ -1,8 +1,8 @@
 //  MIT License
 //
-//  Created on 28/12/2024 for alertsimulator
+//  Created on 10/01/2025 for alertsimulator
 //
-//  Copyright (c) 2024 Brice Rosenzweig
+//  Copyright (c) 2025 Brice Rosenzweig
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,31 +23,50 @@
 //  SOFTWARE.
 //
 
-import SwiftUI
-import OSLog
 
-@main
-struct AlertSimulatorApp: App {
-    public static let worker = DispatchQueue(label: "net.ro-z.alertsimulator.worker")
-    public static let notificationManager = NotificationManager()
+
+import SwiftUI
+
+struct FlightControlView : View {
+    @ObservedObject var alertViewModel: AlertViewModel
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate: AppDelegate
+    func startAlerts() {
+        self.alertViewModel.startFlight()
+    }
+    func stopAlerts() {
+        self.alertViewModel.stopFlight()
+    }
     
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    var body: some View {
+        HStack {
+            Button(action: {
+                self.stopAlerts()
+            }) {
+                Text("Cancel All Alert")
+            }
+            .standardButton()
+            Spacer()
+            Button(action: {
+                self.startAlerts()
+            }) {
+                Text("Start Flight")
+            }
+            .standardButton()
+            .padding()
+            Button(action: {
+                self.alertViewModel.generateSingleAlert()
+                
+            }) {
+                Text("Run One Now")
+            }
+            .standardButton()
         }
+        .padding([.trailing, .leading])
     }
 }
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        AlertSimulatorApp.notificationManager.fromSettings()
-        return true
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        Logger.app.info("Received remote notification: \(userInfo)")
-        completionHandler(.newData)
-    }
+#Preview {
+    @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
+
+    FlightControlView(alertViewModel: alertViewModel)
 }

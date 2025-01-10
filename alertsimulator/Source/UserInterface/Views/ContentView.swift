@@ -30,74 +30,40 @@ import OSLog
 struct ContentView: View {
     @StateObject var alertViewModel: AlertViewModel = .init()
     
-    func startAlerts() {
-        self.alertViewModel.startFlight()
-    }
-    func stopAlerts() {
-        self.alertViewModel.stopFlight()
-    }
     var body: some View {
-        VStack {
-            Text("Configure Flight Alerts")
-                .font(.largeTitle)
-                .bold()
-            TimerPickerView(alertViewModel: alertViewModel)
-            HStack {
-                Button(action: {
-                    self.stopAlerts()
-                }) {
-                    Text("Cancel All Alert")
-                }
+        GeometryReader { geometry in
+            VStack {
+                Text("Configure Flight Alerts")
+                    .font(.largeTitle)
+                    .bold()
+                TimerPickerView(alertViewModel: alertViewModel)
+                NotificationsView(alertViewModel: self.alertViewModel)
+                FlightControlView(alertViewModel: self.alertViewModel)
                 Spacer()
-                Button(action: {
-                    self.startAlerts()
-                }) {
-                    Text("Start Flight")
+                VStack {
+                    HStack() {
+                        Spacer()
+                        Button(action: {
+                            self.alertViewModel.clearAlerts()
+                        }) {
+                            Text("Clear Alerts")
+                        }
+                        .casButton()
+                    }
+                    CASView(casMessage: $alertViewModel.casMessage)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-                .standardButton()
-                .padding()
-                Button(action: {
-                    self.alertViewModel.generateSingleAlert()
-                    
-                }) {
-                    Text("Run One Now")
-                }
-                .standardButton()
+                .frame(height: geometry.size.height / 3)
+                .background(Color.brown)
+                //.edgesIgnoringSafeArea(.all)
             }
-            NotificationsView(alertViewModel: self.alertViewModel)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear(){
             self.alertViewModel.fromSettings()
         }
         .onDisappear {
             self.alertViewModel.toSettings()
-        }
-        .padding()
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                VStack {
-                    CASView(casMessage: $alertViewModel.casMessage)
-                }
-                .frame(height: geometry.size.height / 3)
-                .frame(maxWidth: .infinity)
-                .background(Color.brown)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .edgesIgnoringSafeArea(.all)
-            .onAppear {
-                NotificationCenter.default.addObserver(forName: .didReceiveSimulatedAlert, object: nil, queue: nil){ notification in
-                    if let simulatedAlert = notification.object as? SimulatedAlert{
-                        Logger.app.info("Processing \(simulatedAlert)")
-                        DispatchQueue.main.async {
-                            self.alertViewModel.casMessage = simulatedAlert.casMessage
-                        }
-                    }
-                }
-            }
-            .onDisappear {
-                NotificationCenter.default.removeObserver(self)
-            }
         }
     }
 }
