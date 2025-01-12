@@ -78,7 +78,7 @@ class AlertViewModel: ObservableObject {
         selectedDurationHours = hours
         self.selectedDurationMinutes = minutes
         selectedIntervalMinutes = intervalMinutes
-        self.flight = FlightManager(duration: duration, interval: interval, start: Settings.shared.currentFlightStart, alertTimes: Settings.shared.currentFlightAlertTimes)
+        self.flight = FlightManager(duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
         self.notificationManager.fromSettings()
         Logger.app.info("Settings loaded")
     }
@@ -91,26 +91,27 @@ class AlertViewModel: ObservableObject {
         Settings.shared.currentFlightDuration = duration
         Settings.shared.currentFlightInterval = interval
         Settings.shared.currentFlightStart = self.flight.start
-        Settings.shared.currentFlightAlertTimes = self.flight.alertTimes
+        Settings.shared.currentFlightAlerts = self.flight.flightAlerts
         self.notificationManager.toSettings()
         Logger.app.info("Settings updated")
     }
     
     func startFlight() {
         self.flight = FlightManager(duration: duration, interval: interval, start: Date())
+        self.alertManager.reset()
         self.flight.start()
         self.toSettings()
-        self.notificationManager.scheduleNext(flightManager: self.flight, alertManager: self.alertManager)
+        self.notificationManager.scheduleAll(for: self.flight)
     }
     
     func stopFlight() {
         self.notificationManager.cancelAll()
+        self.flight.stop()
     }
     
     func generateSingleAlert() {
-        let alert = self.alertManager.drawNextAlert()
-        let when = Date().addingTimeInterval(2.0)
-        self.notificationManager.scheduleNext(alert: alert, date: when)
+        let alert = self.flight.immediateAlert()
+        self.notificationManager.scheduleNext(tracked: alert)
     }
     
     func clearAlerts() {

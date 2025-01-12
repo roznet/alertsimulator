@@ -33,19 +33,7 @@ extension Notification.Name {
 }
 
 class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
-    struct TrackedNotification : Codable {
-        let identifier: String
-        let date: Date
-        let alert : SimulatedAlert
-        
-        var isExpired: Bool { date < Date() }
-        
-        var summaryDescription : String {
-            let message = alert.message ?? ""
-            return "\(identifier) - \(date) - \(alert.alertType) \(message)"
-        }
-    }
-    private var trackedNotifications: [String: TrackedNotification] = [:]
+    private var trackedNotifications: [String: TrackedAlert] = [:]
     
     private let center = UNUserNotificationCenter.current()
     
@@ -61,7 +49,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     func fromSettings() {
         let tracked = Settings.shared.currentTrackedNotifications
         center.getPendingNotificationRequests { requests in
-            var newTrackedNotifications: [String: TrackedNotification] = tracked
+            var newTrackedNotifications: [String: TrackedAlert] = tracked
             requests.forEach { request in
                 if let notification = self.trackedNotifications[request.identifier]  {
                     newTrackedNotifications[notification.identifier] = notification
@@ -95,24 +83,18 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         Logger.app.info("Cancelled all notifications")
     }
     
-    public func startNext(alert simulatedAlert: SimulatedAlert) {
-        self.scheduleNext(alert: simulatedAlert)
-    }
-    public func scheduleNext(alert : SimulatedAlert, date : Date? = nil) {
-        guard let date = date else { return }
-        
+    public func scheduleNext(tracked : TrackedAlert) {
         checkAuthorization() { success in
             guard success else {
                 Logger.app.error("No authorization")
                 return
             }
-            let delay = date.timeIntervalSinceNow
+            let delay = tracked.date.timeIntervalSinceNow
             if delay > 0 {
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
-                let tracked = TrackedNotification(identifier: UUID().uuidString, date: date, alert: alert)
                 self.trackedNotifications[tracked.identifier] = tracked
                 Logger.app.info("Scheduling alert for \(delay) seconds")
-                let request = UNNotificationRequest(identifier: tracked.identifier, content: alert.notificationContent, trigger: trigger)
+                let request = UNNotificationRequest(identifier: tracked.identifier, content: tracked.notificationContent, trigger: trigger)
                 self.center.add(request) { error in
                     if let error = error {
                         Logger.app.error("Error adding request \(error)")
@@ -125,10 +107,10 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
-    func getPendingNotifications(completionHandler : @escaping ([TrackedNotification]) -> Void) {
+    func getPendingNotifications(completionHandler : @escaping ([TrackedAlert]) -> Void) {
         center.getPendingNotificationRequests { requests in
             requests.forEach { request in
-                var trackedNotifications : [TrackedNotification] = []
+                var trackedNotifications : [TrackedAlert] = []
                 if let tracked = self.trackedNotifications[request.identifier] {
                     trackedNotifications.append(tracked)
                 }else{
@@ -139,17 +121,16 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
-    func scheduleNext(flightManager : FlightManager, alertManager : AlertManager)  {
+    func scheduleAll(for flightManager : FlightManager)  {
         center.removeAllPendingNotificationRequests()
         
-        for date in flightManager.alertTimes {
-            let alert = alertManager.drawNextAlert()
-            self.scheduleNext(alert: alert, date: date)
+        for alert in flightManager.flightAlerts {
+            self.scheduleNext(tracked: alert)
         }
     }
     
    
-    var lastNotification : TrackedNotification? = nil
+    var lastNotification : TrackedAlert? = nil
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if let tracked = self.trackedNotifications[response.notification.request.identifier] {

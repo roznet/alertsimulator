@@ -13,13 +13,27 @@ struct alertsimulatorTests {
 
     @Test func testAlerts() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+       
         
-        let manager = AlertManager()
+        var manager = AlertManager()
         #expect(manager.available.count > 0)
-        for _ in 1...5 {
+        let half = manager.available.count / 2
+        let total = manager.available.count
+        let all = total + half
+        var alerts : [Int:Int] = [:]
+        // for the first half we should never get the same twice
+        var max = 0
+        for counter in 1...all {
             let alert = manager.drawNextAlert( )
-            print( alert )
+            if counter <= half {
+                #expect(alerts[alert.uid] == nil)
+            }
+            alerts[alert.uid, default: 0] += 1
+            if alerts[alert.uid]! > max {
+                max = alerts[alert.uid]!
+            }
         }
+        #expect(max > 1)
         
     }
     
@@ -41,8 +55,8 @@ struct alertsimulatorTests {
         ]
         for (interval,offset,protected) in tests {
             var flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
-            let times = flight.computeAlertTimes(randomOffsetRange: offset )
-            let intervals = times.map { ($0.timeIntervalSince(date) - protected) / interval}
+            let times = flight.computeAlerts(randomOffsetRange: offset )
+            let intervals = times.map { ($0.date.timeIntervalSince(date) - protected) / interval}
             let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0)).map { $0 + 1.0}
             let tolerance = offset + 0.00001
             
@@ -54,16 +68,16 @@ struct alertsimulatorTests {
             
             flight.start(randomOffsetRange: offset)
             #expect(flight.isRunning)
-            var nextDate : Date? = flight.nextAlertTime(after: date)
+            var nextAlert : TrackedAlert? = flight.nextAlert(after: date)
             var extractedDates : [Date] = []
-            while let runningDate = nextDate {
-                    extractedDates.append(runningDate)
-                nextDate = flight.nextAlertTime(after: runningDate)
+            while let runningAlert = nextAlert {
+                extractedDates.append(runningAlert.date)
+                nextAlert = flight.nextAlert(after: runningAlert.date)
             }
             #expect(extractedDates.count == times.count)
             // if random offset value won't match
             if offset == 0.0 {
-                #expect(extractedDates == times)
+                #expect(extractedDates == times.map { $0.date })
             }
         }
     }

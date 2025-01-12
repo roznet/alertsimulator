@@ -50,15 +50,15 @@ struct Settings {
     @UserStorage(key: Key.current_flight_duration, defaultValue: 0.0)
     var currentFlightDuration : TimeInterval
     
-    @UserStorage(key: Key.current_flight_alert_times, defaultValue: [])
-    var currentFlightAlertTimes : [Date]
+    @CodableStorage(key: Key.current_flight_alert_times, defaultValue: [])
+    var currentFlightAlerts : [TrackedAlert]
     
     @CodableStorage(key: Key.current_tracked_notifications, defaultValue: [:])
-    var currentTrackedNotifications : [String:NotificationManager.TrackedNotification]
+    var currentTrackedNotifications : [String:TrackedAlert]
     
     var currentFlight : FlightManager? {
         guard currentFlightInterval > 0 && currentFlightDuration > 0 else { return nil }
-        return FlightManager(duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, alertTimes: self.currentFlightAlertTimes)
+        return FlightManager(duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
     }
     
 }

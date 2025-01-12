@@ -36,49 +36,60 @@ struct FlightManager {
     let start : Date
     let end : Date
     
-    var alertTimes : [Date]
+    var flightAlerts : [TrackedAlert]
     
     var isRunning : Bool {
-        return !alertTimes.isEmpty
+        return !flightAlerts.isEmpty
     }
+    
+    var alertManager : AlertManager = AlertManager()
    
     init(duration : TimeInterval, interval : TimeInterval, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil,
-         alertTimes : [Date] = []) {
+         flightAlerts : [TrackedAlert] = []) {
         self.start = start ?? Date()
         self.end = self.start.addingTimeInterval(duration)
         self.duration = duration
         self.averageAlertInterval = interval
         self.protectedStart = protectedStart ?? 0.0
         self.protectedEnd = protectedEnd ?? 0.0
-    
-        self.alertTimes = alertTimes
+        self.flightAlerts = flightAlerts
     }
     
   
     mutating func start(randomOffsetRange : TimeInterval = 0.0) {
-        self.alertTimes = self.computeAlertTimes(randomOffsetRange: randomOffsetRange)
+        self.alertManager.reset()
+        self.computeAlerts(randomOffsetRange: randomOffsetRange)
     }
    
-    mutating func finish() {
-        self.alertTimes = []
+    mutating func stop() {
+        self.flightAlerts = []
     }
     
-    func nextAlertTime(after : Date) -> Date? {
-        if let nextAlertTime = alertTimes.first(where: { $0 > after }) {
+    func nextAlert(after : Date) -> TrackedAlert? {
+        if let nextAlertTime = flightAlerts.first(where: { $0.date > after }) {
             return nextAlertTime
         } else {
            return nil
         }
     }
+    
+    mutating func immediateAlert() -> TrackedAlert {
+        let tracked = TrackedAlert(date: Date().addingTimeInterval(1.0), alert: self.alertManager.nextAlert())
+        self.flightAlerts.append(tracked)
+        self.flightAlerts.sort(by: { $0.date < $1.date })
+        return tracked
+    }
+    
     // This should compute the next
-    func computeAlertTimes(randomOffsetRange : TimeInterval = 0.0) -> [Date] {
+    @discardableResult
+    mutating func computeAlerts(randomOffsetRange : TimeInterval = 0.0) -> [TrackedAlert] {
 
         let protectedStartDate = start.addingTimeInterval(protectedStart)
         let protectedEndDate = end.addingTimeInterval(-protectedEnd)
 
         let effectiveDuration = duration - (protectedStart + protectedEnd)
-
-        var alertTimes: [Date] = []
+        
+        self.flightAlerts = []
         if effectiveDuration > 0 && averageAlertInterval > 0 {
             var currentTime = protectedStartDate.addingTimeInterval(self.averageAlertInterval)
             let offsetRange = randomOffsetRange
@@ -91,7 +102,7 @@ struct FlightManager {
                 
                 // Ensure the random alert time stays within the valid range
                 if randomAlertTime >= protectedStartDate && randomAlertTime <= protectedEndDate {
-                    alertTimes.append(randomAlertTime)
+                    self.flightAlerts.append(TrackedAlert(date: randomAlertTime, alert: self.alertManager.drawNextAlert()))
                 }
                 
                 // Move to the next regular alert time
@@ -100,7 +111,8 @@ struct FlightManager {
         } else {
             Logger.app.error("Flight duration is less than protected start and end")
         }
-        return alertTimes
+        self.flightAlerts.sort(by: { $0.date < $1.date })
+        return self.flightAlerts
     }
 }
 

@@ -61,8 +61,8 @@ func drawRandomElement<T>(elements: [T], probabilities: [Double]) -> T? {
 
 struct AlertManager {
     var available = SimulatedAlert.available
+    var drawnAlerts: [SimulatedAlert] = []
     
-    var lastAlerts: [SimulatedAlert] = []
     init() {
     }
    
@@ -88,12 +88,24 @@ struct AlertManager {
         return probabilities
     }
     
-    func drawNextAlert() -> SimulatedAlert {
-        return self.drawAlert(alerts: self.available)
+    mutating func reset() {
+        self.available = SimulatedAlert.available
+        self.drawnAlerts = []
+    }
+    
+    mutating func drawNextAlert() -> SimulatedAlert {
+        let next = self.drawAlert(alerts: self.available)
+        self.drawnAlerts.append(next)
+        self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
+        if self.drawnAlerts.count > self.available.count {
+            let first = self.drawnAlerts.removeFirst()
+            self.available.append(first)
+        }
+        return next
     }
     func drawAlert(alerts : [SimulatedAlert]) -> SimulatedAlert{
-       let probabilities = self.computeProbabilities(alerts: alerts)
-       let next = drawRandomElement(elements: alerts, probabilities: probabilities)
+        let probabilities = self.computeProbabilities(alerts: alerts)
+        let next = drawRandomElement(elements: alerts, probabilities: probabilities)
         return next ?? self.sampleAlert
     }
 }
