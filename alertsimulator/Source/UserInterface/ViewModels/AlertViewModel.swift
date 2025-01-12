@@ -36,6 +36,7 @@ class AlertViewModel: ObservableObject {
     @Published var selectedIntervalMinutes: Int = 0
     
     @Published var nextAlertTime : Date = Date()
+    @Published var hasPendingNotification : Int = 0
     
     @Published var casMessage : CASMessage = CASMessage()
     
@@ -123,11 +124,33 @@ class AlertViewModel: ObservableObject {
             notifications in
             if notifications.isEmpty {
                 Logger.app.info("No notifications")
+                DispatchQueue.main.async {
+                    self.hasPendingNotification = 0
+                }
             }
+            var next : TrackedAlert? = nil
+            var future : Int = 0
+            let now = Date()
             for notification in notifications {
+                if notification.date < now {
+                    Logger.app.info("Past: \(notification.date): \(notification.alert)")
+                    continue
+                }
                 Logger.app.info("at \(notification.date): \(notification.alert)")
+                future += 1
+                if next == nil || notification.date < next!.date {
+                    Logger.app.info("New next: \(notification.date)")
+                    next = notification
+                }
+                Logger.app.info("\(notification.date): \(notification.alert)")
             }
-            
+            Logger.app.info("Next: \(next?.date.formatted() ?? "none")")
+            DispatchQueue.main.async {
+                self.hasPendingNotification = future
+                if let next = next {
+                    self.nextAlertTime = next.date
+                }
+            }
         }
     }
     

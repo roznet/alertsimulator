@@ -81,6 +81,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         center.removeAllPendingNotificationRequests()
         self.trackedNotifications = [:]
         Logger.app.info("Cancelled all notifications")
+        NotificationCenter.default.post(name: .notificationWereUpdated, object: nil)
     }
     
     public func scheduleNext(tracked : TrackedAlert) {
@@ -100,6 +101,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
                         Logger.app.error("Error adding request \(error)")
                     }
                     self.toSettings()
+                    NotificationCenter.default.post(name: .notificationWereUpdated, object: nil)
                 }
             }else{
                 Logger.app.error( "Delay must be greater than zero")
@@ -109,20 +111,20 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     
     func getPendingNotifications(completionHandler : @escaping ([TrackedAlert]) -> Void) {
         center.getPendingNotificationRequests { requests in
-            requests.forEach { request in
-                var trackedNotifications : [TrackedAlert] = []
+            var trackedNotifications : [TrackedAlert] = []
+            for request in requests {
                 if let tracked = self.trackedNotifications[request.identifier] {
                     trackedNotifications.append(tracked)
                 }else{
                     Logger.app.error( "Could not find tracked notification for \(request.identifier)")
                 }
-                completionHandler(trackedNotifications)
             }
+            completionHandler(trackedNotifications)
         }
     }
     
     func scheduleAll(for flightManager : FlightManager)  {
-        center.removeAllPendingNotificationRequests()
+        self.cancelAll()
         
         for alert in flightManager.flightAlerts {
             self.scheduleNext(tracked: alert)
@@ -137,6 +139,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
             Logger.app.info("didReceive alert: \(tracked.summaryDescription)")
             self.lastNotification = tracked
             NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: tracked.alert)
+            NotificationCenter.default.post(name: .notificationWereUpdated, object: tracked.alert)
             self.trackedNotifications.removeValue(forKey: tracked.identifier)
         }else {
             Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")

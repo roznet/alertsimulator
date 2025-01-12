@@ -32,12 +32,17 @@ struct NotificationsView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     var body: some View {
         HStack {
-            Text("Next Alert Status")
-                .font(.body)
-            if $alertViewModel.nextAlertTime.wrappedValue > Date(){
-                Text($alertViewModel.nextAlertTime.wrappedValue.formatted(date: .abbreviated, time: .standard))
-            } else {
-                Text("No Date Available")
+            if alertViewModel.hasPendingNotification > 0 {
+                VStack {
+                    Text("\(alertViewModel.hasPendingNotification) notifications pending")
+                    
+                    HStack {
+                        Text("Next after")
+                        Text(alertViewModel.nextAlertTime.formatted(date: .abbreviated, time: .standard))
+                    }
+                }
+            }else{
+                Text("No Pending Notification")
             }
             Button(action: {
                 self.alertViewModel.checkNotifications()
@@ -45,6 +50,15 @@ struct NotificationsView: View {
             }) {
                 Text( "Check Notifications")
             }
+        }
+        .onAppear {
+            self.alertViewModel.checkNotifications()
+            NotificationCenter.default.addObserver(forName: .notificationWereUpdated, object: nil, queue: nil){ _ in
+                self.alertViewModel.checkNotifications()
+            }
+        }
+        .onDisappear {
+            NotificationCenter.default.removeObserver(self)
         }
     }
 }
