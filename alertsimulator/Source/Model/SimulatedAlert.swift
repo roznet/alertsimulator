@@ -56,6 +56,8 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
     let submessage : String? // to distinguish for two identical message
     let uid : Int
     
+    let aircraft : String
+    
     var description: String {
        var parts: [String] = [
         "uid: \(uid)",
@@ -72,7 +74,7 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         }
         return "SimulatedAlert(" + parts.joined(separator: ", ") + ")"
     }
-    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, priority: Priority = .medium) {
+    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, priority: Priority = .medium, aircraft: String = "") {
         self.category = category
         self.action = action
         self.priority = priority
@@ -80,6 +82,7 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         self.message = message
         self.submessage = submessage
         self.uid = uid
+        self.aircraft = aircraft
     }
     
     var title : String {
@@ -101,6 +104,10 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
 
         return vals.joined(separator: "-")
     }
+    
+    static var aircrafts : [String] = {
+        return Set(Self.available.map { $0.aircraft }).sorted()
+    }()
     
     static var available: [SimulatedAlert] = {
             // Attempt to load and decode the JSON file

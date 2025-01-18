@@ -17,6 +17,10 @@ struct alertsimulatorTests {
         
         var manager = AlertManager()
         #expect(manager.available.count > 0)
+        
+        let aircrafts = SimulatedAlert.aircrafts
+        #expect(aircrafts.count > 0)
+        
         let half = manager.available.count / 2
         let total = manager.available.count
         let all = total + half

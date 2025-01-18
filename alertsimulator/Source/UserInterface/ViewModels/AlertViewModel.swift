@@ -40,6 +40,8 @@ class AlertViewModel: ObservableObject {
     
     @Published var casMessage : CASMessage = CASMessage()
     
+    @Published var selectedAircraft : String = SimulatedAlert.aircrafts.first ?? "undefined"
+    
     var duration : TimeInterval {
         return TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
     }

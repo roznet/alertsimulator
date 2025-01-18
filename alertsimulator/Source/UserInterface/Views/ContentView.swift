@@ -36,6 +36,7 @@ struct ContentView: View {
                 Text("Configure Flight Alerts")
                     .font(.largeTitle)
                     .bold()
+                AircraftView(alertViewModel: alertViewModel)
                 TimerPickerView(alertViewModel: alertViewModel)
                 NotificationsView(alertViewModel: self.alertViewModel)
                 FlightControlView(alertViewModel: self.alertViewModel)
