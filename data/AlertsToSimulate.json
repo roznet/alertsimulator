@@ -5,7 +5,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ALT 1",
         "submessage": "Check alternator 1 current. "
     },
@@ -15,7 +15,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ALT 2",
         "submessage": "Check alternator 2 current. "
     },
@@ -25,7 +25,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ALT AIR OPEN",
         "submessage": "Alternate air door is open. "
     },
@@ -35,7 +35,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE HEAT",
         "submessage": "Stall warning/AoA heater has failed. "
     },
@@ -45,7 +45,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE LEVEL",
         "submessage": "Left tank fluid quantity is unreliable (TKS). "
     },
@@ -55,7 +55,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE PRESS",
         "submessage": "Tail pressure is low (TKS). "
     },
@@ -65,7 +65,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE PRESS",
         "submessage": "Pressure is high (TKS). "
     },
@@ -75,7 +75,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE QTY",
         "submessage": "Fluid quantity imbalance has been detected (TKS) "
     },
@@ -85,7 +85,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE QTY",
         "submessage": "Fluid quantity is low (TKS). "
     },
@@ -95,7 +95,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE SPEED",
         "submessage": "Airspeed is too low for ice protection (TKS). "
     },
@@ -105,7 +105,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE SPEED",
         "submessage": "Airspeed is to high for ice protection (TKS). "
     },
@@ -115,7 +115,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE TEMP",
         "submessage": "Temperature is too low for ice protection (TKS). "
     },
@@ -125,7 +125,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AOA FAIL",
         "submessage": "WARN AOA/stall warning input invalid. "
     },
@@ -135,7 +135,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AP MISCOMPARE",
         "submessage": "Autopilot miscompare, autopilot is not available. "
     },
@@ -145,7 +145,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AP/PFD DIF ADC",
         "submessage": "Autopilot and PFD are using different ADCs. "
     },
@@ -155,7 +155,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AP/PFD DIF AHRS",
         "submessage": "Autopilot and PFD are using different AHRSs. "
     },
@@ -165,7 +165,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AVIONICS OFF ",
         "submessage": "Avionics master switch is off. "
     },
@@ -175,7 +175,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "BATT 1",
         "submessage": "Check battery 1 current. "
     },
@@ -185,7 +185,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "BRAKE TEMP",
         "submessage": "Brake temperature is high. "
     },
@@ -195,7 +195,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "CHT ",
         "submessage": "Cylinder head temperature is high. "
     },
@@ -205,7 +205,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FLAP OVERSPEED ",
         "submessage": "Flaps are extended beyond airspeed limitations. "
     },
@@ -215,7 +215,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL IMBALANCE",
         "submessage": "Fuel quantity imbalance has been detected. "
     },
@@ -225,7 +225,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL LOW TOTAL",
         "submessage": "Total fuel quantity is low. "
     },
@@ -235,7 +235,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ICE DETECT FAIL ",
         "submessage": "Ice detector failure. "
     },
@@ -245,7 +245,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ICING DETECTED ",
         "submessage": "Icing conditions have been detected. "
     },
@@ -255,7 +255,7 @@
         "alertType": "cas",
         "action": "review",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "LRG MAG VAR ",
         "submessage": "The GDU’s internal model cannot determine the exact magnetic variance for geographic locations near the magnetic poles. Displayed magnetic course angles may differ from the actual magnetic heading by more than 2°. "
     },
@@ -265,7 +265,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "M BUS 1",
         "submessage": "Check main power bus 1 voltage. "
     },
@@ -275,7 +275,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "M BUS 2",
         "submessage": "Check main power bus 2 voltage. "
     },
@@ -285,7 +285,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "MAN PRESSURE",
         "submessage": "Check manifold pressure. "
     },
@@ -295,7 +295,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "NO ADC MODES",
         "submessage": "Autopilot air data modes are not available. "
     },
@@ -305,7 +305,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "NO VERT MODES",
         "submessage": "Autopilot vertical modes are not available. "
     },
@@ -315,7 +315,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OIL PRESS",
         "submessage": "Oil pressure is out of range. "
     },
@@ -325,7 +325,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OIL TEMP",
         "submessage": "Oil temperature is high. "
     },
@@ -335,7 +335,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OXYGEN QTY",
         "submessage": "Oxygen quantity is low. "
     },
@@ -345,7 +345,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OXYGEN RQD",
         "submessage": "Oxygen usage is required. "
     },
@@ -355,7 +355,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "PARK BRAKE ",
         "submessage": "Parking break is set. "
     },
@@ -365,7 +365,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "PITOT HEAT FAIL",
         "submessage": "Pitot heat failure. "
     },
@@ -375,7 +375,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "PITOT HEAT REQD",
         "submessage": "Pitot heat is required. "
     },
@@ -385,7 +385,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "SLCT MAG ",
         "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to Magnetic. "
     },
@@ -395,7 +395,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "SLCT NON-MAG ",
         "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to True. "
     },
@@ -405,7 +405,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "START ENGAGED",
         "submessage": "Starter is engaged. "
     },
@@ -415,7 +415,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "TAKEOFF FLAPS",
         "submessage": "Flaps not in takeoff configuration. "
     },
@@ -425,7 +425,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE CTL",
         "submessage": "Tank valves cannot be controlled (closed) (TKS). "
     },
@@ -435,7 +435,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE QTY",
         "submessage": "Left and right fluid quantities are unknown (TKS). "
     },
@@ -445,7 +445,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ANTI ICE QTY",
         "submessage": "Fluid quantity is low (TKS). "
     },
@@ -455,7 +455,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AOA OVERHEAT",
         "submessage": "AOA probe is overheated. "
     },
@@ -465,7 +465,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "BRAKE TEMP",
         "submessage": "Brake temperature is high. "
     },
@@ -475,7 +475,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "CHT",
         "submessage": "Cylinder head temperature is high. "
     },
@@ -485,7 +485,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "CO LVL HIGH",
         "submessage": "Carbon monoxide level is too high. "
     },
@@ -495,7 +495,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ESS BUS",
         "submessage": "Check essential power bus voltage. "
     },
@@ -505,7 +505,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FLAPS ICE",
         "submessage": "Full flap prohibited in icing conditions. "
     },
@@ -515,7 +515,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL FLOW",
         "submessage": "Check fuel flow. "
     },
@@ -525,7 +525,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL IMBALANCE",
         "submessage": "Fuel quantity imbalance has been detected. "
     },
@@ -535,7 +535,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL LOW LEFT",
         "submessage": "Check left fuel tank level. "
     },
@@ -545,7 +545,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL LOW RIGHT",
         "submessage": "Check right fuel tank level. "
     },
@@ -555,7 +555,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "FUEL LOW TOTAL",
         "submessage": "Check fuel tank levels. "
     },
@@ -565,7 +565,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "HIGH FUEL FLOW",
         "submessage": "Check fuel flow. "
     },
@@ -575,7 +575,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "M BUS 1",
         "submessage": "Check main power bus 1 voltage. "
     },
@@ -585,7 +585,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "M BUS 2",
         "submessage": "Check main power bus 2 voltage. "
     },
@@ -595,7 +595,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "MAN PRESSURE",
         "submessage": "Check manifold pressure. "
     },
@@ -605,7 +605,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OIL PRESS",
         "submessage": "Oil pressure is out of range. "
     },
@@ -615,7 +615,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OIL TEMP",
         "submessage": "Oil temperature is high. "
     },
@@ -625,7 +625,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OXYGEN FAULT",
         "submessage": "Oxygen system fault. "
     },
@@ -635,7 +635,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OXYGEN QTY",
         "submessage": "Oxygen quantity is low. "
     },
@@ -645,7 +645,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "OXYGEN RQD",
         "submessage": "Oxygen usage is required. "
     },
@@ -655,7 +655,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "RPM",
         "submessage": "Check engine RPM. "
     },
@@ -665,7 +665,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "SPIN SPIN SPIN",
         "submessage": "Spin entry detected - initiate recovery. "
     },
@@ -675,7 +675,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "START ENGAGED",
         "submessage": ""
     },
@@ -685,7 +685,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "TIT",
         "submessage": "TIT temperature is high. "
     },
@@ -695,7 +695,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Autopilot Failed",
         "submessage": ""
     },
@@ -705,7 +705,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Brake failed",
         "submessage": ""
     },
@@ -715,7 +715,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Electric Trim Failed",
         "submessage": ""
     },
@@ -725,7 +725,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Flat Tire",
         "submessage": ""
     },
@@ -735,7 +735,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Lift Transducer has ice",
         "submessage": ""
     },
@@ -745,7 +745,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Windshield ice but not wings",
         "submessage": ""
     },
@@ -755,7 +755,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "ADC Failed",
         "submessage": ""
     },
@@ -765,7 +765,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "AHRS Failed",
         "submessage": ""
     },
@@ -775,7 +775,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Anti Ice Failed",
         "submessage": ""
     },
@@ -785,7 +785,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Cabin Fire",
         "submessage": ""
     },
@@ -795,7 +795,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Engine Failed",
         "submessage": ""
     },
@@ -805,7 +805,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Engine Fire",
         "submessage": ""
     },
@@ -815,7 +815,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Manifold Pressure is dropping",
         "submessage": ""
     },
@@ -825,7 +825,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Partial Power Loss",
         "submessage": ""
     },
@@ -835,7 +835,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG6",
+        "aircraftName": "S22TG6",
         "message": "Wing Fire",
         "submessage": ""
     },
@@ -845,7 +845,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AOA OVERHEAT2 ",
         "submessage": "AOA probe is overheated. "
     },
@@ -855,7 +855,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "APPROACH SPEED ",
         "submessage": "Approach Speed is too high. "
     },
@@ -865,7 +865,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AUTO DESCENT ",
         "submessage": "Automatic descent to 14,000FT in 60 seconds. "
     },
@@ -875,7 +875,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AUTO DESCENT ",
         "submessage": "Aircraft descending to 14,000FT. "
     },
@@ -885,7 +885,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AUTO DESCENT ",
         "submessage": "Aircraft descending to 12,500FT. "
     },
@@ -895,7 +895,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AUTO DESCENT ",
         "submessage": "Aircraft descended due to pilot incapacitation. "
     },
@@ -905,7 +905,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "CHT ",
         "submessage": "Cylinder head temperature is high. "
     },
@@ -915,7 +915,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "CO LVL HIGH ",
         "submessage": "Carbon monoxide level is too high. "
     },
@@ -925,7 +925,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ESSENTIAL BUS VOLTS ",
         "submessage": "Check essential power bus voltage. "
     },
@@ -935,7 +935,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS ICE2 ",
         "submessage": "Full flaps prohibited in icing conditions. "
     },
@@ -945,7 +945,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL FLOW ",
         "submessage": "Check fuel flow. "
     },
@@ -955,7 +955,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL IMBALANCE ",
         "submessage": "Fuel quantity imbalance has been detected. "
     },
@@ -965,7 +965,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL LOW LEFT ",
         "submessage": "Left fuel tank is nearly empty. "
     },
@@ -975,7 +975,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL LOW RIGHT ",
         "submessage": "Right fuel tank is nearly empty. "
     },
@@ -985,7 +985,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL LOW TOTAL ",
         "submessage": "Total fuel quantity is low. "
     },
@@ -995,7 +995,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS CONTROL FAIL ",
         "submessage": "IPS valves cannot be closed. "
     },
@@ -1005,7 +1005,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS FLUID LOW ",
         "submessage": "IPS fluid quantity is low. "
     },
@@ -1015,7 +1015,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS QUANTITY FAIL ",
         "submessage": "Left and right IPS fluid quantities are unknown. "
     },
@@ -1025,7 +1025,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MAIN BUS 1 VOLTS ",
         "submessage": "Check main power bus 1 voltage. "
     },
@@ -1035,7 +1035,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MAIN BUS 2 VOLTS ",
         "submessage": "Check main power bus 2 voltage. "
     },
@@ -1045,7 +1045,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MANIFOLD PRESSURE ",
         "submessage": "Check manifold pressure. "
     },
@@ -1055,7 +1055,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OIL PRESSURE ",
         "submessage": "Oil pressure is out of range. "
     },
@@ -1065,7 +1065,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OIL TEMP ",
         "submessage": "Oil temperature is high. "
     },
@@ -1075,7 +1075,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN FAULT1 ",
         "submessage": "Oxygen system fault. "
     },
@@ -1085,7 +1085,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN QTY LOW1 ",
         "submessage": "Oxygen quantity is low. "
     },
@@ -1095,7 +1095,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN REQUIRED1 ",
         "submessage": "Oxygen usage is required. "
     },
@@ -1105,7 +1105,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "RPM ",
         "submessage": "Check engine RPM. "
     },
@@ -1115,7 +1115,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SPIN SPIN SPIN ",
         "submessage": "Spin entry detected - initiate recovery. "
     },
@@ -1125,7 +1125,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "STALL ",
         "submessage": "Stall warning. "
     },
@@ -1135,7 +1135,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "STALL WARNING FAIL ",
         "submessage": "Stall warning is inoperative. "
     },
@@ -1145,7 +1145,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "STARTER ENGAGED ",
         "submessage": "Starter is engaged. "
     },
@@ -1155,7 +1155,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "TIT3 ",
         "submessage": "Turbine inlet temperature is high. "
     },
@@ -1165,7 +1165,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ALT AIR OPEN2 ",
         "submessage": "Alternate air door is open. "
     },
@@ -1175,7 +1175,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ALTERNATOR 1 CURRENT ",
         "submessage": "Check alternator 1 current. "
     },
@@ -1185,7 +1185,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ALTERNATOR 2 CURRENT ",
         "submessage": "Check alternator 2 current. "
     },
@@ -1195,7 +1195,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AOA HEAT FAIL 3 ",
         "submessage": "Autopilot is unavailable due to miscompare. "
     },
@@ -1205,7 +1205,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AP MISCOMPARE ",
         "submessage": "Autopilot is unavailable due to miscompare. "
     },
@@ -1215,7 +1215,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AP/PFD DIF ADC ",
         "submessage": "Autopilot and PFD are using different ADCs. "
     },
@@ -1225,7 +1225,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AP/PFD DIF AHRS ",
         "submessage": "Autopilot and PFD are using different AHRSs. "
     },
@@ -1235,7 +1235,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "BATTERY 1 CURRENT ",
         "submessage": "Check battery 1 current. "
     },
@@ -1245,7 +1245,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "BATTERY 1 FAIL ",
         "submessage": "Battery 1 service is required. "
     },
@@ -1255,7 +1255,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "BATTERY 1 FAULT ",
         "submessage": "Battery 1 fault detected. "
     },
@@ -1265,7 +1265,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "BATTERY 1 LOW ",
         "submessage": "Battery 1 state of charge is low. "
     },
@@ -1275,7 +1275,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "CHT ",
         "submessage": "Cylinder head temperature is high. "
     },
@@ -1285,7 +1285,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS AIRSPEED INHIBIT ",
         "submessage": "Flaps motion inhibited. "
     },
@@ -1295,7 +1295,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS DISAGREE ",
         "submessage": "Flaps not in commanded position. "
     },
@@ -1305,7 +1305,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS FAIL ",
         "submessage": "Flaps not in commanded position. "
     },
@@ -1315,7 +1315,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS SELECTOR FAIL ",
         "submessage": "Flaps not in commanded position. "
     },
@@ -1325,7 +1325,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL IMBALANCE ",
         "submessage": "Fuel quantity imbalance has been detected. "
     },
@@ -1335,7 +1335,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL LOW TOTAL ",
         "submessage": "Total fuel quantity is low. "
     },
@@ -1345,7 +1345,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL PUMP OFF ",
         "submessage": "Fuel pump is turned off. "
     },
@@ -1355,7 +1355,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL QTY MISCOMP ",
         "submessage": "Sensed and totalized fuel quantity disagreement. "
     },
@@ -1365,7 +1365,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL VALVE AUTO FAIL ",
         "submessage": "Automatic fuel tank selection is unavailable. "
     },
@@ -1375,7 +1375,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "HYPOXIA ALERT ",
         "submessage": "Hypoxia caution alert. "
     },
@@ -1385,7 +1385,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS FLUID LOW3 ",
         "submessage": "IPS fluid quantity is low. "
     },
@@ -1395,7 +1395,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS IMBALANCE3 ",
         "submessage": "IPS fluid quantity imbalance has been detected. "
     },
@@ -1405,7 +1405,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS PRESSURE HIGH3 ",
         "submessage": "IPS pressure is high. "
     },
@@ -1415,7 +1415,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS PRESSURE LOW 3 ",
         "submessage": "IPS tail pressure is low. "
     },
@@ -1425,7 +1425,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS QUANTITY FAIL 3 ",
         "submessage": "Left IPS fluid quantity is unreliable. "
     },
@@ -1435,7 +1435,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS QUANTITY FAIL 3 ",
         "submessage": "Right IPS fluid quantity is unreliable. "
     },
@@ -1445,7 +1445,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS SPEED HIGH 3 ",
         "submessage": "Airspeed is too high for ice protection. "
     },
@@ -1455,7 +1455,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS SPEED LOW 3 ",
         "submessage": "Airspeed is too low for ice protection. "
     },
@@ -1465,7 +1465,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS TEMP LOW 3 ",
         "submessage": "Temperature is too low for ice protection. "
     },
@@ -1475,7 +1475,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MAIN BUS 1 VOLTS ",
         "submessage": "Check main power bus 1 voltage. "
     },
@@ -1485,7 +1485,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MAIN BUS 2 VOLTS ",
         "submessage": "Check main power bus 2 voltage. "
     },
@@ -1495,7 +1495,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "MANIFOLD PRESSURE ",
         "submessage": "Check manifold pressure. "
     },
@@ -1505,7 +1505,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "NO ADC MODES ",
         "submessage": "Autopilot air data modes are not available. "
     },
@@ -1515,7 +1515,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "NO VERT MODES ",
         "submessage": "Autopilot vertical modes are not available. "
     },
@@ -1525,7 +1525,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OIL PRESSURE ",
         "submessage": "Oil pressure is out of range. "
     },
@@ -1535,7 +1535,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OIL TEMP ",
         "submessage": "Oil temperature is high. "
     },
@@ -1545,7 +1545,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN QTY LOW1 ",
         "submessage": "Oxygen quantity is low. "
     },
@@ -1555,7 +1555,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN REQUIRED1 ",
         "submessage": "Oxygen usage is required. "
     },
@@ -1565,7 +1565,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "PARK BRAKE ",
         "submessage": "Parking break is set. "
     },
@@ -1575,7 +1575,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "PITOT HEAT FAIL ",
         "submessage": "Pitot heat failure. "
     },
@@ -1585,7 +1585,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "PROBE HEAT OFF ",
         "submessage": "Probe heat is required. "
     },
@@ -1595,7 +1595,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFD ALT MISCOMPARE ",
         "submessage": "SFD altitude miscompare. "
     },
@@ -1605,7 +1605,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFD IAS MISCOMPARE ",
         "submessage": "SFD airspeed miscompare. "
     },
@@ -1615,7 +1615,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFD PITCH MISCOMPARE ",
         "submessage": "SFD pitch miscompare. "
     },
@@ -1625,7 +1625,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFD ROLL MISCOMPARE ",
         "submessage": "SFD roll miscompare. "
     },
@@ -1635,7 +1635,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "STALL WARNING FAIL ",
         "submessage": "AOA/stall warning input invalid. "
     },
@@ -1645,7 +1645,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "STARTER ENGAGED ",
         "submessage": "Starter is engaged. "
     },
@@ -1655,7 +1655,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "TAKEOFF FLAPS ",
         "submessage": "Flaps not in takeoff configuration. "
     },
@@ -1665,7 +1665,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ALTITUDE SEL ",
         "submessage": "Climbing away from selected altitude. "
     },
@@ -1675,7 +1675,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ALTITUDE SEL ",
         "submessage": "Descending away from selected altitude. "
     },
@@ -1685,7 +1685,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AOA FAIL2 ",
         "submessage": "Dynamic stall speed band is unavailable. "
     },
@@ -1695,7 +1695,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ARE YOU ALERT? ",
         "submessage": "Are you alert? "
     },
@@ -1705,7 +1705,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "CHECK OXYGEN1 ",
         "submessage": "Check oxygen system status. "
     },
@@ -1715,7 +1715,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "COURSE SELECT1 ",
         "submessage": "Current track will not intercept selected course. "
     },
@@ -1725,7 +1725,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ECS RECIRC ON ",
         "submessage": "ECS recirculation mode is prohibited in flight. "
     },
@@ -1735,7 +1735,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ESP CONFIG ",
         "submessage": "ESP config error. Config service req'd. "
     },
@@ -1745,7 +1745,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "EXIT ICING2 1 ",
         "submessage": "Exit icing conditions. "
     },
@@ -1755,7 +1755,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FAILED PATH ",
         "submessage": "An autopilot servo data path has failed. "
     },
@@ -1765,7 +1765,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FLAPS CLIMB ",
         "submessage": "Flaps not set for enroute climb. "
     },
@@ -1775,7 +1775,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL IMBALANCE ",
         "submessage": "Fuel quantity imbalance has been detected. "
     },
@@ -1785,7 +1785,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL PUMP OFF ",
         "submessage": "Fuel pump is turned off. "
     },
@@ -1795,7 +1795,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "FUEL VALVE OFF ",
         "submessage": "Fuel valve is in the off position. "
     },
@@ -1805,7 +1805,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS FLUID LOW2 ",
         "submessage": "IPS fluid quantity is low. "
     },
@@ -1815,7 +1815,7 @@
         "alertType": "cas",
         "action": "simulate",
         "priority": "low",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "IPS PUMP BACKUP3 ",
         "submessage": "IPS backup pump mode has been selected. "
     },
@@ -1825,7 +1825,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN ON1 ",
         "submessage": "Oxygen system is left on after shutdown. "
     },
@@ -1835,7 +1835,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "OXYGEN QTY LOW1 ",
         "submessage": "Oxygen quantity is low. "
     },
@@ -1845,7 +1845,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ROL MODE ",
         "submessage": "Roll mode is active. "
     },
@@ -1855,7 +1855,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFC WATCH FAIL ",
         "submessage": "SurfaceWatch failed. "
     },
@@ -1865,7 +1865,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFC WATCH INHIB ",
         "submessage": "SurfaceWatch inhibited. "
     },
@@ -1875,7 +1875,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "SFD NO COMPARE ",
         "submessage": "SFD comparison data missing. "
     },
@@ -1885,7 +1885,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "VNAV ALT SEL ",
         "submessage": "VNAV needs lower ALT SEL to capture VPATH. "
     },
@@ -1895,7 +1895,7 @@
         "alertType": "cas",
         "action": "ignore",
         "priority": "none",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "VNAV NOT ARMED ",
         "submessage": "Press VNV to arm VPATH capture. "
     },
@@ -1905,7 +1905,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Autopilot Failed",
         "submessage": ""
     },
@@ -1915,7 +1915,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Brake failed",
         "submessage": ""
     },
@@ -1925,7 +1925,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Electric Trim Failed",
         "submessage": ""
     },
@@ -1935,7 +1935,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Flat Tire",
         "submessage": ""
     },
@@ -1945,7 +1945,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Lift Transducer has ice",
         "submessage": ""
     },
@@ -1955,7 +1955,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Windshield ice but not wings",
         "submessage": ""
     },
@@ -1965,7 +1965,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "ADC Failed",
         "submessage": ""
     },
@@ -1975,7 +1975,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "AHRS Failed",
         "submessage": ""
     },
@@ -1985,7 +1985,7 @@
         "alertType": "situation",
         "action": "review",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Anti Ice Failed",
         "submessage": ""
     },
@@ -1995,7 +1995,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Cabin Fire",
         "submessage": ""
     },
@@ -2005,7 +2005,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Engine Failed",
         "submessage": ""
     },
@@ -2015,7 +2015,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Engine Fire",
         "submessage": ""
     },
@@ -2025,7 +2025,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Manifold Pressure is dropping",
         "submessage": ""
     },
@@ -2035,7 +2035,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "high",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Partial Power Loss",
         "submessage": ""
     },
@@ -2045,7 +2045,7 @@
         "alertType": "situation",
         "action": "simulate",
         "priority": "medium",
-        "aircraft": "S22TG7",
+        "aircraftName": "S22TG7",
         "message": "Wing Fire",
         "submessage": ""
     }

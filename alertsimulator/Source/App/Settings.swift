@@ -38,6 +38,7 @@ struct Settings {
         case current_flight_duration = "current_flight_duration"
         case current_flight_alert_times = "current_flight_alert_times"
         case current_tracked_notifications = "current_tracked_notifications"
+        case current_aircraft_name = "current_aircraft_name"
         
     }
     
@@ -56,9 +57,16 @@ struct Settings {
     @CodableStorage(key: Key.current_tracked_notifications, defaultValue: [:])
     var currentTrackedNotifications : [String:TrackedAlert]
     
+    @UserStorage(key: Key.current_aircraft_name, defaultValue: Aircraft.defaultValue.aircraftName)
+    var currentAircraftName : String
+    
+    var currentAircraft : Aircraft {
+        return Aircraft(aircraftName: self.currentAircraftName)
+    }
+    
     var currentFlight : FlightManager? {
         guard currentFlightInterval > 0 && currentFlightDuration > 0 else { return nil }
-        return FlightManager(duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
+        return FlightManager(aircraft: self.currentAircraft, duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
     }
     
 }

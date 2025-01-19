@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Created on 04/01/2025 for alertsimulator
+//  Created on 18/01/2025 for alertsimulator
 //
 //  Copyright (c) 2025 Brice Rosenzweig
 //
@@ -23,21 +23,21 @@
 //  SOFTWARE.
 //
 
-
-
 import Foundation
 
-struct SampleLoader {
-    static func sampleCAS(category : CASMessage.Category, type : SimulatedAlert.AlertType = .cas) -> [CASMessage] {
-        let available = SimulatedAlert.availableFor(aircraft: SimulatedAlert.aircrafts.first!)
-        var samples: [CASMessage] = []
-        
-        for alert in available {
-            if alert.category == category && alert.alertType == type{
-                samples.append(alert.casMessage)
-            }
-        }
-        
-        return samples
+
+struct Aircraft : Hashable, Equatable{
+    static let defaultValue : Aircraft = Aircraft(aircraftName: "S22TG6")
+    let aircraftName : String
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(aircraftName)
+    }
+    static func == (lhs: Aircraft, rhs: Aircraft) -> Bool {
+        return lhs.aircraftName == rhs.aircraftName
+    }
+    
+    var alerts : [SimulatedAlert] {
+        return SimulatedAlert.availableFor(aircraft: self)
     }
 }

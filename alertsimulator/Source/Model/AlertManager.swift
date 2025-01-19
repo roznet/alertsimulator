@@ -60,10 +60,13 @@ func drawRandomElement<T>(elements: [T], probabilities: [Double]) -> T? {
 }
 
 struct AlertManager {
-    var available = SimulatedAlert.available
+    var available : [SimulatedAlert]
+    var aircraft : Aircraft = Aircraft.defaultValue
     var drawnAlerts: [SimulatedAlert] = []
     
-    init() {
+    init(aircraft : Aircraft = Aircraft.defaultValue) {
+        self.aircraft = aircraft
+        self.available = SimulatedAlert.availableFor(aircraft: aircraft)
     }
    
     var sampleAlert: SimulatedAlert {
@@ -71,7 +74,7 @@ struct AlertManager {
         return one
     }
     func nextAlert() -> SimulatedAlert {
-        SimulatedAlert.available.randomElement() ?? self.sampleAlert
+        self.available.randomElement() ?? self.sampleAlert
     }
     
     func computeProbabilities(alerts : [SimulatedAlert]) -> [Double] {
@@ -88,8 +91,11 @@ struct AlertManager {
         return probabilities
     }
     
-    mutating func reset() {
-        self.available = SimulatedAlert.available
+    mutating func reset(aircraft : Aircraft? = nil) {
+        if let aircraft = aircraft {
+            self.aircraft = aircraft
+        }
+        self.available = SimulatedAlert.availableFor(aircraft: self.aircraft)
         self.drawnAlerts = []
     }
     

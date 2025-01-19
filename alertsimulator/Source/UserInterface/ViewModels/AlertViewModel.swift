@@ -29,6 +29,10 @@ import Foundation
 import SwiftUI
 import OSLog
 
+extension Notification.Name {
+    static let aircraftChanged = Notification.Name("aircraftChanged")
+}
+
 class AlertViewModel: ObservableObject {
     
     @Published var selectedDurationHours: Int = 0
@@ -40,7 +44,8 @@ class AlertViewModel: ObservableObject {
     
     @Published var casMessage : CASMessage = CASMessage()
     
-    @Published var selectedAircraft : String = SimulatedAlert.aircrafts.first ?? "undefined"
+    @Published var selectedAircraftName : String = SimulatedAlert.aircrafts.first?.aircraftName ?? "undefined"
+    @Published var numberOfAlertForAircraft : Int = 0
     
     var duration : TimeInterval {
         return TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
@@ -49,10 +54,32 @@ class AlertViewModel: ObservableObject {
         return TimeInterval( 60.0 * Double(selectedIntervalMinutes))
     }
     
-    var flight : FlightManager = FlightManager(duration: 0.0, interval: 0.0)
+    var aircraft : Aircraft {
+        return Aircraft(aircraftName: self.selectedAircraftName)
+    }
+    var availableAircraftNames : [String] {
+        return SimulatedAlert.aircrafts.map { $0.aircraftName }
+    }
+    
+    var flight : FlightManager = FlightManager()
     var alertManager : AlertManager = AlertManager()
     var notificationManager : NotificationManager = AlertSimulatorApp.notificationManager
     
+    let intervalStep : Int = 1
+    let minuteStep : Int = 1
+   
+    var hourChoices : [Int] {
+        Array(0..<10)
+    }
+    var minuteChoices : [Int] {
+        let numberOfMinute = 60 / self.minuteStep
+        return (0..<numberOfMinute).map { $0 * self.minuteStep }
+    }
+    var intervalChoices : [Int] {
+        let numberOfInterval = 60 / intervalStep
+        return (0..<numberOfInterval).map { $0 * intervalStep }
+    }
+
     init() {
         if let last = self.notificationManager.lastNotification {
             self.casMessage = last.alert.casMessage
@@ -77,11 +104,13 @@ class AlertViewModel: ObservableObject {
         let minutes = Int(duration / 60.0) % 60
         
         let intervalMinutes = Int(interval / 60.0) % 60
+        self.selectedAircraftName = Settings.shared.currentAircraft.aircraftName
         
-        selectedDurationHours = hours
+        self.selectedDurationHours = hours
+        self.numberOfAlertForAircraft = self.aircraft.alerts.count
         self.selectedDurationMinutes = minutes
-        selectedIntervalMinutes = intervalMinutes
-        self.flight = FlightManager(duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
+        self.selectedIntervalMinutes = intervalMinutes
+        self.flight = FlightManager(aircraft: self.aircraft, duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
         self.notificationManager.fromSettings()
         Logger.app.info("Settings loaded")
     }
@@ -95,6 +124,7 @@ class AlertViewModel: ObservableObject {
         Settings.shared.currentFlightInterval = interval
         Settings.shared.currentFlightStart = self.flight.start
         Settings.shared.currentFlightAlerts = self.flight.flightAlerts
+        Settings.shared.currentAircraftName = self.selectedAircraftName
         self.notificationManager.toSettings()
         Logger.app.info("Settings updated")
     }
@@ -154,6 +184,15 @@ class AlertViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func updateAircraft() {
+        // If aircraft change, make sure all current alerts are canceled
+        self.numberOfAlertForAircraft = self.aircraft.alerts.count
+        self.stopFlight()
+        self.clearAlerts()
+        
+        NotificationCenter.default.post(name: .aircraftChanged, object: nil)
     }
     
 }

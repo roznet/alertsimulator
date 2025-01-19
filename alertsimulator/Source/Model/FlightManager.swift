@@ -27,6 +27,7 @@ import Foundation
 import OSLog
 
 struct FlightManager {
+    let aircraft : Aircraft
     let duration : TimeInterval
     let protectedStart : TimeInterval
     let protectedEnd : TimeInterval
@@ -42,10 +43,11 @@ struct FlightManager {
         return !flightAlerts.isEmpty
     }
     
-    var alertManager : AlertManager = AlertManager()
+    var alertManager : AlertManager
    
-    init(duration : TimeInterval, interval : TimeInterval, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil,
+    init(aircraft : Aircraft = Aircraft.defaultValue, duration : TimeInterval = 0.0, interval : TimeInterval = 0.0, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil,
          flightAlerts : [TrackedAlert] = []) {
+        self.aircraft = aircraft
         self.start = start ?? Date()
         self.end = self.start.addingTimeInterval(duration)
         self.duration = duration
@@ -53,6 +55,7 @@ struct FlightManager {
         self.protectedStart = protectedStart ?? 0.0
         self.protectedEnd = protectedEnd ?? 0.0
         self.flightAlerts = flightAlerts
+        self.alertManager = AlertManager(aircraft: self.aircraft)
     }
     
   

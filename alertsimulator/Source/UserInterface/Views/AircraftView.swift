@@ -27,9 +27,9 @@
 
 import SwiftUI
 
+
 struct AircraftView: View {
     @ObservedObject var alertViewModel: AlertViewModel
-    let aircrafts = SimulatedAlert.aircrafts
     
     var body: some View {
         HStack {
@@ -37,16 +37,23 @@ struct AircraftView: View {
                 .font(.headline)
                 .padding()
             
-            Picker("Aircraft", selection: $alertViewModel.selectedAircraft) {
-                ForEach(aircrafts, id: \.self) { aircraft in
+            Picker("Aircraft", selection: $alertViewModel.selectedAircraftName) {
+                ForEach(self.alertViewModel.availableAircraftNames, id: \.self) { aircraft in
                     Text(aircraft).tag(aircraft)
                 }
             }
             .pickerStyle(MenuPickerStyle()) // You can use other styles like .wheel or .segmented
+            .onChange(of: alertViewModel.selectedAircraftName) { oldValue, newValue in
+                self.alertViewModel.updateAircraft()
+            }
             .padding()
             
-            Text("Selected Aircraft: \(alertViewModel.selectedAircraft)")
+            
+            Text("Selected Aircraft: \(alertViewModel.selectedAircraftName)")
                 .padding()
+            if alertViewModel.numberOfAlertForAircraft > 0 {
+                Text( "\(alertViewModel.numberOfAlertForAircraft) alerts")
+            }
         }
         .onAppear {
             // Set an initial value if needed

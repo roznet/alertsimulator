@@ -53,10 +53,14 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
     let priority : Priority
     let alertType : AlertType
     let message : String?
+    let aircraftName : String?
     let submessage : String? // to distinguish for two identical message
     let uid : Int
     
-    let aircraft : String
+    var aircraft : Aircraft? {
+        guard let aircraftName = self.aircraftName else { return nil }
+        return Aircraft(aircraftName: aircraftName)
+    }
     
     var description: String {
        var parts: [String] = [
@@ -74,7 +78,7 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         }
         return "SimulatedAlert(" + parts.joined(separator: ", ") + ")"
     }
-    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, priority: Priority = .medium, aircraft: String = "") {
+    init(category: Category, action: Action, alertType: AlertType, message: String?, uid : Int, submessage: String? = nil, priority: Priority = .medium, aircraftName: String = "") {
         self.category = category
         self.action = action
         self.priority = priority
@@ -82,7 +86,7 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         self.message = message
         self.submessage = submessage
         self.uid = uid
-        self.aircraft = aircraft
+        self.aircraftName = aircraftName
     }
     
     var title : String {
@@ -105,11 +109,15 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         return vals.joined(separator: "-")
     }
     
-    static var aircrafts : [String] = {
-        return Set(Self.available.map { $0.aircraft }).sorted()
+    static var aircrafts : [Aircraft] = {
+        return Set(Self.available.compactMap { $0.aircraftName }).sorted().map { Aircraft(aircraftName: $0)}
     }()
-    
-    static var available: [SimulatedAlert] = {
+   
+    static func availableFor(aircraft : Aircraft) -> [SimulatedAlert] {
+        let alertsForAircraft : [SimulatedAlert] = Self.available.filter { $0.aircraft == aircraft }
+        return alertsForAircraft
+    }
+    private static var available: [SimulatedAlert] = {
             // Attempt to load and decode the JSON file
             guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
                 print("Default JSON file not found.")
