@@ -147,6 +147,7 @@ extension SimulatedAlert {
         
         content.title = title
         content.body = message ?? ""
+        content.sound = UNNotificationSound.default
         
         return content
     }
