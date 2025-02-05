@@ -45,6 +45,10 @@ struct TimerPickerView: View {
                 Text("Alert Interval")
                 Text("\(alertViewModel.selectedIntervalMinutes) m")
             }
+            VStack {
+                Text("Flight Ends")
+                Text(alertViewModel.flight.end.formatted(date: .omitted, time: .standard))
+            }
         }
     }
     

@@ -39,23 +39,26 @@ struct FlightControlView : View {
     
     var body: some View {
         HStack {
-            Button(action: {
-                self.stopAlerts()
-            }) {
-                Text("Cancel All")
+            if alertViewModel.flight.isRunning {
+                Button(action: {
+                    self.stopAlerts()
+                }) {
+                    Text("Stop Flight")
+                }
+                .standardButton()
+                .padding()
+            } else {
+                Button(action: {
+                    self.startAlerts()
+                }) {
+                    Text("Start Flight")
+                }
+                .standardButton()
+                .padding()
             }
-            .standardButton()
-            Spacer()
-            Button(action: {
-                self.startAlerts()
-            }) {
-                Text("Start Flight")
-            }
-            .standardButton()
-            .padding()
+            
             Button(action: {
                 self.alertViewModel.generateSingleAlert()
-                
             }) {
                 Text("Run One Now")
             }
