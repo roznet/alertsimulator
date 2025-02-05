@@ -36,8 +36,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .bold()
             AircraftView(alertViewModel: alertViewModel)
-            TimerPickerView(alertViewModel: alertViewModel)
             FlightControlView(alertViewModel: self.alertViewModel)
+            TimerPickerView(alertViewModel: alertViewModel)
             NotificationsView(alertViewModel: self.alertViewModel)
             Spacer()
             VStack {
