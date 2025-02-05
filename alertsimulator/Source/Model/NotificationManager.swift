@@ -73,7 +73,10 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     }
    
     private func checkAuthorization(completion: @escaping (Bool) -> Void) {
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { success, _ in
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { success, error in
+            if !success {
+                Logger.app.error("No authorization \(String(describing: error))")
+            }
             completion(success)
         }
     }

@@ -42,7 +42,7 @@ struct FlightControlView : View {
             Button(action: {
                 self.stopAlerts()
             }) {
-                Text("Cancel All Alert")
+                Text("Cancel All")
             }
             .standardButton()
             Spacer()

@@ -79,6 +79,14 @@ class AlertViewModel: ObservableObject {
         let numberOfInterval = 60 / intervalStep
         return (0..<numberOfInterval).map { $0 * intervalStep }
     }
+    
+    var selectedDurationDescription : String {
+        return String(format: "%02d h %02d", selectedDurationHours, selectedDurationMinutes)
+    }
+    
+    var selectedIntervalDescription : String {
+        return String(format: "%02d m", selectedIntervalMinutes)
+    }
 
     init() {
         if let last = self.notificationManager.lastNotification {
@@ -113,6 +121,14 @@ class AlertViewModel: ObservableObject {
         self.flight = FlightManager(aircraft: self.aircraft, duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
         self.notificationManager.fromSettings()
         Logger.app.info("Settings loaded")
+    }
+    
+    func updateFromFlight() {
+        self.selectedAircraftName = self.flight.aircraft.aircraftName
+        self.selectedDurationHours = Int(self.flight.duration / 60.0 / 60.0)
+        self.selectedDurationMinutes = Int(self.flight.duration / 60.0) % 60
+        self.selectedIntervalMinutes = Int(self.flight.averageAlertInterval / 60.0) % 60
+        
     }
     
     func toSettings() {

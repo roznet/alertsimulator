@@ -28,10 +28,30 @@ struct TimerPickerView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
+        if self.alertViewModel.flight.isRunning {
+            runningView
+        }else{
+            setupView
+        }
+    }
+    
+    var runningView: some View {
         HStack {
             VStack {
-                Text("Set Flight Duration")
-                    .font(.title)
+                Text("Flight Duration")
+                Text("\(alertViewModel.selectedDurationHours) h \(alertViewModel.selectedDurationMinutes) m")
+            }
+            VStack {
+                Text("Alert Interval")
+                Text("\(alertViewModel.selectedIntervalMinutes) m")
+            }
+        }
+    }
+    
+    var setupView: some View {
+        HStack {
+            VStack {
+                Text("Flight Duration")
                 
                 HStack(spacing: 0) {
                     // Hours Picker
@@ -65,8 +85,7 @@ struct TimerPickerView: View {
             }
             Spacer()
             VStack {
-                Text("Set Alert Interval")
-                    .font(.title)
+                Text("Alert Interval")
                 
                 HStack(spacing: 0) {
                     // Hours Picker
@@ -85,26 +104,13 @@ struct TimerPickerView: View {
                     
                 }
             }
-            .onAppear {
-                self.alertViewModel.fromSettings()
-            }
-            .onDisappear {
-                self.alertViewModel.toSettings()
-            }
             
         }
         .padding()
     }
 }
 
-struct TimerPickerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerPickerView(alertViewModel: createViewModel())
-    }
-    
-    static func createViewModel() -> AlertViewModel {
-        
-        let viewModel = AlertViewModel()
-        return viewModel
-    }
+#Preview {
+    TimerPickerView(alertViewModel: SampleLoader.sampleAlertViewModel())
+    TimerPickerView(alertViewModel: SampleLoader.sampleAlertViewModel(running: true))
 }

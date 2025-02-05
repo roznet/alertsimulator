@@ -40,4 +40,29 @@ struct SampleLoader {
         
         return samples
     }
+    
+    static func sampleTrackedAlert(n : Int, interval : TimeInterval = 10.0) -> [TrackedAlert]{
+        let minute = 60.0
+        let alerts = SimulatedAlert.availableFor(aircraft: SimulatedAlert.aircrafts.first!)
+        let sampleAlerts : [TrackedAlert] = [
+            TrackedAlert(date: Date().addingTimeInterval(interval*minute), alert: alerts.first!)
+        ]
+        return sampleAlerts
+    }
+    
+    static func sampleRunningFlight(trackedAlertsCount : Int = 0) -> FlightManager{
+        let minute = 60.0
+        let sampleAlerts : [TrackedAlert] = trackedAlertsCount > 0 ? self.sampleTrackedAlert(n: trackedAlertsCount) : []
+        let flight = FlightManager(aircraft: Aircraft.defaultValue, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
+        return flight
+    }
+    
+    
+    static func sampleAlertViewModel(running: Bool = false) -> AlertViewModel {
+        let viewModel = AlertViewModel()
+        viewModel.flight = SampleLoader.sampleRunningFlight(trackedAlertsCount: running ? 4 : 0)
+        viewModel.updateFromFlight()
+        return viewModel
+    }
 }
+

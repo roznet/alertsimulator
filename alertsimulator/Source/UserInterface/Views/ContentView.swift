@@ -31,35 +31,29 @@ struct ContentView: View {
     @StateObject var alertViewModel: AlertViewModel = .init()
     
     var body: some View {
-        GeometryReader { geometry in
+        VStack {
+            Text("Configure Flight Alerts")
+                .font(.largeTitle)
+                .bold()
+            AircraftView(alertViewModel: alertViewModel)
+            TimerPickerView(alertViewModel: alertViewModel)
+            FlightControlView(alertViewModel: self.alertViewModel)
+            NotificationsView(alertViewModel: self.alertViewModel)
+            Spacer()
             VStack {
-                Text("Configure Flight Alerts")
-                    .font(.largeTitle)
-                    .bold()
-                AircraftView(alertViewModel: alertViewModel)
-                TimerPickerView(alertViewModel: alertViewModel)
-                NotificationsView(alertViewModel: self.alertViewModel)
-                FlightControlView(alertViewModel: self.alertViewModel)
-                Spacer()
-                VStack {
-                    HStack() {
-                        Spacer()
-                        Button(action: {
-                            self.alertViewModel.clearAlerts()
-                        }) {
-                            Text("Clear Alerts")
-                        }
-                        .casButton()
+                HStack() {
+                    Spacer()
+                    Button(action: {
+                        self.alertViewModel.clearAlerts()
+                    }) {
+                        Text("Clear Alerts")
                     }
-                    CASView(casMessage: $alertViewModel.casMessage)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .casButton()
                 }
-                .frame(height: geometry.size.height / 3)
-                .background(Color.brown)
-                //.edgesIgnoringSafeArea(.all)
+                CASView(casMessage: $alertViewModel.casMessage)
             }
+            .background(Color.brown)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear(){
             self.alertViewModel.fromSettings()
         }
