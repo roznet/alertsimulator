@@ -38,9 +38,9 @@ struct FlightManager {
     let end : Date
     
     var flightAlerts : [TrackedAlert]
-    
-    var isRunning : Bool {
-        return !flightAlerts.isEmpty
+
+    func isRunning(at : Date = Date()) -> Bool {
+        return at >= start && at <= end && !flightAlerts.isEmpty
     }
     
     var alertManager : AlertManager
@@ -57,7 +57,6 @@ struct FlightManager {
         self.flightAlerts = flightAlerts
         self.alertManager = AlertManager(aircraft: self.aircraft)
     }
-    
   
     mutating func start(randomOffsetRange : TimeInterval = 0.0) {
         self.alertManager.reset()

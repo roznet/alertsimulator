@@ -59,7 +59,7 @@ struct Settings {
     
     @UserStorage(key: Key.current_aircraft_name, defaultValue: Aircraft.defaultValue.aircraftName)
     var currentAircraftName : String
-    
+
     var currentAircraft : Aircraft {
         return Aircraft(aircraftName: self.currentAircraftName)
     }

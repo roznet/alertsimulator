@@ -1,6 +1,6 @@
 import Foundation
 
-class FlightData: ObservableObject {
+class AirplaneAttitude: ObservableObject {
     @Published var pitch: Double // degrees (-90 to +90)
     @Published var roll: Double  // degrees (-180 to +180)
     @Published var airspeed: Double // knots

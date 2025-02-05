@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PrimaryFlightDisplayView: View {
-    @ObservedObject var flightData: FlightData
+    @ObservedObject var flightData: AirplaneAttitude
     
     var body: some View {
         HStack(spacing: 2) {
@@ -246,7 +246,7 @@ struct PitchLadder: Shape {
 
 #Preview {
     PrimaryFlightDisplayView(
-        flightData: FlightData(
+        flightData: AirplaneAttitude(
             pitch: 5,
             roll: 10,
             airspeed: 120,
