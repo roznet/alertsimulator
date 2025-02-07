@@ -64,9 +64,9 @@ struct Settings {
         return Aircraft(aircraftName: self.currentAircraftName)
     }
     
-    var currentFlight : FlightManager? {
+    var currentFlight : Flight? {
         guard currentFlightInterval > 0 && currentFlightDuration > 0 else { return nil }
-        return FlightManager(aircraft: self.currentAircraft, duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
+        return Flight(aircraft: self.currentAircraft, duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
     }
     
 }

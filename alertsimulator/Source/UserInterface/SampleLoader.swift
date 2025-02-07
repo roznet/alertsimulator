@@ -50,10 +50,10 @@ struct SampleLoader {
         return sampleAlerts
     }
     
-    static func sampleRunningFlight(trackedAlertsCount : Int = 0) -> FlightManager{
+    static func sampleRunningFlight(trackedAlertsCount : Int = 0) -> Flight{
         let minute = 60.0
         let sampleAlerts : [TrackedAlert] = trackedAlertsCount > 0 ? self.sampleTrackedAlert(n: trackedAlertsCount) : []
-        let flight = FlightManager(aircraft: Aircraft.defaultValue, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
+        let flight = Flight(aircraft: Aircraft.defaultValue, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
         return flight
     }
     

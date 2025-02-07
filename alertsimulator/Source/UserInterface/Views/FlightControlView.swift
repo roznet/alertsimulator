@@ -39,7 +39,7 @@ struct FlightControlView : View {
     
     var body: some View {
         HStack {
-            if alertViewModel.flight.isRunning() {
+            if alertViewModel.flightIsRunning {
                 Button(action: {
                     self.stopAlerts()
                 }) {

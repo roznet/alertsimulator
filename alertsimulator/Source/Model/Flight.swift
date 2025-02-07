@@ -26,7 +26,8 @@
 import Foundation
 import OSLog
 
-struct FlightManager {
+
+struct Flight {
     let aircraft : Aircraft
     let duration : TimeInterval
     let protectedStart : TimeInterval

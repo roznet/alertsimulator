@@ -34,7 +34,7 @@ extension Notification.Name {
 }
 
 class AlertViewModel: ObservableObject {
-    
+    @Published var flightIsRunning : Bool = false
     @Published var selectedDurationHours: Int = 0
     @Published var selectedDurationMinutes: Int = 0
     @Published var selectedIntervalMinutes: Int = 0
@@ -47,26 +47,37 @@ class AlertViewModel: ObservableObject {
     @Published var selectedAircraftName : String = SimulatedAlert.aircrafts.first?.aircraftName ?? "undefined"
     @Published var numberOfAlertForAircraft : Int = 0
     
-    var duration : TimeInterval {
-        return TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
+    private var duration : TimeInterval {
+        get {
+            return TimeInterval( 3600.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
+        }
+        set {
+            selectedDurationHours = Int(newValue / 3600)
+            selectedDurationMinutes = Int((newValue - Double(selectedDurationHours * 3600)) / 60)
+        }
     }
-    var interval : TimeInterval {
-        return TimeInterval( 60.0 * Double(selectedIntervalMinutes))
+    private var interval : TimeInterval {
+        get {
+            return TimeInterval( 60.0 * Double(selectedIntervalMinutes))
+        }
+        set {
+            selectedIntervalMinutes = Int(newValue / 60)
+        }
     }
     
-    var aircraft : Aircraft {
+    private var aircraft : Aircraft {
         return Aircraft(aircraftName: self.selectedAircraftName)
     }
     var availableAircraftNames : [String] {
         return SimulatedAlert.aircrafts.map { $0.aircraftName }
     }
     
-    var flight : FlightManager = FlightManager()
+    var flight : Flight = Flight()
     var alertManager : AlertManager = AlertManager()
     var notificationManager : NotificationManager = AlertSimulatorApp.notificationManager
     
-    let intervalStep : Int = 1
-    let minuteStep : Int = 1
+    private let intervalStep : Int = 1
+    private let minuteStep : Int = 1
    
     var hourChoices : [Int] {
         Array(0..<10)
@@ -88,6 +99,17 @@ class AlertViewModel: ObservableObject {
         return String(format: "%02d m", selectedIntervalMinutes)
     }
 
+    private var flightEndTimer: Timer?
+    private func startTimer(){
+        // Set up timer to automatically stop flight at end time
+        flightEndTimer?.invalidate() // Clear any existing timer
+        flightEndTimer = Timer.scheduledTimer(withTimeInterval: self.duration, repeats: false) { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.stopFlight()
+            }
+        }
+    }
+
     init() {
         if let last = self.notificationManager.lastNotification {
             self.casMessage = last.alert.casMessage
@@ -103,41 +125,34 @@ class AlertViewModel: ObservableObject {
     }
     deinit {
         NotificationCenter.default.removeObserver(self)
+        flightEndTimer?.invalidate()
     }
     func fromSettings() {
-        let duration = Settings.shared.currentFlightDuration
-        let interval = Settings.shared.currentFlightInterval
+        self.duration = Settings.shared.currentFlightDuration
+        self.interval = Settings.shared.currentFlightInterval
         
-        let hours = Int(duration / 60.0 / 60.0)
-        let minutes = Int(duration / 60.0) % 60
-        
-        let intervalMinutes = Int(interval / 60.0) % 60
         self.selectedAircraftName = Settings.shared.currentAircraft.aircraftName
-        
-        self.selectedDurationHours = hours
         self.numberOfAlertForAircraft = self.aircraft.alerts.count
-        self.selectedDurationMinutes = minutes
-        self.selectedIntervalMinutes = intervalMinutes
-        self.flight = FlightManager(aircraft: self.aircraft, duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
+        self.flight = Flight(aircraft: self.aircraft, duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
         self.notificationManager.fromSettings()
         Logger.app.info("Settings loaded")
+        self.flightIsRunning = self.flight.isRunning()
+        if self.flightIsRunning {
+            self.startTimer()
+        }
     }
+    
     
     func updateFromFlight() {
         self.selectedAircraftName = self.flight.aircraft.aircraftName
-        self.selectedDurationHours = Int(self.flight.duration / 60.0 / 60.0)
-        self.selectedDurationMinutes = Int(self.flight.duration / 60.0) % 60
-        self.selectedIntervalMinutes = Int(self.flight.averageAlertInterval / 60.0) % 60
-        
+        self.duration = self.flight.duration
+        self.interval = self.flight.averageAlertInterval
+        self.flightIsRunning = self.flight.isRunning()
     }
     
     func toSettings() {
-        
-        let duration = TimeInterval( 60.0 * 60.0 * Double(selectedDurationHours) + 60.0 * Double(selectedDurationMinutes))
-        let interval = TimeInterval( 60.0 * Double(selectedIntervalMinutes))
-        
-        Settings.shared.currentFlightDuration = duration
-        Settings.shared.currentFlightInterval = interval
+        Settings.shared.currentFlightDuration = self.duration
+        Settings.shared.currentFlightInterval = self.interval
         Settings.shared.currentFlightStart = self.flight.start
         Settings.shared.currentFlightAlerts = self.flight.flightAlerts
         Settings.shared.currentAircraftName = self.selectedAircraftName
@@ -146,16 +161,23 @@ class AlertViewModel: ObservableObject {
     }
     
     func startFlight() {
-        self.flight = FlightManager(duration: duration, interval: interval, start: Date())
-        self.alertManager.reset()
-        self.flight.start()
+        guard !flight.isRunning() else { return }
+        
+        // Calculate flight duration in seconds
+        self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
+        // Start the flight
+        flight.start()
         self.toSettings()
+        self.startTimer()
         self.notificationManager.scheduleAll(for: self.flight)
+        self.flightIsRunning = self.flight.isRunning()
     }
-    
     func stopFlight() {
         self.notificationManager.cancelAll()
-        self.flight.stop()
+        flight.stop()
+        self.flightIsRunning = self.flight.isRunning()
+        flightEndTimer?.invalidate()
+        flightEndTimer = nil
     }
     
     func generateSingleAlert() {

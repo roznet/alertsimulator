@@ -58,7 +58,7 @@ struct alertsimulatorTests {
             (oneHour/2, 2.0 * oneMinute,   10.0 * oneMinute),
         ]
         for (interval,offset,protected) in tests {
-            var flight = FlightManager(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
+            var flight = Flight(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
             let times = flight.computeAlerts(randomOffsetRange: offset )
             let intervals = times.map { ($0.date.timeIntervalSince(date) - protected) / interval}
             let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0)).map { $0 + 1.0}

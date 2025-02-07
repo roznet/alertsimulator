@@ -28,7 +28,7 @@ struct TimerPickerView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
-        if self.alertViewModel.flight.isRunning() {
+        if self.alertViewModel.flightIsRunning {
             runningView
         }else{
             setupView

@@ -126,7 +126,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
-    func scheduleAll(for flightManager : FlightManager)  {
+    func scheduleAll(for flightManager : Flight)  {
         self.cancelAll()
         
         for alert in flightManager.flightAlerts {
