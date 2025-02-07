@@ -1,16 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "fmdb",
-        "repositoryURL": "https://github.com/ccgus/fmdb",
-        "state": {
-          "branch": null,
-          "revision": "1227a3fa2b9916bfd75fe380eb45cd210e69e251",
-          "version": "2.7.12"
-        }
+  "originHash" : "fa33e9ed4e39bcac5cdad5fc7bda3bcca548946cd6e90bdc732bf4d72f44239d",
+  "pins" : [
+    {
+      "identity" : "fmdb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ccgus/fmdb",
+      "state" : {
+        "revision" : "1227a3fa2b9916bfd75fe380eb45cd210e69e251",
+        "version" : "2.7.12"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "rzutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roznet/rzutils",
+      "state" : {
+        "revision" : "4ddf6c0ae146b801b5fd62d1baed77caa7193c96",
+        "version" : "1.0.29"
+      }
+    }
+  ],
+  "version" : 3
 }
