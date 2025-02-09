@@ -14,12 +14,19 @@ struct alertsimulatorTests {
     @Test func testAlerts() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
        
-        
+       
+        // This ensures we can read the alert definition files
+        // and that the default aircraft is present
         var manager = AlertManager()
         #expect(manager.available.count > 0)
-        
+       
         let aircrafts = SimulatedAlert.aircrafts
         #expect(aircrafts.count > 0)
+        
+        // check each aircraft has some alerts
+        for aircraft in aircrafts {
+            #expect(aircraft.alerts.count > 0)
+        }
         
         let half = manager.available.count / 2
         let total = manager.available.count
@@ -71,7 +78,7 @@ struct alertsimulatorTests {
             }
             
             flight.start(randomOffsetRange: offset)
-            #expect(flight.isRunning)
+            #expect(flight.isRunning(at: date.addingTimeInterval(5.0)))
             var nextAlert : TrackedAlert? = flight.nextAlert(after: date)
             var extractedDates : [Date] = []
             while let runningAlert = nextAlert {

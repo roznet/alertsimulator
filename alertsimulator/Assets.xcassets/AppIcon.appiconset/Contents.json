@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "MacIcon.png",
+      "filename" : "YellowIcon.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "MacIcon 1.png",
+      "filename" : "YellowIcon 1.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
