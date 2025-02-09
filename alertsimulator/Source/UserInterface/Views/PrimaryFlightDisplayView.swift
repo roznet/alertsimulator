@@ -59,12 +59,10 @@ struct AttitudeBackground: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                let center = CGPoint(x: geometry.size.width/2, y: geometry.size.height/2)
                 let radius = min(geometry.size.width, geometry.size.height)
                 
                 // Calculate horizon line position based on pitch and roll
                 let pitchOffset = CGFloat(pitch) * radius/180
-                let rollRadians = CGFloat(roll) * .pi/180
                 
                 path.addRect(CGRect(x: 0, y: 0, width: geometry.size.width, height: geometry.size.height/2 - pitchOffset))
             }
@@ -72,7 +70,6 @@ struct AttitudeBackground: View {
             .rotationEffect(.radians(Double(roll) * .pi/180))
             
             Path { path in
-                let center = CGPoint(x: geometry.size.width/2, y: geometry.size.height/2)
                 let radius = min(geometry.size.width, geometry.size.height)
                 
                 let pitchOffset = CGFloat(pitch) * radius/180
