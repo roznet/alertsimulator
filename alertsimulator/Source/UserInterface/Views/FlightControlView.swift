@@ -29,10 +29,18 @@ import SwiftUI
 
 struct FlightControlView : View {
     @ObservedObject var alertViewModel: AlertViewModel
+    @State private var showingValidationAlert = false
+    @State private var validationErrors: [AlertViewModel.FlightValidationError] = []
     
     func startAlerts() {
-        self.alertViewModel.startFlight()
+        validationErrors = alertViewModel.validateFlightParameters()
+        if validationErrors.isEmpty {
+            self.alertViewModel.startFlight()
+        } else {
+            showingValidationAlert = true
+        }
     }
+    
     func stopAlerts() {
         self.alertViewModel.stopFlight()
     }
@@ -65,11 +73,17 @@ struct FlightControlView : View {
             .standardButton()
         }
         .padding([.trailing, .leading])
+        .alert("Invalid Flight Parameters", isPresented: $showingValidationAlert) {
+            Button("OK", role: .cancel) {
+                showingValidationAlert = false
+            }
+        } message: {
+            Text(validationErrors.map { $0.rawValue }.joined(separator: "\n"))
+        }
     }
 }
 
 #Preview {
     @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
-
     FlightControlView(alertViewModel: alertViewModel)
 }

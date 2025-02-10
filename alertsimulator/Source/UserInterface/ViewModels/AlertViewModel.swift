@@ -160,8 +160,41 @@ class AlertViewModel: ObservableObject {
         Logger.app.info("Settings updated")
     }
     
+    // Add validation result type
+    enum FlightValidationError: String {
+        case durationZero = "Flight duration must be greater than 0"
+        case intervalZero = "Alert interval must be greater than 0"
+        case intervalGreaterThanDuration = "Alert interval must be less than flight duration"
+    }
+    
+    // Add validation function
+    func validateFlightParameters() -> [FlightValidationError] {
+        var errors: [FlightValidationError] = []
+        
+        if duration <= 0 {
+            errors.append(.durationZero)
+        }
+        
+        if interval <= 0 {
+            errors.append(.intervalZero)
+        }
+        
+        if interval >= duration && duration > 0 && interval > 0 {
+            errors.append(.intervalGreaterThanDuration)
+        }
+        
+        return errors
+    }
+    
     func startFlight() {
         guard !flight.isRunning() else { return }
+        
+        // Add validation check
+        let validationErrors = validateFlightParameters()
+        guard validationErrors.isEmpty else {
+            // If there are validation errors, we'll handle them in the view
+            return
+        }
         
         // Calculate flight duration in seconds
         self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
