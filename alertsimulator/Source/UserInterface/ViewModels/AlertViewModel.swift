@@ -165,10 +165,17 @@ class AlertViewModel: ObservableObject {
         case durationZero = "Flight duration must be greater than 0"
         case intervalZero = "Alert interval must be greater than 0"
         case intervalGreaterThanDuration = "Alert interval must be less than flight duration"
+        case notificationsNotAuthorized = "Notifications must be enabled to start flight simulation. Tap OK to open Settings."
+    }
+    
+    func openNotificationSettings() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     
     // Add validation function
-    func validateFlightParameters() -> [FlightValidationError] {
+    func validateFlightParameters(completion: @escaping ([FlightValidationError]) -> Void) {
         var errors: [FlightValidationError] = []
         
         if duration <= 0 {
@@ -183,27 +190,28 @@ class AlertViewModel: ObservableObject {
             errors.append(.intervalGreaterThanDuration)
         }
         
-        return errors
+        // Check and request notification authorization if needed
+        notificationManager.checkAuthorization { authorized in
+            if !authorized {
+                errors.append(.notificationsNotAuthorized)
+            }
+            completion(errors)
+        }
     }
     
     func startFlight() {
         guard !flight.isRunning() else { return }
         
-        // Add validation check
-        let validationErrors = validateFlightParameters()
-        guard validationErrors.isEmpty else {
-            // If there are validation errors, we'll handle them in the view
-            return
-        }
-        
         // Calculate flight duration in seconds
         self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
         // Start the flight
-        flight.start()
+        self.flight.start()
         self.toSettings()
         self.startTimer()
         self.notificationManager.scheduleAll(for: self.flight)
-        self.flightIsRunning = self.flight.isRunning()
+        DispatchQueue.main.async {
+            self.flightIsRunning = self.flight.isRunning()
+        }
     }
     func stopFlight() {
         self.notificationManager.cancelAll()

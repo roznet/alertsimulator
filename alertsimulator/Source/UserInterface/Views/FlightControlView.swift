@@ -33,11 +33,13 @@ struct FlightControlView : View {
     @State private var validationErrors: [AlertViewModel.FlightValidationError] = []
     
     func startAlerts() {
-        validationErrors = alertViewModel.validateFlightParameters()
-        if validationErrors.isEmpty {
-            self.alertViewModel.startFlight()
-        } else {
-            showingValidationAlert = true
+        alertViewModel.validateFlightParameters { errors in
+            self.validationErrors = errors
+            if errors.isEmpty {
+                self.alertViewModel.startFlight()
+            } else {
+                self.showingValidationAlert = true
+            }
         }
     }
     
@@ -74,8 +76,18 @@ struct FlightControlView : View {
         }
         .padding([.trailing, .leading])
         .alert("Invalid Flight Parameters", isPresented: $showingValidationAlert) {
-            Button("OK", role: .cancel) {
-                showingValidationAlert = false
+            if validationErrors.contains(.notificationsNotAuthorized) {
+                Button("Open Settings", role: .none) {
+                    alertViewModel.openNotificationSettings()
+                    showingValidationAlert = false
+                }
+                Button("Cancel", role: .cancel) {
+                    showingValidationAlert = false
+                }
+            } else {
+                Button("OK", role: .cancel) {
+                    showingValidationAlert = false
+                }
             }
         } message: {
             Text(validationErrors.map { $0.rawValue }.joined(separator: "\n"))
