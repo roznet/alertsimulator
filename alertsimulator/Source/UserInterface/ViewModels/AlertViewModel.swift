@@ -165,7 +165,7 @@ class AlertViewModel: ObservableObject {
         case durationZero = "Flight duration must be greater than 0"
         case intervalZero = "Alert interval must be greater than 0"
         case intervalGreaterThanDuration = "Alert interval must be less than flight duration"
-        case notificationsNotAuthorized = "Notifications must be enabled to start flight simulation. Tap OK to open Settings."
+        case notificationsNotAuthorized = "Notifications must be enabled to start flight simulation. Tap open Settings to enable."
     }
     
     func openNotificationSettings() {
@@ -221,9 +221,17 @@ class AlertViewModel: ObservableObject {
         flightEndTimer = nil
     }
     
-    func generateSingleAlert() {
-        let alert = self.flight.immediateAlert()
-        self.notificationManager.scheduleNext(tracked: alert)
+    func generateSingleAlert(completion: @escaping (Bool) -> Void) {
+        // Check and request notification authorization if needed
+        notificationManager.checkAuthorization { authorized in
+            if authorized {
+                let alert = self.flight.immediateAlert()
+                self.notificationManager.scheduleNext(tracked: alert)
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
     }
     
     func clearAlerts() {

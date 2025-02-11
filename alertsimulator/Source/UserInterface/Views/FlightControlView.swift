@@ -47,6 +47,15 @@ struct FlightControlView : View {
         self.alertViewModel.stopFlight()
     }
     
+    func runOneNow() {
+        alertViewModel.generateSingleAlert { authorized in
+            if !authorized {
+                self.validationErrors = [.notificationsNotAuthorized]
+                self.showingValidationAlert = true
+            }
+        }
+    }
+    
     var body: some View {
         HStack {
             if alertViewModel.flightIsRunning {
@@ -68,7 +77,7 @@ struct FlightControlView : View {
             }
             
             Button(action: {
-                self.alertViewModel.generateSingleAlert()
+                self.runOneNow()
             }) {
                 Text("Run One Now")
             }
