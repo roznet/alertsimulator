@@ -60,25 +60,25 @@ func drawRandomElement<T>(elements: [T], probabilities: [Double]) -> T? {
 }
 
 struct AlertManager {
-    var available : [SimulatedAlert]
+    var available : [FlightAlert]
     var aircraft : Aircraft = Aircraft.defaultValue
-    var drawnAlerts: [SimulatedAlert] = []
+    var drawnAlerts: [FlightAlert] = []
     
     init(aircraft : Aircraft = Aircraft.defaultValue) {
         self.aircraft = aircraft
-        self.available = SimulatedAlert.availableFor(aircraft: aircraft)
+        self.available = FlightAlert.availableFor(aircraft: aircraft)
     }
    
-    var sampleAlert: SimulatedAlert {
-        let one = SimulatedAlert(category: .abnormal, action: .simulate, alertType: .situation, message: "No more fuel", uid: -1)
+    var sampleAlert: FlightAlert {
+        let one = FlightAlert(category: .abnormal, action: .simulate, alertType: .situation, message: "No more fuel", uid: -1)
         return one
     }
-    func nextAlert() -> SimulatedAlert {
+    func nextAlert() -> FlightAlert {
         self.available.randomElement() ?? self.sampleAlert
     }
     
-    func computeProbabilities(alerts : [SimulatedAlert]) -> [Double] {
-        typealias Priority = SimulatedAlert.Priority
+    func computeProbabilities(alerts : [FlightAlert]) -> [Double] {
+        typealias Priority = FlightAlert.Priority
         let categoryCount = Dictionary(grouping: self.available, by: { $0.priority }).mapValues({$0.count})
         let multiplier : [Priority : Double] = [
             .low : 1.0,
@@ -95,11 +95,11 @@ struct AlertManager {
         if let aircraft = aircraft {
             self.aircraft = aircraft
         }
-        self.available = SimulatedAlert.availableFor(aircraft: self.aircraft)
+        self.available = FlightAlert.availableFor(aircraft: self.aircraft)
         self.drawnAlerts = []
     }
     
-    mutating func drawNextAlert() -> SimulatedAlert {
+    mutating func drawNextAlert() -> FlightAlert {
         let next = self.drawAlert(alerts: self.available)
         self.drawnAlerts.append(next)
         self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
@@ -109,7 +109,7 @@ struct AlertManager {
         }
         return next
     }
-    func drawAlert(alerts : [SimulatedAlert]) -> SimulatedAlert{
+    func drawAlert(alerts : [FlightAlert]) -> FlightAlert{
         let probabilities = self.computeProbabilities(alerts: alerts)
         let next = drawRandomElement(elements: alerts, probabilities: probabilities)
         return next ?? self.sampleAlert

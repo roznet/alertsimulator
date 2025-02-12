@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-struct SimulatedAlert : Codable, CustomStringConvertible {
+struct FlightAlert : Codable, CustomStringConvertible {
     enum Category : String, Codable {
         case abnormal = "abnormal"
         case emergency = "emergency"
@@ -113,11 +113,11 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
         return Set(Self.available.compactMap { $0.aircraftName }).sorted().map { Aircraft(aircraftName: $0)}
     }()
    
-    static func availableFor(aircraft : Aircraft) -> [SimulatedAlert] {
-        let alertsForAircraft : [SimulatedAlert] = Self.available.filter { $0.aircraft == aircraft }
+    static func availableFor(aircraft : Aircraft) -> [FlightAlert] {
+        let alertsForAircraft : [FlightAlert] = Self.available.filter { $0.aircraft == aircraft }
         return alertsForAircraft
     }
-    private static var available: [SimulatedAlert] = {
+    private static var available: [FlightAlert] = {
             // Attempt to load and decode the JSON file
             guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
                 print("Default JSON file not found.")
@@ -127,13 +127,13 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                return try decoder.decode([SimulatedAlert].self, from: data)
+                return try decoder.decode([FlightAlert].self, from: data)
             } catch {
                 print("Error decoding JSON: \(error)")
                 return []
             }
         }()
-    static func alert(for uniqueIdentifier: String) -> SimulatedAlert? {
+    static func alert(for uniqueIdentifier: String) -> FlightAlert? {
         for alert in available where alert.uniqueIdentifier == uniqueIdentifier {
             return alert
         }
@@ -141,7 +141,7 @@ struct SimulatedAlert : Codable, CustomStringConvertible {
     }
 }
 
-extension SimulatedAlert {
+extension FlightAlert {
     var notificationContent: UNNotificationContent {
         let content = UNMutableNotificationContent()
         

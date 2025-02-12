@@ -48,12 +48,7 @@ struct FlightControlView : View {
     }
     
     func runOneNow() {
-        alertViewModel.generateSingleAlert { authorized in
-            if !authorized {
-                self.validationErrors = [.notificationsNotAuthorized]
-                self.showingValidationAlert = true
-            }
-        }
+        alertViewModel.generateSingleAlert()
     }
     
     var body: some View {
@@ -92,6 +87,7 @@ struct FlightControlView : View {
                 }
                 Button("Cancel", role: .cancel) {
                     showingValidationAlert = false
+                    self.alertViewModel.generateSingleAlert()
                 }
             } else {
                 Button("OK", role: .cancel) {

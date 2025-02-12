@@ -37,7 +37,7 @@ struct Aircraft : Hashable, Equatable{
         return lhs.aircraftName == rhs.aircraftName
     }
     
-    var alerts : [SimulatedAlert] {
-        return SimulatedAlert.availableFor(aircraft: self)
+    var alerts : [FlightAlert] {
+        return FlightAlert.availableFor(aircraft: self)
     }
 }

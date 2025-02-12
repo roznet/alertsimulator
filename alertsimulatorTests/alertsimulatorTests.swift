@@ -20,7 +20,7 @@ struct alertsimulatorTests {
         var manager = AlertManager()
         #expect(manager.available.count > 0)
        
-        let aircrafts = SimulatedAlert.aircrafts
+        let aircrafts = FlightAlert.aircrafts
         #expect(aircrafts.count > 0)
         
         // check each aircraft has some alerts

@@ -28,8 +28,8 @@
 import Foundation
 
 struct SampleLoader {
-    static func sampleCAS(category : CASMessage.Category, type : SimulatedAlert.AlertType = .cas) -> [CASMessage] {
-        let available = SimulatedAlert.availableFor(aircraft: SimulatedAlert.aircrafts.first!)
+    static func sampleCAS(category : CASMessage.Category, type : FlightAlert.AlertType = .cas) -> [CASMessage] {
+        let available = FlightAlert.availableFor(aircraft: FlightAlert.aircrafts.first!)
         var samples: [CASMessage] = []
         
         for alert in available {
@@ -43,7 +43,7 @@ struct SampleLoader {
     
     static func sampleTrackedAlert(n : Int, interval : TimeInterval = 10.0) -> [TrackedAlert]{
         let minute = 60.0
-        let alerts = SimulatedAlert.availableFor(aircraft: SimulatedAlert.aircrafts.first!)
+        let alerts = FlightAlert.availableFor(aircraft: FlightAlert.aircrafts.first!)
         let sampleAlerts : [TrackedAlert] = [
             TrackedAlert(date: Date().addingTimeInterval(interval*minute), alert: alerts.first!)
         ]

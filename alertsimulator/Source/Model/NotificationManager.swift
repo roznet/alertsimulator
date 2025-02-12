@@ -151,8 +151,8 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
         if let tracked = self.trackedNotifications[response.notification.request.identifier] {
             Logger.app.info("didReceive alert: \(tracked.summaryDescription)")
             self.lastNotification = tracked
-            NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: tracked.alert)
-            NotificationCenter.default.post(name: .notificationWereUpdated, object: tracked.alert)
+            NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: tracked.flightAlert)
+            NotificationCenter.default.post(name: .notificationWereUpdated, object: tracked.flightAlert)
             self.trackedNotifications.removeValue(forKey: tracked.identifier)
         }else {
             Logger.app.error("didReceive unknown alert identifier: \(response.notification.request.identifier)")

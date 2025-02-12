@@ -28,7 +28,7 @@
 import Foundation
 
 struct CASMessage {
-    typealias Category = SimulatedAlert.Category
+    typealias Category = FlightAlert.Category
     
     let category: Category
     let message: String

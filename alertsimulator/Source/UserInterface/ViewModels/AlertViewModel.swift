@@ -44,7 +44,7 @@ class AlertViewModel: ObservableObject {
     
     @Published var casMessage : CASMessage = CASMessage()
     
-    @Published var selectedAircraftName : String = SimulatedAlert.aircrafts.first?.aircraftName ?? "undefined"
+    @Published var selectedAircraftName : String = FlightAlert.aircrafts.first?.aircraftName ?? "undefined"
     @Published var numberOfAlertForAircraft : Int = 0
     
     private var duration : TimeInterval {
@@ -69,7 +69,7 @@ class AlertViewModel: ObservableObject {
         return Aircraft(aircraftName: self.selectedAircraftName)
     }
     var availableAircraftNames : [String] {
-        return SimulatedAlert.aircrafts.map { $0.aircraftName }
+        return FlightAlert.aircrafts.map { $0.aircraftName }
     }
     
     var flight : Flight = Flight()
@@ -112,10 +112,10 @@ class AlertViewModel: ObservableObject {
 
     init() {
         if let last = self.notificationManager.lastNotification {
-            self.casMessage = last.alert.casMessage
+            self.casMessage = last.flightAlert.casMessage
         }
         NotificationCenter.default.addObserver(forName: .didReceiveSimulatedAlert, object: nil, queue: nil){ notification in
-            if let simulatedAlert = notification.object as? SimulatedAlert{
+            if let simulatedAlert = notification.object as? FlightAlert{
                 Logger.app.info("Processing \(simulatedAlert)")
                 DispatchQueue.main.async {
                     self.casMessage = simulatedAlert.casMessage
@@ -165,7 +165,7 @@ class AlertViewModel: ObservableObject {
         case durationZero = "Flight duration must be greater than 0"
         case intervalZero = "Alert interval must be greater than 0"
         case intervalGreaterThanDuration = "Alert interval must be less than flight duration"
-        case notificationsNotAuthorized = "Notifications must be enabled to start flight simulation. Tap open Settings to enable."
+        case notificationsNotAuthorized = "Notifications should be enabled to simulate flight alert in the background. Tap open Settings to enable, or cancel to simulate a single flight alert now"
     }
     
     func openNotificationSettings() {
@@ -221,17 +221,11 @@ class AlertViewModel: ObservableObject {
         flightEndTimer = nil
     }
     
-    func generateSingleAlert(completion: @escaping (Bool) -> Void) {
-        // Check and request notification authorization if needed
-        notificationManager.checkAuthorization { authorized in
-            if authorized {
-                let alert = self.flight.immediateAlert()
-                self.notificationManager.scheduleNext(tracked: alert)
-                completion(true)
-            } else {
-                completion(false)
-            }
-        }
+    func generateSingleAlert() {
+        // Generate an immediate alert and update the CAS message directly
+        let alert = self.flight.immediateAlert()
+        // Post notification to update any observers
+        NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: alert.flightAlert)
     }
     
     func clearAlerts() {
@@ -252,16 +246,16 @@ class AlertViewModel: ObservableObject {
             let now = Date()
             for notification in notifications {
                 if notification.date < now {
-                    Logger.app.info("Past: \(notification.date): \(notification.alert)")
+                    Logger.app.info("Past: \(notification.date): \(notification.flightAlert)")
                     continue
                 }
-                Logger.app.info("at \(notification.date): \(notification.alert)")
+                Logger.app.info("at \(notification.date): \(notification.flightAlert)")
                 future += 1
                 if next == nil || notification.date < next!.date {
                     Logger.app.info("New next: \(notification.date)")
                     next = notification
                 }
-                Logger.app.info("\(notification.date): \(notification.alert)")
+                Logger.app.info("\(notification.date): \(notification.flightAlert)")
             }
             Logger.app.info("Next: \(next?.date.formatted() ?? "none")")
             DispatchQueue.main.async {

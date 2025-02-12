@@ -29,23 +29,23 @@ import UserNotifications
 struct TrackedAlert : Codable {
     let identifier: String
     let date: Date
-    let alert : SimulatedAlert
+    let flightAlert : FlightAlert
     
     var isExpired: Bool { date < Date() }
     
-    init(date: Date, alert: SimulatedAlert, identifier: String? = nil) {
+    init(date: Date, alert: FlightAlert, identifier: String? = nil) {
         self.identifier = identifier ?? UUID().uuidString
         self.date = date
-        self.alert = alert
+        self.flightAlert = alert
     }
     var summaryDescription : String {
-        let message = alert.message ?? ""
-        return "\(identifier) - \(date) - \(alert.alertType) \(message)"
+        let message = flightAlert.message ?? ""
+        return "\(identifier) - \(date) - \(flightAlert.alertType) \(message)"
     }
 }
 
 extension TrackedAlert {
     var notificationContent : UNNotificationContent {
-        return self.alert.notificationContent
+        return self.flightAlert.notificationContent
     }
 }
