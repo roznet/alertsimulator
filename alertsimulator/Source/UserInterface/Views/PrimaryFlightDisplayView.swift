@@ -11,13 +11,8 @@ struct PrimaryFlightDisplayView: View {
             AttitudeIndicatorView(pitch: flightData.pitch, roll: flightData.roll)
                 .frame(maxWidth: .infinity)
             
-            VStack(spacing: 2) {
-                AltitudeTapeView(altitude: flightData.altitude)
-                    .frame(width: 60)
-                
-                VerticalSpeedIndicator(verticalSpeed: flightData.verticalSpeed)
-                    .frame(width: 60)
-            }
+            CombinedAltitudeView(altitude: flightData.altitude, verticalSpeed: flightData.verticalSpeed)
+                .frame(width: 60)
         }
         .background(Color.black)
         .aspectRatio(16/9, contentMode: .fit)
@@ -99,72 +94,6 @@ struct AircraftSymbol: Shape {
     }
 }
 
-struct AirspeedTapeView: View {
-    let airspeed: Double
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                // Speed tape background
-                Rectangle()
-                    .fill(Color.black)
-                
-                // Current speed indicator
-                Text("\(Int(airspeed))")
-                    .foregroundColor(.white)
-                    .font(.system(size: 24, weight: .bold))
-                    .background(
-                        Rectangle()
-                            .stroke(Color.white, lineWidth: 2)
-                            .background(Color.black)
-                    )
-            }
-        }
-    }
-}
-
-struct AltitudeTapeView: View {
-    let altitude: Double
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                // Altitude tape background
-                Rectangle()
-                    .fill(Color.black)
-                
-                // Current altitude indicator
-                Text("\(Int(altitude))")
-                    .foregroundColor(.white)
-                    .font(.system(size: 24, weight: .bold))
-                    .background(
-                        Rectangle()
-                            .stroke(Color.white, lineWidth: 2)
-                            .background(Color.black)
-                    )
-            }
-        }
-    }
-}
-
-struct VerticalSpeedIndicator: View {
-    let verticalSpeed: Double
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                // VSI background
-                Rectangle()
-                    .fill(Color.black)
-                
-                // VSI indicator
-                Text("\(Int(verticalSpeed))")
-                    .foregroundColor(.white)
-                    .font(.system(size: 20, weight: .bold))
-            }
-        }
-    }
-}
 
 struct RollIndicator: Shape {
     let roll: Double
