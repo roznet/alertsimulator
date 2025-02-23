@@ -44,46 +44,44 @@ struct CASView: View {
     @Binding var casMessage: CASMessage
     
     var body: some View {
-        VStack {
-            if !$casMessage.wrappedValue.message.isEmpty {
-                Text($casMessage.wrappedValue.message)
-                    .casMessage(category: $casMessage.wrappedValue.category)
+        VStack(alignment: .trailing) {
+            if !casMessage.message.isEmpty {
+                Text(casMessage.message)
+                    .casMessage(category: casMessage.category)
                     .frame(maxWidth: .infinity,alignment: .trailing)
                     .padding([.bottom,.top])
-
             }
             Spacer()
             HStack {
                 Spacer()
-                VStack() {
+                VStack(alignment: .leading) {
                     Text("Alerts")
                         .foregroundColor(.white)
                     Divider()
                         .background(Color.white)
                         .padding([.bottom])
-                    if !$casMessage.wrappedValue.submessage.isEmpty {
-                        Text($casMessage.wrappedValue.detailedMessage)
-                            .casSubMessage(category: $casMessage.wrappedValue.category)
-                            .lineLimit(2)
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                    }else {
-                        Text($casMessage.wrappedValue.submessage)
-                            .casSubMessage(category: $casMessage.wrappedValue.category)
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                        
+                    if !casMessage.submessage.isEmpty {
+                        Text(casMessage.detailedMessage)
+                            .casSubMessage(category: casMessage.category)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        Text(casMessage.submessage)
+                            .casSubMessage(category: casMessage.category)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
                 .background(.black)
                 .frame(maxWidth:600, alignment: .trailing)
                 .cornerRadius(10)
-                .overlay( RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
                 .padding([.leading,.top,.bottom])
             }
             
-            Text($casMessage.wrappedValue.categoryDescription)
-                .casAnnuciation(category: $casMessage.wrappedValue.category)
+            Text(casMessage.categoryDescription)
+                .casAnnuciation(category: casMessage.category)
                 .frame(maxWidth: .infinity,alignment: .trailing)
-            .background(Color.black)
+                .background(Color.black)
         }
         .background(Color.brown)
     }
