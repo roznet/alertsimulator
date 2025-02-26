@@ -7,6 +7,12 @@
 
 import Foundation
 import UserNotifications
+import OSLog
+
+struct AlertsData: Codable {
+    let version: String
+    let alerts: [FlightAlert]
+}
 
 struct FlightAlert : Codable, CustomStringConvertible {
     enum Category : String, Codable {
@@ -117,22 +123,127 @@ struct FlightAlert : Codable, CustomStringConvertible {
         let alertsForAircraft : [FlightAlert] = Self.available.filter { $0.aircraft == aircraft }
         return alertsForAircraft
     }
+
     private static var available: [FlightAlert] = {
-            // Attempt to load and decode the JSON file
-            guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
-                print("Default JSON file not found.")
-                return []
+        loadAlerts()
+    }()
+
+    private static func loadAlerts() -> [FlightAlert] {
+        // First try to load from local storage
+        if let localAlerts = loadFromLocalStorage() {
+            return localAlerts
+        }
+        
+        // If no local storage, load from bundle
+        return loadFromBundle()
+    }
+    
+    private static func loadFromBundle() -> [FlightAlert] {
+        guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
+            Logger.app.error("Default JSON file not found.")
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let alertsData = try decoder.decode(AlertsData.self, from: data)
+            Settings.shared.alertsDataVersion = alertsData.version
+            return alertsData.alerts
+        } catch {
+            Logger.app.error("Error decoding bundle JSON: \(error)")
+            return []
+        }
+    }
+    
+    private static func loadFromLocalStorage() -> [FlightAlert]? {
+        let fileManager = FileManager.default
+        guard let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            return nil
+        }
+        
+        let alertsFile = documentsPath.appendingPathComponent("AlertsToSimulate.json")
+        
+        guard fileManager.fileExists(atPath: alertsFile.path) else {
+            return nil
+        }
+        
+        do {
+            let data = try Data(contentsOf: alertsFile)
+            let decoder = JSONDecoder()
+            let alertsData = try decoder.decode(AlertsData.self, from: data)
+            Settings.shared.alertsDataVersion = alertsData.version
+            return alertsData.alerts
+        } catch {
+            Logger.app.error("Error loading local alerts: \(error)")
+            return nil
+        }
+    }
+    
+    static func checkForUpdates() {
+        guard Settings.shared.shouldCheckForUpdates else { return }
+        
+        guard let url = URL(string: Settings.shared.alertsDataUrl) else {
+            Logger.app.error("Invalid alerts data URL")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                Logger.app.error("Error checking for updates: \(error)")
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  httpResponse.statusCode == 200,
+                  let data = data else {
+                Logger.app.error("Invalid response or no data")
+                return
             }
             
             do {
-                let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                return try decoder.decode([FlightAlert].self, from: data)
+                let alertsData = try decoder.decode(AlertsData.self, from: data)
+                
+                // Compare versions
+                if alertsData.version > Settings.shared.alertsDataVersion {
+                    // Save new data
+                    try self.saveNewAlertsData(data)
+                    // Reload alerts
+                    self.available = alertsData.alerts
+                    Settings.shared.alertsDataVersion = alertsData.version
+                }
+                
+                // Update last check time
+                Settings.shared.lastUpdateCheck = Date()
+                
             } catch {
-                print("Error decoding JSON: \(error)")
-                return []
+                Logger.app.error("Error processing update data: \(error)")
             }
-        }()
+        }
+        
+        task.resume()
+    }
+    
+    private static func saveNewAlertsData(_ data: Data) throws {
+        let fileManager = FileManager.default
+        guard let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            throw NSError(domain: "FlightAlert", code: -1, userInfo: [NSLocalizedDescriptionKey: "Could not access documents directory"])
+        }
+        
+        let alertsFile = documentsPath.appendingPathComponent("AlertsToSimulate.json")
+        
+        // Create a backup of the current file if it exists
+        if fileManager.fileExists(atPath: alertsFile.path) {
+            let backupFile = documentsPath.appendingPathComponent("AlertsToSimulate.backup.json")
+            try? fileManager.removeItem(at: backupFile)
+            try fileManager.copyItem(at: alertsFile, to: backupFile)
+        }
+        
+        // Write new data
+        try data.write(to: alertsFile)
+    }
+    
     static func alert(for uniqueIdentifier: String) -> FlightAlert? {
         for alert in available where alert.uniqueIdentifier == uniqueIdentifier {
             return alert

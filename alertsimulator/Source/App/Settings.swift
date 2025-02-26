@@ -39,7 +39,9 @@ struct Settings {
         case current_flight_alert_times = "current_flight_alert_times"
         case current_tracked_notifications = "current_tracked_notifications"
         case current_aircraft_name = "current_aircraft_name"
-        
+        case alerts_data_version = "alerts_data_version"
+        case alerts_data_url = "alerts_data_url"
+        case last_update_check = "last_update_check"
     }
     
     @UserStorage(key: Key.current_flight_start, defaultValue: Date())
@@ -60,6 +62,15 @@ struct Settings {
     @UserStorage(key: Key.current_aircraft_name, defaultValue: Aircraft.defaultValue.aircraftName)
     var currentAircraftName : String
 
+    @UserStorage(key: Key.alerts_data_version, defaultValue: "1.0")
+    var alertsDataVersion : String
+    
+    @UserStorage(key: Key.alerts_data_url, defaultValue: "https://example.com/AlertsToSimulate.json")
+    var alertsDataUrl : String
+    
+    @UserStorage(key: Key.last_update_check, defaultValue: Date.distantPast)
+    var lastUpdateCheck : Date
+
     var currentAircraft : Aircraft {
         return Aircraft(aircraftName: self.currentAircraftName)
     }
@@ -69,4 +80,10 @@ struct Settings {
         return Flight(aircraft: self.currentAircraft, duration: self.currentFlightDuration, interval: self.currentFlightInterval, start: self.currentFlightStart, flightAlerts: self.currentFlightAlerts)
     }
     
+    // Time interval between update checks (1 day)
+    static let updateCheckInterval: TimeInterval = 24 * 60 * 60
+    
+    var shouldCheckForUpdates: Bool {
+        return Date().timeIntervalSince(lastUpdateCheck) >= Settings.updateCheckInterval
+    }
 }

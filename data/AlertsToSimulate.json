@@ -1,2052 +1,2055 @@
-[
-    {
-        "uid": 1,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ALT 1",
-        "submessage": "Check alternator 1 current. "
-    },
-    {
-        "uid": 2,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ALT 2",
-        "submessage": "Check alternator 2 current. "
-    },
-    {
-        "uid": 3,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ALT AIR OPEN",
-        "submessage": "Alternate air door is open. "
-    },
-    {
-        "uid": 4,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE HEAT",
-        "submessage": "Stall warning/AoA heater has failed. "
-    },
-    {
-        "uid": 5,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE LEVEL",
-        "submessage": "Left tank fluid quantity is unreliable (TKS). "
-    },
-    {
-        "uid": 6,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE PRESS",
-        "submessage": "Tail pressure is low (TKS). "
-    },
-    {
-        "uid": 7,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE PRESS",
-        "submessage": "Pressure is high (TKS). "
-    },
-    {
-        "uid": 8,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE QTY",
-        "submessage": "Fluid quantity imbalance has been detected (TKS) "
-    },
-    {
-        "uid": 9,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE QTY",
-        "submessage": "Fluid quantity is low (TKS). "
-    },
-    {
-        "uid": 10,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE SPEED",
-        "submessage": "Airspeed is too low for ice protection (TKS). "
-    },
-    {
-        "uid": 11,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE SPEED",
-        "submessage": "Airspeed is to high for ice protection (TKS). "
-    },
-    {
-        "uid": 12,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE TEMP",
-        "submessage": "Temperature is too low for ice protection (TKS). "
-    },
-    {
-        "uid": 13,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "AOA FAIL",
-        "submessage": "WARN AOA/stall warning input invalid. "
-    },
-    {
-        "uid": 14,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "AP MISCOMPARE",
-        "submessage": "Autopilot miscompare, autopilot is not available. "
-    },
-    {
-        "uid": 15,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "AP/PFD DIF ADC",
-        "submessage": "Autopilot and PFD are using different ADCs. "
-    },
-    {
-        "uid": 16,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "AP/PFD DIF AHRS",
-        "submessage": "Autopilot and PFD are using different AHRSs. "
-    },
-    {
-        "uid": 17,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "AVIONICS OFF ",
-        "submessage": "Avionics master switch is off. "
-    },
-    {
-        "uid": 18,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "BATT 1",
-        "submessage": "Check battery 1 current. "
-    },
-    {
-        "uid": 19,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "BRAKE TEMP",
-        "submessage": "Brake temperature is high. "
-    },
-    {
-        "uid": 20,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "CHT ",
-        "submessage": "Cylinder head temperature is high. "
-    },
-    {
-        "uid": 21,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "FLAP OVERSPEED ",
-        "submessage": "Flaps are extended beyond airspeed limitations. "
-    },
-    {
-        "uid": 22,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "FUEL IMBALANCE",
-        "submessage": "Fuel quantity imbalance has been detected. "
-    },
-    {
-        "uid": 23,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "FUEL LOW TOTAL",
-        "submessage": "Total fuel quantity is low. "
-    },
-    {
-        "uid": 24,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ICE DETECT FAIL ",
-        "submessage": "Ice detector failure. "
-    },
-    {
-        "uid": 25,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "ICING DETECTED ",
-        "submessage": "Icing conditions have been detected. "
-    },
-    {
-        "uid": 26,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "review",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "LRG MAG VAR ",
-        "submessage": "The GDU’s internal model cannot determine the exact magnetic variance for geographic locations near the magnetic poles. Displayed magnetic course angles may differ from the actual magnetic heading by more than 2°. "
-    },
-    {
-        "uid": 27,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "M BUS 1",
-        "submessage": "Check main power bus 1 voltage. "
-    },
-    {
-        "uid": 28,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "M BUS 2",
-        "submessage": "Check main power bus 2 voltage. "
-    },
-    {
-        "uid": 29,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "MAN PRESSURE",
-        "submessage": "Check manifold pressure. "
-    },
-    {
-        "uid": 30,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "NO ADC MODES",
-        "submessage": "Autopilot air data modes are not available. "
-    },
-    {
-        "uid": 31,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "NO VERT MODES",
-        "submessage": "Autopilot vertical modes are not available. "
-    },
-    {
-        "uid": 32,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "OIL PRESS",
-        "submessage": "Oil pressure is out of range. "
-    },
-    {
-        "uid": 33,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "OIL TEMP",
-        "submessage": "Oil temperature is high. "
-    },
-    {
-        "uid": 34,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "OXYGEN QTY",
-        "submessage": "Oxygen quantity is low. "
-    },
-    {
-        "uid": 35,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "OXYGEN RQD",
-        "submessage": "Oxygen usage is required. "
-    },
-    {
-        "uid": 36,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "PARK BRAKE ",
-        "submessage": "Parking break is set. "
-    },
-    {
-        "uid": 37,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "PITOT HEAT FAIL",
-        "submessage": "Pitot heat failure. "
-    },
-    {
-        "uid": 38,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "PITOT HEAT REQD",
-        "submessage": "Pitot heat is required. "
-    },
-    {
-        "uid": 39,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "SLCT MAG ",
-        "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to Magnetic. "
-    },
-    {
-        "uid": 40,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "SLCT NON-MAG ",
-        "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to True. "
-    },
-    {
-        "uid": 41,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "START ENGAGED",
-        "submessage": "Starter is engaged. "
-    },
-    {
-        "uid": 42,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "TAKEOFF FLAPS",
-        "submessage": "Flaps not in takeoff configuration. "
-    },
-    {
-        "uid": 43,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE CTL",
-        "submessage": "Tank valves cannot be controlled (closed) (TKS). "
-    },
-    {
-        "uid": 44,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE QTY",
-        "submessage": "Left and right fluid quantities are unknown (TKS). "
-    },
-    {
-        "uid": 45,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "ANTI ICE QTY",
-        "submessage": "Fluid quantity is low (TKS). "
-    },
-    {
-        "uid": 46,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "AOA OVERHEAT",
-        "submessage": "AOA probe is overheated. "
-    },
-    {
-        "uid": 47,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "BRAKE TEMP",
-        "submessage": "Brake temperature is high. "
-    },
-    {
-        "uid": 48,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "CHT",
-        "submessage": "Cylinder head temperature is high. "
-    },
-    {
-        "uid": 49,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "CO LVL HIGH",
-        "submessage": "Carbon monoxide level is too high. "
-    },
-    {
-        "uid": 50,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "ESS BUS",
-        "submessage": "Check essential power bus voltage. "
-    },
-    {
-        "uid": 51,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "FLAPS ICE",
-        "submessage": "Full flap prohibited in icing conditions. "
-    },
-    {
-        "uid": 52,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "FUEL FLOW",
-        "submessage": "Check fuel flow. "
-    },
-    {
-        "uid": 53,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "FUEL IMBALANCE",
-        "submessage": "Fuel quantity imbalance has been detected. "
-    },
-    {
-        "uid": 54,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "FUEL LOW LEFT",
-        "submessage": "Check left fuel tank level. "
-    },
-    {
-        "uid": 55,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "FUEL LOW RIGHT",
-        "submessage": "Check right fuel tank level. "
-    },
-    {
-        "uid": 56,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "FUEL LOW TOTAL",
-        "submessage": "Check fuel tank levels. "
-    },
-    {
-        "uid": 57,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "HIGH FUEL FLOW",
-        "submessage": "Check fuel flow. "
-    },
-    {
-        "uid": 58,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "M BUS 1",
-        "submessage": "Check main power bus 1 voltage. "
-    },
-    {
-        "uid": 59,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "M BUS 2",
-        "submessage": "Check main power bus 2 voltage. "
-    },
-    {
-        "uid": 60,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "MAN PRESSURE",
-        "submessage": "Check manifold pressure. "
-    },
-    {
-        "uid": 61,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "OIL PRESS",
-        "submessage": "Oil pressure is out of range. "
-    },
-    {
-        "uid": 62,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "OIL TEMP",
-        "submessage": "Oil temperature is high. "
-    },
-    {
-        "uid": 63,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "OXYGEN FAULT",
-        "submessage": "Oxygen system fault. "
-    },
-    {
-        "uid": 64,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "OXYGEN QTY",
-        "submessage": "Oxygen quantity is low. "
-    },
-    {
-        "uid": 65,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "OXYGEN RQD",
-        "submessage": "Oxygen usage is required. "
-    },
-    {
-        "uid": 66,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "RPM",
-        "submessage": "Check engine RPM. "
-    },
-    {
-        "uid": 67,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG6",
-        "message": "SPIN SPIN SPIN",
-        "submessage": "Spin entry detected - initiate recovery. "
-    },
-    {
-        "uid": 68,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG6",
-        "message": "START ENGAGED",
-        "submessage": ""
-    },
-    {
-        "uid": 69,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "TIT",
-        "submessage": "TIT temperature is high. "
-    },
-    {
-        "uid": 70,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Autopilot Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 71,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Brake failed",
-        "submessage": ""
-    },
-    {
-        "uid": 72,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Electric Trim Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 73,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Flat Tire",
-        "submessage": ""
-    },
-    {
-        "uid": 74,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Lift Transducer has ice",
-        "submessage": ""
-    },
-    {
-        "uid": 75,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Windshield ice but not wings",
-        "submessage": ""
-    },
-    {
-        "uid": 76,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "ADC Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 77,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "AHRS Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 78,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "Anti Ice Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 79,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Cabin Fire",
-        "submessage": ""
-    },
-    {
-        "uid": 80,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "Engine Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 81,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Engine Fire",
-        "submessage": ""
-    },
-    {
-        "uid": 82,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "Manifold Pressure is dropping",
-        "submessage": ""
-    },
-    {
-        "uid": 83,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG6",
-        "message": "Partial Power Loss",
-        "submessage": ""
-    },
-    {
-        "uid": 84,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG6",
-        "message": "Wing Fire",
-        "submessage": ""
-    },
-    {
-        "uid": 100,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AOA OVERHEAT2 ",
-        "submessage": "AOA probe is overheated. "
-    },
-    {
-        "uid": 101,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "APPROACH SPEED ",
-        "submessage": "Approach Speed is too high. "
-    },
-    {
-        "uid": 102,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AUTO DESCENT ",
-        "submessage": "Automatic descent to 14,000FT in 60 seconds. "
-    },
-    {
-        "uid": 103,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AUTO DESCENT ",
-        "submessage": "Aircraft descending to 14,000FT. "
-    },
-    {
-        "uid": 104,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AUTO DESCENT ",
-        "submessage": "Aircraft descending to 12,500FT. "
-    },
-    {
-        "uid": 105,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AUTO DESCENT ",
-        "submessage": "Aircraft descended due to pilot incapacitation. "
-    },
-    {
-        "uid": 106,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "CHT ",
-        "submessage": "Cylinder head temperature is high. "
-    },
-    {
-        "uid": 107,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "CO LVL HIGH ",
-        "submessage": "Carbon monoxide level is too high. "
-    },
-    {
-        "uid": 108,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "ESSENTIAL BUS VOLTS ",
-        "submessage": "Check essential power bus voltage. "
-    },
-    {
-        "uid": 109,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS ICE2 ",
-        "submessage": "Full flaps prohibited in icing conditions. "
-    },
-    {
-        "uid": 110,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FUEL FLOW ",
-        "submessage": "Check fuel flow. "
-    },
-    {
-        "uid": 111,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FUEL IMBALANCE ",
-        "submessage": "Fuel quantity imbalance has been detected. "
-    },
-    {
-        "uid": 112,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FUEL LOW LEFT ",
-        "submessage": "Left fuel tank is nearly empty. "
-    },
-    {
-        "uid": 113,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FUEL LOW RIGHT ",
-        "submessage": "Right fuel tank is nearly empty. "
-    },
-    {
-        "uid": 114,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "FUEL LOW TOTAL ",
-        "submessage": "Total fuel quantity is low. "
-    },
-    {
-        "uid": 115,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "IPS CONTROL FAIL ",
-        "submessage": "IPS valves cannot be closed. "
-    },
-    {
-        "uid": 116,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "IPS FLUID LOW ",
-        "submessage": "IPS fluid quantity is low. "
-    },
-    {
-        "uid": 117,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "IPS QUANTITY FAIL ",
-        "submessage": "Left and right IPS fluid quantities are unknown. "
-    },
-    {
-        "uid": 118,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "MAIN BUS 1 VOLTS ",
-        "submessage": "Check main power bus 1 voltage. "
-    },
-    {
-        "uid": 119,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "MAIN BUS 2 VOLTS ",
-        "submessage": "Check main power bus 2 voltage. "
-    },
-    {
-        "uid": 120,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "MANIFOLD PRESSURE ",
-        "submessage": "Check manifold pressure. "
-    },
-    {
-        "uid": 121,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "OIL PRESSURE ",
-        "submessage": "Oil pressure is out of range. "
-    },
-    {
-        "uid": 122,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "OIL TEMP ",
-        "submessage": "Oil temperature is high. "
-    },
-    {
-        "uid": 123,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN FAULT1 ",
-        "submessage": "Oxygen system fault. "
-    },
-    {
-        "uid": 124,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN QTY LOW1 ",
-        "submessage": "Oxygen quantity is low. "
-    },
-    {
-        "uid": 125,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN REQUIRED1 ",
-        "submessage": "Oxygen usage is required. "
-    },
-    {
-        "uid": 126,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "RPM ",
-        "submessage": "Check engine RPM. "
-    },
-    {
-        "uid": 127,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "SPIN SPIN SPIN ",
-        "submessage": "Spin entry detected - initiate recovery. "
-    },
-    {
-        "uid": 128,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "STALL ",
-        "submessage": "Stall warning. "
-    },
-    {
-        "uid": 129,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "STALL WARNING FAIL ",
-        "submessage": "Stall warning is inoperative. "
-    },
-    {
-        "uid": 130,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "STARTER ENGAGED ",
-        "submessage": "Starter is engaged. "
-    },
-    {
-        "uid": 131,
-        "category": "emergency",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "TIT3 ",
-        "submessage": "Turbine inlet temperature is high. "
-    },
-    {
-        "uid": 132,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "ALT AIR OPEN2 ",
-        "submessage": "Alternate air door is open. "
-    },
-    {
-        "uid": 133,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "ALTERNATOR 1 CURRENT ",
-        "submessage": "Check alternator 1 current. "
-    },
-    {
-        "uid": 134,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "ALTERNATOR 2 CURRENT ",
-        "submessage": "Check alternator 2 current. "
-    },
-    {
-        "uid": 135,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "AOA HEAT FAIL 3 ",
-        "submessage": "Autopilot is unavailable due to miscompare. "
-    },
-    {
-        "uid": 136,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "AP MISCOMPARE ",
-        "submessage": "Autopilot is unavailable due to miscompare. "
-    },
-    {
-        "uid": 137,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "AP/PFD DIF ADC ",
-        "submessage": "Autopilot and PFD are using different ADCs. "
-    },
-    {
-        "uid": 138,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "AP/PFD DIF AHRS ",
-        "submessage": "Autopilot and PFD are using different AHRSs. "
-    },
-    {
-        "uid": 139,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "BATTERY 1 CURRENT ",
-        "submessage": "Check battery 1 current. "
-    },
-    {
-        "uid": 140,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "BATTERY 1 FAIL ",
-        "submessage": "Battery 1 service is required. "
-    },
-    {
-        "uid": 141,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "BATTERY 1 FAULT ",
-        "submessage": "Battery 1 fault detected. "
-    },
-    {
-        "uid": 142,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "BATTERY 1 LOW ",
-        "submessage": "Battery 1 state of charge is low. "
-    },
-    {
-        "uid": 143,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "CHT ",
-        "submessage": "Cylinder head temperature is high. "
-    },
-    {
-        "uid": 144,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS AIRSPEED INHIBIT ",
-        "submessage": "Flaps motion inhibited. "
-    },
-    {
-        "uid": 145,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS DISAGREE ",
-        "submessage": "Flaps not in commanded position. "
-    },
-    {
-        "uid": 146,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS FAIL ",
-        "submessage": "Flaps not in commanded position. "
-    },
-    {
-        "uid": 147,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS SELECTOR FAIL ",
-        "submessage": "Flaps not in commanded position. "
-    },
-    {
-        "uid": 148,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FUEL IMBALANCE ",
-        "submessage": "Fuel quantity imbalance has been detected. "
-    },
-    {
-        "uid": 149,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FUEL LOW TOTAL ",
-        "submessage": "Total fuel quantity is low. "
-    },
-    {
-        "uid": 150,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FUEL PUMP OFF ",
-        "submessage": "Fuel pump is turned off. "
-    },
-    {
-        "uid": 151,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FUEL QTY MISCOMP ",
-        "submessage": "Sensed and totalized fuel quantity disagreement. "
-    },
-    {
-        "uid": 152,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "FUEL VALVE AUTO FAIL ",
-        "submessage": "Automatic fuel tank selection is unavailable. "
-    },
-    {
-        "uid": 153,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "HYPOXIA ALERT ",
-        "submessage": "Hypoxia caution alert. "
-    },
-    {
-        "uid": 154,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS FLUID LOW3 ",
-        "submessage": "IPS fluid quantity is low. "
-    },
-    {
-        "uid": 155,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS IMBALANCE3 ",
-        "submessage": "IPS fluid quantity imbalance has been detected. "
-    },
-    {
-        "uid": 156,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS PRESSURE HIGH3 ",
-        "submessage": "IPS pressure is high. "
-    },
-    {
-        "uid": 157,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS PRESSURE LOW 3 ",
-        "submessage": "IPS tail pressure is low. "
-    },
-    {
-        "uid": 158,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS QUANTITY FAIL 3 ",
-        "submessage": "Left IPS fluid quantity is unreliable. "
-    },
-    {
-        "uid": 159,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS QUANTITY FAIL 3 ",
-        "submessage": "Right IPS fluid quantity is unreliable. "
-    },
-    {
-        "uid": 160,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS SPEED HIGH 3 ",
-        "submessage": "Airspeed is too high for ice protection. "
-    },
-    {
-        "uid": 161,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS SPEED LOW 3 ",
-        "submessage": "Airspeed is too low for ice protection. "
-    },
-    {
-        "uid": 162,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "IPS TEMP LOW 3 ",
-        "submessage": "Temperature is too low for ice protection. "
-    },
-    {
-        "uid": 163,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "MAIN BUS 1 VOLTS ",
-        "submessage": "Check main power bus 1 voltage. "
-    },
-    {
-        "uid": 164,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "MAIN BUS 2 VOLTS ",
-        "submessage": "Check main power bus 2 voltage. "
-    },
-    {
-        "uid": 165,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "MANIFOLD PRESSURE ",
-        "submessage": "Check manifold pressure. "
-    },
-    {
-        "uid": 166,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "NO ADC MODES ",
-        "submessage": "Autopilot air data modes are not available. "
-    },
-    {
-        "uid": 167,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "NO VERT MODES ",
-        "submessage": "Autopilot vertical modes are not available. "
-    },
-    {
-        "uid": 168,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "OIL PRESSURE ",
-        "submessage": "Oil pressure is out of range. "
-    },
-    {
-        "uid": 169,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "OIL TEMP ",
-        "submessage": "Oil temperature is high. "
-    },
-    {
-        "uid": 170,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN QTY LOW1 ",
-        "submessage": "Oxygen quantity is low. "
-    },
-    {
-        "uid": 171,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN REQUIRED1 ",
-        "submessage": "Oxygen usage is required. "
-    },
-    {
-        "uid": 172,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "PARK BRAKE ",
-        "submessage": "Parking break is set. "
-    },
-    {
-        "uid": 173,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "PITOT HEAT FAIL ",
-        "submessage": "Pitot heat failure. "
-    },
-    {
-        "uid": 174,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "PROBE HEAT OFF ",
-        "submessage": "Probe heat is required. "
-    },
-    {
-        "uid": 175,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "SFD ALT MISCOMPARE ",
-        "submessage": "SFD altitude miscompare. "
-    },
-    {
-        "uid": 176,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "SFD IAS MISCOMPARE ",
-        "submessage": "SFD airspeed miscompare. "
-    },
-    {
-        "uid": 177,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "SFD PITCH MISCOMPARE ",
-        "submessage": "SFD pitch miscompare. "
-    },
-    {
-        "uid": 178,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "SFD ROLL MISCOMPARE ",
-        "submessage": "SFD roll miscompare. "
-    },
-    {
-        "uid": 179,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "STALL WARNING FAIL ",
-        "submessage": "AOA/stall warning input invalid. "
-    },
-    {
-        "uid": 180,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "STARTER ENGAGED ",
-        "submessage": "Starter is engaged. "
-    },
-    {
-        "uid": 181,
-        "category": "abnormal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "TAKEOFF FLAPS ",
-        "submessage": "Flaps not in takeoff configuration. "
-    },
-    {
-        "uid": 182,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "ALTITUDE SEL ",
-        "submessage": "Climbing away from selected altitude. "
-    },
-    {
-        "uid": 183,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "ALTITUDE SEL ",
-        "submessage": "Descending away from selected altitude. "
-    },
-    {
-        "uid": 184,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "AOA FAIL2 ",
-        "submessage": "Dynamic stall speed band is unavailable. "
-    },
-    {
-        "uid": 185,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "ARE YOU ALERT? ",
-        "submessage": "Are you alert? "
-    },
-    {
-        "uid": 186,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "CHECK OXYGEN1 ",
-        "submessage": "Check oxygen system status. "
-    },
-    {
-        "uid": 187,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "COURSE SELECT1 ",
-        "submessage": "Current track will not intercept selected course. "
-    },
-    {
-        "uid": 188,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "ECS RECIRC ON ",
-        "submessage": "ECS recirculation mode is prohibited in flight. "
-    },
-    {
-        "uid": 189,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "ESP CONFIG ",
-        "submessage": "ESP config error. Config service req'd. "
-    },
-    {
-        "uid": 190,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "EXIT ICING2 1 ",
-        "submessage": "Exit icing conditions. "
-    },
-    {
-        "uid": 191,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "FAILED PATH ",
-        "submessage": "An autopilot servo data path has failed. "
-    },
-    {
-        "uid": 192,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "FLAPS CLIMB ",
-        "submessage": "Flaps not set for enroute climb. "
-    },
-    {
-        "uid": 193,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "FUEL IMBALANCE ",
-        "submessage": "Fuel quantity imbalance has been detected. "
-    },
-    {
-        "uid": 194,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "FUEL PUMP OFF ",
-        "submessage": "Fuel pump is turned off. "
-    },
-    {
-        "uid": 195,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "FUEL VALVE OFF ",
-        "submessage": "Fuel valve is in the off position. "
-    },
-    {
-        "uid": 196,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "IPS FLUID LOW2 ",
-        "submessage": "IPS fluid quantity is low. "
-    },
-    {
-        "uid": 197,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "simulate",
-        "priority": "low",
-        "aircraftName": "S22TG7",
-        "message": "IPS PUMP BACKUP3 ",
-        "submessage": "IPS backup pump mode has been selected. "
-    },
-    {
-        "uid": 198,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN ON1 ",
-        "submessage": "Oxygen system is left on after shutdown. "
-    },
-    {
-        "uid": 199,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "OXYGEN QTY LOW1 ",
-        "submessage": "Oxygen quantity is low. "
-    },
-    {
-        "uid": 200,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "ROL MODE ",
-        "submessage": "Roll mode is active. "
-    },
-    {
-        "uid": 201,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "SFC WATCH FAIL ",
-        "submessage": "SurfaceWatch failed. "
-    },
-    {
-        "uid": 202,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "SFC WATCH INHIB ",
-        "submessage": "SurfaceWatch inhibited. "
-    },
-    {
-        "uid": 203,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "SFD NO COMPARE ",
-        "submessage": "SFD comparison data missing. "
-    },
-    {
-        "uid": 204,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "VNAV ALT SEL ",
-        "submessage": "VNAV needs lower ALT SEL to capture VPATH. "
-    },
-    {
-        "uid": 205,
-        "category": "normal",
-        "alertType": "cas",
-        "action": "ignore",
-        "priority": "none",
-        "aircraftName": "S22TG7",
-        "message": "VNAV NOT ARMED ",
-        "submessage": "Press VNV to arm VPATH capture. "
-    },
-    {
-        "uid": 206,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Autopilot Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 207,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Brake failed",
-        "submessage": ""
-    },
-    {
-        "uid": 208,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Electric Trim Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 209,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Flat Tire",
-        "submessage": ""
-    },
-    {
-        "uid": 210,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Lift Transducer has ice",
-        "submessage": ""
-    },
-    {
-        "uid": 211,
-        "category": "abnormal",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Windshield ice but not wings",
-        "submessage": ""
-    },
-    {
-        "uid": 212,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "ADC Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 213,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "AHRS Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 214,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "review",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "Anti Ice Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 215,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Cabin Fire",
-        "submessage": ""
-    },
-    {
-        "uid": 216,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "Engine Failed",
-        "submessage": ""
-    },
-    {
-        "uid": 217,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Engine Fire",
-        "submessage": ""
-    },
-    {
-        "uid": 218,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "Manifold Pressure is dropping",
-        "submessage": ""
-    },
-    {
-        "uid": 219,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "high",
-        "aircraftName": "S22TG7",
-        "message": "Partial Power Loss",
-        "submessage": ""
-    },
-    {
-        "uid": 220,
-        "category": "emergency",
-        "alertType": "situation",
-        "action": "simulate",
-        "priority": "medium",
-        "aircraftName": "S22TG7",
-        "message": "Wing Fire",
-        "submessage": ""
-    }
-]
+{
+    "version": "2025.02.25.1712",
+    "alerts": [
+        {
+            "uid": 1,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ALT 1",
+            "submessage": "Check alternator 1 current. "
+        },
+        {
+            "uid": 2,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ALT 2",
+            "submessage": "Check alternator 2 current. "
+        },
+        {
+            "uid": 3,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ALT AIR OPEN",
+            "submessage": "Alternate air door is open. "
+        },
+        {
+            "uid": 4,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE HEAT",
+            "submessage": "Stall warning/AoA heater has failed. "
+        },
+        {
+            "uid": 5,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE LEVEL",
+            "submessage": "Left tank fluid quantity is unreliable (TKS). "
+        },
+        {
+            "uid": 6,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE PRESS",
+            "submessage": "Tail pressure is low (TKS). "
+        },
+        {
+            "uid": 7,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE PRESS",
+            "submessage": "Pressure is high (TKS). "
+        },
+        {
+            "uid": 8,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE QTY",
+            "submessage": "Fluid quantity imbalance has been detected (TKS) "
+        },
+        {
+            "uid": 9,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE QTY",
+            "submessage": "Fluid quantity is low (TKS). "
+        },
+        {
+            "uid": 10,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE SPEED",
+            "submessage": "Airspeed is too low for ice protection (TKS). "
+        },
+        {
+            "uid": 11,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE SPEED",
+            "submessage": "Airspeed is to high for ice protection (TKS). "
+        },
+        {
+            "uid": 12,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE TEMP",
+            "submessage": "Temperature is too low for ice protection (TKS). "
+        },
+        {
+            "uid": 13,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "AOA FAIL",
+            "submessage": "WARN AOA/stall warning input invalid. "
+        },
+        {
+            "uid": 14,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "AP MISCOMPARE",
+            "submessage": "Autopilot miscompare, autopilot is not available. "
+        },
+        {
+            "uid": 15,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "AP/PFD DIF ADC",
+            "submessage": "Autopilot and PFD are using different ADCs. "
+        },
+        {
+            "uid": 16,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "AP/PFD DIF AHRS",
+            "submessage": "Autopilot and PFD are using different AHRSs. "
+        },
+        {
+            "uid": 17,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "AVIONICS OFF ",
+            "submessage": "Avionics master switch is off. "
+        },
+        {
+            "uid": 18,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "BATT 1",
+            "submessage": "Check battery 1 current. "
+        },
+        {
+            "uid": 19,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "BRAKE TEMP",
+            "submessage": "Brake temperature is high. "
+        },
+        {
+            "uid": 20,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "CHT ",
+            "submessage": "Cylinder head temperature is high. "
+        },
+        {
+            "uid": 21,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "FLAP OVERSPEED ",
+            "submessage": "Flaps are extended beyond airspeed limitations. "
+        },
+        {
+            "uid": 22,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "FUEL IMBALANCE",
+            "submessage": "Fuel quantity imbalance has been detected. "
+        },
+        {
+            "uid": 23,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "FUEL LOW TOTAL",
+            "submessage": "Total fuel quantity is low. "
+        },
+        {
+            "uid": 24,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ICE DETECT FAIL ",
+            "submessage": "Ice detector failure. "
+        },
+        {
+            "uid": 25,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "ICING DETECTED ",
+            "submessage": "Icing conditions have been detected. "
+        },
+        {
+            "uid": 26,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "review",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "LRG MAG VAR ",
+            "submessage": "The GDU’s internal model cannot determine the exact magnetic variance for geographic locations near the magnetic poles. Displayed magnetic course angles may differ from the actual magnetic heading by more than 2°. "
+        },
+        {
+            "uid": 27,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "M BUS 1",
+            "submessage": "Check main power bus 1 voltage. "
+        },
+        {
+            "uid": 28,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "M BUS 2",
+            "submessage": "Check main power bus 2 voltage. "
+        },
+        {
+            "uid": 29,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "MAN PRESSURE",
+            "submessage": "Check manifold pressure. "
+        },
+        {
+            "uid": 30,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "NO ADC MODES",
+            "submessage": "Autopilot air data modes are not available. "
+        },
+        {
+            "uid": 31,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "NO VERT MODES",
+            "submessage": "Autopilot vertical modes are not available. "
+        },
+        {
+            "uid": 32,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "OIL PRESS",
+            "submessage": "Oil pressure is out of range. "
+        },
+        {
+            "uid": 33,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "OIL TEMP",
+            "submessage": "Oil temperature is high. "
+        },
+        {
+            "uid": 34,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "OXYGEN QTY",
+            "submessage": "Oxygen quantity is low. "
+        },
+        {
+            "uid": 35,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "OXYGEN RQD",
+            "submessage": "Oxygen usage is required. "
+        },
+        {
+            "uid": 36,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "PARK BRAKE ",
+            "submessage": "Parking break is set. "
+        },
+        {
+            "uid": 37,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "PITOT HEAT FAIL",
+            "submessage": "Pitot heat failure. "
+        },
+        {
+            "uid": 38,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "PITOT HEAT REQD",
+            "submessage": "Pitot heat is required. "
+        },
+        {
+            "uid": 39,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "SLCT MAG ",
+            "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to Magnetic. "
+        },
+        {
+            "uid": 40,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "SLCT NON-MAG ",
+            "submessage": "The system notifies the pilot to set the Nav Angle units on the 'Avionics Settings' Screen to True. "
+        },
+        {
+            "uid": 41,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "START ENGAGED",
+            "submessage": "Starter is engaged. "
+        },
+        {
+            "uid": 42,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "TAKEOFF FLAPS",
+            "submessage": "Flaps not in takeoff configuration. "
+        },
+        {
+            "uid": 43,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE CTL",
+            "submessage": "Tank valves cannot be controlled (closed) (TKS). "
+        },
+        {
+            "uid": 44,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE QTY",
+            "submessage": "Left and right fluid quantities are unknown (TKS). "
+        },
+        {
+            "uid": 45,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "ANTI ICE QTY",
+            "submessage": "Fluid quantity is low (TKS). "
+        },
+        {
+            "uid": 46,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "AOA OVERHEAT",
+            "submessage": "AOA probe is overheated. "
+        },
+        {
+            "uid": 47,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "BRAKE TEMP",
+            "submessage": "Brake temperature is high. "
+        },
+        {
+            "uid": 48,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "CHT",
+            "submessage": "Cylinder head temperature is high. "
+        },
+        {
+            "uid": 49,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "CO LVL HIGH",
+            "submessage": "Carbon monoxide level is too high. "
+        },
+        {
+            "uid": 50,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "ESS BUS",
+            "submessage": "Check essential power bus voltage. "
+        },
+        {
+            "uid": 51,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "FLAPS ICE",
+            "submessage": "Full flap prohibited in icing conditions. "
+        },
+        {
+            "uid": 52,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "FUEL FLOW",
+            "submessage": "Check fuel flow. "
+        },
+        {
+            "uid": 53,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "FUEL IMBALANCE",
+            "submessage": "Fuel quantity imbalance has been detected. "
+        },
+        {
+            "uid": 54,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "FUEL LOW LEFT",
+            "submessage": "Check left fuel tank level. "
+        },
+        {
+            "uid": 55,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "FUEL LOW RIGHT",
+            "submessage": "Check right fuel tank level. "
+        },
+        {
+            "uid": 56,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "FUEL LOW TOTAL",
+            "submessage": "Check fuel tank levels. "
+        },
+        {
+            "uid": 57,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "HIGH FUEL FLOW",
+            "submessage": "Check fuel flow. "
+        },
+        {
+            "uid": 58,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "M BUS 1",
+            "submessage": "Check main power bus 1 voltage. "
+        },
+        {
+            "uid": 59,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "M BUS 2",
+            "submessage": "Check main power bus 2 voltage. "
+        },
+        {
+            "uid": 60,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "MAN PRESSURE",
+            "submessage": "Check manifold pressure. "
+        },
+        {
+            "uid": 61,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "OIL PRESS",
+            "submessage": "Oil pressure is out of range. "
+        },
+        {
+            "uid": 62,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "OIL TEMP",
+            "submessage": "Oil temperature is high. "
+        },
+        {
+            "uid": 63,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "OXYGEN FAULT",
+            "submessage": "Oxygen system fault. "
+        },
+        {
+            "uid": 64,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "OXYGEN QTY",
+            "submessage": "Oxygen quantity is low. "
+        },
+        {
+            "uid": 65,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "OXYGEN RQD",
+            "submessage": "Oxygen usage is required. "
+        },
+        {
+            "uid": 66,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "RPM",
+            "submessage": "Check engine RPM. "
+        },
+        {
+            "uid": 67,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG6",
+            "message": "SPIN SPIN SPIN",
+            "submessage": "Spin entry detected - initiate recovery. "
+        },
+        {
+            "uid": 68,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG6",
+            "message": "START ENGAGED",
+            "submessage": ""
+        },
+        {
+            "uid": 69,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "TIT",
+            "submessage": "TIT temperature is high. "
+        },
+        {
+            "uid": 70,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Autopilot Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 71,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Brake failed",
+            "submessage": ""
+        },
+        {
+            "uid": 72,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Electric Trim Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 73,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Flat Tire",
+            "submessage": ""
+        },
+        {
+            "uid": 74,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Lift Transducer has ice",
+            "submessage": ""
+        },
+        {
+            "uid": 75,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Windshield ice but not wings",
+            "submessage": ""
+        },
+        {
+            "uid": 76,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "ADC Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 77,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "AHRS Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 78,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "Anti Ice Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 79,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Cabin Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 80,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "Engine Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 81,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Engine Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 82,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "Manifold Pressure is dropping",
+            "submessage": ""
+        },
+        {
+            "uid": 83,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG6",
+            "message": "Partial Power Loss",
+            "submessage": ""
+        },
+        {
+            "uid": 84,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG6",
+            "message": "Wing Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 100,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AOA OVERHEAT2 ",
+            "submessage": "AOA probe is overheated. "
+        },
+        {
+            "uid": 101,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "APPROACH SPEED ",
+            "submessage": "Approach Speed is too high. "
+        },
+        {
+            "uid": 102,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AUTO DESCENT ",
+            "submessage": "Automatic descent to 14,000FT in 60 seconds. "
+        },
+        {
+            "uid": 103,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AUTO DESCENT ",
+            "submessage": "Aircraft descending to 14,000FT. "
+        },
+        {
+            "uid": 104,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AUTO DESCENT ",
+            "submessage": "Aircraft descending to 12,500FT. "
+        },
+        {
+            "uid": 105,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AUTO DESCENT ",
+            "submessage": "Aircraft descended due to pilot incapacitation. "
+        },
+        {
+            "uid": 106,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "CHT ",
+            "submessage": "Cylinder head temperature is high. "
+        },
+        {
+            "uid": 107,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "CO LVL HIGH ",
+            "submessage": "Carbon monoxide level is too high. "
+        },
+        {
+            "uid": 108,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "ESSENTIAL BUS VOLTS ",
+            "submessage": "Check essential power bus voltage. "
+        },
+        {
+            "uid": 109,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS ICE2 ",
+            "submessage": "Full flaps prohibited in icing conditions. "
+        },
+        {
+            "uid": 110,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FUEL FLOW ",
+            "submessage": "Check fuel flow. "
+        },
+        {
+            "uid": 111,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FUEL IMBALANCE ",
+            "submessage": "Fuel quantity imbalance has been detected. "
+        },
+        {
+            "uid": 112,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FUEL LOW LEFT ",
+            "submessage": "Left fuel tank is nearly empty. "
+        },
+        {
+            "uid": 113,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FUEL LOW RIGHT ",
+            "submessage": "Right fuel tank is nearly empty. "
+        },
+        {
+            "uid": 114,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "FUEL LOW TOTAL ",
+            "submessage": "Total fuel quantity is low. "
+        },
+        {
+            "uid": 115,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "IPS CONTROL FAIL ",
+            "submessage": "IPS valves cannot be closed. "
+        },
+        {
+            "uid": 116,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "IPS FLUID LOW ",
+            "submessage": "IPS fluid quantity is low. "
+        },
+        {
+            "uid": 117,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "IPS QUANTITY FAIL ",
+            "submessage": "Left and right IPS fluid quantities are unknown. "
+        },
+        {
+            "uid": 118,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "MAIN BUS 1 VOLTS ",
+            "submessage": "Check main power bus 1 voltage. "
+        },
+        {
+            "uid": 119,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "MAIN BUS 2 VOLTS ",
+            "submessage": "Check main power bus 2 voltage. "
+        },
+        {
+            "uid": 120,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "MANIFOLD PRESSURE ",
+            "submessage": "Check manifold pressure. "
+        },
+        {
+            "uid": 121,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "OIL PRESSURE ",
+            "submessage": "Oil pressure is out of range. "
+        },
+        {
+            "uid": 122,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "OIL TEMP ",
+            "submessage": "Oil temperature is high. "
+        },
+        {
+            "uid": 123,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN FAULT1 ",
+            "submessage": "Oxygen system fault. "
+        },
+        {
+            "uid": 124,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN QTY LOW1 ",
+            "submessage": "Oxygen quantity is low. "
+        },
+        {
+            "uid": 125,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN REQUIRED1 ",
+            "submessage": "Oxygen usage is required. "
+        },
+        {
+            "uid": 126,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "RPM ",
+            "submessage": "Check engine RPM. "
+        },
+        {
+            "uid": 127,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "SPIN SPIN SPIN ",
+            "submessage": "Spin entry detected - initiate recovery. "
+        },
+        {
+            "uid": 128,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "STALL ",
+            "submessage": "Stall warning. "
+        },
+        {
+            "uid": 129,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "STALL WARNING FAIL ",
+            "submessage": "Stall warning is inoperative. "
+        },
+        {
+            "uid": 130,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "STARTER ENGAGED ",
+            "submessage": "Starter is engaged. "
+        },
+        {
+            "uid": 131,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "TIT3 ",
+            "submessage": "Turbine inlet temperature is high. "
+        },
+        {
+            "uid": 132,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "ALT AIR OPEN2 ",
+            "submessage": "Alternate air door is open. "
+        },
+        {
+            "uid": 133,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "ALTERNATOR 1 CURRENT ",
+            "submessage": "Check alternator 1 current. "
+        },
+        {
+            "uid": 134,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "ALTERNATOR 2 CURRENT ",
+            "submessage": "Check alternator 2 current. "
+        },
+        {
+            "uid": 135,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "AOA HEAT FAIL 3 ",
+            "submessage": "Autopilot is unavailable due to miscompare. "
+        },
+        {
+            "uid": 136,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "AP MISCOMPARE ",
+            "submessage": "Autopilot is unavailable due to miscompare. "
+        },
+        {
+            "uid": 137,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "AP/PFD DIF ADC ",
+            "submessage": "Autopilot and PFD are using different ADCs. "
+        },
+        {
+            "uid": 138,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "AP/PFD DIF AHRS ",
+            "submessage": "Autopilot and PFD are using different AHRSs. "
+        },
+        {
+            "uid": 139,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "BATTERY 1 CURRENT ",
+            "submessage": "Check battery 1 current. "
+        },
+        {
+            "uid": 140,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "BATTERY 1 FAIL ",
+            "submessage": "Battery 1 service is required. "
+        },
+        {
+            "uid": 141,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "BATTERY 1 FAULT ",
+            "submessage": "Battery 1 fault detected. "
+        },
+        {
+            "uid": 142,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "BATTERY 1 LOW ",
+            "submessage": "Battery 1 state of charge is low. "
+        },
+        {
+            "uid": 143,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "CHT ",
+            "submessage": "Cylinder head temperature is high. "
+        },
+        {
+            "uid": 144,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS AIRSPEED INHIBIT ",
+            "submessage": "Flaps motion inhibited. "
+        },
+        {
+            "uid": 145,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS DISAGREE ",
+            "submessage": "Flaps not in commanded position. "
+        },
+        {
+            "uid": 146,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS FAIL ",
+            "submessage": "Flaps not in commanded position. "
+        },
+        {
+            "uid": 147,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS SELECTOR FAIL ",
+            "submessage": "Flaps not in commanded position. "
+        },
+        {
+            "uid": 148,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FUEL IMBALANCE ",
+            "submessage": "Fuel quantity imbalance has been detected. "
+        },
+        {
+            "uid": 149,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FUEL LOW TOTAL ",
+            "submessage": "Total fuel quantity is low. "
+        },
+        {
+            "uid": 150,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FUEL PUMP OFF ",
+            "submessage": "Fuel pump is turned off. "
+        },
+        {
+            "uid": 151,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FUEL QTY MISCOMP ",
+            "submessage": "Sensed and totalized fuel quantity disagreement. "
+        },
+        {
+            "uid": 152,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "FUEL VALVE AUTO FAIL ",
+            "submessage": "Automatic fuel tank selection is unavailable. "
+        },
+        {
+            "uid": 153,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "HYPOXIA ALERT ",
+            "submessage": "Hypoxia caution alert. "
+        },
+        {
+            "uid": 154,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS FLUID LOW3 ",
+            "submessage": "IPS fluid quantity is low. "
+        },
+        {
+            "uid": 155,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS IMBALANCE3 ",
+            "submessage": "IPS fluid quantity imbalance has been detected. "
+        },
+        {
+            "uid": 156,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS PRESSURE HIGH3 ",
+            "submessage": "IPS pressure is high. "
+        },
+        {
+            "uid": 157,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS PRESSURE LOW 3 ",
+            "submessage": "IPS tail pressure is low. "
+        },
+        {
+            "uid": 158,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS QUANTITY FAIL 3 ",
+            "submessage": "Left IPS fluid quantity is unreliable. "
+        },
+        {
+            "uid": 159,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS QUANTITY FAIL 3 ",
+            "submessage": "Right IPS fluid quantity is unreliable. "
+        },
+        {
+            "uid": 160,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS SPEED HIGH 3 ",
+            "submessage": "Airspeed is too high for ice protection. "
+        },
+        {
+            "uid": 161,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS SPEED LOW 3 ",
+            "submessage": "Airspeed is too low for ice protection. "
+        },
+        {
+            "uid": 162,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "IPS TEMP LOW 3 ",
+            "submessage": "Temperature is too low for ice protection. "
+        },
+        {
+            "uid": 163,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "MAIN BUS 1 VOLTS ",
+            "submessage": "Check main power bus 1 voltage. "
+        },
+        {
+            "uid": 164,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "MAIN BUS 2 VOLTS ",
+            "submessage": "Check main power bus 2 voltage. "
+        },
+        {
+            "uid": 165,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "MANIFOLD PRESSURE ",
+            "submessage": "Check manifold pressure. "
+        },
+        {
+            "uid": 166,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "NO ADC MODES ",
+            "submessage": "Autopilot air data modes are not available. "
+        },
+        {
+            "uid": 167,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "NO VERT MODES ",
+            "submessage": "Autopilot vertical modes are not available. "
+        },
+        {
+            "uid": 168,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "OIL PRESSURE ",
+            "submessage": "Oil pressure is out of range. "
+        },
+        {
+            "uid": 169,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "OIL TEMP ",
+            "submessage": "Oil temperature is high. "
+        },
+        {
+            "uid": 170,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN QTY LOW1 ",
+            "submessage": "Oxygen quantity is low. "
+        },
+        {
+            "uid": 171,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN REQUIRED1 ",
+            "submessage": "Oxygen usage is required. "
+        },
+        {
+            "uid": 172,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "PARK BRAKE ",
+            "submessage": "Parking break is set. "
+        },
+        {
+            "uid": 173,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "PITOT HEAT FAIL ",
+            "submessage": "Pitot heat failure. "
+        },
+        {
+            "uid": 174,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "PROBE HEAT OFF ",
+            "submessage": "Probe heat is required. "
+        },
+        {
+            "uid": 175,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "SFD ALT MISCOMPARE ",
+            "submessage": "SFD altitude miscompare. "
+        },
+        {
+            "uid": 176,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "SFD IAS MISCOMPARE ",
+            "submessage": "SFD airspeed miscompare. "
+        },
+        {
+            "uid": 177,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "SFD PITCH MISCOMPARE ",
+            "submessage": "SFD pitch miscompare. "
+        },
+        {
+            "uid": 178,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "SFD ROLL MISCOMPARE ",
+            "submessage": "SFD roll miscompare. "
+        },
+        {
+            "uid": 179,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "STALL WARNING FAIL ",
+            "submessage": "AOA/stall warning input invalid. "
+        },
+        {
+            "uid": 180,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "STARTER ENGAGED ",
+            "submessage": "Starter is engaged. "
+        },
+        {
+            "uid": 181,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "TAKEOFF FLAPS ",
+            "submessage": "Flaps not in takeoff configuration. "
+        },
+        {
+            "uid": 182,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "ALTITUDE SEL ",
+            "submessage": "Climbing away from selected altitude. "
+        },
+        {
+            "uid": 183,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "ALTITUDE SEL ",
+            "submessage": "Descending away from selected altitude. "
+        },
+        {
+            "uid": 184,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "AOA FAIL2 ",
+            "submessage": "Dynamic stall speed band is unavailable. "
+        },
+        {
+            "uid": 185,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "ARE YOU ALERT? ",
+            "submessage": "Are you alert? "
+        },
+        {
+            "uid": 186,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "CHECK OXYGEN1 ",
+            "submessage": "Check oxygen system status. "
+        },
+        {
+            "uid": 187,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "COURSE SELECT1 ",
+            "submessage": "Current track will not intercept selected course. "
+        },
+        {
+            "uid": 188,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "ECS RECIRC ON ",
+            "submessage": "ECS recirculation mode is prohibited in flight. "
+        },
+        {
+            "uid": 189,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "ESP CONFIG ",
+            "submessage": "ESP config error. Config service req'd. "
+        },
+        {
+            "uid": 190,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "EXIT ICING2 1 ",
+            "submessage": "Exit icing conditions. "
+        },
+        {
+            "uid": 191,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "FAILED PATH ",
+            "submessage": "An autopilot servo data path has failed. "
+        },
+        {
+            "uid": 192,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "FLAPS CLIMB ",
+            "submessage": "Flaps not set for enroute climb. "
+        },
+        {
+            "uid": 193,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "FUEL IMBALANCE ",
+            "submessage": "Fuel quantity imbalance has been detected. "
+        },
+        {
+            "uid": 194,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "FUEL PUMP OFF ",
+            "submessage": "Fuel pump is turned off. "
+        },
+        {
+            "uid": 195,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "FUEL VALVE OFF ",
+            "submessage": "Fuel valve is in the off position. "
+        },
+        {
+            "uid": 196,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "IPS FLUID LOW2 ",
+            "submessage": "IPS fluid quantity is low. "
+        },
+        {
+            "uid": 197,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "S22TG7",
+            "message": "IPS PUMP BACKUP3 ",
+            "submessage": "IPS backup pump mode has been selected. "
+        },
+        {
+            "uid": 198,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN ON1 ",
+            "submessage": "Oxygen system is left on after shutdown. "
+        },
+        {
+            "uid": 199,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "OXYGEN QTY LOW1 ",
+            "submessage": "Oxygen quantity is low. "
+        },
+        {
+            "uid": 200,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "ROL MODE ",
+            "submessage": "Roll mode is active. "
+        },
+        {
+            "uid": 201,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "SFC WATCH FAIL ",
+            "submessage": "SurfaceWatch failed. "
+        },
+        {
+            "uid": 202,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "SFC WATCH INHIB ",
+            "submessage": "SurfaceWatch inhibited. "
+        },
+        {
+            "uid": 203,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "SFD NO COMPARE ",
+            "submessage": "SFD comparison data missing. "
+        },
+        {
+            "uid": 204,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "VNAV ALT SEL ",
+            "submessage": "VNAV needs lower ALT SEL to capture VPATH. "
+        },
+        {
+            "uid": 205,
+            "category": "normal",
+            "alertType": "cas",
+            "action": "ignore",
+            "priority": "none",
+            "aircraftName": "S22TG7",
+            "message": "VNAV NOT ARMED ",
+            "submessage": "Press VNV to arm VPATH capture. "
+        },
+        {
+            "uid": 206,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Autopilot Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 207,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Brake failed",
+            "submessage": ""
+        },
+        {
+            "uid": 208,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Electric Trim Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 209,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Flat Tire",
+            "submessage": ""
+        },
+        {
+            "uid": 210,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Lift Transducer has ice",
+            "submessage": ""
+        },
+        {
+            "uid": 211,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Windshield ice but not wings",
+            "submessage": ""
+        },
+        {
+            "uid": 212,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "ADC Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 213,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "AHRS Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 214,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "review",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "Anti Ice Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 215,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Cabin Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 216,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "Engine Failed",
+            "submessage": ""
+        },
+        {
+            "uid": 217,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Engine Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 218,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "Manifold Pressure is dropping",
+            "submessage": ""
+        },
+        {
+            "uid": 219,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "S22TG7",
+            "message": "Partial Power Loss",
+            "submessage": ""
+        },
+        {
+            "uid": 220,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "S22TG7",
+            "message": "Wing Fire",
+            "submessage": ""
+        }
+    ]
+}

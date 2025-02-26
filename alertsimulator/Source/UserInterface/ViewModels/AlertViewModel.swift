@@ -122,6 +122,9 @@ class AlertViewModel: ObservableObject {
                 }
             }
         }
+        
+        // Check for alert data updates
+        FlightAlert.checkForUpdates()
     }
     deinit {
         NotificationCenter.default.removeObserver(self)
