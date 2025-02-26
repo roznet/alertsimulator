@@ -180,6 +180,12 @@ struct FlightAlert : Codable, CustomStringConvertible {
         }
     }
     
+    private static func versionToDate(_ version: String) -> Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy.MM.dd.HHmm"
+        return formatter.date(from: version)
+    }
+
     static func checkForUpdates() {
         guard Settings.shared.shouldCheckForUpdates else { return }
         
@@ -205,10 +211,18 @@ struct FlightAlert : Codable, CustomStringConvertible {
                 let decoder = JSONDecoder()
                 let alertsData = try decoder.decode(AlertsData.self, from: data)
                 
-                // Compare versions
-                if alertsData.version > Settings.shared.alertsDataVersion {
+                // Convert versions to dates for comparison
+                guard let newVersion = versionToDate(alertsData.version),
+                      let currentVersion = versionToDate(Settings.shared.alertsDataVersion) else {
+                    Logger.app.error("Invalid version format")
+                    return
+                }
+                
+                // Compare dates instead of strings
+                if newVersion > currentVersion {
                     // Save new data
                     try self.saveNewAlertsData(data)
+                    Logger.app.info("New alerts data saved")
                     // Reload alerts
                     self.available = alertsData.alerts
                     Settings.shared.alertsDataVersion = alertsData.version

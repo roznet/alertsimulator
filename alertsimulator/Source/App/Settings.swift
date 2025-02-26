@@ -65,7 +65,7 @@ struct Settings {
     @UserStorage(key: Key.alerts_data_version, defaultValue: "1.0")
     var alertsDataVersion : String
     
-    @UserStorage(key: Key.alerts_data_url, defaultValue: "https://example.com/AlertsToSimulate.json")
+    @UserStorage(key: Key.alerts_data_url, defaultValue: "https://flyfun.aero/latest/AlertsToSimulate.json")
     var alertsDataUrl : String
     
     @UserStorage(key: Key.last_update_check, defaultValue: Date.distantPast)
