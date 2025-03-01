@@ -103,7 +103,7 @@ struct AlertManager {
         let next = self.drawAlert(alerts: self.available)
         self.drawnAlerts.append(next)
         self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
-        if self.drawnAlerts.count > self.available.count {
+        if self.drawnAlerts.count > 5 {
             let first = self.drawnAlerts.removeFirst()
             self.available.append(first)
         }
