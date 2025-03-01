@@ -8,6 +8,12 @@ struct SettingsView: View {
     @State private var lowPriorityMultiplier: Double
     @State private var showHelp: Bool = false
     
+    // Add default values as static constants
+    private static let defaultAlertRepeatThreshold: Double = 5
+    private static let defaultHighPriorityMultiplier: Double = 10.0
+    private static let defaultMediumPriorityMultiplier: Double = 5.0
+    private static let defaultLowPriorityMultiplier: Double = 1.0
+    
     init() {
         _alertRepeatThreshold = State(initialValue: Double(Settings.shared.alertRepeatThreshold))
         _highPriorityMultiplier = State(initialValue: Settings.shared.highPriorityMultiplier)
@@ -78,13 +84,27 @@ struct SettingsView: View {
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
-                        saveSettings()
-                        dismiss()
+                    HStack(spacing: 16) {
+                        Button("Reset") {
+                            resetToDefaults()
+                        }
+                        .foregroundColor(.red)
+                        
+                        Button("Save") {
+                            saveSettings()
+                            dismiss()
+                        }
                     }
                 }
             }
         }
+    }
+    
+    private func resetToDefaults() {
+        alertRepeatThreshold = Self.defaultAlertRepeatThreshold
+        highPriorityMultiplier = Self.defaultHighPriorityMultiplier
+        mediumPriorityMultiplier = Self.defaultMediumPriorityMultiplier
+        lowPriorityMultiplier = Self.defaultLowPriorityMultiplier
     }
     
     private func saveSettings() {
