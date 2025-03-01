@@ -1,5 +1,5 @@
 {
-    "version": "2025.02.25.1712",
+    "version": "2025.03.01.0916",
     "alerts": [
         {
             "uid": 1,
@@ -2049,6 +2049,176 @@
             "priority": "medium",
             "aircraftName": "S22TG7",
             "message": "Wing Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 300,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "SMOKE/FIRE/FUMES",
+            "submessage": ""
+        },
+        {
+            "uid": 301,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Smoke Evacuation",
+            "submessage": ""
+        },
+        {
+            "uid": 302,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Emergency Evacuation",
+            "submessage": ""
+        },
+        {
+            "uid": 303,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Dual Engine Failure",
+            "submessage": ""
+        },
+        {
+            "uid": 304,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Elec Emergency",
+            "submessage": ""
+        },
+        {
+            "uid": 305,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Elec XFR Fail",
+            "submessage": ""
+        },
+        {
+            "uid": 306,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Engine Abnormal Start",
+            "submessage": ""
+        },
+        {
+            "uid": 307,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "E1 (2) Engine Fire",
+            "submessage": ""
+        },
+        {
+            "uid": 308,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Cabine Altitude High",
+            "submessage": ""
+        },
+        {
+            "uid": 309,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Engine Fire",
+            "submessage": "Severe damage or separation"
+        },
+        {
+            "uid": 310,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Emergency Descent",
+            "submessage": ""
+        },
+        {
+            "uid": 311,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Gear Lever",
+            "submessage": "cannot be moved up"
+        },
+        {
+            "uid": 312,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Inadvertent Pusher Activation",
+            "submessage": ""
+        },
+        {
+            "uid": 313,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "LG Vow SYS Fail",
+            "submessage": ""
+        },
+        {
+            "uid": 314,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Takeoff Engine Failure Above V1",
+            "submessage": ""
+        },
+        {
+            "uid": 315,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Rejected Takeoff below V1",
+            "submessage": ""
+        },
+        {
+            "uid": 316,
+            "category": "emergency",
+            "alertType": "memory",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "Phenom300",
+            "message": "Windshear",
             "submessage": ""
         }
     ]

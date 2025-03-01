@@ -275,7 +275,10 @@ class AlertViewModel: ObservableObject {
         self.numberOfAlertForAircraft = self.aircraft.alerts.count
         self.stopFlight()
         self.clearAlerts()
-        
+        self.toSettings()
+       
+        // need to create new flight with the new plane
+        self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
         NotificationCenter.default.post(name: .aircraftChanged, object: nil)
     }
     

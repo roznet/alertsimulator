@@ -14,6 +14,8 @@ struct AlertsData: Codable {
     let alerts: [FlightAlert]
 }
 
+typealias AlertsLoadResult = (alerts: [FlightAlert], version: String)
+
 struct FlightAlert : Codable, CustomStringConvertible {
     enum Category : String, Codable {
         case abnormal = "abnormal"
@@ -45,11 +47,13 @@ struct FlightAlert : Codable, CustomStringConvertible {
     enum AlertType : String, Codable {
         case cas = "cas"
         case situation = "situation"
+        case memory = "memory"
         
         var uniqueIdentifier: String {
             switch self {
             case .cas: return "cas"
             case .situation: return "situ"
+            case .memory: return "mem"
             }
         }
     }
@@ -98,12 +102,29 @@ struct FlightAlert : Codable, CustomStringConvertible {
     var title : String {
         return "\(category) \(alertType)"
     }
+    
+    var fullMessage : String {
+        var parts : [String] = []
+        if let message = self.message {
+            parts.append(message)
+        }
+        if let submessage = self.submessage, !submessage.isEmpty {
+            parts.append(submessage)
+        }
+        return parts.joined(separator: " ")
+    }
    
     var casMessage : CASMessage {
         if self.alertType == .cas {
             return CASMessage(category: self.category, message: self.message ?? "Alert", submessage: self.submessage ?? "")
+        }else if self.alertType == .memory {
+            return CASMessage(category: self.category, message: "MEMORY", submessage: self.fullMessage)
         }else{
-            return CASMessage(category: self.category, message: "", submessage: self.message ?? "")
+            if let submessage = self.submessage, !submessage.isEmpty {
+                return CASMessage(category: self.category, message: self.message ?? "", submessage: submessage)
+            }else{
+                return CASMessage(category: self.category, message: "", submessage: self.message ?? "")
+            }
         }
     }
     var uniqueIdentifier: String {
@@ -129,34 +150,67 @@ struct FlightAlert : Codable, CustomStringConvertible {
     }()
 
     private static func loadAlerts() -> [FlightAlert] {
-        // First try to load from local storage
-        if let localAlerts = loadFromLocalStorage() {
-            return localAlerts
+        // Try to load both bundle and local storage
+        let bundleResult: AlertsLoadResult? = loadFromBundle()
+        let localResult: AlertsLoadResult? = loadFromLocalStorage()
+        
+        // If we have both, compare versions
+        if let localData = localResult,
+           let bundleData = bundleResult {
+            
+            // Use bundle if it's more recent
+            if let bundleDateVersion = versionToDate(bundleData.version),
+               let localDateVersion = versionToDate(localData.version),
+               bundleDateVersion > localDateVersion {
+                Logger.app.info("Using bundle alerts (newer version: \(bundleData.version))")
+                Settings.shared.alertsDataVersion = bundleData.version
+                return bundleData.alerts
+            }
+            
+            Logger.app.info("Using local alerts (version: \(localData.version))")
+            Settings.shared.alertsDataVersion = localData.version
+            return localData.alerts
         }
         
-        // If no local storage, load from bundle
-        return loadFromBundle()
+        // If we only have one or the other, use what we have
+        if let localData = localResult {
+            Logger.app.info("Using local alerts (no bundle comparison available)")
+            Settings.shared.alertsDataVersion = localData.version
+            return localData.alerts
+        }
+        
+        // Use bundle data or empty array as last resort
+        if let bundleData = bundleResult {
+            Logger.app.info("Using bundle alerts (no local storage available)")
+            Settings.shared.alertsDataVersion = bundleData.version
+            return bundleData.alerts
+        }
+        
+        return []
     }
     
-    private static func loadFromBundle() -> [FlightAlert] {
-        guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
-            Logger.app.error("Default JSON file not found.")
-            return []
-        }
-        
+    private static func loadAndDecodeAlertsData(from url: URL) -> AlertsLoadResult? {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let alertsData = try decoder.decode(AlertsData.self, from: data)
-            Settings.shared.alertsDataVersion = alertsData.version
-            return alertsData.alerts
+            return (alertsData.alerts, alertsData.version)
         } catch {
-            Logger.app.error("Error decoding bundle JSON: \(error)")
-            return []
+            Logger.app.error("Error decoding alerts data from \(url.path): \(error)")
+            return nil
         }
     }
     
-    private static func loadFromLocalStorage() -> [FlightAlert]? {
+    private static func loadFromBundle() -> AlertsLoadResult? {
+        guard let url = Bundle.main.url(forResource: "AlertsToSimulate", withExtension: "json") else {
+            Logger.app.error("Default JSON file not found.")
+            return nil
+        }
+        
+        return loadAndDecodeAlertsData(from: url)
+    }
+    
+    private static func loadFromLocalStorage() -> AlertsLoadResult? {
         let fileManager = FileManager.default
         guard let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {
             return nil
@@ -168,16 +222,7 @@ struct FlightAlert : Codable, CustomStringConvertible {
             return nil
         }
         
-        do {
-            let data = try Data(contentsOf: alertsFile)
-            let decoder = JSONDecoder()
-            let alertsData = try decoder.decode(AlertsData.self, from: data)
-            Settings.shared.alertsDataVersion = alertsData.version
-            return alertsData.alerts
-        } catch {
-            Logger.app.error("Error loading local alerts: \(error)")
-            return nil
-        }
+        return loadAndDecodeAlertsData(from: alertsFile)
     }
     
     private static func versionToDate(_ version: String) -> Date? {
