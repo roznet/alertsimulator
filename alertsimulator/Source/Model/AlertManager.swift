@@ -73,6 +73,7 @@ struct AlertManager {
         let one = FlightAlert(category: .abnormal, action: .simulate, alertType: .situation, message: "No more fuel", uid: -1)
         return one
     }
+    
     func nextAlert() -> FlightAlert {
         self.available.randomElement() ?? self.sampleAlert
     }
@@ -81,9 +82,9 @@ struct AlertManager {
         typealias Priority = FlightAlert.Priority
         let categoryCount = Dictionary(grouping: self.available, by: { $0.priority }).mapValues({$0.count})
         let multiplier : [Priority : Double] = [
-            .low : 1.0,
-            .medium : 5.0,
-            .high : 10.0,
+            .low : Settings.shared.lowPriorityMultiplier,
+            .medium : Settings.shared.mediumPriorityMultiplier,
+            .high : Settings.shared.highPriorityMultiplier,
             .none : 0.0
         ]
         let total : Double = categoryCount.reduce(0) { $0 + Double($1.value) * (multiplier[$1.key] ?? 0.0)}
@@ -103,13 +104,16 @@ struct AlertManager {
         let next = self.drawAlert(alerts: self.available)
         self.drawnAlerts.append(next)
         self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
-        if self.drawnAlerts.count > 5 {
+        
+        // Use the configured threshold for alert repeats
+        if self.drawnAlerts.count > Settings.shared.alertRepeatThreshold {
             let first = self.drawnAlerts.removeFirst()
             self.available.append(first)
         }
         return next
     }
-    func drawAlert(alerts : [FlightAlert]) -> FlightAlert{
+    
+    func drawAlert(alerts : [FlightAlert]) -> FlightAlert {
         let probabilities = self.computeProbabilities(alerts: alerts)
         let next = drawRandomElement(elements: alerts, probabilities: probabilities)
         return next ?? self.sampleAlert

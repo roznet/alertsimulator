@@ -42,6 +42,10 @@ struct Settings {
         case alerts_data_version = "alerts_data_version"
         case alerts_data_url = "alerts_data_url"
         case last_update_check = "last_update_check"
+        case alert_repeat_threshold = "alert_repeat_threshold"
+        case high_priority_multiplier = "high_priority_multiplier"
+        case medium_priority_multiplier = "medium_priority_multiplier"
+        case low_priority_multiplier = "low_priority_multiplier"
     }
     
     @UserStorage(key: Key.current_flight_start, defaultValue: Date())
@@ -70,6 +74,18 @@ struct Settings {
     
     @UserStorage(key: Key.last_update_check, defaultValue: Date.distantPast)
     var lastUpdateCheck : Date
+
+    @UserStorage(key: Key.alert_repeat_threshold, defaultValue: 5)
+    var alertRepeatThreshold: Int
+    
+    @UserStorage(key: Key.high_priority_multiplier, defaultValue: 10.0)
+    var highPriorityMultiplier: Double
+    
+    @UserStorage(key: Key.medium_priority_multiplier, defaultValue: 5.0)
+    var mediumPriorityMultiplier: Double
+    
+    @UserStorage(key: Key.low_priority_multiplier, defaultValue: 1.0)
+    var lowPriorityMultiplier: Double
 
     var currentAircraft : Aircraft {
         return Aircraft(aircraftName: self.currentAircraftName)

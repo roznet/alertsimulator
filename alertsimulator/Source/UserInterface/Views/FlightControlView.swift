@@ -31,6 +31,7 @@ struct FlightControlView : View {
     @ObservedObject var alertViewModel: AlertViewModel
     @State private var showingValidationAlert = false
     @State private var validationErrors: [AlertViewModel.FlightValidationError] = []
+    @State private var showingSettings = false
     
     func startAlerts() {
         alertViewModel.validateFlightParameters { errors in
@@ -52,33 +53,42 @@ struct FlightControlView : View {
     }
     
     var body: some View {
-        HStack {
-            if alertViewModel.flightIsRunning {
+        VStack {
+            HStack {
+                if alertViewModel.flightIsRunning {
+                    Button(action: {
+                        self.stopAlerts()
+                    }) {
+                        Text("Stop Flight")
+                    }
+                    .standardButton()
+                    .padding()
+                } else {
+                    Button(action: {
+                        self.startAlerts()
+                    }) {
+                        Text("Start Flight")
+                    }
+                    .standardButton()
+                    .padding()
+                }
+                
                 Button(action: {
-                    self.stopAlerts()
+                    self.runOneNow()
                 }) {
-                    Text("Stop Flight")
+                    Text("Run One Now")
                 }
                 .standardButton()
-                .padding()
-            } else {
+                
                 Button(action: {
-                    self.startAlerts()
+                    showingSettings = true
                 }) {
-                    Text("Start Flight")
+                    Image(systemName: "gear")
                 }
                 .standardButton()
-                .padding()
             }
-            
-            Button(action: {
-                self.runOneNow()
-            }) {
-                Text("Run One Now")
-            }
-            .standardButton()
+            .padding([.trailing, .leading])
         }
-        .padding([.trailing, .leading])
         .alert("Invalid Flight Parameters", isPresented: $showingValidationAlert) {
             if validationErrors.contains(.notificationsNotAuthorized) {
                 Button("Open Settings", role: .none) {
@@ -96,6 +106,9 @@ struct FlightControlView : View {
             }
         } message: {
             Text(validationErrors.map { $0.rawValue }.joined(separator: "\n"))
+        }
+        .sheet(isPresented: $showingSettings) {
+            SettingsView()
         }
     }
 }
