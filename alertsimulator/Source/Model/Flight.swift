@@ -77,7 +77,7 @@ struct Flight {
     }
     
     mutating func immediateAlert() -> TrackedAlert {
-        let tracked = TrackedAlert(date: Date().addingTimeInterval(1.0), alert: self.alertManager.nextAlert())
+        let tracked = TrackedAlert(date: Date().addingTimeInterval(1.0), alert: self.alertManager.drawNextAlert())
         self.flightAlerts.append(tracked)
         self.flightAlerts.sort(by: { $0.date < $1.date })
         return tracked

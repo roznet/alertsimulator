@@ -49,7 +49,7 @@ struct SettingsView: View {
                         
                         Text("Low Priority Multiplier")
                         HStack {
-                            Slider(value: $lowPriorityMultiplier, in: 0.1...5)
+                            Slider(value: $lowPriorityMultiplier, in: 0.0...5)
                             Text(String(format: "%.1f", lowPriorityMultiplier))
                         }
                         
