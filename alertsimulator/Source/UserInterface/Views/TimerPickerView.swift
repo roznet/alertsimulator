@@ -27,10 +27,43 @@ import SwiftUI
 struct TimerPickerView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     
+    // Computed property to get total duration in minutes
+    private var totalDurationMinutes: Int {
+        alertViewModel.selectedDurationHours * 60 + alertViewModel.selectedDurationMinutes
+    }
+    
+    // Binding for total duration that updates hours and minutes
+    private var durationBinding: Binding<Double> {
+        Binding<Double>(
+            get: { Double(totalDurationMinutes) },
+            set: { newValue in
+                let minutes = Int(round(newValue))
+                alertViewModel.selectedDurationHours = minutes / 60
+                alertViewModel.selectedDurationMinutes = minutes % 60
+                // Ensure interval doesn't exceed new duration
+                if alertViewModel.selectedIntervalMinutes > minutes {
+                    alertViewModel.selectedIntervalMinutes = minutes
+                }
+            }
+        )
+    }
+    
+    // Binding for interval that handles conversion between Double and Int
+    private var intervalBinding: Binding<Double> {
+        Binding<Double>(
+            get: { Double(alertViewModel.selectedIntervalMinutes) },
+            set: { newValue in
+                let minutes = Int(round(newValue))
+                let maxInterval = min(totalDurationMinutes, max(1, minutes))
+                alertViewModel.selectedIntervalMinutes = maxInterval
+            }
+        )
+    }
+    
     var body: some View {
         if self.alertViewModel.flightIsRunning {
             runningView
-        }else{
+        } else {
             setupView
         }
     }
@@ -53,64 +86,51 @@ struct TimerPickerView: View {
     }
     
     var setupView: some View {
-        HStack {
-            VStack {
+        VStack(spacing: 20) {
+            // Flight Duration Section
+            VStack(alignment: .leading, spacing: 8) {
                 Text("Flight Duration")
+                    .font(.headline)
                 
-                HStack(spacing: 0) {
-                    // Hours Picker
-                    Picker(selection: $alertViewModel.selectedDurationHours, label: Text("Hours")) {
-                        ForEach(0..<10) { hour in
-                            Text("\(hour)").tag(hour)
-                        }
-                    }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 100)
-                    .clipped()
-                    
-                    Text("h")
-                        .font(.title)
-                        .frame(width: 40)
-                    
-                    // Minutes Picker
-                    Picker(selection: $alertViewModel.selectedDurationMinutes, label: Text("Minutes")) {
-                        ForEach(0..<12) { minute in
-                            Text("\(minute*5)").tag(minute*5)
-                        }
-                    }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 100)
-                    .clipped()
-                    
-                    Text("m")
-                        .font(.title)
-                        .frame(width: 40)
+                HStack {
+                    Slider(value: durationBinding, in: 5...600, step: 5)
+                    Text("\(totalDurationMinutes / 60)h \(totalDurationMinutes % 60)m")
+                        .frame(width: 70, alignment: .trailing)
+                        .monospacedDigit()
                 }
+                Text("5 minutes to 10 hours")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Spacer()
-            VStack {
-                Text("Alert Interval")
-                
-                HStack(spacing: 0) {
-                    // Hours Picker
-                    Picker(selection: $alertViewModel.selectedIntervalMinutes, label: Text("Minutes")) {
-                        ForEach(self.alertViewModel.intervalChoices, id: \.self) { minutes in
-                            Text("\(minutes)").tag(minutes)
-                        }
-                    }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 100)
-                    .clipped()
-                    
-                    Text("m")
-                        .font(.title)
-                        .frame(width: 40)
-                    
-                }
-            }
+            .padding(.horizontal)
             
+            // Alert Interval Section
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Alert Interval")
+                    .font(.headline)
+                
+                let maxInterval = max(1.0, Double(totalDurationMinutes))
+                HStack {
+                    // Use a fixed range slider and scale the values
+                    Slider(
+                        value: Binding(
+                            get: { intervalBinding.wrappedValue / maxInterval },
+                            set: { intervalBinding.wrappedValue = $0 * maxInterval }
+                        ),
+                        in: 0...1,
+                        step: 1.0 / maxInterval
+                    )
+                    Text("\(alertViewModel.selectedIntervalMinutes)m")
+                        .frame(width: 50, alignment: .trailing)
+                        .monospacedDigit()
+                }
+                Text("1 minute to flight duration")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .padding(.horizontal)
         }
-        .padding()
+        .padding(.vertical)
     }
 }
 

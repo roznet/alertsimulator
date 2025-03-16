@@ -32,38 +32,50 @@ struct AircraftView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
-        HStack {
-            Text("Select an Aircraft")
-                .font(.headline)
-                .padding()
-            
-            Picker("Aircraft", selection: $alertViewModel.selectedAircraftName) {
-                ForEach(self.alertViewModel.availableAircraftNames, id: \.self) { aircraft in
-                    Text(aircraft).tag(aircraft)
+        HStack(spacing: 12) {
+            Menu {
+                ForEach(alertViewModel.availableAircraftNames, id: \.self) { aircraft in
+                    Button(action: {
+                        alertViewModel.selectedAircraftName = aircraft
+                        alertViewModel.updateAircraft()
+                    }) {
+                        HStack {
+                            Text(aircraft)
+                            if aircraft == alertViewModel.selectedAircraftName {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                    }
+                }
+            } label: {
+                HStack {
+                    Image(systemName: "airplane")
+                        .foregroundColor(.primary)
+                    Text(alertViewModel.selectedAircraftName)
+                        .lineLimit(1)
+                        .foregroundColor(.accentColor)
                 }
             }
-            .pickerStyle(MenuPickerStyle()) // You can use other styles like .wheel or .segmented
-            .onChange(of: alertViewModel.selectedAircraftName) { oldValue, newValue in
-                self.alertViewModel.updateAircraft()
-            }
-            .padding()
             
-            
-            Text("Selected Aircraft: \(alertViewModel.selectedAircraftName)")
-                .padding()
             if alertViewModel.numberOfAlertForAircraft > 0 {
-                Text( "\(alertViewModel.numberOfAlertForAircraft) alerts")
+                HStack(spacing: 4) {
+                    Text("\(alertViewModel.numberOfAlertForAircraft)")
+                        .fontWeight(.medium)
+                    Text("alerts")
+                }
+                .font(.caption)
+                .padding(.horizontal, 6)
+                .padding(.vertical, 3)
+                .background(Color.blue.opacity(0.2))
+                .clipShape(RoundedRectangle(cornerRadius: 4))
             }
         }
-        .onAppear {
-            // Set an initial value if needed
-            
-        }
+        .padding(.horizontal)
     }
 }
 
 #Preview {
     @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
-    
     AircraftView(alertViewModel: alertViewModel)
 }
+
