@@ -42,21 +42,60 @@ class CASViewModel : ObservableObject {
 }
 struct CASView: View {
     @Binding var casMessage: CASMessage
+    @State private var showingChecklist = false
     
     var body: some View {
         VStack(alignment: .trailing) {
             if !casMessage.message.isEmpty {
-                Text(casMessage.message)
-                    .casMessage(category: casMessage.category)
-                    .frame(maxWidth: .infinity,alignment: .trailing)
-                    .padding([.bottom,.top])
+                HStack {
+                    Spacer()
+                    Text(casMessage.message)
+                        .casMessage(category: casMessage.category)
+                    
+                    if !casMessage.message.isEmpty {
+                        Button(action: {
+                            showingChecklist = true
+                        }) {
+                            Image(systemName: "eye.fill")
+                                .foregroundColor(.white)
+                                .padding(8)
+                        }
+                        .background(Color.blue.opacity(0.6))
+                        .clipShape(Circle())
+                        .padding(.trailing, 8)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding([.bottom, .top])
             }
             Spacer()
             HStack {
                 Spacer()
                 VStack(alignment: .leading) {
-                    Text("Alerts")
-                        .foregroundColor(.white)
+                    HStack {
+                        Text("Alerts")
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                        
+                        if !casMessage.message.isEmpty {
+                            Button(action: {
+                                showingChecklist = true
+                            }) {
+                                HStack(spacing: 4) {
+                                    Image(systemName: "list.bullet.clipboard")
+                                    Text("View Checklist")
+                                        .font(.caption)
+                                }
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                            }
+                            .background(Color.blue.opacity(0.6))
+                            .cornerRadius(4)
+                        }
+                    }
+                    
                     Divider()
                         .background(Color.white)
                         .padding([.bottom])
@@ -84,6 +123,11 @@ struct CASView: View {
                 .background(Color.black)
         }
         .background(Color.brown)
+        .sheet(isPresented: $showingChecklist) {
+            if !casMessage.message.isEmpty {
+                ChecklistView(alertMessage: casMessage.message)
+            }
+        }
     }
 }
 
