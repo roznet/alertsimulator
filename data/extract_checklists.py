@@ -67,6 +67,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     current_cas: Optional[str] = None
     current_cas_type: Optional[str] = None
     current_cas_description: Optional[str] = None
+    pending_pfd_alert: Optional[str] = None
     line_count = 0
     
     # Define regex patterns
@@ -75,6 +76,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     checklist_pattern = re.compile(r"^###(.+)$")
     item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
     cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?:\s+\(([^)]+)\))?(?:\s*-\s*(.+))?$")
+    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [“"]([^”"]+)[”"]$')
     
     if verbose:
         print(f"Opening input file: {file_path}")
@@ -119,10 +121,10 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 section=current_section or "",
                 subsection=current_subsection,
                 steps=[],
-                cas=current_cas,
-                cas_type=current_cas_type,
-                cas_description=current_cas_description,
-                alert_message=current_cas
+                cas=None,
+                cas_type=None,
+                cas_description=None,
+                alert_message=None
             )
             current_step = None
             current_cas = None
@@ -132,12 +134,25 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 print(f"Found checklist: {current_checklist.title} at line {i}")
             continue
         
+        # Check for PFD Alerts Window message
+        pfd_alert_match = pfd_alert_pattern.match(line)
+        if pfd_alert_match:
+            pending_pfd_alert = pfd_alert_match.group(1).strip()
+            current_checklist.alert_message = pending_pfd_alert
+            current_checklist.cas_description = pending_pfd_alert
+            if verbose:
+                print(f"Found PFD Alert: {pending_pfd_alert} at line {i}")
+            continue
+        
         # Check for CAS message
         cas_match = cas_message_pattern.match(line)
         if cas_match:
             current_cas = cas_match.group(1).strip()
             current_cas_type = cas_match.group(2).strip() if cas_match.group(2) else None
-            current_cas_description = cas_match.group(3).strip() if cas_match.group(3) else None
+            current_checklist.cas = current_cas
+            current_checklist.cas_type = current_cas_type
+            current_checklist.cas_description = current_cas_description
+            
             if verbose:
                 print(f"Found CAS message: {current_cas} at line {i}")
             continue
@@ -165,11 +180,13 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             step_number = None
             if num1:  # "1", "2", etc.
                 step_number = num1
+                indent_level = 0
             elif num2:  # "(1)", "(2)", etc.
                 step_number = f"({num2})"
+                indent_level = 2
             elif num3:  # "a", "b", etc.
                 step_number = num3
-            
+                indent_level = 1
             new_step = ChecklistStep(
                 id=str(uuid.uuid4()),
                 instruction=instruction,
@@ -184,14 +201,35 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             if indent_level == 0:
                 current_checklist.steps.append(new_step)
                 current_step = new_step
-            elif current_step and indent_level > current_step.indent_level:
-                current_step.sub_steps.append(new_step)
-            elif current_checklist.steps:
-                # Find appropriate parent based on indentation
-                parent = current_checklist.steps[-1]
-                while parent.sub_steps and parent.sub_steps[-1].indent_level >= indent_level:
-                    parent = parent.sub_steps[-1]
-                parent.sub_steps.append(new_step)
+            else:
+                # Find the appropriate parent step by maintaining a stack of steps
+                parent = None
+                step_stack = []
+                
+                # Build stack of potential parent steps
+                for step in reversed(current_checklist.steps):
+                    if step.indent_level < indent_level:
+                        step_stack.append(step)
+                    
+                    # Check substeps recursively
+                    current = step
+                    while current.sub_steps:
+                        last_substep = current.sub_steps[-1]
+                        if last_substep.indent_level < indent_level:
+                            step_stack.append(last_substep)
+                        current = last_substep
+                
+                # Find the closest parent with lower indent level
+                for potential_parent in step_stack:
+                    if potential_parent.indent_level < indent_level:
+                        parent = potential_parent
+                        break
+                
+                if parent:
+                    parent.sub_steps.append(new_step)
+                else:
+                    # If no parent found, add to the main steps list
+                    current_checklist.steps.append(new_step)
                 current_step = new_step
             
             if verbose:
@@ -217,7 +255,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
         return obj
     
     # Filter out empty checklists and those without alert messages
-    checklists = [c for c in checklists if c.alert_message and c.steps]
+    checklists = [c for c in checklists if c.steps]
     
     with open(output_path, 'w', encoding='utf-8') as json_file:
         json.dump(dataclass_to_dict(checklists), json_file, indent=4)
