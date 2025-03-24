@@ -92,4 +92,40 @@ struct alertsimulatorTests {
             }
         }
     }
+    
+    @Test func testChecklistAlertMatching() async throws {
+        // Load checklists
+        let checklists = try Checklist.loadFromJSON()
+        #expect(checklists.count > 0)
+        
+        // Get SR22TG6 aircraft
+        let aircrafts = FlightAlert.aircrafts
+        let sr22tg6 = aircrafts.first { $0.aircraftName == "SR22TG6" }
+        #expect(sr22tg6 != nil)
+        
+        // Go through all alerts for SR22TG6
+        for alert in sr22tg6!.alerts {
+            if alert.alertType == .cas,
+               let alertMessage = alert.message{
+                // Find matching checklist
+                let matchingChecklists = checklists.filter { checklist in
+                    checklist.alert == alertMessage
+                }
+                
+                // Log the results for debugging
+                if matchingChecklists.isEmpty {
+                    print("No matching checklist found for alert: \(alertMessage)")
+                } else {
+                    print("Found \(matchingChecklists.count) matching checklist(s) for alert: \(alertMessage)")
+                    for checklist in matchingChecklists {
+                        print("  - \(checklist.title) in section \(checklist.section)")
+                    }
+                }
+                
+                // Verify we found at least one matching checklist
+                #expect(matchingChecklists.count > 0, "No matching checklist found for alert: \(alertMessage)")
+                
+            }
+        }
+    }
 }

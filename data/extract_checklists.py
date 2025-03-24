@@ -44,9 +44,8 @@ class Checklist:
     title: str
     section: str
     subsection: Optional[str]
-    cas: Optional[str]
-    cas_type: Optional[str]
-    cas_description: Optional[str]
+    alert: Optional[str]
+    alert_type: Optional[str]
     alert_message: Optional[str]
     steps: List[ChecklistStep]
 
@@ -64,9 +63,8 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     current_step: Optional[ChecklistStep] = None
     current_section: Optional[str] = None
     current_subsection: Optional[str] = None
-    current_cas: Optional[str] = None
-    current_cas_type: Optional[str] = None
-    current_cas_description: Optional[str] = None
+    current_alert: Optional[str] = None
+    current_alert_type: Optional[str] = None
     pending_pfd_alert: Optional[str] = None
     line_count = 0
     
@@ -76,7 +74,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     checklist_pattern = re.compile(r"^###(.+)$")
     item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
     cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?:\s+\(([^)]+)\))?(?:\s*-\s*(.+))?$")
-    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [“"]([^”"]+)[”"]$')
+    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [""]([^"]+)[""]$')
     
     if verbose:
         print(f"Opening input file: {file_path}")
@@ -121,14 +119,13 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 section=current_section or "",
                 subsection=current_subsection,
                 steps=[],
-                cas=None,
-                cas_type=None,
-                cas_description=None,
+                alert=None,
+                alert_type=None,
                 alert_message=None
             )
             current_step = None
-            current_cas = None
-            current_cas_type = None
+            current_alert = None
+            current_alert_type = None
             current_cas_description = None
             if verbose:
                 print(f"Found checklist: {current_checklist.title} at line {i}")
@@ -139,7 +136,6 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
         if pfd_alert_match:
             pending_pfd_alert = pfd_alert_match.group(1).strip()
             current_checklist.alert_message = pending_pfd_alert
-            current_checklist.cas_description = pending_pfd_alert
             if verbose:
                 print(f"Found PFD Alert: {pending_pfd_alert} at line {i}")
             continue
@@ -147,14 +143,13 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
         # Check for CAS message
         cas_match = cas_message_pattern.match(line)
         if cas_match:
-            current_cas = cas_match.group(1).strip()
-            current_cas_type = cas_match.group(2).strip() if cas_match.group(2) else None
-            current_checklist.cas = current_cas
-            current_checklist.cas_type = current_cas_type
-            current_checklist.cas_description = current_cas_description
+            current_alert = cas_match.group(1).strip()
+            current_alert_type = cas_match.group(2).strip() if cas_match.group(2) else None
+            current_checklist.alert = current_alert
+            current_checklist.alert_type = current_alert_type
             
             if verbose:
-                print(f"Found CAS message: {current_cas} at line {i}")
+                print(f"Found CAS message: {current_alert} at line {i}")
             continue
         
         # Check for checklist step
