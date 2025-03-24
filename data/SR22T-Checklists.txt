@@ -1,0 +1,2020 @@
+#NORMAL
+
+###Preflight Inspection (All Serials)
+1. Cabin
+a. Required Documents ............................................ ON BOARD
+b. AVIONICS Switch.............................................................. OFF
+c. BAT 2 Switch ....................................................................... ON
+d. PFD ....................................................................... VERIFY ON
+e. Essential Bus Voltage .........................................23-25 VOLTS
+f. Flap Position Light.............................................................OUT
+g. BAT 1 Switch ....................................................................... ON
+h. Avionics Cooling Fan................................................. AUDIBLE
+i. Oxygen Masks/Cannulas and Hoses (if available) .......CHECK CONDITION
+j. AVIONICS Switch................................................................ ON
+k. Fuel Quantity................................................................CHECK
+l. Fuel Selector ..................................... SELECT FULLER TANK
+m. Flaps ...............................................100%, CHECK LIGHT ON
+n. Lights...................................................... CHECK OPERATION
+o. Stall Warning System Inlet ..........................UNOBSTRUCTED
+p. Stall Warning................................................................... TEST
+
+
+(1) Quantity ...... VERIFY ADEQUATE SUPPLY FOR FLIGHT WITH RESERVE
+(2) Flow ....................CHECK FLOWMETER ON ALL MASKS
+(3) Oxygen System .......................................................... OFF
+r. Pitot Heat ............................................................................ ON
+(1) Verify probe is hot.
+s. Pitot Heat .......................................................................... OFF
+t. AVIONICS Switch.............................................................. OFF
+u. BAT 1 and BAT 2 Switches................................................ OFF
+v. Alternate Static Source ............................................. NORMAL
+w. Circuit Breakers.....................................................................IN
+x. Fire Extinguisher ........................ CHARGED AND AVAILABLE
+y. Emergency Egress Hammer ..................................AVAILABLE
+z. CAPS Handle .................................................. PIN REMOVED
+2. Left Fuselage
+a. Door Lock.................................................................. UNLOCK
+b. COM 1 Antenna (top) .......... CONDITION AND ATTACHMENT
+c. Transponder Antenna (underside)................CONDITION AND ATTACHMENT
+d. COM 2 Antenna (underside) ........................CONDITION AND ATTACHMENT
+e. Wing/Fuselage Fairing .................................................CHECK
+f. Baggage Door ................................... CLOSED AND SECURE
+g. Static Button................................... CHECK FOR BLOCKAGE
+h. Parachute Cover ................................SEALED AND SECURE
+3. Empennage
+a. Tiedown Rope ........................................................... REMOVE
+b. Horizontal and Vertical Stabilizers........................ CONDITION
+c. Elevator and Tab .................... CONDITION AND MOVEMENT
+q. Oxygen System (if available)............................................... ON
+d. Rudder ........................................FREEDOM OF MOVEMENT
+e. Rudder Trim Tab....................... CONDITION AND SECURITY
+f. Attachment Hinges, Bolts, and Cotter Pins ............... SECURE 
+4. Right Fuselage
+a. Static Button................................... CHECK FOR BLOCKAGE
+b. Wing/Fuselage Fairings................................................CHECK
+c. Door Lock .................................................................. UNLOCK
+5. Right Wing Trailing Edge
+a. Flap and Rub Strips (if installed) ..................CONDITION AND SECURITY
+b. Aileron and Tab ...................... CONDITION AND MOVEMENT
+c. Aileron Gap Seal .................................................... SECURITY
+d. Hinges, Actuation Arm, Bolts, and Cotter pins .......... SECURE
+6. Right Wing Tip
+a. Tip .....................................................................ATTACHMENT
+b. Wing Tip Light and Lens .......... CONDITION AND SECURITY
+c. Fuel Vent (underside) ................................. UNOBSTRUCTED
+7. Right Wing Forward and Main Gear
+a. Leading Edge and Stall Strips.............................. CONDITION
+b. Fuel Cap........................... CHECK QUANTITY AND SECURE
+c. Fuel Drains (2 underside)...................... DRAIN AND SAMPLE
+d. Wheel Fairings ..... SECURITY, ACCUMULATION OF DEBRIS
+e. Tire ............................. CONDITION, INFLATION, AND WEAR
+f. Wheel and Brakes ................... FLUID LEAKS, EVIDENCE OF OVERHEATING, GENERAL CONDITION, AND SECURITY
+g. Chocks and Tiedown Ropes ..................................... REMOVE
+8. Nose, Right Side
+a. Vortex Generator .................................................. CONDITION
+b. Ice Inspection Light .................. CONDITION AND SECURITY
+c. Cowling .......................................... ATTACHMENTS SECURE
+d. Exhaust Pipe .... CONDITION, SECURITY, AND CLEARANCE
+
+
+
+
+
+
+9. Nose Gear, Propeller, and Spinner
+a. Tow Bar .................................................REMOVE AND STOW
+b. Landing Light........................................................ CONDITION
+
+c. Strut ..................................................................... CONDITION
+
+d. Wheel Fairing ....... SECURITY, ACCUMULATION OF DEBRIS
+e. Wheel and Tire........... CONDITION, INFLATION, AND WEAR
+f. Propeller........... CONDITION (INDENTATIONS, NICKS, ETC.)
+
+g. Spinner.................CONDITION, SECURITY, AND OIL LEAKS
+h. Air Inlets ......................................................UNOBSTRUCTED
+i. Alternator ............................................................. CONDITION
+
+10. Nose, Left Side
+a. Engine Oil....CHECK 6-8 QUARTS, LEAKS, CAP AND DOOR SECURE
+b. Ice Inspection Light .................. CONDITION AND SECURITY
+c. Cowling .......................................... ATTACHMENTS SECURE
+d. External Power ...............................................DOOR SECURE
+e. Gascolator (underside)... DRAIN FOR 3 SECONDS, SAMPLE
+f. Vortex Generator.................................................. CONDITION
+g. Exhaust Pipe .... CONDITION, SECURITY, AND CLEARANCE
+11. Left Main Gear and Forward Wing
+a. Wheel Fairings ..... SECURITY, ACCUMULATION OF DEBRIS
+b. Tire ............................. CONDITION, INFLATION, AND WEAR
+c. Wheel and Brakes................... FLUID LEAKS, EVIDENCE OF OVERHEATING, GENERAL CONDITION, AND SECURITY
+
+d. Chocks and Tiedown Ropes ..................................... REMOVE
+e. Fuel Drains (2 underside)...................... DRAIN AND SAMPLE
+f. Fuel Cap........................... CHECK QUANTITY AND SECURE
+
+g. Leading Edge and Stall Strips.............................. CONDITION
+
+
+
+
+12. Left Wing Tip
+a. Fuel Vent (underside) ................................. UNOBSTRUCTED
+b. Pitot Probe ................ COVER REMOVED, UNOBSTRUCTED
+
+c. Wing Tip Light and Lens .......... CONDITION AND SECURITY
+d. Tip .....................................................................ATTACHMENT
+13. Left Wing Trailing Edge
+
+a. Hinges, Actuation Arm, Bolts, and Cotter Pins.......... SECURE
+b. Aileron Gap Seal .................................................... SECURITY
+c. Aileron .........................................FREEDOM OF MOVEMENT
+
+d. Flap and Rub Strips (If installed)..................CONDITION AND SECURITY
+
+###Supplemental Preflight Inspection (Serials w/ FIKI)
+14. Cabin
+a. Circuit Breakers................................................................. SET
+b. BAT 1 Switch ....................................................................... ON
+c. Flaps ............................................................................... 100%
+d. AVIONICS Switch................................................................ ON
+e. Cabin Speaker .................................................................... ON
+f. Cabin Doors ................................................................. CLOSE
+
+g. WIND SHLD Push-Button ............................................ PRESS
+(1) Verify evidence of deicing fluid from spray nozzles.
+h. PUMP BKUP Switch ........................................................... ON
+(1) Metering Pump Duty Cycle ................................... VERIFY CONTINUOUSLY ON
+(2) Deicing Fluid and Endurance Indications ..............CHECK
+i. PUMP BKUP Switch ......................................................... OFF
+j. ICE PROTECT System Switch............................................ ON
+k. ICE PROTECT Mode Switch......................................... NORM
+(1) Metering Pump Duty Cycle ... VERIFY 30 S ON, 90 S OFF
+(2) Deicing Fluid and Endurance Indications ..............CHECK
+
+
+
+l. ICE PROTECT Mode Switch........................................... HIGH
+(1) Metering Pump Duty Cycle...... VERIFY CONTINUOUSLY ON
+(2) Deicing Fluid and Endurance Indications ..............CHECK
+m. ICE Inspection Lights Switch............................................... ON
+(1) Verify LH and RH Operation.
+n. PITOT HEAT Switch . ON, CHECK, OFF (MAX 45 SECONDS)
+15. Empennage
+a. Stabilizers Porous Panels......... CONDITION AND SECURITY
+
+b. Vertical Porous Panel ............... CONDITION AND SECURITY
+(1) Verify evidence of deicing fluid along length of panel.
+16. Right Wing Forward and Main Gear
+a. Fluid Tank................................ VERIFY DESIRED QUANTITY
+(1) Filler Cap ........................... CONDITION AND SECURITY
+(2) Fluid Vent (underside wing) ..................UNOBSTRUCTED
+b. Porous Panels .......................... CONDITION AND SECURITY
+(1) Verify evidence of deicing fluid along length of panels.
+
+c. Lift Transducer Faceplate .........................PERCEPTIBLY HOT
+
+d. Lift Transducer Vane .............................................. VERY HOT
+(1) Verify Stall Warning audio alert after lifting stall vane with
+wooden tooth pick or tongue depressor.
+17. Nose, Right Side
+a. Ice Inspection Light .................. CONDITION AND SECURITY
+18. Nose Gear, Propeller, Spinner
+a. Slinger Ring...........................EVIDENCE OF DEICING FLUID
+19. Nose, Left Side
+a. Ice Inspection Light .................. CONDITION AND SECURITY
+b. Windshield Spray Nozzles ....... CONDITION AND SECURITY
+
+
+
+
+
+
+
+
+
+(1) Verify evidence of deicing fluid along length of panels and elevator horns.
+
+
+
+
+
+
+20. Left Wing Forward and Main Gear
+a. Fluid Tank................................ VERIFY DESIRED QUANTITY
+(1) Filler Cap ........................... CONDITION AND SECURITY
+(2) Fluid Vent (underside wing) ................. UNOBSTRUCTED
+b. Porous Panels .......................... CONDITION AND SECURITY
+(1) Verify evidence of deicing fluid along length of panels.
+
+21. Left Wing Tip
+a. Pitot Probe (underside) .............................. UNOBSTRUCTED
+b. Pitot Probe ............................................................. VERY HOT
+
+22. Cabin
+
+
+a. Fluid Quantity ........................ VERIFY 5 GALLONS MINIMUM
+b. ICE PROTECT System Switch.......................................... OFF
+
+c. Flaps ................................................................................... 0%
+
+d. Cabin Speaker .................................................................. OFF
+e. AVIONICS Switch.............................................................. OFF
+f. BAT 1 Switch ..................................................................... OFF
+
+
+
+
+
+
+
+
+
+###Before Engine Start
+1. Preflight Inspection ................................................... COMPLETED
+2. Weight and Balance................................. VERIFY WITHIN LIMITS
+3. Emergency Equipment ................................................ ON BOARD
+4. Passengers......................................................................BRIEFED
+5. Seats, Seat Belts, and Harnesses............ADJUST AND SECURE
+
+###Engine Start
+1. External Power (If applicable) ........................................CONNECT
+2. Brakes................................................................................... HOLD
+3. BAT 1 and BAT 2 Switches ............................ON (CHECK VOLTS)
+4. Strobe Lights ............................................................................. ON
+5. Mixture..........................................................................FULL RICH
+6. Power Lever ........................................................ FULL FORWARD
+7. Fuel Pump ..........................................................................BOOST
+8. Propeller Area..................................................................... CLEAR
+9. Power Lever ............................................................ OPEN ¼ INCH
+10. Ignition Switch ....... START (RELEASE AFTER ENGINE STARTS)
+11. Power Lever .......................... RETARD (TO MAINTAIN 1000 RPM)
+12. Oil Pressure........................................................................CHECK
+13. Mixture...........LEAN UNTIL RPM RISES TO A MAXIMUM VALUE
+14. ALT 1 and ALT 2 Switches......................................................... ON
+15. AVIONICS Switch ...................................................................... ON
+16. Engine Parameters .........................................................MONITOR
+17. External Power (If applicable) ..................................DISCONNECT
+
+
+
+
+
+
+
+
+
+
+
+
+###Cold Weather Operation: Starting
+1. Ignition Switch ......................................................................... OFF
+2. Propeller ..............................HAND TURN SEVERAL ROTATIONS
+3. External Power (If applicable) ........................................CONNECT
+4. Brakes................................................................................... HOLD
+5. BAT 1 and BAT 2 Switches ....................... ON (CHECK VOLTAGE)
+6. Mixture ..........................................................................FULL RICH
+7. Power Lever ........................................................ FULL FORWARD
+8. Fuel Pump .......................... HIGH BOOST/PRIME, THEN BOOST
+9. Propeller Area..................................................................... CLEAR
+10. Power Lever ............................................................ OPEN ¼ INCH
+11. Ignition Switch .......START (RELEASE AFTER ENGINE STARTS)
+12. Power Lever .......................... RETARD (TO MAINTAIN 1000 RPM)
+13. Oil Pressure ........................................................................CHECK
+14. ALT 1 and ALT 2 Switches ......................................................... ON
+15. AVIONICS Switch ...................................................................... ON
+16. Engine Parameters ........................................................ MONITOR
+17. External Power (If applicable) ..................................DISCONNECT
+18. Amp Meter/Indication..........................................................CHECK
+19. Strobe Lights ............................................................................. ON
+
+###Before Taxiing
+1. Flaps..................................................................................UP (0%)
+2. Radios/Avionics ......................................................AS REQUIRED
+3. Cabin Heat/Defrost ................................................ AS REQUIRED
+4. Fuel Selector .......................................................... SWITCH TANK
+
+###Taxiing
+1. Parking Brake ............................................................ DISENGAGE
+2. Brakes.................................................................................CHECK
+3. HSI Orientation ...................................................................CHECK
+4. Attitude Gyro.......................................................................CHECK
+5. Turn Coordinator.................................................................CHECK
+
+
+
+
+
+
+
+
+
+
+###Before Takeoff
+1. Doors .............................................................................. LATCHED
+2. CAPS Handle .......................................... VERIFY PIN REMOVED
+3. Seat Belts and Shoulder Harness ................................... SECURE
+4. Cabin Heat/Defrost .................................................AS REQUIRED
+5. Air Conditioner................................................RECIRC DISABLED
+6. Fuel Quantity ..................................................................CONFIRM
+7. Fuel Selector .......................................................... FULLER TANK
+8. Fuel Pump ..........................................................................BOOST
+9. Mixture..........................................................................FULL RICH
+10. Flaps.......................................................... SET 50% AND CHECK
+11. Autopilot............................................ CHECK AND DISCONNECT
+12. Transponder............................................................................. SET
+13. COM and NAV/GPS ................................................................ SET
+14. Brakes................................................................................... HOLD
+15. Power Lever ................................................................... 1700 RPM
+16. Alternator ............................................................................CHECK
+a. Pitot Heat ............................................................................ ON
+b. Navigation Lights................................................................. ON
+c. Landing Light....................................................................... ON
+
+17. Voltage................................................................................CHECK
+18. Pitot Heat................................................................AS REQUIRED
+19. Navigation Lights ....................................................AS REQUIRED
+20. Landing Light ..........................................................AS REQUIRED
+21. Magnetos............................................. CHECK LEFT AND RIGHT
+RPM drop must not exceed 150 RPM for either magneto. RPM differential must not exceed 75 RPM between magnetos.
+a. Ignition Switch ............................ R, NOTE RPM, THEN BOTH
+b. Ignition Switch ............................. L, NOTE RPM, THEN BOTH
+22. Engine Parameters .............................................................CHECK
+23. Power Lever .................................. IDLE CHECK THEN 1000 RPM
+24. Flight Instruments, HSI, and Altimeter............... CHECK AND SET
+
+
+
+
+
+
+
+
+
+
+
+
+25. Flight Controls ........................................... FREE AND CORRECT
+26. Trim......................................................................... SET TAKEOFF
+27. CAS Messages ...................................................................CHECK
+If icing conditions are anticipated immediately after takeoff (Serials w/ FIKI):
+28. ICE PROTECT System Switch .................................................. ON
+29. ICE PROTECT Mode Switch ................................................. HIGH
+30. PITOT HEAT Switch................................................................... ON
+31. Cabin Heat............................................................................... HOT
+32. Windshield Defrost .................................................................... ON
+33. Ice Inspection Lights ...............................................AS REQUIRED
+34. Verify airframe is free of contamination immediately before takeoff.
+
+
+35. Flaps.................................. RETRACT AS SOON AS PRACTICAL
+
+
+
+
+
+
+
+
+
+
+
+###Normal Takeoff
+1. Brakes.........................RELEASE (STEER WITH RUDDER ONLY)
+2. Power Lever ........................................................ FULL FORWARD
+3. Engine Parameters .............................................................CHECK
+4. Elevator Control ...................ROTATE SMOOTHLY AT 77-80 KIAS
+5. At 90 KIAS, Flaps ...................................................................... UP
+
+###Short Field Takeoff
+1. Flaps........................................................................................ 50%
+2. Brakes .................................................................................. HOLD
+3. Power Lever ........................................................ FULL FORWARD
+4. Engine Parameters .............................................................CHECK
+5. Brakes.........................RELEASE (STEER WITH RUDDER ONLY)
+6. Elevator Control ......................... ROTATE SMOOTHLY AT 77 KIAS
+7. Airspeed at Obstacle ......................................................... 85 KIAS
+
+###Full Power Climb: Rich of Peak Technique
+1. Oxygen ...................................................................AS REQUIRED
+2. Power Lever ........................................................ FULL FORWARD
+4. Flaps............................................................................ VERIFY UP
+5. Airspeed .......................................................................... 120 KIAS
+6. Fuel Pump ..........................................................................BOOST
+7. Fuel Flow ........................................................................MONITOR
+8. Engine Parameters .........................................................MONITOR
+
+###Cruise Climb: Lean of Peak Technique
+1. Power Lever .......................................... REDUCE TO 30.5 IN. HG
+2. Mixture...................................LEAN TO CYAN TARGET OR LESS
+3. Minimum Airspeed........................................................... 120 KIAS
+4. Fuel Pump ..........................................................................BOOST
+5. Oxygen (if available) .............................................. AS REQUIRED
+
+
+
+
+3. Mixture........................... MAINTAIN FUEL FLOW IN GREEN ARC
+
+
+
+
+
+
+a. Oxygen Masks/Cannulas ................................................. DON
+b. Oxygen System................................................................... ON
+
+c. Flow Rate ........ ADJUST FOR PLANNED CRUISE ALTITUDE
+
+d. Flowmeters and Quantity ........................................ MONITOR
+6. Cylinder Head Temperatures ......................................... MONITOR
+
+##Icing Conditions: In Flight (Serials w/ FIKI)
+###Inadvertent Icing Encounter OR If Icing Conditions Exist:
+1. PITOT HEAT Switch..................................................... VERIFY ON
+2. ICE PROTECT System Switch .................................................. ON
+3. ICE PROTECT Mode Switch ............................................... NORM
+4. WIND SHLD Push-Button......................... PRESS AS REQUIRED
+5. Monitor ice accumulation.
+If ice accretions persist on protected surfaces following each cycle:
+a. ICE PROTECT Mode ...................................................... HIGH
+If ice continues accumulating on protected surfaces:
+b. ICE PROTECT Mode Push-Button ...................................MAX
+If ice accretions do not shed from protected surfaces:
+c. PUMP BKUP Switch ........................................................... ON
+
+d. Perform Anti-Ice System Failure Checklist.
+e. WIND SHLD Push-Button .................. PRESS AS REQUIRED
+f. Airspeed ............................................. MAINTAIN 95-177 KIAS AND LESS THAN 204 KTAS
+
+
+###While in Icing Conditions:
+1. Flaps.......................................................................................... UP
+2. Ice Inspection Lights...............................................AS REQUIRED
+3. Cabin Heat............................................................................... HOT
+4. Windshield Defrost .................................................................... ON
+5. Deicing Fluid Quantity ....................................................MONITOR
+a. Ensure adequate quantity to complete flight.
+
+###After Leaving Icing Conditions:
+1. Anti-Ice System ....................................................................... OFF
+2. Airspeed ................................AS FLIGHT CONDITIONS DICTATE
+3. Ice Inspection Lights...............................................AS REQUIRED
+4. Cabin Heat..............................................................AS REQUIRED
+5. Windshield Defrost .................................................AS REQUIRED
+
+
+6. WIND SHLD Push-Button......................... PRESS AS REQUIRED
+
+
+
+
+
+
+
+
+
+
+
+###Cruise
+1. Oxygen .................................................................. AS REQUIRED
+2. Cruise Altitude ........................................................ ESTABLISHED
+3. Power Lever ...........................REDUCE TO 30.5 IN. HG OR LESS
+4. Fuel Pump ..............................................................AS REQUIRED
+5. Mixture .............................................................................. ADJUST
+6. Engine Parameters ........................................................ MONITOR
+7. Fuel Flow and Balance .................................................. MONITOR
+If any CHTs exceed 420 °F:
+8. Mixture ..........................................LEAN 0.5 GPH AND MONITOR
+If icing conditions are encountered during cruise (Serials w/ FIKI):
+9. Perform Icing Conditions: In Flight Checklist.
+10. Engine Power.............INCREASE TO MAINTAIN CRUISE SPEED
+
+
+
+11. Autopilot..................................................................AS REQUIRED
+Disconnect every 30 minutes to detect any out-of-trim conditions. When disconnecting the autopilot with ice accretions on the airplane, the pilot should be alert for out-of-trim forces.
+
+
+
+
+
+
+
+
+
+
+
+###Descent
+1. Oxygen .................................................................. AS REQUIRED
+2. Altimeter .................................................................................. SET
+3. Cabin Heat/Defrost .................................................AS REQUIRED
+4. Landing Light ............................................................................. ON
+5. Fuel System........................................................................CHECK
+6. Power Lever ............................................................AS REQUIRED
+For Rapid Descent:
+a. Power Lever ...SMOOTHLY REDUCE MAP TO 18 - 20 IN. HG
+7. Mixture....................................................................AS REQUIRED
+For Rapid Descent:
+a. Mixture ................................. MAINTAIN CHTS ABOVE 240 °F
+8. Brake Pressure ...................................................................CHECK
+
+If Icing Conditions Exist (Serials w/ FIKI):
+1. ICE PROTECT System Switch .................................................. ON
+2. ICE PROTECT Mode Switch ................................................. HIGH
+3. Monitor ice accumulation.
+If ice continues to accumulate:
+a. ICE PROTECT Mode Push-Button ...................................MAX
+If ice does not shed:
+b. PUMP BKUP Switch ........................................................... ON
+c. Perform Anti-Ice System Failure Checklist.
+
+4. WIND SHLD Push-Button......................... PRESS AS REQUIRED
+5. Ice Inspection Lights...............................................AS REQUIRED
+6. Flaps........................................................................................ 50%
+7. Airspeed ..................................................... MINIMUM OF 95 KIAS
+8. Airspeed on Short Final ..................................................... 88 KIAS
+
+
+
+
+
+
+
+
+
+
+###Before Landing
+1. Seat Belt and Shoulder Harness ..................................... SECURE
+2. Fuel Pump ..........................................................................BOOST
+3. Mixture ..........................................................................FULL RICH
+4. Flaps.......................................................................AS REQUIRED
+5. Autopilot..................................................................AS REQUIRED
+
+###Normal Landing
+1. Flaps...................................................................................... 100%
+2. Airspeed ....................................................................... 80-85 KIAS
+If Icing Conditions Exist:
+a. Airspeed on Short Final .............................................. 88 KIAS
+3. Power Lever ............................................................AS REQUIRED
+After touchdown:
+4. Brakes.....................................................................AS REQUIRED
+
+###Short Field Landing
+1. Flaps...................................................................................... 100%
+2. Airspeed ............................................................................ 79 KIAS
+3. Power Lever ............................................................AS REQUIRED
+After clear of obstacles:
+4. Power Lever ...................................................... REDUCE TO IDLE
+After touchdown:
+5. Brakes............................................................................ MAXIMUM
+
+###Balked Landing/Go-Around
+
+1. Autopilot..................................................................... DISENGAGE
+2. Power Lever ........................................................ FULL FORWARD
+3. Flaps........................................................................................ 50%
+4. Airspeed ....................................................................... 80-85 KIAS
+After clear of obstacles:
+5. Flaps ......................................................................................... UP
+
+
+
+
+
+
+
+
+
+
+
+###After Landing
+1. Power Lever ................................................................... 1000 RPM
+2. Fuel Pump ........................................................... OFF OR BOOST
+3. Mixture.......................... LEAN TO OBTAIN MAXIMUM IDLE RPM
+4. Flaps.......................................................................................... UP
+5. Lights ......................................................................AS REQUIRED
+6. Pitot Heat................................................................................. OFF
+Serials w/ FIKI:
+7. ICE PROTECT System Switch ................................................ OFF
+8. PUMP BKUP Switch................................................................ OFF
+9. Ice Inspection Lights................................................................ OFF
+
+###Shutdown
+1. Fuel Pump (if used) ................................................................. OFF
+2. Power Lever ............................................................................ IDLE
+3. Ignition Switch .................................................................... CYCLE
+4. Mixture.............................................................................. CUTOFF
+5. All Switches ............................................................................. OFF
+6. Magnetos................................................................................. OFF
+7. ELT ...........................................................TRANSMIT LIGHT OUT
+
+8. Chocks, Tie-downs, Pitot Covers............................AS REQUIRED
+
+
+
+
+
+#Abnormal Procedures
+
+#ABNORMAL
+
+
+
+
+
+
+##Flight Environment
+###Inadvertent Icing Encounter (Serials w/o FIKI)
+1. Pitot Heat................................................................................... ON
+2. Exit icing conditions. Turn back or change altitude.
+3. Cabin Heat..................................................................... MAXIMUM
+4. Windshield Defrost ..................................................... FULL OPEN
+
+###Inadvertent IMC Encounter
+1. Airplane Control..... ESTABLISH STRAIGHT AND LEVEL FLIGHT
+2. Autopilot.............. ENGAGE TO HOLD HEADING AND ALTITUDE
+3. Heading ......................................RESET TO INITIATE 180° TURN
+
+###Door Open In Flight
+1. Airplane Control..............................................................MAINTAIN
+
+
+
+
+
+
+
+
+
+
+
+##Abnormal Landings
+###Landing With Failed Brakes One brake inoperative
+1. Land on the side of runway corresponding to the inoperative brake.
+2. Maintain directional control using rudder and working brake.
+###Landing With Failed Brakes Both brakes inoperative
+1. Divert to the longest, widest runway with the most direct headwind.
+2. Land on downwind side of the runway.
+3. Use the rudder for obstacle avoidance.
+4. Perform Emergency Engine Shutdown on Ground Checklist.
+
+###Landing With Flat Tire Main Gear
+1. Land on the side of the runway corresponding to the good tire.
+2. Maintain directional control with the brakes and rudder.
+3. Do not taxi. Stop the airplane and perform a normal engine shutdown.
+###Landing With Flat Tire Nose Gear
+1. Land in the center of the runway.
+2. Hold the nosewheel off the ground as long as possible.
+3. Do not taxi. Stop the airplane and perform a normal engine shutdown.
+
+
+
+
+
+
+
+
+
+
+
+
+##Engine System
+###Low Idle Oil Pressure
+
+OIL PRESS Caution
+OIL PRESS
+
+1. If In-Flight..............................LAND AS SOON AS PRACTICABLE
+
+###High Oil Temperature
+OIL TEMP Caution
+OIL TEMP
+
+1. Power...................................REDUCE AS MUCH AS PRACTICAL
+2. Airspeed ....................................................................... INCREASE
+3. Mixture .............. ADJUST FUEL FLOW TO TOP OF GREEN ARC
+4. Oil Temperature Gauge ................................................. MONITOR
+
+###Manifold Pressure High
+MAN PRESSURE Caution
+MAN PRESSURE
+
+1. Power Lever ................................. REDUCE TO LESS THAN 36.5"
+2. Flight.............................................................................CONTINUE
+If noticeable surging is present:
+3. Perform Overboost / Pressure Relief Valve Emergency Checklist.
+
+
+
+
+
+
+
+
+
+
+
+###Start Engaged On-Ground
+START ENGAGED Caution
+START ENGAGED
+
+1. Ignition Switch ................. DISENGAGE PRIOR TO 10 SECONDS
+If starter does not disengage (relay or solenoid failure):
+2. Wait 20 seconds before next start attempt.
+3. BAT 1 Switch ........................................................................... OFF
+4. Engine ....................................................................... SHUTDOWN
+5. STARTER Circuit Breaker...................................................... PULL
+
+###Start Engaged In-Flight
+START ENGAGED Caution
+START ENGAGED
+1. Ignition Switch ........................... ENSURE NOT STUCK IN START
+2. STARTER Circuit Breaker...................................................... PULL
+3. Flight.............................................................................CONTINUE
+
+
+
+
+
+
+
+
+
+
+
+
+###Alternate Air Door Open
+ALT AIR OPEN Caution
+ALT AIR OPEN
+
+1. Manifold Pressure...............................................................CHECK
+If environment suspect as cause (icing or visible debris):
+
+
+2. Flight Conditions ..................................................... CHANGE/EXIT
+3. Power..................... REDUCE TO 30.5 IN.HG WHEN PRACTICAL
+4. Flight.............................................................................CONTINUE
+
+
+
+
+
+
+
+
+
+
+
+##Fuel System
+###Low Fuel Quantity
+FUEL LOW TOTAL Caution
+FUEL LOW TOTAL
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Totalized Fuel Quantity .......................................................CHECK
+If totalized value differs significantly from sensed quantity:
+a. Initial Fuel Value............................... VERIFY AND CORRECT
+If message persists:
+
+a. Land as soon as practicable.
+
+###Fuel Imbalance
+FUEL IMBALANCE Caution
+FUEL IMBALANCE
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Fuel Pump ..........................................................................BOOST
+If HIGH BOOST already in use for vapor suppression, pump should be left in this position for tank switch.
+3. Fuel Selector ........................................... SELECT FULLER TANK
+4. Fuel Pump ..............................................................AS REQUIRED
+After switching tanks, message will remain until sensed imbalance is less than 10 gallons.
+
+###Fuel Imbalance
+FUEL IMBALANCE Advisory
+FUEL IMBALANCE
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Fuel Pump ..........................................................................BOOST
+If HIGH BOOST already in use for vapor suppression, pump should be left in this position for tank switch.
+3. Fuel Selector ........................................... SELECT FULLER TANK
+4. Fuel Pump ..............................................................AS REQUIRED
+After switching tanks, message will remain until sensed imbalance is less than 8 gallons.
+
+
+
+
+
+
+
+
+
+
+##Electrical System
+###Low Voltage on Main Bus 1
+M BUS 1 Caution
+M BUS 1
+
+1. Perform Alt 1 Caution (Failure) Checklist.
+
+###Low Voltage on Main Bus 2
+
+
+M BUS 2 Caution
+M BUS 2
+
+1. Perform Alt 1 Caution (Failure) and Alt 2 Caution (Failure) Checklists.
+
+###Unexpected Discharge on Battery 1
+BATT 1 Caution
+BATT 1
+
+1. Main Bus 1, 2 and Non-Essential Bus Loads .................. REDUCE
+2. Main Bus 1, 2 and Essential Bus Voltages .................... MONITOR
+3. Land as soon as practicable.
+
+
+
+
+
+
+
+
+
+
+
+###Low Alternator 1 Output
+ALT 1 Caution (Failure)
+ALT 1
+
+1. ALT 1 Circuit Breaker.............................................. CHECK & SET
+2. ALT 1 Switch....................................................................... CYCLE
+If alternator does not reset:
+3. ALT 1 Switch............................................................................ OFF
+4. Non-Essential Bus Loads ................................................ REDUCE
+a. If flight conditions permit, consider shedding the following to preserve Battery 1:
+(1) Air Conditioning
+(2) Landing Light
+(3) Yaw Servo
+(4) Convenience Power (aux items plugged into armrest jack)
+(5) EVS Camera (if installed)
+5. Continue Flight, avoiding IMC or night flight as able (reduced power redundancy).
+
+###Low Alternator 2 Output
+ALT 2 Caution (Failure)
+ALT 2
+
+1. ALT 2 Circuit Breaker.............................................. CHECK & SET
+2. ALT 2 Switch....................................................................... CYCLE
+If alternator does not reset:
+3. ALT 2 Switch............................................................................ OFF
+4. Continue Flight, avoiding IMC or night flight as able (reduced power redundancy).
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Integrated Avionics System
+###Avionics Switch Off
+AVIONICS OFF Caution
+AVIONICS OFF
+
+1. AVIONICS Switch ........................................... ON, AS REQUIRED
+
+###PFD Cooling Fan Failure
+PFD FAN FAIL Advisory
+PFD FAN FAIL
+
+1. AVIONICS FAN 2 Circuit Breaker ....................................... CYCLE
+
+If annunciation does not extinguish:
+a. High cabin temperatures ............................... LAND AS SOON
+AS PRACTICABLE
+b. Low cabin temperatures ......................CONTINUE, MONITOR
+
+###MFD Cooling Fan Failure
+MFD FAN FAIL Advisory
+MFD FAN FAIL
+
+1. AVIONICS FAN 1 Circuit Breaker ....................................... CYCLE
+If annunciation does not extinguish:
+a. High cabin temperatures ............................... LAND AS SOON AS PRACTICABLE
+b. Low cabin temperatures ......................CONTINUE, MONITOR
+
+###Flight Displays Too Dim
+1. INSTRUMENT dimmer knob .................... OFF (FULL COUNTERCLOCKWISE)
+If flight displays do not provide sufficient brightness:
+2. Revert to standby instruments.
+
+
+
+
+
+
+
+
+
+
+
+##Pitot Static System
+###Static Source Blocked
+1. Pitot Heat................................................................................... ON
+2. Alternate Static Source......................................................... OPEN
+###Pitot Tube Blocked
+1. Pitot Heat................................................................................... ON
+
+###Pitot Heat Current Sensor
+PITOT HEAT FAIL Caution
+PITOT HEAT FAIL
+
+1. Pitot Circuit Breaker............................................................ CYCLE
+2. Pitot Heat............................................................. CYCLE OFF, ON
+If inadvertent icing encountered, perform Inadvertent Icing Encounter Emergency Checklist and:
+a. Airspeed ....................... EXPECT NO RELIABLE INDICATION
+b. Exit icing conditions using attitude, altitude, and power instruments.
+
+###Pitot Heat Required
+PITOT HEAT REQD Caution
+PITOT HEAT REQD
+
+1. Pitot Heat................................................................................... ON
+
+
+
+
+
+
+
+
+
+
+
+
+##Flight Control System
+###Electric Trim/Autopilot Failure
+1. Airplane Control..........................................MAINTAIN MANUALLY
+2. Autopilot (if engaged)................................................. DISENGAGE
+If Problem Is Not Corrected:
+3. Circuit Breakers ............................................PULL AS REQUIRED
+a. PITCH TRIM
+b. ROLL TRIM
+c. YAW SERVO
+d. AP SERVOS
+4. Power Lever ............................................................AS REQUIRED
+5. Control Yoke .................................MANUALLY HOLD PRESSURE
+6. Land as soon as practicable.
+
+###Flap System Exceedance
+
+FLAPS OVERSPEED Caution
+FLAPS OVERSPEED
+
+1. Airspeed .......................................................................... REDUCE
+or:
+1. Flaps.............................................................................. RETRACT
+
+###Flaps Not In Takeoff Configuration
+TAKEOFF FLAPS Caution
+TAKEOFF FLAPS
+
+1. Takeoff ................................................................................ ABORT
+2. Aircraft Control................................................................MAINTAIN
+3. Aircraft Configuration ..........................................................CHECK
+
+
+###Flaps Not Set For Climb
+FLAPS CLIMB Advisory
+FLAPS CLIMB
+
+1. Flaps.......................................................................................... UP
+
+
+
+
+
+
+
+
+
+Landing Gear System
+Brake Failure During Taxi
+1. Engine Power..........................................................AS REQUIRED
+a. To Stop Airplane........................................................ REDUCE
+b. If necessary for steering......................................... INCREASE
+
+2. Directional Control ............................... MAINTAIN WITH RUDDER
+3. Brake Pedal(s) ...................................................................... PUMP
+If directional control can not be maintained:
+4. Ignition Switch ......................................................................... OFF
+
+###Left/Right Brake Over-Temperature
+BRAKE TEMP Caution
+BRAKE TEMP
+
+
+1. Stop aircraft and allow the brakes to cool.
+
+
+
+
+
+
+
+##Oxygen System
+###Oxygen Quantity Low
+OXYGEN QTY Caution
+OXYGEN QTY
+
+1. Oxygen Pressure and Flow Rate........................................CHECK
+2. Oxygen Duration.........................................................CALCULATE
+a. See Performance Tab - Oxygen Duration: calculate duration based on remaining pressure, number of occupants and type of device (mask or cannula).
+3. Perform Normal Descent as necessary, dependent on duration calculation.
+4. Annunciation indicated tank pressure is between 800 and 400 PSI. See Performance Tab - Oxygen Duration.
+
+###Oxygen Quantity Low On Ground
+OXYGEN QTY Advisory
+OXYGEN QTY
+
+1. Oxygen Supply ...................REPLENISH IF USE OF OXYGEN IS ANTICIPATED
+
+###Oxygen Quantity Low In-Flight
+OXYGEN QTY Advisory
+OXYGEN QTY
+1. If use of oxygen is anticipated, verify adequate oxygen supply for flight duration. See Performance Tab - Oxygen Duration.
+
+###Oxygen Required
+OXYGEN RQD Caution
+OXYGEN RQD
+
+1. Oxygen System ......................................................................... ON
+2. Oxygen Masks or Cannulas ................................................... DON
+3. Oxygen Flow Rate ......................................... SET AND MONITOR
+4. Pulse Oximeter .......................................... MONITOR O2 LEVELS
+
+
+
+
+
+
+
+###Oxygen System Left On
+OXYGEN LEFT ON Advisory
+OXYGEN LEFT ON
+
+1. Oxygen System ....................................................................... OFF
+
+###Check Oxygen System Status
+CHECK OXYGEN Advisory
+CHECK OXYGEN
+
+1. Pulse Oximeter .............................CHECK SATURATION LEVELS
+If O2 saturations are low:
+a. Oxygen Mask/Cannula..................................................... DON
+b. Oxygen System................................................................... ON
+
+c. Oxygen Flow Rates......................................................CHECK
+
+2. Oxygen Lines........................ VERIFY SECURITY AND ROUTING
+
+3. Oxygen Quantity .................................................................CHECK
+
+
+
+
+
+
+
+
+##Anti-Ice System (Serials w/ FIKI)
+###Windshield De-Ice System Malfunction
+1. ICE PROTECT 1 Circuit Breaker ........................................ CYCLE
+2. Fluid Quantity .................................... SWITCH TO FULLER TANK
+3. WIND SHLD Push-Button......................... PRESS AS REQUIRED
+If the forward field of view is overly restricted during landing approach and taxiing:
+a. Cabin Heat ........................................................................ HOT
+b. Windshield Defrost .............................................................. ON
+
+c. Execute a forward slip as required for visibility.
+
+d. Avoid taxiing without adequate forward visibility.
+
+###Heated Lift Transducer Malfunction
+If ice forms on lift transducer vane:
+1. STALL VANE HEAT Circuit Breaker.................................... CYCLE
+2. PITOT HEAT Switch............................................. CYCLE OFF, ON
+If ice remains on lift transducer vane:
+1. Stall Warning System ......... EXPECT NO RELIABLE INDICATION
+This includes:
+- Impending stall warning.
+- Stall speed indication.
+2. Airspeed ............................................. MONITOR, DO NOT STALL
+3. Fly published VREF speeds...MINIMUM 88 KIAS WITH 50% FLAP
+
+###Low Temperature
+ANTI ICE TEMP Caution
+ANTI ICE TEMP
+
+PFD Alerts Window: “Temperature is too low for ice protection (TKS)”
+1. ICE PROTECT System Switch ................................................ OFF
+2. Icing Conditions .........................................................AVOID / EXIT
+
+
+
+
+
+
+
+
+###Low Fluid Quantity
+ANTI ICE QTY Caution
+ANTI ICE QTY
+
+PFD Alerts Window: “Fluid quantity is low (TKS)”
+1. Icing Conditions .........................................................AVOID / EXIT
+
+###Fluid Quantity Imbalance Detected
+ANTI ICE QTY Caution
+ANTI ICE QTY
+
+PFD Alerts Window: “Fluid quantity imbalance has been detected”
+Imbalance between left and right sensed fluid quantity is greater than 1.0 gallon:
+1. Revert to AUTO control of the fluid source to control the fluid quantity.
+If ANTI ICE PRESS annunciates:
+a. Revert to manual control of the fluid source to control the fluid level quantity.
+(1) Fluid Quantity ....................... SWITCH TO FULLER TANK
+b. WIND SHLD Push-Button ............................................ PRESS
+(1) Repeat operation of windshield pump to verify metering pumps are primed properly as evidenced by deicing fluid exiting windshield nozzles.
+
+If Caution Annunciation extinguishes:
+a. Anti-Ice System ....................................................... MONITOR
+
+If Caution Annunciation does not extinguish or intermittent:
+a. Fluid Quantity ..........................SWITCH TO OPPOSITE TANK
+b. WIND SHLD Push-Button ............................................ PRESS
+(1) Repeat operation of windshield pump to verify metering pumps are primed properly as evidenced by deicing fluid exiting windshield nozzles.
+
+c. Icing Conditions...................................................AVOID / EXIT
+
+
+
+
+
+
+
+
+###Low Pressure
+ANTI ICE PRESS Caution
+ANTI ICE PRESS
+
+PFD Alerts Window: “Tail pressure is low (TKS)”
+1. ICE PROTECT 1 and 2 Circuit Breakers ................................. SET
+2. Anti-Ice - TKS Quantity...................... SWITCH TO FULLER TANK
+3. WIND SHLD Push-Button................................................... PRESS
+a. Repeat operation of windshield pump to verify metering pumps are primed properly as evidenced by deicing fluid exiting windshield nozzles.
+4. ICE PROTECT Mode Switch ................................................. HIGH
+If caution annunciation extinguishes:
+a. Anti-Ice System ........................................................MONITOR
+If caution annunciation does not extinguish or is intermittent:
+a. PUMP BKUP Switch ........................................................... ON
+b. Icing Conditions...................................................AVOID / EXIT
+
+###High Pressure
+ANTI ICE PRESS Caution
+ANTI ICE PRESS
+
+PFD Alerts Window: “Pressure is high (TKS)”
+1. Evidence of Anti-Ice Flow ...............................MONITOR / VERIFY
+
+2. Icing Conditions .........................................................AVOID / EXIT
+
+
+
+
+
+
+
+
+
+###Low/High Airspeed
+ANTI ICE SPEED Caution
+ANTI ICE SPEED
+
+PFD Alerts Window: “Airspeed is too low/high for ice protection (TKS)”
+1. Airspeed ................................................... MAINTAIN 95-177 KIAS AND LESS THAN 204 KTAS.
+
+###Lift Transducer Heater Failure
+ANTI ICE HEAT Caution
+ANTI ICE HEAT
+
+PFD Alerts Window: “Stall warning/AoA heater has failed”
+1. STALL VANE HEAT Circuit Breaker.................................... CYCLE
+2. PITOT HEAT Circuit Breaker .............................................. CYCLE
+3. Icing Conditions .........................................................AVOID / EXIT
+4. Fly aircraft normally using airframe buffet as the stall warning. Ice accumulations on the stall warning vane may result in unreliable stall warning system operation.
+
+###Left/Right Anti-Ice Fluid Level - Serials 22T-1460, 22T1471, 22T-1473 thru 22T-1709, 22T-1732
+ANTI ICE LEVEL Caution
+ANTI ICE LEVEL
+
+PFD Alerts Window: “Right/Left tank fluid quantity is unreliable (TKS)”
+1. Revert to manual control of the fluid source to control the fluid level quantity.
+If ANTI ICE PRESS annunciates:
+
+a. Fluid Quantity ..........................SWITCH TO OPPOSITE TANK
+b. WIND SHLD Push-Button ............................................ PRESS
+(1) Repeat operation of windshield pump to verify metering pumps are primed properly as evidenced by deicing fluid exiting windshield nozzles.
+
+
+
+
+
+
+
+###Dynamic Stall Speed Band Unavailable Advisory
+AOA FAIL Advisory
+AOA FAIL
+
+PFD Alerts Window: “Dynamic stall speed band is unavailable”
+
+
+
+
+
+Angle of Attack signal has failed. This signal is used to calculate and display a dynamic stall speed awareness band (red band) on airspeed tape. With a failed AOA signal, the low speed red band extends to a fixed value of 61 knots.
+
+
+
+##Other Conditions
+###Aborted Takeoff
+1. Power Lever ............................................................................ IDLE
+2. Brakes.....................................................................AS REQUIRED
+
+###Parking Brake Engaged
+PARK BRAKE Caution
+PARK BRAKE
+
+1. Parking Brake .................................................................RELEASE
+2. Monitor CAS for BRAKE TEMP Caution. Stop aircraft and allow the brakes to cool if necessary.
+
+###Communications Failure
+1. Switches, Controls ..............................................................CHECK
+2. Frequency........................................................................ CHANGE
+3. Circuit Breakers ....................................................................... SET
+4. Headset ........................................................................... CHANGE
+
+5. Hand Held Microphone (if equipped) .............................CONNECT
+
+
+
+
+
+
+
+
+
+
+
+#Emergency Procedures
+
+#EMERGENCY
+
+
+
+
+
+
+
+
+
+##Engine Failures
+###Engine Failure On Takeoff (Low Altitude)
+1. Best Glide or Landing Speed...................................... ESTABLISH
+2. Mixture.............................................................................. CUTOFF
+3. Fuel Selector ........................................................................... OFF
+4. Ignition Switch ......................................................................... OFF
+5. Flaps.......................................................................AS REQUIRED
+If time permits:
+a. Power Lever ..................................................................... IDLE
+b. Fuel Pump......................................................................... OFF
+
+c. Seat Belts................................................ENSURE SECURED
+
+d. BAT 1, BAT 2, ALT 1, and ALT 2 Switches ........................ OFF
+
+###Engine Failure In Flight
+1. Best Glide Speed........................................................ ESTABLISH
+2. Fuel Selector ........................................................SWITCH TANKS
+3. Ignition Switch ........................................................ CHECK, BOTH
+4. Fuel Pump ......................................................................... BOOST
+5. Power Lever ...................................................................... ½ OPEN
+6. Mixture..............IDLE CUTOFF THEN SLOWLY ADVANCE UNTIL ENGINE STARTS
+If engine does not start:
+7. Perform Engine Airstart, CAPS Deployment or Emergency Landing w/o Engine Power Checklist, as required.
+If engine starts:
+8. CHTs and Oil Temperature ................................... WARM ENGINE AT PARTIAL POWER IF REQUIRED
+
+
+
+##Airstart
+###Engine Airstart
+1. BAT 1 and BAT 2 Switches ........................................................ ON
+
+2. Power Lever ............................................................ OPEN ½ INCH
+3. Mixture .................................................................RICH, AS REQ’D
+4. Fuel Selector ........................................................SWITCH TANKS
+5. Ignition Switch ...................................................................... BOTH
+6. Fuel Pump ..........................................................................BOOST
+7. ALT 1 and ALT 2 Switches ....................................................... OFF
+8. Starter (Propeller not Windmilling)................................... ENGAGE
+9. Power Lever ...................................................SLOWLY INCREASE
+10. ALT 1 and ALT 2 Switches ......................................................... ON
+11. CHTs and Oil Temperature ................................... WARM ENGINE AT PARTIAL POWER IF REQUIRED FOR SMOOTH OPERATION
+12. If engine will not start, perform Emergency Landing w/o Power Checklist.
+
+
+
+
+
+
+
+##Smoke and Fire
+###Cabin Fire In Flight
+1. BAT 1, ALT 1, and ALT 2 Switches ........................OFF, AS REQ’D
+2. Fire Extinguisher.............................................................ACTIVATE
+3. AVIONICS Switch .................................................................... OFF
+4. All other switches..................................................................... OFF
+5. Land as soon as possible.
+If setting master switches off eliminated source of fire or fumes and airplane is in night, weather, or IFR conditions:
+6. Airflow Selector........................................................................ OFF
+7. BAT 1, BAT 2, ALT 1, and ALT 2 Switches................................. ON
+8. AVIONICS Switch ...................................................................... ON
+9. Required Systems ...............................ACTIVATE ONE AT A TIME
+10. Temperature Selector ........................................................... COLD
+11. Vent Selector .................... FEET / PANEL / DEFROST POSITION
+12. Airflow Selector...............................SET AIRFLOW TO MAXIMUM
+13. Panel Eyeball Outlets ........................................................... OPEN
+14. Land as soon as possible.
+
+###Engine Fire In Flight
+1. Mixture.............................................................................. CUTOFF
+2. Fuel Pump ............................................................................... OFF
+3. Fuel Selector ........................................................................... OFF
+4. Airflow Selector........................................................................ OFF
+5. Power Lever ........................................................................... IDLE
+6. Ignition Switch ......................................................................... OFF
+7. Land as soon as possible.
+
+
+
+
+
+
+
+###Wing Fire In Flight
+1. Pitot Heat Switch ..................................................................... OFF
+2. Navigation Light Switch ........................................................... OFF
+3. Landing Light ........................................................................... OFF
+4. Strobe Light Switch.................................................................. OFF
+5. If possible, side slip to keep flames away from fuel tank and cabin.
+
+6. Land as soon as possible.
+
+###Engine Fire During Start
+1. Mixture .............................................................................. CUTOFF
+2. Fuel Pump ............................................................................... OFF
+3. Fuel Selector ........................................................................... OFF
+4. Power Lever .................................................................. FORWARD
+5. Starter.................................................................................CRANK
+6. If flames persist, perform Emergency Engine Shutdown on
+Ground and Emergency Ground Egress Checklists.
+
+###Smoke and Fume Elimination
+1. Air Conditioner (if installed) ..................................................... OFF
+2. Temperature Selector ........................................................... COLD
+3. Vent Selector .................... FEET / PANEL / DEFROST POSITION
+4. Airflow Selector...............................SET AIRFLOW TO MAXIMUM
+If source of smoke and fume is firewall forward:
+a. Airflow Selector ................................................................. OFF
+5. Panel Eyeball Outlets ........................................................... OPEN
+6. Supplemental Oxygen (if available)
+a. Oxygen Masks or Cannulas ............................................. DON
+b. Oxygen System................................................................... ON
+c. Oxygen Flow Rate................................................... MAXIMUM
+7. Land as soon as possible.
+
+
+
+
+
+
+
+###Emergency Descent
+1. Power Lever ............................................................................ IDLE
+2. Mixture....................................................................AS REQUIRED
+3. Airspeed ................................................................................... VNE
+
+##Forced Landing
+###Emergency Landing w/o Engine Power
+1. Best Glide Speed........................................................ ESTABLISH
+2. Radio ....................................... TRANSMIT (121.5 MHZ) MAYDAY GIVING LOCATION AND INTENTIONS
+3. Transponder............................................................SQUAWK 7700
+4. Power Lever ............................................................................ IDLE
+5. Mixture.............................................................................. CUTOFF
+6. Fuel Selector ........................................................................... OFF
+7. Ignition Switch ......................................................................... OFF
+8. Fuel Pump ............................................................................... OFF
+9. Flaps (when landing is assured)............................................ 100%
+10. Seat Belt(s)....................................................................SECURED
+11. BAT 1, BAT 2, ALT 1, and ALT 2 Switches............................... OFF
+
+###Ditching
+1. Radio ....................................... TRANSMIT (121.5 MHZ) MAYDAY GIVING LOCATION AND INTENTIONS
+2. Transponder............................................................SQUAWK 7700
+3. CAPS..............................................................................ACTIVATE
+4. Airplane ........................................................................ EVACUATE
+5. Flotation Devices ............ INFLATE WHEN CLEAR OF AIRPLANE
+
+###Landing Without Elevator Control
+1. Flaps........................................................................................ 50%
+2. Trim.................................................................................... 80 KIAS
+3. Power.................................... AS REQUIRED FOR GLIDE ANGLE
+
+
+
+
+
+
+
+##Engine System
+###Engine Partial Power Loss
+1. Air Conditioner (if installed) ..................................................... OFF
+2. Fuel Pump ................................................... HIGH BOOST/PRIME
+3. Fuel Selector ........................................................SWITCH TANKS
+4. Mixture ........CHECK APPROPRIATE FOR FLIGHT CONDITIONS
+5. Power Lever ....................................................................... SWEEP
+6. Ignition Switch ................................................... BOTH, L, THEN R
+7. Land as soon as practicable.
+
+###Oil Pressure Out of Range
+OIL PRESS Warning
+OIL PRESS
+
+1. Oil Pressure Gauge ............................................................CHECK
+If pressure low / high:
+a. Power ......REDUCE TO MINIMUM FOR SUSTAINED FLIGHT
+b. Land as soon as possible.
+(1) Prepare for potential engine failure.
+
+###Oil Temperature High
+OIL TEMP Warning
+OIL TEMP
+
+1. Power............................................................................... REDUCE
+2. Airspeed ....................................................................... INCREASE
+3. Mixture .............. ADJUST FUEL FLOW TO TOP OF GREEN ARC
+4. Oil Temperature Gauge ................................................. MONITOR
+If message persists:
+a. Land as soon as possible.
+
+
+
+
+
+
+
+###High Cylinder Head Temperature On Ground
+CHT Caution
+CHT
+
+1. Power Lever ..................................................................... REDUCE
+2. Annunciations and Engine Temperatures .......................MONITOR
+If Caution or Warning annunciation is still illuminated:
+3. Power Lever ................................................ MINIMUM REQUIRED
+4. Flight......................................................................... PROHIBITED
+
+###High Cylinder Head Temperature In-Flight
+CHT Caution
+CHT
+
+1. Power Lever ..................................................................... REDUCE
+2. Mixture.............. ADJUST FUEL FLOW TO TOP OF GREEN ARC
+3. Airspeed ...................................................................... INCREASE
+4. Annunciations and Engine Temperatures .......................MONITOR
+If Caution or Warning annunciation is still illuminated:
+5. Power Lever ............................................... MINIMUM REQUIRED
+6. Engine Instruments ........................................................MONITOR
+If Caution annunciation only remains illuminated:
+a. Land as soon as practicable.
+If Warning annunciation remains illuminated:
+a. Land as soon as possible.
+
+
+
+
+
+
+
+
+
+##Turbocharger System Emergencies
+###Unexpected Loss Of Manifold Pressure
+1. Power .......ADJUST TO MINIMUM REQUIRED FOR SUSTAINED FLIGHT
+2. Mixture ........... ADJUST FOR EGTS BETWEEN 1300 TO 1400 ºF
+3. Descend to MINIMUM SAFE ALTITUDE from which a landing may be safely accomplished.
+4. Divert to nearest suitable airfield.
+5. Radio ..............................ADVISE ATC LANDING IS URGENT OR TRANSMIT (121.5 MHZ) MAYDAY GIVING LOCATION AND INTENTIONS WHEN WORKLOAD PERMITS
+6. Oil Pressure ................................................................... MONITOR
+7. Land as soon as possible.
+
+
+###Manifold Pressure High
+MAN PRESSURE Warning
+MAN PRESSURE
+
+1. Power Lever .............. REDUCE MAP TO LESS THAN 36.5 IN.HG
+2. Flight.............................................................................CONTINUE
+If noticeable surging is present:
+3. Perform Overboost / Pressure Relief Valve Checklist.
+
+###Overboost / Pressure Relief Valve
+1. Power Lever ............................REDUCE TO 30.5 IN.HG OR LESS
+2. Mixture .............. ADJUST FUEL FLOW TO TOP OF GREEN ARC
+If continued surging is present:
+3. Land as soon as practicable.
+
+
+
+
+
+
+
+###Turbine Inlet Temperature High
+TIT Warning
+TIT
+
+1. Mixture.............. ADJUST FUEL FLOW TO TOP OF GREEN ARC
+2. Ignition Switch ...................................................CHECK ON BOTH
+If TIT remains in excess of limits:
+a. Power ........................................................................ REDUCE
+b. Land as soon as practicable.
+
+###EGT, TIT or CHT Temperature Sensor Failure
+1. Similar Gauges ...............................................................MONITOR
+
+
+2. Flight.....................CONTINUE USING REMAINING GAUGES AS REPRESENTATIVE
+
+
+
+
+
+
+
+##Propeller System Emergencies
+###Engine Speed High
+RPM Warning
+RPM
+
+1. Power Lever ......... REDUCE BY 2 IN.HG MANIFOLD PRESSURE
+If governor is not in control (RPM reduces and remains lower after power adjustment):
+2. Perform Propeller Governor Failure Checklist.
+If governor is in control (RPM remains high, but stable after power reduction):
+3. Power Lever ....REDUCE BELOW 34 IN.HG FOR CLIMB, BELOW 30.5 IN.HG FOR CRUISE
+If governed engine speed exceeds 2600 RPM:
+4. Perform Propeller Governor Failure Checklist.
+If governed engine speed is 2600 RPM or less:
+5. Flight.............................................................................CONTINUE
+
+###Propeller Governor Failure
+1. Power Lever .............. REDUCE TO MINIMUM NECESSARY FOR SUSTAINED FLIGHT
+2. Airspeed ................................................. REDUCE TO 85-90 KIAS
+3. Oil Pressure ................................................................... MONITOR
+4. Land as soon as practicable.
+
+
+
+
+
+##Fuel System Emergencies
+###Low Fuel Quantity in Left Tank
+FUEL LOW LEFT Warning
+FUEL LOW LEFT
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Fuel Pump ..........................................................................BOOST
+If HIGH BOOST already in use for vapor suppression, pump should be left in this position for tank switching.
+3. Fuel Selector ............................................................. RIGHT TANK
+
+###Low Fuel Quantity in Right Tank
+FUEL LOW RIGHT Warning
+FUEL LOW RIGHT
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Fuel Pump ..........................................................................BOOST
+If HIGH BOOST already in use for vapor suppression, pump should be left in this position for tank switching.
+
+3. Fuel Selector ............................................................... LEFT TANK
+
+###Low Fuel Quantity
+FUEL LOW TOTAL Warning
+FUEL LOW TOTAL
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Totalized Fuel Quantity .......................................................CHECK
+If totalized fuel quantity differs significantly from sensed quantity:
+a. Initial Fuel Value............................... VERIFY AND CORRECT
+If message persists:
+a. Land as soon as practicable.
+
+
+
+
+
+###Fuel Imbalance
+FUEL IMBALANCE Warning
+FUEL IMBALANCE
+
+1. Fuel Quantity Gauges.........................................................CHECK
+2. Fuel Pump ..........................................................................BOOST
+If HIGH BOOST already in use for vapor suppression, pump should be left in this position for tank switch.
+3. Fuel Selector ........................................... SELECT FULLER TANK
+4. Fuel Pump ..............................................................AS REQUIRED
+After switching tanks, message will remain until sensed imbalance is less than 12 gallons.
+
+###High Fuel Flow On-Ground
+FUEL FLOW Warning
+FUEL FLOW
+
+If warning occurs during takeoff role:
+
+1. Takeoff Run......................................................................... ABORT
+If on ground, not during takeoff run:
+2. Power Lever ..................................................................... REDUCE
+3. Flight Operation ........................................................ PROHIBITED
+Maintenance required to reduce fuel flow.
+###High Fuel Flow In-Flight
+FUEL FLOW Warning
+FUEL FLOW
+1. Mixture Lever .. ADJUST FUEL FLOW TO TOP OF GREEEN ARC
+2. Annunciations and Engine Temperatures ..................... MONITOR
+
+
+
+
+##Electrical System Emergencies
+###High Voltage on Main Bus 1
+M BUS 1 Warning
+M BUS 1
+
+1. ALT 1 Switch....................................................................... CYCLE
+2. M Bus 1 Voltage (M1) .........................................................CHECK
+If M Bus 1 Voltage is greater than 32 volts:
+3. ALT 1 Switch............................................................................ OFF
+4. Perform Alt 1 Caution (Failure) Checklist (do not reset alternator).
+
+###High Voltage on Main Bus 2
+M BUS 2 Warning
+M BUS 2
+
+1. Main Bus 1 Voltage (M1) ....................................................CHECK
+If M Bus 1 Voltage is greater than 32 volts:
+2. Perform M Bus 1 Warning Checklist.
+3. Main Bus 2 Voltage (M2) ....................................................CHECK
+If M Bus 2 Voltage is greater than 32 volts:
+4. ALT 2 Switch....................................................................... CYCLE
+5. Main Bus 2 Voltage (M2) ....................................................CHECK
+If M Bus 2 Voltage remains greater than 32 volts:
+6. ALT 2 Switch............................................................................ OFF
+7. Perform Alt 2 Caution (Failure) Checklist (do not reset alternator).
+
+
+
+
+
+
+
+
+
+
+###High or Low Voltage on Essential Bus
+ESS BUS Warning
+ESS BUS
+
+1. Essential Bus Voltage (ESS) ..............................................CHECK
+If Essential Bus Voltage is greater than 32 volts:
+2. Main Bus 1 and Main Bus 2 Voltages (M1 and M2)............CHECK
+3. Perform appropriate M Bus 1 Warning or M Bus 2 Warning Checklist.
+If Essential Bus Voltage is less than 24.5 volts:
+4. Perform Alt 1 Caution (Failure) and Alt 2 Caution (Failure) Checklists.
+If unable to restore at least one alternator:
+5. Non-Essential Loads ....................................................... REDUCE
+a. If flight conditions permit, consider shedding: Air Conditioning, Landing Light, Pitot Heat, Cabin Fan, Nav Lights, Strobe Lights, Audio Panel, COM 2, Yaw Damper
+
+6. Land as soon as practicable (Battery reserve only).
+
+
+
+
+
+
+
+
+
+##Environmental System Emergencies
+###Carbon Monoxide Level High
+CO LVL HIGH Warning
+CO LVL HIGH
+
+1. Air Conditioner (if installed) ......................NOT IN RECIRC MODE
+2. Temperature Selector ........................................................... COLD
+3. Vent Selector ........................ FEET/PANEL/DEFROST POSITION
+4. Airflow Selector...............................SET AIRFLOW TO MAXIMUM
+5. Panel Eyeball Outlets ........................................................... OPEN
+If CO LVL HIGH does not extinguish:
+6. Supplemental Oxygen (if available)
+a. Oxygen Masks or Cannulas ............................................. DON
+b. Oxygen System................................................................... ON
+
+c. Oxygen Flow Rate................................................... MAXIMUM
+
+
+7. Land as soon as possible.
+
+
+
+
+
+
+##Oxygen System Emergencies
+###Oxygen System Fault - Above 12,500 Ft
+OXYGEN FAULT Warning
+OXYGEN FAULT
+
+1. Oxygen Flow Rate ..............................................................CHECK
+If no flow:
+2. Initiate Emergency Descent to below 12,500 ft:
+a. Power Lever ..................................................................... IDLE
+b. Mixture .............................................................AS REQUIRED
+c. Airspeed ............................................................................. VNE
+Below 12,500 ft:
+(1) Oxygen System .......................................................... OFF
+(2) Flight ................................................................CONTINUE
+Remain below altitudes requiring supplemental oxygen.
+
+If flow is normal:
+3. Oxygen Flow Rate ......................................................... MONITOR
+4. Initiate Normal Descent as soon as practical.
+Below 12,500 ft:
+5. Oxygen System ....................................................................... OFF
+
+
+6. Flight.............................................................................CONTINUE
+Remain below altitudes requiring supplemental oxygen.
+
+
+
+
+
+
+
+
+
+###Oxygen Quantity Low
+OXYGEN QTY Warning
+OXYGEN QTY
+
+1. Oxygen Pressure and Flow Rate........................................CHECK
+2. Initiate Normal Descent (non-emergency) below 12,500 ft.
+3. Oxygen Flow Rate ..........................................................MONITOR
+Below 12,500 ft:
+4. Flight.............................................................................CONTINUE
+Remain below altitudes requiring supplemental oxygen.
+
+###Oxygen Required
+OXYGEN RQD Warning
+OXYGEN RQD
+
+1. Oxygen System ......................................................................... ON
+2. Oxygen Mask/Cannula ........................................................... DON
+3. Oxygen Flow Rate ......................................... SET AND MONITOR
+
+4. Pulse Oximeter .......................................... MONITOR O2 LEVELS
+
+
+
+
+
+##Anti-Ice System (Serials w/ FIKI)
+###Anti-Ice System Failure / Excessive Ice Accumulation
+1. ICE PROTECT 1 and 2 Circuit Breakers ................................. SET
+2. Fluid Quantity .................................... SWITCH TO FULLER TANK
+3. WIND SHLD Push-Button................................................... PRESS
+a. Repeat operation of windshield pump to verify metering pumps are primed properly as evidenced by deicing fluid exiting windshield nozzles.
+4. ICE PROTECT Mode Switch ................................... VERIFY HIGH
+5. PUMP BKUP Switch .................................................................. ON
+If determined windshield pump is not priming:
+6. Exit Icing Conditions Immediately.
+7. Airspeed ....................................................95 KIAS OR GREATER
+Maintain a minimum airspeed of 95 KIAS or higher to stay above pre-stall buffet. If unable to maintain this airspeed, allow altitude to decrease in order to maintain 95 KIAS.
+8. Minimum Approach Speed w/ Residual Ice (Flaps 50%)... 88 KIAS
+In severe icing conditions, it may not be possible to maintain altitude or proper glide path on approach; in this case, it is imperative that a safe airspeed be maintained, the stall warning system may not function and there may be little or no pre-stall buffet with heavy ice loads on the wing.
+9. FLAPS ........................................................ MINIMUM REQUIRED
+When landing is assured, select the minimum flap setting required, not to exceed 50%, and maintain extra airspeed consistent with available field length. Do not retract the flaps once they have been extended unless required for go-around.
+
+###Low Fluid Quantity
+ANTI ICE QTY Warning
+ANTI ICE QTY
+
+PFD Alerts Window: “Fluid quantity is low (TKS)”
+1. Icing Conditions .........................................................AVOID / EXIT
+
+
+
+
+
+
+
+
+
+###AOA Probe Overheat
+AOA OVERHEAT Warning
+AOA OVERHEAT
+
+PFD Alerts Window: “AOA probe is overheated”
+1. PITOT HEAT Switch................................................................. OFF
+2. Icing Conditions .........................................................AVOID / EXIT
+
+Tank Control Failure
+ANTI ICE CTL Warning
+ANTI ICE CTL
+
+PFD Alerts Window: “Tank valves cannot be controlled (closed) (TKS)”
+
+
+1. Icing Conditions .........................................................AVOID / EXIT
+
+
+
+
+
+###Unreliable Left and Right Fluid Quantity
+ANTI ICE QTY Warning
+ANTI ICE QTY
+
+PFD Alerts Window: “Left and right fluid quantities unknown (TKS)”
+Both fluid quantities are unknown and both tanks are closed.
+1. ICE PROTECT System Switch ................................................ OFF
+2. Icing Conditions .........................................................AVOID / EXIT
+
+###Full Flaps Prohibited In Ice
+FLAPS ICE Warning
+FLAPS ICE
+
+PFD Alerts Window: “Full flaps prohibited in icing conditions”
+
+1. Flaps....................................................................SET UP OR 50%
+
+
+
+
+
+
+
+
+##Integrated Avionics System Emergencies
+###Attitude & Heading Reference System (AHRS) Failure
+1. Verify Avionics System has switched to functioning AHRS.
+If not, manually switch to functioning AHRS and attempt to bring failed AHRS back on-line:
+2. Failed ADAHRS Circuit Breaker .............................................. SET
+If open, reset (close) circuit breaker. If circuit breaker opens again, do not reset.
+3. Be prepared to revert to Standby Instruments (Attitude, Heading).
+
+###Air Data Computer (ADC) Failure
+1. Failed ADAHRS Circuit Breaker .............................................. SET
+If open, reset (close) circuit breaker. If circuit breaker opens again, do not reset.
+2. Revert to Standby Instruments (Altitude, Airspeed).
+3. Land as soon as practicable.
+
+###PFD Display Failure
+1. Display Backup ...............................................................ACTIVATE
+2. Land as soon as practicable.
+
+
+
+
+
+
+
+
+##Unusual Attitude Emergencies
+
+###Inadvertent Spiral Dive During IMC Flight
+1. Power Lever ............................................................................ IDLE
+2. Stop the spiral dive by using coordinated aileron and rudder control while referring to the attitude indicator and turn coordinator to level the wings.
+3. Cautiously apply elevator back pressure to bring airplane to level flight attitude.
+4. Trim for level flight.
+5. Set power as required.
+6. Use autopilot if functional otherwise maintain a constant heading through the coordinated aileron and rudder inputs.
+7. Exit IMC conditions as soon as possible.
+
+
+
+
+
+
+
+
+
+
+###Power Lever Linkage Failure
+1. Power Lever Movement ..................................................... VERIFY
+2. Power......................................................................... SET IF ABLE
+3. Flaps.................................................................... SET IF NEEDED
+4. Mixture....................... AS REQUIRED (FULL RICH TO CUT-OFF)
+5. Land as soon as possible.
+
+###Emergency Engine Shutdown On Ground
+1. Power Lever ............................................................................ IDLE
+2. Fuel Pump (if used) ................................................................. OFF
+3. Mixture.............................................................................. CUTOFF
+4. Fuel Selector ........................................................................... OFF
+5. Ignition Switch ......................................................................... OFF
+6. BAT 1, BAT 2, ALT 1, and ALT 2 Switches............................... OFF
+
+###Left/Right Brake Over-Temperature
+BRAKE TEMP Warning
+BRAKE TEMP
+
+1. Stop aircraft and allow the brakes to cool.
+
+
+
+
+
+
+
+##Other Emergencies
+
+
+
+
+
+
+###Start Engaged On-Ground
+START ENGAGED Warning
+START ENGAGED
+
+1. Ignition Switch ........................................................... DISENGAGE
+2. Wait 1 minute before next start attempt.
+If starter does not disengage (relay or solenoid failure):
+3. BAT 1 Switch ........................................................................... OFF
+4. Engine ....................................................................... SHUTDOWN
+5. STARTER Circuit Breaker...................................................... PULL
+
+###Start Engaged In-Flight
+START ENGAGED Warning
+START ENGAGED
+1. Ignition Switch ...........................ENSURE NOT STUCK IN START
+2. STARTER Circuit Breaker...................................................... PULL
+3. Flight.............................................................................CONTINUE
+Engine start will not be available at destination.
+
+###Emergency Ground Egress
+1. Engine ....................................................................... SHUTDOWN
+2. Seat belts........................................................................RELEASE
+3. Airplane .................................................................................. EXIT
+
+
+
+
+
+
+###CAPS Deployment
+1. Activation Handle Cover .................................................. REMOVE
+2. Activation Handle (Both Hands) ............. PULL STRAIGHT DOWN
+3. Mixture.............................................................................. CUTOFF
+4. Fuel Selector ........................................................................... OFF
+5. Fuel Pump ............................................................................... OFF
+6. BAT 1, BAT 2, ALT 1, and ALT 2 Switches............................... OFF
+Turn the master switches off after completing any necessary radio communications.
+7. Ignition Switch ......................................................................... OFF
+8. ELT ............................................................................................ ON
+9. Seat Belts and Harnesses ...............................................TIGHTEN
+10. Loose Items ..................................................................... SECURE
+11. Assume emergency landing body position.
+12. After the airplane comes to a complete stop, evacuate quickly and move upwind.
+
+
+
+
+
+
