@@ -35,6 +35,7 @@ class ChecklistStep:
     action: str
     is_conditional: bool
     indent_level: int
+    step_number: Optional[str]
     sub_steps: List['ChecklistStep']
 
 @dataclass
@@ -46,6 +47,7 @@ class Checklist:
     cas: Optional[str]
     cas_type: Optional[str]
     cas_description: Optional[str]
+    alert_message: Optional[str]
     steps: List[ChecklistStep]
 
 def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> None:
@@ -62,15 +64,17 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     current_step: Optional[ChecklistStep] = None
     current_section: Optional[str] = None
     current_subsection: Optional[str] = None
+    current_cas: Optional[str] = None
+    current_cas_type: Optional[str] = None
+    current_cas_description: Optional[str] = None
     line_count = 0
     
     # Define regex patterns
     section_pattern = re.compile(r"#([A-Z].+)$")
     subsection_pattern = re.compile(r"^##([A-Z].+)$")
     checklist_pattern = re.compile(r"^###(.+)$")
-    item_pattern = re.compile(r"^(\s*)(?:(\d+\.)|([a-z]\.)|(\(\d+\)))\s+(.+?)(?:\.\.\.\s*(.+))?$")
-    cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+) ?(Warning|Advisory)?$")
-    pfd_alert_pattern = re.compile(r"^PFD Alerts Window: (.+)$")
+    item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
+    cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?:\s+\(([^)]+)\))?(?:\s*-\s*(.+))?$")
     
     if verbose:
         print(f"Opening input file: {file_path}")
@@ -78,7 +82,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
         
-    for line in lines:
+    for i, line in enumerate(lines, 1):
         line_count += 1
         line = line.rstrip()
         
@@ -91,7 +95,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
         if section_match:
             current_section = section_match.group(1)
             if verbose:
-                print(f"Found section: {current_section} at line {line_count}")
+                print(f"Found section: {current_section} at line {i}")
             continue
         
         # Check for subsection header
@@ -99,7 +103,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
         if subsection_match:
             current_subsection = subsection_match.group(1)
             if verbose:
-                print(f"Found subsection: {current_subsection} at line {line_count}")
+                print(f"Found subsection: {current_subsection} at line {i}")
             continue
         
         # Check for checklist title
@@ -115,26 +119,27 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 section=current_section or "",
                 subsection=current_subsection,
                 steps=[],
-                cas=None,
-                cas_type=None,
-                cas_description=None
+                cas=current_cas,
+                cas_type=current_cas_type,
+                cas_description=current_cas_description,
+                alert_message=current_cas
             )
             current_step = None
+            current_cas = None
+            current_cas_type = None
+            current_cas_description = None
             if verbose:
-                print(f"Found checklist: {current_checklist.title} at line {line_count}")
+                print(f"Found checklist: {current_checklist.title} at line {i}")
             continue
         
         # Check for CAS message
         cas_match = cas_message_pattern.match(line)
-        if cas_match and len(cas_match.group(1)) > 2:  # Avoid matching single letters
-            if current_checklist:
-                checklists.append(current_checklist)
-
-            current_checklist.cas = cas_match.group(1).strip()
-            if cas_match.group(2):
-                current_checklist.cas_type = cas_match.group(2)
+        if cas_match:
+            current_cas = cas_match.group(1).strip()
+            current_cas_type = cas_match.group(2).strip() if cas_match.group(2) else None
+            current_cas_description = cas_match.group(3).strip() if cas_match.group(3) else None
             if verbose:
-                print(f"Found CAS message: {current_checklist.cas} at line {line_count}")
+                print(f"Found CAS message: {current_cas} at line {i}")
             continue
         
         # Check for checklist step
@@ -149,8 +154,21 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             instruction = content.strip()
             action = action.strip() if action else ""
             
+            # Remove dots from action text
+            if action:
+                action = re.sub(r'\.+', '', action).strip()
+            
             # Check if step is conditional
             is_conditional = instruction.lower().startswith(('if', 'when', 'verify'))
+            
+            # Determine step number format
+            step_number = None
+            if num1:  # "1", "2", etc.
+                step_number = num1
+            elif num2:  # "(1)", "(2)", etc.
+                step_number = f"({num2})"
+            elif num3:  # "a", "b", etc.
+                step_number = num3
             
             new_step = ChecklistStep(
                 id=str(uuid.uuid4()),
@@ -158,10 +176,11 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 action=action,
                 is_conditional=is_conditional,
                 indent_level=indent_level,
+                step_number=step_number,
                 sub_steps=[]
             )
             
-            # Add step to appropriate parent based on indentation
+            # Add step to appropriate parent based on indentation and number format
             if indent_level == 0:
                 current_checklist.steps.append(new_step)
                 current_step = new_step
@@ -176,8 +195,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 current_step = new_step
             
             if verbose:
-                step_num = num1 or num2 or num3
-                print(f"Found step: {step_num} - {instruction} at line {line_count}")
+                print(f"Found step: {step_number} - {instruction} at line {i}")
             continue
     
     # Add the last checklist
