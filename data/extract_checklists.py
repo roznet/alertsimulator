@@ -30,7 +30,6 @@ OUTPUT_FILE = "S22TG6-Checklists.json"
 
 @dataclass
 class ChecklistStep:
-    id: str
     instruction: str
     action: str
     is_conditional: bool
@@ -40,7 +39,6 @@ class ChecklistStep:
 
 @dataclass
 class Checklist:
-    id: str
     title: str
     section: str
     subsection: Optional[str]
@@ -74,7 +72,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     checklist_pattern = re.compile(r"^###(.+)$")
     item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
     cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?: (Warning|Advisory|Caution))?$")
-    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [“"]([^“”"]*)[”"]$')
+    pfd_alert_pattern = re.compile(r'^PFD Alerts Window:\s*["""]([^"""]*)[""]$')
     # Unnumbered should be last as it's the most generic
     unnumbered_item_pattern = re.compile(r"^(\s*)([^#].+?)(?:\.\.\.\s*(.+))?$")
     
@@ -116,7 +114,6 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             
             # Create new checklist
             current_checklist = Checklist(
-                id=str(uuid.uuid4()),
                 title=checklist_match.group(1).strip(),
                 section=current_section or "",
                 subsection=current_subsection,
@@ -186,7 +183,6 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 indent_level = 1
 
             new_step = ChecklistStep(
-                id=str(uuid.uuid4()),
                 instruction=instruction,
                 action=action,
                 is_conditional=is_conditional,
@@ -262,7 +258,6 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             is_conditional = instruction.lower().startswith(('if', 'when', 'verify'))
             
             new_step = ChecklistStep(
-                id=str(uuid.uuid4()),
                 instruction=instruction,
                 action=action,
                 is_conditional=is_conditional,
