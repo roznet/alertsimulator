@@ -200,6 +200,147 @@ def validate_cas_messages(txt_path: str, json_path: str) -> ValidationTest:
     
     return test
 
+def extract_checklist_steps(txt_path: str, checklist_title: str, checklist_section: str) -> List[str]:
+    """Extract all steps from a specific checklist in the text file, matching both title and section."""
+    steps = []
+    in_section = False
+    in_checklist = False
+    current_section = None
+    section_pattern = re.compile(r"^#([A-Z].+)$")
+    checklist_pattern = re.compile(r'^###(.+)$')
+    item_pattern = re.compile(r'^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$')
+    unnumbered_item_pattern = re.compile(r"^(\s*)([^#].+?)(?:\.\.\.\s*(.+))?$")
+    
+    with open(txt_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            
+            # Check for section header
+            section_match = section_pattern.match(line)
+            if section_match:
+                current_section = section_match.group(1).strip()
+                in_section = (current_section == checklist_section)
+                in_checklist = False  # Reset checklist flag when section changes
+                continue
+                
+            # Only process checklist if we're in the right section
+            if not in_section:
+                continue
+                
+            # Check for checklist title
+            checklist_match = checklist_pattern.match(line)
+            if checklist_match:
+                title = checklist_match.group(1).strip()
+                if title == checklist_title:
+                    in_checklist = True
+                    continue
+                elif in_checklist:
+                    # We've reached the next checklist
+                    break
+                continue
+            
+            if in_checklist:
+                # Try to match numbered items first
+                item_match = item_pattern.match(line)
+                if item_match:
+                    content = item_match.group(5).strip()
+                    steps.append(content)
+                    continue
+                
+                # Then try unnumbered items
+                unnumbered_match = unnumbered_item_pattern.match(line)
+                if unnumbered_match:
+                    content = unnumbered_match.group(2).strip()
+                    # Skip if this looks like a section, subsection, CAS message, or PFD Alert
+                    if not (content.isupper() or content.startswith('PFD Alerts Window:')):
+                        steps.append(content)
+    
+    return steps
+
+def normalize_instruction(instruction: str) -> str:
+    """Normalize instruction text for comparison by removing dots and extra whitespace."""
+    return re.sub(r'\s+', ' ', instruction.replace('.', '').strip())
+
+def validate_checklist_steps(txt_path: str, json_path: str) -> ValidationTest:
+    """
+    Validate that all steps in each JSON checklist appear in the same order
+    in the text file, matching checklists by both title and section.
+    """
+    test = ValidationTest(
+        name="Checklist Steps Validation",
+        description="Verify all checklist steps from JSON appear in order in the text file"
+    )
+    
+    try:
+        json_data = load_json_checklists(json_path)
+        total_checklists = len(json_data)
+        matching_checklists = 0
+        
+        for checklist in json_data:
+            title = checklist['title']
+            section = checklist['section']
+            txt_steps = extract_checklist_steps(txt_path, title, section)
+            
+            if not txt_steps:
+                test.add_error(f"Could not find steps for checklist '{title}' (section: {section}) in text file")
+                continue
+                
+            # Get all instructions from JSON steps (including sub-steps)
+            json_instructions = []
+            def collect_instructions(steps):
+                for step in steps:
+                    if step['instruction']:
+                        json_instructions.append(normalize_instruction(step['instruction']))
+                    if step['sub_steps']:
+                        collect_instructions(step['sub_steps'])
+            
+            collect_instructions(checklist['steps'])
+            
+            # Normalize text file steps
+            txt_instructions = [normalize_instruction(step) for step in txt_steps]
+            
+            # Check if all JSON instructions appear in order in text file
+            txt_idx = 0
+            json_idx = 0
+            missing_steps = []
+            
+            while json_idx < len(json_instructions):
+                json_instruction = json_instructions[json_idx]
+                
+                # Try to find the next JSON instruction in remaining text steps
+                found = False
+                while txt_idx < len(txt_instructions):
+                    if json_instruction == txt_instructions[txt_idx]:
+                        found = True
+                        txt_idx += 1
+                        break
+                    txt_idx += 1
+                
+                if not found:
+                    missing_steps.append(json_instruction)
+                
+                json_idx += 1
+            
+            if missing_steps:
+                test.add_error(f"Checklist '{title}' (section: {section}) has steps in JSON that don't appear in order in text file:")
+                for step in missing_steps:
+                    test.add_error(f"  • {step}")
+            else:
+                matching_checklists += 1
+                test.add_debug(f"✓ Checklist '{title}' (section: {section}) steps match")
+        
+        test.add_verbose(f"Found {matching_checklists}/{total_checklists} checklists with matching steps")
+        
+        if not test.error_messages:
+            test.success()
+            
+    except Exception as e:
+        test.add_error(f"Error during validation: {str(e)}")
+    
+    return test
+
 def main():
     parser = argparse.ArgumentParser(description='Validate checklist JSON against source text file.')
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
@@ -222,6 +363,7 @@ def main():
     # Run validation tests
     results.add_test(validate_checklist_titles(txt_path, json_path))
     results.add_test(validate_cas_messages(txt_path, json_path))
+    results.add_test(validate_checklist_steps(txt_path, json_path))
     
     # Print results
     results.print_results(args.verbose, args.debug)

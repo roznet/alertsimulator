@@ -72,7 +72,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     checklist_pattern = re.compile(r"^###(.+)$")
     item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
     cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?: (Warning|Advisory|Caution))?$")
-    pfd_alert_pattern = re.compile(r'^PFD Alerts Window:\s*["""]([^"""]*)[""]$')
+    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [“"]([^“”"]*)[”"]$')
     # Unnumbered should be last as it's the most generic
     unnumbered_item_pattern = re.compile(r"^(\s*)([^#].+?)(?:\.\.\.\s*(.+))?$")
     
