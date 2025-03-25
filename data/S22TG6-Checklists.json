@@ -5276,16 +5276,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE TEMP",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Temperature is too low for ice protection (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cTemperature is too low for ice protection (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "ICE PROTECT System Switch",
                 "action": "OFF",
@@ -5310,16 +5302,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE QTY",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Fluid quantity is low (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cFluid quantity is low (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Icing Conditions",
                 "action": "AVOID / EXIT",
@@ -5336,16 +5320,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE QTY",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Fluid quantity imbalance has been detected",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cFluid quantity imbalance has been detected\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Imbalance between left and right sensed fluid quantity is greater than 1.0 gallon:",
                 "action": "",
@@ -5469,16 +5445,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE PRESS",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Tail pressure is low (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cTail pressure is low (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "ICE PROTECT 1 and 2 Circuit Breakers",
                 "action": "SET",
@@ -5570,16 +5538,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE PRESS",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Pressure is high (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cPressure is high (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Evidence of Anti-Ice Flow",
                 "action": "MONITOR / VERIFY",
@@ -5604,16 +5564,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE SPEED",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Airspeed is too low/high for ice protection (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cAirspeed is too low/high for ice protection (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Airspeed",
                 "action": "MAINTAIN 95-177 KIAS AND LESS THAN 204 KTAS",
@@ -5630,16 +5582,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE HEAT",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Stall warning/AoA heater has failed",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cStall warning/AoA heater has failed\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "STALL VANE HEAT Circuit Breaker",
                 "action": "CYCLE",
@@ -5680,16 +5624,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE LEVEL",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Right/Left tank fluid quantity is unreliable (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cRight/Left tank fluid quantity is unreliable (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Revert to manual control of the fluid source to control the fluid level quantity.",
                 "action": "",
@@ -5739,16 +5675,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "AOA FAIL",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Dynamic stall speed band is unavailable",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cDynamic stall speed band is unavailable\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Angle of Attack signal has failed. This signal is used to calculate and display a dynamic stall speed awareness band (red band) on airspeed tape. With a failed AOA signal, the low speed red band extends to a fixed value of 61 knots.",
                 "action": "",
@@ -8462,16 +8390,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE QTY",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Fluid quantity is low (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cFluid quantity is low (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Icing Conditions",
                 "action": "AVOID / EXIT",
@@ -8488,16 +8408,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "AOA OVERHEAT",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "AOA probe is overheated",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cAOA probe is overheated\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "PITOT HEAT Switch",
                 "action": "OFF",
@@ -8522,16 +8434,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE CTL",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Tank valves cannot be controlled (closed) (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cTank valves cannot be controlled (closed) (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Icing Conditions",
                 "action": "AVOID / EXIT",
@@ -8548,16 +8452,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "ANTI ICE QTY",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Left and right fluid quantities unknown (TKS)",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cLeft and right fluid quantities unknown (TKS)\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Both fluid quantities are unknown and both tanks are closed.",
                 "action": "",
@@ -8590,16 +8486,8 @@
         "subsection": "Anti-Ice System (Serials w/ FIKI)",
         "alert": "FLAPS ICE",
         "alert_type": null,
-        "alert_message": null,
+        "alert_message": "Full flaps prohibited in icing conditions",
         "steps": [
-            {
-                "instruction": "PFD Alerts Window: \u201cFull flaps prohibited in icing conditions\u201d",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
             {
                 "instruction": "Flaps",
                 "action": "SET UP OR 50%",
