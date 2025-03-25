@@ -200,9 +200,10 @@ def validate_cas_messages(txt_path: str, json_path: str) -> ValidationTest:
     
     return test
 
-def extract_checklist_steps(txt_path: str, checklist_title: str, checklist_section: str) -> List[str]:
-    """Extract all steps from a specific checklist in the text file, matching both title and section."""
+def extract_checklist_steps(txt_path: str, checklist_title: str, checklist_section: str) -> Tuple[List[str], Optional[str]]:
+    """Extract all steps and CAS message from a specific checklist in the text file, matching both title and section."""
     steps = []
+    cas_message = None
     in_section = False
     in_checklist = False
     current_section = None
@@ -210,54 +211,68 @@ def extract_checklist_steps(txt_path: str, checklist_title: str, checklist_secti
     checklist_pattern = re.compile(r'^###(.+)$')
     item_pattern = re.compile(r'^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$')
     unnumbered_item_pattern = re.compile(r"^(\s*)([^#].+?)(?:\.\.\.\s*(.+))?$")
+    cas_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?: (Warning|Advisory|Caution))?$")
     
     with open(txt_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
+        lines = f.readlines()
+        
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if not line:
+            continue
+        
+        # Check for section header
+        section_match = section_pattern.match(line)
+        if section_match:
+            current_section = section_match.group(1).strip()
+            in_section = (current_section == checklist_section)
+            in_checklist = False  # Reset checklist flag when section changes
+            continue
+            
+        # Only process checklist if we're in the right section
+        if not in_section:
+            continue
+            
+        # Check for checklist title
+        checklist_match = checklist_pattern.match(line)
+        if checklist_match:
+            title = checklist_match.group(1).strip()
+            if title == checklist_title:
+                in_checklist = True
+                # Look for CAS message in the next few lines (up to 5 lines)
+                for j in range(1, 6):  # Look at next 5 lines
+                    if i + j >= len(lines):
+                        break
+                    next_line = lines[i + j].strip()
+                    if not next_line:  # Skip empty lines
+                        continue
+                    cas_match = cas_pattern.match(next_line)
+                    if cas_match:
+                        cas_message = cas_match.group(1).strip()
+                        break
+                continue
+            elif in_checklist:
+                # We've reached the next checklist
+                break
+            continue
+        
+        if in_checklist:
+            # Try to match numbered items first
+            item_match = item_pattern.match(line)
+            if item_match:
+                content = item_match.group(5).strip()
+                steps.append(content)
                 continue
             
-            # Check for section header
-            section_match = section_pattern.match(line)
-            if section_match:
-                current_section = section_match.group(1).strip()
-                in_section = (current_section == checklist_section)
-                in_checklist = False  # Reset checklist flag when section changes
-                continue
-                
-            # Only process checklist if we're in the right section
-            if not in_section:
-                continue
-                
-            # Check for checklist title
-            checklist_match = checklist_pattern.match(line)
-            if checklist_match:
-                title = checklist_match.group(1).strip()
-                if title == checklist_title:
-                    in_checklist = True
-                    continue
-                elif in_checklist:
-                    # We've reached the next checklist
-                    break
-                continue
-            
-            if in_checklist:
-                # Try to match numbered items first
-                item_match = item_pattern.match(line)
-                if item_match:
-                    content = item_match.group(5).strip()
+            # Then try unnumbered items
+            unnumbered_match = unnumbered_item_pattern.match(line)
+            if unnumbered_match:
+                content = unnumbered_match.group(2).strip()
+                # Skip if this looks like a section, subsection, CAS message, or PFD Alert
+                if not (content.isupper() or content.startswith('PFD Alerts Window:')):
                     steps.append(content)
-                    continue
-                
-                # Then try unnumbered items
-                unnumbered_match = unnumbered_item_pattern.match(line)
-                if unnumbered_match:
-                    content = unnumbered_match.group(2).strip()
-                    # Skip if this looks like a section, subsection, CAS message, or PFD Alert
-                    if not (content.isupper() or content.startswith('PFD Alerts Window:')):
-                        steps.append(content)
     
-    return steps
+    return steps, cas_message
 
 def normalize_instruction(instruction: str) -> str:
     """Normalize instruction text for comparison by removing dots and extra whitespace."""
@@ -267,10 +282,11 @@ def validate_checklist_steps(txt_path: str, json_path: str) -> ValidationTest:
     """
     Validate that all steps in each JSON checklist appear in the same order
     in the text file, matching checklists by both title and section.
+    Also validates that CAS messages match between text and JSON.
     """
     test = ValidationTest(
         name="Checklist Steps Validation",
-        description="Verify all checklist steps from JSON appear in order in the text file"
+        description="Verify all checklist steps from JSON appear in order in the text file and CAS messages match"
     )
     
     try:
@@ -281,11 +297,21 @@ def validate_checklist_steps(txt_path: str, json_path: str) -> ValidationTest:
         for checklist in json_data:
             title = checklist['title']
             section = checklist['section']
-            txt_steps = extract_checklist_steps(txt_path, title, section)
+            txt_steps, txt_cas = extract_checklist_steps(txt_path, title, section)
             
             if not txt_steps:
                 test.add_error(f"Could not find steps for checklist '{title}' (section: {section}) in text file")
                 continue
+            
+            # Validate CAS message if present in JSON
+            json_alert = checklist.get('alert')
+            if json_alert:
+                if not txt_cas:
+                    test.add_error(f"Checklist '{title}' (section: {section}) has alert in JSON but no CAS message in text file")
+                elif json_alert != txt_cas:
+                    test.add_error(f"Checklist '{title}' (section: {section}) has mismatched CAS messages:")
+                    test.add_error(f"  • JSON: {json_alert}")
+                    test.add_error(f"  • Text: {txt_cas}")
                 
             # Get all instructions from JSON steps (including sub-steps)
             json_instructions = []
@@ -330,6 +356,8 @@ def validate_checklist_steps(txt_path: str, json_path: str) -> ValidationTest:
             else:
                 matching_checklists += 1
                 test.add_debug(f"✓ Checklist '{title}' (section: {section}) steps match")
+                if json_alert and txt_cas:
+                    test.add_debug(f"  • CAS message: {txt_cas}")
         
         test.add_verbose(f"Found {matching_checklists}/{total_checklists} checklists with matching steps")
         
