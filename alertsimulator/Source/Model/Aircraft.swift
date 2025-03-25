@@ -40,4 +40,11 @@ struct Aircraft : Hashable, Equatable{
     var alerts : [FlightAlert] {
         return FlightAlert.availableFor(aircraft: self)
     }
+    
+    var checklists : [Checklist] {
+        guard let checklists = try? Checklist.load(for: self) else {
+            return []
+        }
+        return checklists
+    }
 }

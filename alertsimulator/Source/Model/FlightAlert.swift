@@ -127,6 +127,21 @@ struct FlightAlert : Codable, CustomStringConvertible {
             }
         }
     }
+    
+    func hasChecklist(in aircraft: Aircraft) -> Bool {
+        // Only check for checklists if this is a CAS message in EMERGENCY or ABNORMAL category
+        guard alertType == .cas,
+              (category == .emergency || category == .abnormal),
+              let message = self.message else {
+            return false
+        }
+        
+        // Find matching checklist
+        return aircraft.checklists.contains { checklist in
+            checklist.alert == message
+        }
+    }
+    
     var uniqueIdentifier: String {
         var vals : [String] = ["\(self.uid)", category.uniqueIdentifier, alertType.uniqueIdentifier]
         if let message = message {

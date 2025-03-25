@@ -43,6 +43,7 @@ class AlertViewModel: ObservableObject {
     @Published var hasPendingNotification : Int = 0
     
     @Published var casMessage : CASMessage = CASMessage()
+    @Published var hasChecklist : Bool = false
     
     @Published var selectedAircraftName : String = FlightAlert.aircrafts.first?.aircraftName ?? "undefined"
     @Published var numberOfAlertForAircraft : Int = 0
@@ -113,12 +114,14 @@ class AlertViewModel: ObservableObject {
     init() {
         if let last = self.notificationManager.lastNotification {
             self.casMessage = last.flightAlert.casMessage
+            self.hasChecklist = last.flightAlert.hasChecklist(in: self.aircraft)
         }
         NotificationCenter.default.addObserver(forName: .didReceiveSimulatedAlert, object: nil, queue: nil){ notification in
             if let simulatedAlert = notification.object as? FlightAlert{
                 Logger.app.info("Processing \(simulatedAlert)")
                 DispatchQueue.main.async {
                     self.casMessage = simulatedAlert.casMessage
+                    self.hasChecklist = simulatedAlert.hasChecklist(in: self.aircraft)
                 }
             }
         }
@@ -233,6 +236,7 @@ class AlertViewModel: ObservableObject {
     
     func clearAlerts() {
         self.casMessage = CASMessage()
+        self.hasChecklist = false
     }
     
     func checkNotifications() {
