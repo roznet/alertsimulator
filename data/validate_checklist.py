@@ -9,7 +9,7 @@ import json
 import re
 import os
 import argparse
-from typing import List, Dict, Set, Tuple
+from typing import List, Dict, Set, Tuple, Optional
 
 class ValidationTest:
     def __init__(self, name: str, description: str):
@@ -136,6 +136,70 @@ def validate_checklist_titles(txt_path: str, json_path: str) -> ValidationTest:
     
     return test
 
+def extract_cas_messages(txt_path: str) -> Set[str]:
+    """Extract all CAS messages from the text file (ignoring the type)."""
+    messages = set()
+    cas_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?: (Warning|Advisory|Caution))?$")
+    
+    with open(txt_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            match = cas_pattern.match(line.strip())
+            if match:
+                message = match.group(1).strip()
+                messages.add(message)
+    
+    return messages
+
+def validate_cas_messages(txt_path: str, json_path: str) -> ValidationTest:
+    """
+    Validate that all CAS messages in the text file exist in the JSON file
+    and vice versa, ignoring the alert type.
+    """
+    test = ValidationTest(
+        name="CAS Messages Validation",
+        description="Verify all CAS messages from text file exist in JSON and vice versa"
+    )
+    
+    try:
+        # Get CAS messages from text file
+        txt_messages = extract_cas_messages(txt_path)
+        
+        # Get CAS messages from JSON file
+        json_data = load_json_checklists(json_path)
+        json_messages = {
+            checklist['alert']
+            for checklist in json_data
+            if checklist['alert'] is not None
+        }
+        
+        # Find matching messages
+        matching_messages = txt_messages & json_messages
+        test.add_verbose(f"Found {len(matching_messages)} matching CAS messages")
+        
+        # Add detailed message list in debug mode
+        if matching_messages:
+            test.add_debug("Matched CAS messages:")
+            for msg in sorted(matching_messages):
+                test.add_debug(f"  • {msg}")
+        
+        # Check for missing messages in JSON
+        missing_in_json = txt_messages - json_messages
+        if missing_in_json:
+            test.add_error(f"CAS messages found in text file but missing in JSON: {sorted(missing_in_json)}")
+        
+        # Check for extra messages in JSON
+        extra_in_json = json_messages - txt_messages
+        if extra_in_json:
+            test.add_error(f"CAS messages found in JSON but missing in text file: {sorted(extra_in_json)}")
+        
+        if not test.error_messages:
+            test.success()
+            
+    except Exception as e:
+        test.add_error(f"Error during validation: {str(e)}")
+    
+    return test
+
 def main():
     parser = argparse.ArgumentParser(description='Validate checklist JSON against source text file.')
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
@@ -157,6 +221,7 @@ def main():
     
     # Run validation tests
     results.add_test(validate_checklist_titles(txt_path, json_path))
+    results.add_test(validate_cas_messages(txt_path, json_path))
     
     # Print results
     results.print_results(args.verbose, args.debug)
