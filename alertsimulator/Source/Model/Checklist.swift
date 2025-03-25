@@ -6,7 +6,7 @@ enum ChecklistError: Error {
 }
 
 struct Checklist: Codable, Identifiable {
-    let id: String
+    let id: String = UUID().uuidString
     let title: String
     let section: String
     let subsection: String?
@@ -16,7 +16,6 @@ struct Checklist: Codable, Identifiable {
     let steps: [ChecklistItem]
     
     enum CodingKeys: String, CodingKey {
-        case id
         case title
         case section
         case subsection
@@ -26,9 +25,10 @@ struct Checklist: Codable, Identifiable {
         case steps
     }
     
-    static func loadFromJSON() throws -> [Checklist] {
-        guard let url = Bundle.main.url(forResource: "SR22TG6-Checklists", withExtension: "json") else {
-            throw ChecklistError.fileNotFound
+    static func load(for aircraft: Aircraft) throws -> [Checklist] {
+        let fileName = "\(aircraft.aircraftName)-Checklists"
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
+            return []
         }
         
         let data = try Data(contentsOf: url)

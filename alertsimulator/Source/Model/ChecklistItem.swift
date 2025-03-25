@@ -1,7 +1,7 @@
 import Foundation
 
 struct ChecklistItem: Codable, Identifiable {
-    let id: String
+    let id: String = UUID().uuidString
     let instruction: String
     let action: String
     let isConditional: Bool
@@ -10,7 +10,6 @@ struct ChecklistItem: Codable, Identifiable {
     let subSteps: [ChecklistItem]
     
     enum CodingKeys: String, CodingKey {
-        case id
         case instruction
         case action
         case isConditional = "is_conditional"

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421F1EE32D916F70003BAB7B /* S22TG6-Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */; };
+		421F1EE42D916F70003BAB7B /* S22TG6-Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */; };
+		421F1EE62D91E584003BAB7B /* S22TG6-Checklists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */; };
 		42DAD7602D200DBD00BEC3C2 /* RZUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD75F2D200DBD00BEC3C2 /* RZUtils */; };
 		42DAD7622D200DBD00BEC3C2 /* RZUtilsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7612D200DBD00BEC3C2 /* RZUtilsSwift */; };
 		42DAD7642D200DBD00BEC3C2 /* RZUtilsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7632D200DBD00BEC3C2 /* RZUtilsSwiftUI */; };
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "S22TG6-Checklists.json"; sourceTree = "<group>"; };
+		421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "S22TG6-Checklists.txt"; sourceTree = "<group>"; };
 		42DAD7302D20097D00BEC3C2 /* alertsimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertsimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +114,8 @@
 		42DAD7D22D206D6400BEC3C2 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */,
+				421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */,
 				42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */,
 			);
 			path = data;
@@ -241,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421F1EE42D916F70003BAB7B /* S22TG6-Checklists.json in Resources */,
 				42DAD7DB2D25843200BEC3C2 /* AlertsToSimulate.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +257,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421F1EE32D916F70003BAB7B /* S22TG6-Checklists.json in Resources */,
+				421F1EE62D91E584003BAB7B /* S22TG6-Checklists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
