@@ -25,8 +25,8 @@ from typing import Dict, List, Optional, Union
 from dataclasses import dataclass, asdict
 
 # Define the input and output files
-INPUT_FILE = "SR22T-Checklists.txt"
-OUTPUT_FILE = "SR22TG6-Checklists.json"
+INPUT_FILE = "S22TG6-Checklists.txt"
+OUTPUT_FILE = "S22TG6-Checklists.json"
 
 @dataclass
 class ChecklistStep:
@@ -73,8 +73,10 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
     subsection_pattern = re.compile(r"^##([A-Z].+)$")
     checklist_pattern = re.compile(r"^###(.+)$")
     item_pattern = re.compile(r"^(\s*)(?:(\d+)\.|\((\d+)\)|([a-z])\.)\s+(.+?)(?:\.\.\.\s*(.+))?$")
-    cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?:\s+\(([^)]+)\))?(?:\s*-\s*(.+))?$")
-    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [""]([^"]+)[""]$')
+    cas_message_pattern = re.compile(r"^([A-Z][A-Z0-9 ]+)(?: (Warning|Advisory|Caution))?$")
+    pfd_alert_pattern = re.compile(r'^PFD Alerts Window: [“"]([^“”"]*)[”"]$')
+    # Unnumbered should be last as it's the most generic
+    unnumbered_item_pattern = re.compile(r"^(\s*)([^#].+?)(?:\.\.\.\s*(.+))?$")
     
     if verbose:
         print(f"Opening input file: {file_path}")
@@ -131,16 +133,16 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
                 print(f"Found checklist: {current_checklist.title} at line {i}")
             continue
         
-        # Check for PFD Alerts Window message
+        # Check for PFD Alerts Window message - must check before unnumbered items
         pfd_alert_match = pfd_alert_pattern.match(line)
-        if pfd_alert_match:
+        if pfd_alert_match and current_checklist:
             pending_pfd_alert = pfd_alert_match.group(1).strip()
             current_checklist.alert_message = pending_pfd_alert
             if verbose:
                 print(f"Found PFD Alert: {pending_pfd_alert} at line {i}")
             continue
         
-        # Check for CAS message
+        # Check for CAS message - must check before unnumbered items
         cas_match = cas_message_pattern.match(line)
         if cas_match:
             current_alert = cas_match.group(1).strip()
@@ -182,6 +184,7 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             elif num3:  # "a", "b", etc.
                 step_number = num3
                 indent_level = 1
+
             new_step = ChecklistStep(
                 id=str(uuid.uuid4()),
                 instruction=instruction,
@@ -229,6 +232,82 @@ def parse_checklist(file_path: str, output_path: str, verbose: bool = False) -> 
             
             if verbose:
                 print(f"Found step: {step_number} - {instruction} at line {i}")
+            continue
+
+        # Check for unnumbered checklist step
+        unnumbered_match = unnumbered_item_pattern.match(line)
+        if unnumbered_match and current_checklist:
+            indent, content, action = unnumbered_match.groups()
+            
+            # Calculate indent level (2 spaces = 1 level)
+            indent_level = len(indent) // 2
+            
+            # Skip if this is a section, subsection, or checklist title
+            if section_pattern.match(line) or subsection_pattern.match(line) or checklist_pattern.match(line):
+                continue
+                
+            # Skip if this is a CAS message or PFD Alert
+            if cas_message_pattern.match(line) or pfd_alert_pattern.match(line):
+                continue
+            
+            # Split content into instruction and action
+            instruction = content.strip()
+            action = action.strip() if action else ""
+            
+            # Remove dots from action text
+            if action:
+                action = re.sub(r'\.+', '', action).strip()
+            
+            # Check if step is conditional
+            is_conditional = instruction.lower().startswith(('if', 'when', 'verify'))
+            
+            new_step = ChecklistStep(
+                id=str(uuid.uuid4()),
+                instruction=instruction,
+                action=action,
+                is_conditional=is_conditional,
+                indent_level=indent_level,
+                step_number=None,  # No step number for unnumbered items
+                sub_steps=[]
+            )
+            
+            # Add step to appropriate parent based on indentation
+            if indent_level == 0:
+                current_checklist.steps.append(new_step)
+                current_step = new_step
+            else:
+                # Find the appropriate parent step
+                parent = None
+                step_stack = []
+                
+                # Build stack of potential parent steps
+                for step in reversed(current_checklist.steps):
+                    if step.indent_level < indent_level:
+                        step_stack.append(step)
+                    
+                    # Check substeps recursively
+                    current = step
+                    while current.sub_steps:
+                        last_substep = current.sub_steps[-1]
+                        if last_substep.indent_level < indent_level:
+                            step_stack.append(last_substep)
+                        current = last_substep
+                
+                # Find the closest parent with lower indent level
+                for potential_parent in step_stack:
+                    if potential_parent.indent_level < indent_level:
+                        parent = potential_parent
+                        break
+                
+                if parent:
+                    parent.sub_steps.append(new_step)
+                else:
+                    # If no parent found, add to the main steps list
+                    current_checklist.steps.append(new_step)
+                current_step = new_step
+            
+            if verbose:
+                print(f"Found unnumbered step: {instruction} at line {i}")
             continue
     
     # Add the last checklist

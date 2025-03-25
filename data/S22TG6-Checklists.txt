@@ -897,8 +897,7 @@ PFD FAN FAIL
 1. AVIONICS FAN 2 Circuit Breaker ....................................... CYCLE
 
 If annunciation does not extinguish:
-a. High cabin temperatures ............................... LAND AS SOON
-AS PRACTICABLE
+a. High cabin temperatures ............................... LAND AS SOON AS PRACTICABLE
 b. Low cabin temperatures ......................CONTINUE, MONITOR
 
 ###MFD Cooling Fan Failure
@@ -1853,7 +1852,7 @@ PFD Alerts Window: “AOA probe is overheated”
 1. PITOT HEAT Switch................................................................. OFF
 2. Icing Conditions .........................................................AVOID / EXIT
 
-Tank Control Failure
+###Tank Control Failure
 ANTI ICE CTL Warning
 ANTI ICE CTL
 
