@@ -43,6 +43,7 @@ class CASViewModel : ObservableObject {
 struct CASView: View {
     @Binding var casMessage: CASMessage
     @State private var showingChecklist = false
+    @ObservedObject var alertViewModel: AlertViewModel
     
     var body: some View {
         VStack(alignment: .trailing) {
@@ -125,7 +126,7 @@ struct CASView: View {
         .background(Color.brown)
         .sheet(isPresented: $showingChecklist) {
             if !casMessage.message.isEmpty {
-                ChecklistView(alertMessage: casMessage.message)
+                ChecklistView(alertMessage: casMessage.message, alertViewModel: self.alertViewModel)
             }
         }
     }
@@ -133,17 +134,18 @@ struct CASView: View {
 
 
 #Preview {
+    @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
     @Previewable @State var casMessage1: CASMessage = SampleLoader.sampleCAS(category: .abnormal).first!
     @Previewable @State var casMessage2: CASMessage = SampleLoader.sampleCAS(category: .emergency).first!
     @Previewable @State var casMessage3: CASMessage = CASMessage()
     @Previewable @State var casMessage4: CASMessage = SampleLoader.sampleCAS(category: .abnormal, type:.situation).first!
     
-    CASView(casMessage: $casMessage1)
+    CASView(casMessage: $casMessage1, alertViewModel: alertViewModel)
         .padding(.bottom)
-    CASView(casMessage: $casMessage2)
+    CASView(casMessage: $casMessage2, alertViewModel: alertViewModel)
         .padding(.bottom)
-    CASView(casMessage: $casMessage3)
+    CASView(casMessage: $casMessage3, alertViewModel: alertViewModel)
         .padding(.bottom)
-    CASView(casMessage: $casMessage4)
+    CASView(casMessage: $casMessage4, alertViewModel: alertViewModel)
         .padding(.bottom)
 }

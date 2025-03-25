@@ -50,7 +50,7 @@ struct ContentView: View {
                     }
                     .casButton()
                 }
-                CASView(casMessage: $alertViewModel.casMessage)
+                CASView(casMessage: $alertViewModel.casMessage, alertViewModel: self.alertViewModel)
             }
             .background(Color.brown)
         }

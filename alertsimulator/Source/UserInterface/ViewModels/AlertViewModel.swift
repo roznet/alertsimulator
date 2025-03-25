@@ -236,7 +236,10 @@ class AlertViewModel: ObservableObject {
     
     func clearAlerts() {
         self.casMessage = CASMessage()
-        self.hasChecklist = false
+    }
+    
+    func findChecklist(for alertMessage: String) -> Checklist? {
+        return aircraft.checklists.first { $0.alert == alertMessage }
     }
     
     func checkNotifications() {
