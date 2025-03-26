@@ -1004,8 +1004,8 @@ FLAPS CLIMB
 
 
 
-Landing Gear System
-Brake Failure During Taxi
+##Landing Gear System
+###Brake Failure During Taxi
 1. Engine Power..........................................................AS REQUIRED
 a. To Stop Airplane........................................................ REDUCE
 b. If necessary for steering......................................... INCREASE

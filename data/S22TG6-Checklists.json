@@ -4797,23 +4797,17 @@
                 "indent_level": 0,
                 "step_number": "1",
                 "sub_steps": []
-            },
-            {
-                "instruction": "Landing Gear System",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
-            {
-                "instruction": "Brake Failure During Taxi",
-                "action": "",
-                "is_conditional": false,
-                "indent_level": 0,
-                "step_number": null,
-                "sub_steps": []
-            },
+            }
+        ]
+    },
+    {
+        "title": "Brake Failure During Taxi",
+        "section": "ABNORMAL",
+        "subsection": "Landing Gear System",
+        "alert": null,
+        "alert_type": null,
+        "alert_message": null,
+        "steps": [
             {
                 "instruction": "Engine Power",
                 "action": "AS REQUIRED",
@@ -4876,7 +4870,7 @@
     {
         "title": "Left/Right Brake Over-Temperature",
         "section": "ABNORMAL",
-        "subsection": "Flight Control System",
+        "subsection": "Landing Gear System",
         "alert": "BRAKE TEMP",
         "alert_type": null,
         "alert_message": null,
