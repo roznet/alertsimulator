@@ -28,6 +28,7 @@
 import SwiftUI
 import RZUtilsSwift
 
+// MARK: - View Model
 class CASViewModel : ObservableObject {
     typealias CCategory = CASMessage.Category
     @Published var category: CCategory
@@ -40,6 +41,95 @@ class CASViewModel : ObservableObject {
         self.category = casMessage.category
     }
 }
+
+// MARK: - View Components
+private struct EyeButton: View {
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: "eye.fill")
+                .foregroundColor(.white)
+                .padding(8)
+        }
+        .background(Color.blue.opacity(0.6))
+        .clipShape(Circle())
+        .padding(.leading, 8)
+    }
+}
+
+private struct MessageHeader: View {
+    let message: String
+    let category: CASMessage.Category
+    let onChecklistTapped: () -> Void
+    let alertViewModel: AlertViewModel
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            if alertViewModel.hasChecklist {
+                EyeButton(action: onChecklistTapped)
+            }
+            
+            Text(message)
+                .casMessage(category: category)
+            
+        }
+        .frame(maxWidth: .infinity, alignment: .trailing)
+        .padding([.bottom, .top])
+    }
+}
+
+private struct AlertsSection: View {
+    let submessage: String
+    let category: CASMessage.Category
+    let onChecklistTapped: () -> Void
+    let alertViewModel: AlertViewModel
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Alerts")
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                if alertViewModel.hasChecklist {
+                    Button(action: onChecklistTapped) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "list.bullet.clipboard")
+                            Text("View Checklist")
+                                .font(.caption)
+                        }
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                    }
+                    .background(Color.blue.opacity(0.6))
+                    .cornerRadius(4)
+                }
+            }
+            
+            Divider()
+                .background(Color.white)
+                .padding([.bottom])
+            
+            if !submessage.isEmpty {
+                Text(submessage)
+                    .casSubMessage(category: category)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .background(.black)
+        .frame(maxWidth: 600, alignment: .trailing)
+        .cornerRadius(10)
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
+        .padding([.leading, .top, .bottom])
+    }
+}
+
+// MARK: - Main View
 struct CASView: View {
     @Binding var casMessage: CASMessage
     @State private var showingChecklist = false
@@ -48,80 +138,29 @@ struct CASView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             if !casMessage.message.isEmpty {
-                HStack {
-                    Spacer()
-                    if !casMessage.message.isEmpty {
-                        Button(action: {
-                            showingChecklist = true
-                        }) {
-                            Image(systemName: "eye.fill")
-                                .foregroundColor(.white)
-                                .padding(8)
-                        }
-                        .background(Color.blue.opacity(0.6))
-                        .clipShape(Circle())
-                        .padding(.leading, 8)
-                    }
-                    
-                    Text(casMessage.message)
-                        .casMessage(category: casMessage.category)
-                    
-                }
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding([.bottom, .top])
+                MessageHeader(
+                    message: casMessage.message,
+                    category: casMessage.category,
+                    onChecklistTapped: { showingChecklist = true },
+                    alertViewModel: alertViewModel
+                )
             }
+            
             Spacer()
+            
             HStack {
                 Spacer()
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Alerts")
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-                        
-                        if !casMessage.message.isEmpty {
-                            Button(action: {
-                                showingChecklist = true
-                            }) {
-                                HStack(spacing: 4) {
-                                    Image(systemName: "list.bullet.clipboard")
-                                    Text("View Checklist")
-                                        .font(.caption)
-                                }
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 4)
-                            }
-                            .background(Color.blue.opacity(0.6))
-                            .cornerRadius(4)
-                        }
-                    }
-                    
-                    Divider()
-                        .background(Color.white)
-                        .padding([.bottom])
-                    if !casMessage.submessage.isEmpty {
-                        Text(casMessage.detailedMessage)
-                            .casSubMessage(category: casMessage.category)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    } else {
-                        Text(casMessage.submessage)
-                            .casSubMessage(category: casMessage.category)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                }
-                .background(.black)
-                .frame(maxWidth:600, alignment: .trailing)
-                .cornerRadius(10)
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 1))
-                .padding([.leading,.top,.bottom])
+                AlertsSection(
+                    submessage: casMessage.submessage,
+                    category: casMessage.category,
+                    onChecklistTapped: { showingChecklist = true },
+                    alertViewModel: alertViewModel
+                )
             }
             
             Text(casMessage.categoryDescription)
                 .casAnnuciation(category: casMessage.category)
-                .frame(maxWidth: .infinity,alignment: .trailing)
+                .frame(maxWidth: .infinity, alignment: .trailing)
                 .background(Color.black)
         }
         .background(Color.brown)
@@ -133,7 +172,7 @@ struct CASView: View {
     }
 }
 
-
+// MARK: - Preview
 #Preview {
     @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
     @Previewable @State var casMessage1: CASMessage = SampleLoader.sampleCAS(category: .abnormal).first!
@@ -141,12 +180,14 @@ struct CASView: View {
     @Previewable @State var casMessage3: CASMessage = CASMessage()
     @Previewable @State var casMessage4: CASMessage = SampleLoader.sampleCAS(category: .abnormal, type:.situation).first!
     
-    CASView(casMessage: $casMessage1, alertViewModel: alertViewModel)
-        .padding(.bottom)
-    CASView(casMessage: $casMessage2, alertViewModel: alertViewModel)
-        .padding(.bottom)
-    CASView(casMessage: $casMessage3, alertViewModel: alertViewModel)
-        .padding(.bottom)
-    CASView(casMessage: $casMessage4, alertViewModel: alertViewModel)
-        .padding(.bottom)
+    VStack {
+        CASView(casMessage: $casMessage1, alertViewModel: alertViewModel)
+            .padding(.bottom)
+        CASView(casMessage: $casMessage2, alertViewModel: alertViewModel)
+            .padding(.bottom)
+        CASView(casMessage: $casMessage3, alertViewModel: alertViewModel)
+            .padding(.bottom)
+        CASView(casMessage: $casMessage4, alertViewModel: alertViewModel)
+            .padding(.bottom)
+    }
 }
