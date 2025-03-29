@@ -27,13 +27,81 @@
 
 import SwiftUI
 
-struct FlightControlView : View {
+// MARK: - View Components
+private struct FlightControlButton: View {
+    let title: String
+    let action: () -> Void
+    let systemImage: String?
+    
+    init(title: String, systemImage: String? = nil, action: @escaping () -> Void) {
+        self.title = title
+        self.systemImage = systemImage
+        self.action = action
+    }
+    
+    var body: some View {
+        Button(action: action) {
+            if let systemImage = systemImage {
+                Image(systemName: systemImage)
+            } else {
+                Text(title)
+            }
+        }
+        .standardButton()
+        .padding(.horizontal)
+    }
+}
+
+private struct FlightStatusButton: View {
+    let isRunning: Bool
+    let onStart: () -> Void
+    let onStop: () -> Void
+    
+    var body: some View {
+        if isRunning {
+            FlightControlButton(title: "Stop Flight", action: onStop)
+        } else {
+            FlightControlButton(title: "Start Flight", action: onStart)
+        }
+    }
+}
+
+private struct ValidationAlert: View {
+    let isPresented: Binding<Bool>
+    let errors: [AlertViewModel.FlightValidationError]
+    let onOpenSettings: () -> Void
+    let onCancel: () -> Void
+    
+    var body: some View {
+        EmptyView()
+            .alert("Invalid Flight Parameters", isPresented: isPresented) {
+                if errors.contains(.notificationsNotAuthorized) {
+                    Button("Open Settings", role: .none) {
+                        onOpenSettings()
+                    }
+                    Button("Cancel", role: .cancel) {
+                        onCancel()
+                    }
+                } else {
+                    Button("OK", role: .cancel) {
+                        isPresented.wrappedValue = false
+                    }
+                }
+            } message: {
+                Text(errors.map { $0.rawValue }.joined(separator: "\n"))
+            }
+    }
+}
+
+// MARK: - Main View
+struct FlightControlView: View {
     @ObservedObject var alertViewModel: AlertViewModel
     @State private var showingValidationAlert = false
     @State private var validationErrors: [AlertViewModel.FlightValidationError] = []
     @State private var showingSettings = false
     
-    func startAlerts() {
+    // MARK: - Actions
+    private func startAlerts() {
         alertViewModel.validateFlightParameters { errors in
             self.validationErrors = errors
             if errors.isEmpty {
@@ -44,76 +112,101 @@ struct FlightControlView : View {
         }
     }
     
-    func stopAlerts() {
-        self.alertViewModel.stopFlight()
+    private func stopAlerts() {
+        alertViewModel.stopFlight()
     }
     
-    func runOneNow() {
+    private func runOneNow() {
         alertViewModel.generateSingleAlert()
     }
     
+    private func openSettings() {
+        alertViewModel.openNotificationSettings()
+        showingValidationAlert = false
+    }
+    
+    private func cancelValidation() {
+        showingValidationAlert = false
+        alertViewModel.generateSingleAlert()
+    }
+    
+    // MARK: - Body
     var body: some View {
         VStack {
             HStack {
-                if alertViewModel.flightIsRunning {
-                    Button(action: {
-                        self.stopAlerts()
-                    }) {
-                        Text("Stop Flight")
-                    }
-                    .standardButton()
-                    .padding()
-                } else {
-                    Button(action: {
-                        self.startAlerts()
-                    }) {
-                        Text("Start Flight")
-                    }
-                    .standardButton()
-                    .padding()
-                }
+                FlightStatusButton(
+                    isRunning: alertViewModel.flightIsRunning,
+                    onStart: startAlerts,
+                    onStop: stopAlerts
+                )
                 
-                Button(action: {
-                    self.runOneNow()
-                }) {
-                    Text("Run One Now")
-                }
-                .standardButton()
+                FlightControlButton(title: "Run One Now", action: runOneNow)
                 
-                Button(action: {
-                    showingSettings = true
-                }) {
-                    Image(systemName: "gear")
-                }
-                .standardButton()
+                FlightControlButton(
+                    title: "Settings",
+                    systemImage: "gear",
+                    action: { showingSettings = true }
+                )
             }
             .padding([.trailing, .leading])
         }
-        .alert("Invalid Flight Parameters", isPresented: $showingValidationAlert) {
-            if validationErrors.contains(.notificationsNotAuthorized) {
-                Button("Open Settings", role: .none) {
-                    alertViewModel.openNotificationSettings()
-                    showingValidationAlert = false
-                }
-                Button("Cancel", role: .cancel) {
-                    showingValidationAlert = false
-                    self.alertViewModel.generateSingleAlert()
-                }
-            } else {
-                Button("OK", role: .cancel) {
-                    showingValidationAlert = false
-                }
-            }
-        } message: {
-            Text(validationErrors.map { $0.rawValue }.joined(separator: "\n"))
-        }
+        .validationAlert(
+            isPresented: $showingValidationAlert,
+            errors: validationErrors,
+            onOpenSettings: openSettings,
+            onCancel: cancelValidation
+        )
         .sheet(isPresented: $showingSettings) {
             SettingsView()
         }
     }
 }
 
+// MARK: - View Modifiers
+private extension View {
+    func validationAlert(
+        isPresented: Binding<Bool>,
+        errors: [AlertViewModel.FlightValidationError],
+        onOpenSettings: @escaping () -> Void,
+        onCancel: @escaping () -> Void
+    ) -> some View {
+        self.modifier(ValidationAlertModifier(
+            isPresented: isPresented,
+            errors: errors,
+            onOpenSettings: onOpenSettings,
+            onCancel: onCancel
+        ))
+    }
+}
+
+private struct ValidationAlertModifier: ViewModifier {
+    let isPresented: Binding<Bool>
+    let errors: [AlertViewModel.FlightValidationError]
+    let onOpenSettings: () -> Void
+    let onCancel: () -> Void
+    
+    func body(content: Content) -> some View {
+        content.alert("Invalid Flight Parameters", isPresented: isPresented) {
+            if errors.contains(.notificationsNotAuthorized) {
+                Button("Open Settings", role: .none) {
+                    onOpenSettings()
+                }
+                Button("Cancel", role: .cancel) {
+                    onCancel()
+                }
+            } else {
+                Button("OK", role: .cancel) {
+                    isPresented.wrappedValue = false
+                }
+            }
+        } message: {
+            Text(errors.map { $0.rawValue }.joined(separator: "\n"))
+        }
+    }
+}
+
+// MARK: - Preview
 #Preview {
     @Previewable @StateObject var alertViewModel: AlertViewModel = AlertViewModel()
-    FlightControlView(alertViewModel: alertViewModel)
+    return FlightControlView(alertViewModel: alertViewModel)
 }

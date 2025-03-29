@@ -236,6 +236,7 @@ class AlertViewModel: ObservableObject {
     
     func clearAlerts() {
         self.casMessage = CASMessage()
+        self.hasChecklist = false
     }
     
     func findChecklist(for alertMessage: String) -> Checklist? {
