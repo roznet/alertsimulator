@@ -25,13 +25,6 @@
 			remoteGlobalIDString = 42DAD72F2D20097D00BEC3C2;
 			remoteInfo = alertsimulator;
 		};
-		42DAD74C2D20097E00BEC3C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42DAD7282D20097D00BEC3C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42DAD72F2D20097D00BEC3C2;
-			remoteInfo = alertsimulator;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +32,6 @@
 		421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "S22TG6-Checklists.txt"; sourceTree = "<group>"; };
 		42DAD7302D20097D00BEC3C2 /* alertsimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertsimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlertsToSimulate.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,11 +44,6 @@
 		42DAD7442D20097E00BEC3C2 /* alertsimulatorTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = alertsimulatorTests;
-			sourceTree = "<group>";
-		};
-		42DAD74E2D20097E00BEC3C2 /* alertsimulatorUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = alertsimulatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42DAD7482D20097E00BEC3C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,7 +75,6 @@
 			children = (
 				42DAD7D22D206D6400BEC3C2 /* data */,
 				42DAD7442D20097E00BEC3C2 /* alertsimulatorTests */,
-				42DAD74E2D20097E00BEC3C2 /* alertsimulatorUITests */,
 				42DAD7312D20097D00BEC3C2 /* Products */,
 				42DAD7322D20097D00BEC3C2 /* alertsimulator */,
 			);
@@ -106,7 +85,6 @@
 			children = (
 				42DAD7302D20097D00BEC3C2 /* alertsimulator.app */,
 				42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */,
-				42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,29 +151,6 @@
 			productReference = 42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		42DAD74A2D20097E00BEC3C2 /* alertsimulatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42DAD75B2D20097E00BEC3C2 /* Build configuration list for PBXNativeTarget "alertsimulatorUITests" */;
-			buildPhases = (
-				42DAD7472D20097E00BEC3C2 /* Sources */,
-				42DAD7482D20097E00BEC3C2 /* Frameworks */,
-				42DAD7492D20097E00BEC3C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42DAD74D2D20097E00BEC3C2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				42DAD74E2D20097E00BEC3C2 /* alertsimulatorUITests */,
-			);
-			name = alertsimulatorUITests;
-			packageProductDependencies = (
-			);
-			productName = alertsimulatorUITests;
-			productReference = 42DAD74B2D20097E00BEC3C2 /* alertsimulatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,10 +165,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					42DAD7402D20097E00BEC3C2 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 42DAD72F2D20097D00BEC3C2;
-					};
-					42DAD74A2D20097E00BEC3C2 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 42DAD72F2D20097D00BEC3C2;
 					};
@@ -238,7 +189,6 @@
 			targets = (
 				42DAD72F2D20097D00BEC3C2 /* alertsimulator */,
 				42DAD7402D20097E00BEC3C2 /* alertsimulatorTests */,
-				42DAD74A2D20097E00BEC3C2 /* alertsimulatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,13 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42DAD7492D20097E00BEC3C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,13 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42DAD7472D20097E00BEC3C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = 42DAD72F2D20097D00BEC3C2 /* alertsimulator */;
 			targetProxy = 42DAD7422D20097E00BEC3C2 /* PBXContainerItemProxy */;
-		};
-		42DAD74D2D20097E00BEC3C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42DAD72F2D20097D00BEC3C2 /* alertsimulator */;
-			targetProxy = 42DAD74C2D20097E00BEC3C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -555,50 +486,6 @@
 			};
 			name = Release;
 		};
-		42DAD75C2D20097E00BEC3C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7QSSF3624;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.alertsimulatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = alertsimulator;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		42DAD75D2D20097E00BEC3C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7QSSF3624;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.alertsimulatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = alertsimulator;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -625,15 +512,6 @@
 			buildConfigurations = (
 				42DAD7592D20097E00BEC3C2 /* Debug */,
 				42DAD75A2D20097E00BEC3C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42DAD75B2D20097E00BEC3C2 /* Build configuration list for PBXNativeTarget "alertsimulatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42DAD75C2D20097E00BEC3C2 /* Debug */,
-				42DAD75D2D20097E00BEC3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
