@@ -50,9 +50,6 @@ struct CASView: View {
             if !casMessage.message.isEmpty {
                 HStack {
                     Spacer()
-                    Text(casMessage.message)
-                        .casMessage(category: casMessage.category)
-                    
                     if !casMessage.message.isEmpty {
                         Button(action: {
                             showingChecklist = true
@@ -63,8 +60,12 @@ struct CASView: View {
                         }
                         .background(Color.blue.opacity(0.6))
                         .clipShape(Circle())
-                        .padding(.trailing, 8)
+                        .padding(.leading, 8)
                     }
+                    
+                    Text(casMessage.message)
+                        .casMessage(category: casMessage.category)
+                    
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding([.bottom, .top])
