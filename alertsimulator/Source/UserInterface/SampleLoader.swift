@@ -28,8 +28,10 @@
 import Foundation
 
 struct SampleLoader {
+    static var aircraft: Aircraft = Aircraft.defaultValue
+    
     static func sampleCAS(category : CASMessage.Category, type : FlightAlert.AlertType = .cas) -> [CASMessage] {
-        let available = FlightAlert.availableFor(aircraft: FlightAlert.aircrafts.first!)
+        let available = FlightAlert.availableFor(aircraft: aircraft)
         var samples: [CASMessage] = []
         
         for alert in available {
@@ -43,7 +45,7 @@ struct SampleLoader {
     
     static func sampleTrackedAlert(n : Int, interval : TimeInterval = 10.0) -> [TrackedAlert]{
         let minute = 60.0
-        let alerts = FlightAlert.availableFor(aircraft: FlightAlert.aircrafts.first!)
+        let alerts = FlightAlert.availableFor(aircraft: aircraft)
         let sampleAlerts : [TrackedAlert] = [
             TrackedAlert(date: Date().addingTimeInterval(interval*minute), alert: alerts.first!)
         ]
@@ -53,10 +55,9 @@ struct SampleLoader {
     static func sampleRunningFlight(trackedAlertsCount : Int = 0) -> Flight{
         let minute = 60.0
         let sampleAlerts : [TrackedAlert] = trackedAlertsCount > 0 ? self.sampleTrackedAlert(n: trackedAlertsCount) : []
-        let flight = Flight(aircraft: Aircraft.defaultValue, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
+        let flight = Flight(aircraft: aircraft, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
         return flight
     }
-    
     
     static func sampleAlertViewModel(running: Bool = false) -> AlertViewModel {
         let viewModel = AlertViewModel()
