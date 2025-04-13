@@ -1,0 +1,2994 @@
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Emergency Procedures
+Automatic Flight Control Malfunction (Stick Pusher, 
+ESP, USP, Autopilot)
+
+1. Grip side stick firmly.
+2. AP DISC Button ........................................................... PRESS AND HOLD
+3. Airplane Control ....................................................................... MAINTAIN
+4. AP SERVOS CB (A3)............................................................................ PULL
+5. AP DISC Button .............................................................................RELEASE
+
+◆ If in RVSM airspace:
+
+a. Airplane Control ................................................................. MAINTAIN
+
+b. Exit RVSM airspace.
+
+• NOTE •
+Refer to Section 3A: Abnormal Procedures, "Autopilot Failure".
+
+6. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+If erroneous AOA indications are observed, green donut airspeed 
+reference will be unavailable or unreliable. Low speed awareness 
+indications on the airspeed tape should be considered unreliable 
+and should not be referenced. Refer to Section 3A: Abnormal 
+Procedures, "STICK PUSHER FAIL Caution".
+Expect CAPS AUTOPILOT INOP CAS. Refer to Section 3A: 
+Abnormal Procedures, "CAPS AUTOPILOT INOP Advisory".
+
+3-10
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Engine Emergency On Takeoff - Speed Below VR
+
+• NOTE •
+Includes emergencies such as engine failure or fire.
+
+1. Brakes ........................................MAX PILOT EFFORT W/O SKIDDING
+2. Thrust Lever............................................................................................ IDLE
+
+3. Engine Knob .............................................................................................OFF
+4. Engine Button ......................................................PRESS (MOMENTARY)
+
+◆ If ENGINE FIRE Warning occurs:
+
+a. ENGINE FIRE ACKNOWLEDGE Switch...................LIFT GUARD, 
+
+TOGGLE
+
+b. Left or Right PUSH TO DISCHARGE Button ..........................PUSH
+
+c. CABIN PRESSURE DUMP Button  ........................................... PRESS
+
+d. GEN 1 and GEN 2 Switches  ............................................................OFF
+
+e. BAT 1 and BAT 2 Switches  .............................................................OFF
+
+f. Evacuate airplane.
+
+◆ If no indication of engine fire:
+
+a. Parking Brake....................................................................DO NOT SET
+
+b. Exit aircraft normally when safe to do so.
+
+After airplane comes to a complete stop:
+5. Brakes  .................................................................................... COOL DOWN
+Procedure Complete
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-11
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• CAUTION •
+For maximum brake effectiveness, retract flaps, hold side stick 
+control full back, and bring the airplane to a stop by smooth, even 
+application of the brakes.
+A cool down period and brake overheat inspection are required 
+after high-energy braking events.
+Refer to Section 2: Limitations, "Brakes".
+• NOTE •
+Refer to Section 4: Normal Procedures, "After Landing".
+
+Engine Fire On Takeoff - Low Altitude
+
+1. Land as soon as possible.
+
+◆ If immediate landing is not possible:
+
+a. Perform ENGINE FIRE Warning - In Flight checklist.
+
+Procedure Complete
+
+• WARNING •
+If the engine fails immediately after becoming airborne, abort on the 
+runway if possible. In most cases, when the engine fails below 500 feet 
+AGL, the landing should be made straight ahead, turning only to avoid 
+obstructions. In such a case, lower the nose to maintain flying airspeed 
+and establish a glide attitude. After establishing a glide for landing, 
+perform as many of the checklist items as time permits.
+
+• NOTE •
+
+When determined that a forced landing is the safest option, a 
+suitable landing site should be chosen as early as possible so that 
+maximum time will be available to plan and execute the forced 
+landing. While gliding, be aware that use of flaps will reduce glide 
+distance. Flaps should not be selected until landing is assured. 
+Land on the main gear and hold the nose wheel off the ground as 
+long as possible.
+
+3-12
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Engine Failure On Takeoff - Low Altitude
+
+1. Best Glide or Landing Speed ......................................................... 100 KIAS
+2. Landing Gear .............................................................................................A/R
+3. Flaps ............................................................................................................A/R
+4. Land straight ahead.
+
+◆ If time permits:
+
+a. Engine Knob.......................................................................................OFF
+
+b. Engine Button  ...............................................PRESS (MOMENTARY)
+
+c. CABIN PRESSURE DUMP Button  ........................................... PRESS
+
+d. GEN 1 and GEN 2 Switches .............................................................OFF
+
+e. BAT 1 and BAT 2 Switches  .............................................................OFF
+
+Procedure Complete
+
+• WARNING •
+
+If engine failure is accompanied by fuel fumes in the cockpit, or if 
+internal engine damage is suspected, lift the guard on the ENGINE 
+FIRE ACKNOWLEDGE switch, toggle the switch, and shut down the 
+engine. Do not attempt a restart.
+
+If the engine fails immediately after becoming airborne, abort on the 
+runway if possible. In most cases, when the engine fails below 500 feet 
+AGL, the landing should be made straight ahead, turning only to avoid 
+obstructions. In such a case, lower the nose to maintain flying airspeed 
+and establish a glide attitude. After establishing a glide for landing, 
+perform as many of the checklist items as time permits.
+
+• NOTE •
+
+When determined that a forced landing is the safest option, a 
+suitable landing site should be chosen as early as possible so that 
+maximum time will be available to plan and execute the forced 
+landing. While gliding, be aware that use of flaps will reduce glide 
+distance. Flaps should not be selected until landing is assured. 
+Land on the main gear and hold the nose wheel off the ground as 
+long as possible.
+
+P/N 31452-002
+Revision 1
+
+3-13
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Rejected Takeoff
+
+CIRRUS
+VISION SF50
+
+1. Brakes........................................MAX. PILOT EFFORT W/O SKIDDING
+2. Thrust Lever............................................................................................ IDLE
+
+After airplane comes to a complete stop:
+3. Brakes......................................................................................COOL DOWN
+Procedure Complete
+
+• CAUTION •
+
+For maximum brake effectiveness, retract flaps, hold side stick 
+control full back, and bring the airplane to a stop by smooth, even 
+application of the brakes.
+Do not set the parking brake following a Rejected Takeoff. 
+A cool down period and brake overheat inspection are required 
+after high-energy braking events.
+Refer to Section 2: Limitations, Brakes.
+
+• NOTE •
+Use as much of the remaining runway as needed to safely bring 
+airplane to a stop or to slow airplane sufficiently to turn off 
+runway.
+Refer to Section 4: Normal Procedures, After Landing.
+
+Engine Failure In Flight
+
+1. Pitch for air start...............................................AIRSPEED 120 - 200 KIAS
+2. Turn toward possible landing site(s).
+3. Oxygen Mask .............................................................................. DON, 100%
+
+4. MIC SELECT Switch ................................................................. MASK MIC
+• NOTE •
+Engine can be considered safe to attempt restart if no abnormal, 
+loud noises or vibrations were noted prior to or during shutdown, 
+N1 rotation is observed, and no exceedances were noted prior to 
+shutdown.
+
+(Continued on next page)
+
+3-14
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+ (Continued)
+
+◆ If engine appears safe to attempt a restart:
+
+a. Perform Air Start checklist.
+
+◆ If engine is unsafe to restart:
+
+Procedure Complete
+
+a. Engine Knob.......................................................................................OFF
+
+b. Engine Button  ...............................................PRESS (MOMENTARY)
+
+c. Perform Emergency Landing w/o Power checklist.
+
+Procedure Complete
+
+◆ If engine failure is accompanied by fuel fumes in the cockpit, or if 
+internal engine damage is suspected:
+
+a. ENGINE FIRE ACKNOWLEDGE Switch...................LIFT GUARD, 
+
+TOGGLE
+
+b. Shut down engine. Do not attempt a restart.
+
+c. Perform Emergency Landing w/o Power checklist.
+
+Procedure Complete
+
+• WARNING •
+
+If all attempts to restart the engine fail and a forced landing is 
+imminent, select a suitable landing site and prepare for landing. As 
+forced landings on unimproved surfaces are not recommended, CAPS 
+activation may be the safest option.
+Refer to Section 3: Emergency Procedures, "CAPS Activation" checklist.
+Refer to Section 10: Safety Information, "Cirrus Airframe Parachute 
+System (CAPS)" for CAPS deployment scenarios and landing 
+considerations.
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+P/N 31452-002
+Revision 1
+
+3-15
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Uncontained Engine Failure (Rotor Burst in Flight)
+
+1. Pitch for 120 KIAS (APPROX.)
+2. Turn toward possible landing site(s).
+3. Oxygen Mask .............................................................................. DON, 100%
+
+4. MIC SELECT Switch ................................................................. MASK MIC
+5. ENGINE FIRE ACKNOWLEDGE Switch ...... LIFT GUARD, TOGGLE
+6. Left or Right PUSH TO DISCHARGE Button ....PUSH (REGARDLESS 
+
+OF ARMED LIGHT)
+
+7. Engine Knob .............................................................................................OFF
+8. Engine Button .......................................................PRESS (MOMENTARY)
+9. GEN 1 and GEN 2 Switches....................................................................OFF
+10.Perform Emergency Landing w/o Power checklist.
+
+Procedure Complete
+
+• NOTE •
+
+This condition is identified by complete loss of thrust 
+accompanied by the following:
+1. Loud bangs, knocks, vibration, or other noise, or
+2. Engine Fire Indication (CAS Warning and/or FIRE light), or
+3. Fire Detector Fail (CAS Caution), or
+4. Erratic engine indications, such as the following:
+
+•
+
+•
+
+•
+
+•
+
+Indication failure/loss of indication
+
+Low or no N1 or N2
+
+Low fuel pressure
+
+Low or no oil pressure
+
+• High ITT, fuel flow, or oil temperature
+
+• NOTE •
+Refer to Section 2: Limitations, "Oxygen" for oxygen 
+requirements.
+
+3-16
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Loss of All Flight Displays
+
+1. BAT 1 and BAT 2 Switches ..................................................... VERIFY ON
+2. GEN 1 and GEN 2 Switches .................................................... VERIFY ON
+3. Land as soon as possible.
+
+Procedure Complete
+
+• NOTE •
+BAT 2 is designed to power the Emergency Bus for at least 60 
+minutes. 
+FADEC NO DISPATCH faults will be displayed once normal 
+power is restored. Faults can be cleared using the FADEC fault 
+reset button.
+FUEL VALVE #2 FAIL Caution will be displayed during normal 
+tank AUTO selection since the secondary valve is not powered by 
+emergency power.
+
+Loss of Thrust Control
+
+1. Shut down engine, if required.
+2. Flaps ............................................................................................................A/R
+3. Landing Gear .............................................................................................A/R
+4. Land as soon as practicable.
+
+◆ If the thrust lever is stuck at, or near, the T/O detent:
+a. Turn toward nearest practical landing site.
+
+b. Engine Knob.......................................................................................OFF
+
+c. Engine Button ................................................PRESS (MOMENTARY)
+
+d. Fly a Flameout / Precautionary Approach.
+
+e.
+
+If necessary, consider CAPS Activation.
+
+Procedure Complete
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-17
+
+ 
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+◆ If the thrust lever is stuck at, or near, the IDLE position, and straight and 
+level flight cannot be maintained:
+
+a. Pitch for glide speed.
+
+b. Turn toward nearest practical landing site.
+
+c. Fly a Flameout / Precautionary Approach.
+
+d.
+
+If necessary, consider CAPS Activation.
+
+Procedure Complete
+• NOTE •
+
+Refer to Section 3: Emergency Procedures, "Flameout / 
+Precautionary Approach".
+
+Loss of Reliable Airspeed Indication
+
+1. Autopilot .................................................................................. DISENGAGE
+2. AOA Display.............................................................................................. ON
+3. Use following guidance pertaining to phase of flight.
+◆ Climb:
+
+a. AOA..................................................................................................... 0.25
+
+• NOTE •
+Airspeed is approximately 160 KIAS.
+
+◆ Cruise:
+
+a. Power .................................................................................SET N1% PER 
+
+Section 5: Performance Data, "Cruise Performance" 
+
+◆ Descent:
+
+a. AOA..................................................................................................... 0.25
+
+• NOTE •
+Airspeed is approximately 160 KIAS.
+
+(Continued on next page)
+
+3-18
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+ (Continued)
+
+◆ Approach:
+
+❍ Gear UP:
+
+(1)AOA ................................................................................................0.35
+
+• NOTE •
+Airspeed is approximately 120 KIAS.
+
+❍ Gear DOWN, Flaps DOWN:
+
+(1)AOA ................................................................................................0.53
+
+• NOTE •
+Refer to VREF Speeds table.
+
+◆ Go Around:
+a. AOA......................................................................................................0.53
+
+• NOTE •
+Refer to VREF Speeds table.
+
+4. Land as soon as practicable.
+
+Procedure Complete
+
+Abnormal Engine Start
+
+1. Engine Knob .............................................................................................OFF
+2. Engine Button.............................. PRESS AND HOLD 15 - 30 SECONDS
+
+3. See Section 2: Limitations, "Powerplant Limitations" and Section 2: 
+
+Limitations, "Outside Air Temperature Limits" in for corrective actions.
+
+Procedure Complete
+
+• NOTE •
+An Abnormal Engine Start occurs when: 
+
+•
+•
+•
+•
+
+there is a failure to accelerate after 30 seconds, or
+there is no N1 indication at 25% N2, or
+there is low oil pressure after start, or
+ITT exceeds limits (red line).
+
+P/N 31452-002
+Revision 1
+
+3-19
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Air Start
+
+1. Airspeed..................................................................................120 - 200 KIAS
+2. Altitude .........................................................................................< 18,000 FT
+3. Thrust Lever............................................................................................ IDLE
+Engine reset:
+4. Engine Knob .............................................................................................OFF
+5. Engine Button  ......................................................PRESS (MOMENTARY)
+6. N2 ................................................................................. WAIT UNTIL < 24%
+◆ If time permits:
+
+a. N2........................................................................... WAIT UNTIL < 16%
+
+Engine start:
+7. Engine Knob ........................................................................................... RUN
+8. Engine Button .......................................................PRESS (MOMENTARY)
+
+◆ If air start is successful:
+
+a. GEN 1 and GEN 2 Switches .............................................  VERIFY ON
+
+b. Engine Instruments ..............................................................MONITOR
+
+c. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If air start is unsuccessful:
+
+a. Engine Knob ...................................................................................... OFF
+
+b. Engine Button................................................ PRESS (MOMENTARY)
+
+c. GEN 1 and GEN 2 Switches ............................................................ OFF
+
+d. Perform Emergency Landing w/o Power checklist.
+
+Procedure Complete
+
+• CAUTION •
+
+Probability of engine restart is greater when N2 < 16%.
+Do not attempt a restart until N2 < 24%.
+See Section 2: Limitations, "Engine Start (In flight)" for Engine Air 
+Start envelope.
+
+3-20
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+Smoke Removal
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+1. Oxygen Mask ............................................................................ DON, EMER
+2. Smoke Goggles (if equipped) ............................................................... DON
+3. PAX OXY DEPLOY Switch..................................................................... ON
+
+4. MIC SELECT Switch ..................................................................MASK MIC
+5. Instruct passenger(s) to don mask(s).
+6. DEFOG Button ......................................................................................... ON
+7. CABIN PRESSURE DUMP Button................................................... PRESS
+• NOTE •
+Autopilot Emergency Descent Mode (EDM) is disabled when the 
+cabin dump switch is activated.
+8. Perform Emergency Descent checklist as required.
+9. BLEED Switch (below 14,000 feet)...................................................FRESH
+10.ECS DISABLE ...................................................................................SELECT
+11.FIRE EXTINGUISHER............................................................................A/R
+12.All Other Switches (except BAT 2).......................................................OFF
+◆ If setting switches off eliminates fire / fumes source and airplane is in 
+night or IFR conditions:
+
+a. BAT 1 Switch....................................................................................... ON
+
+b. GEN 1 and GEN 2 Switches ..............................................................A/R
+
+c. Required Systems................................. ACTIVATE ONE AT A TIME
+
+d. Temperature Select........................................................................ COLD
+
+e. Panel Air Outlets ........................................................................... OPEN
+
+f. Land as soon as possible.
+g. Oxygen Masks .......................................ADJUST TO NORM IF ABLE  
+
+AND BELOW 20,000 FEET
+
+Procedure Complete
+
+13.Land as soon as possible.
+14.Oxygen Masks ......ADJUST TO NORM IF ABLE AND BELOW 20,000  
+
+FEET
+
+Procedure Complete
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-21
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• WARNING •
+Regardless of smoke evidence, if there is no visual confirmation that 
+fire has been extinguished following fire suppression and/or smoke 
+evacuation, land as soon as possible.
+The fire extinguisher should only be used in 2-second blasts, and 
+additional shots should only be used if necessary to extinguish the fire. 
+Inhalation of the complete discharge of the fire extinguisher may result 
+in cardiotoxicity and/or anesthetic effects to the occupants. Occupants 
+shall use emergency oxygen masks during and after fire extinguisher 
+use.
+
+• NOTE •
+Refer to Section 2: Limitations, "Oxygen" for oxygen 
+requirements.
+
+Cabin Fire In Flight
+
+1. Oxygen Mask ............................................................................ DON, EMER
+2. Smoke Goggles (if equipped)................................................................DON
+3. PAX OXY DEPLOY Switch..................................................................... ON
+
+4. MIC SELECT Switch ................................................................. MASK MIC
+5. BAT 1 Switch ............................................................................................OFF
+6. GEN 1 and GEN 2 Switches....................................................................OFF
+7. Fire Extinguisher ...................................................................................... A/R
+8. Oxygen Mask ....... ADJUST TO NORM IF ABLE AND BELOW 20,000 
+
+FEET
+
+◆ If airflow is not sufficient to clear smoke or fumes:
+
+a. Perform Smoke Removal checklist.
+
+Procedure Complete
+
+(Continued on next page)
+
+3-22
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+ (Continued)
+
+• WARNING •
+
+The fire extinguisher should only be used in 2-second blasts, and 
+additional shots should only be used if necessary to extinguish the fire. 
+Inhalation of the complete discharge of the fire extinguisher may result 
+in cardiotoxicity and/or anesthetic effects to the occupants. Occupants 
+shall use emergency oxygen masks during and after fire extinguisher 
+use.
+
+• NOTE •
+
+With BAT and GEN switches OFF, engine will continue to run. 
+However, no electrical power will be available.
+If the airplane is in IMC, turn GEN 1, GEN 2, and BAT 1 switches 
+OFF. Power from Battery 2 will power all the loads on the 
+Emergency Bus for at least 60 minutes. If airplane is in day VFR 
+conditions and turning off the GEN switches eliminated the fire 
+situation, leave the GEN switches OFF.
+If the cause of the fire is readily apparent and accessible, use the 
+fire extinguisher to extinguish flames and land as soon as possible.
+If required to re-activate systems, pause several seconds between 
+activating each system to isolate malfunctioning system. Continue 
+flight to earliest possible landing with malfunctioning system 
+OFF. Activate only the minimum amount of equipment necessary 
+to complete a safe landing.
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+Ditching
+
+1. Radio.................. TRANSMIT (ATC OR 121.5 MHZ) MAYDAY WITH 
+
+LOCATION & INTENTIONS
+
+2. Transponder .........................................................................SQUAWK 7700
+3. ELT.............................................................................................................. ON
+4. Landing Gear .............................................................................................. UP
+5. Flaps ................................................................... 100% (RECOMMENDED)
+6. CABIN PRESSURE DUMP Button................................................... PRESS
+7. Airspeed ...................................................................................................VREF
+8. Rate of Descent...........................................200 - 300 FEET PER MINUTE
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-23
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+9. Align approach parallel to swells and attempt to touchdown along a 
+
+wave crest or behind it.
+
+◆ If surface winds are strong, or waves rough and irregular:
+
+a. Ditch into the wind on the backside of a wave.
+
+10.Pitch attitude at water contact..................................SLIGHTLY HIGHER  
+
+THAN NORMAL LANDING ATTITUDE
+
+11.Airspeed & Rate of Descent ............................ REDUCE TO MINIMUM,  
+
+ABOVE STALL WARNING
+
+12.Thrust Lever............................................................................................ IDLE
+13.Water Touchdown .... CONTACT ON CREST OF SWELL, PARALLEL 
+
+TO MAJOR SWELL
+
+14.Airplane ......................................................................................EVACUATE
+• WARNING •
+Evacuate via either egress window or main cabin door. However, main 
+cabin door evacuation shall be done only via the upper cabin door. To 
+avoid flooding the airplane, do not open lower cabin door.
+15.Flotation Devices (if equipped) ................ INFLATE WHEN CLEAR OF 
+
+AIRPLANE
+
+Procedure Complete
+
+• NOTE •
+
+If available, life preservers should be donned and the life raft 
+prepared for immediate evacuation upon touchdown.
+
+Emergency Descent
+
+1. AP DISC ...................................................................PRESS AND RELEASE
+2. Thrust Lever............................................................................................ IDLE
+3. Pitch ..................................................................................... -20° (APPROX.)
+4. Airspeed...............INCREASE TO VMO (250 KIAS) / MMO (0.53 Mach) 
+
+MAXIMUM
+
+Procedure Complete
+
+• CAUTION •
+If significant turbulence is expected, do not descend at indicated 
+airspeeds greater than VO.
+
+3-24
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Emergency Landing w/o Power
+
+1. Airplane Control ........................................................................MAINTAIN
+2. Pitch for glide speed.
+3. Turn toward nearest practical landing site.
+4. Radio.................. TRANSMIT (ATC OR 121.5 MHZ) MAYDAY WITH 
+
+LOCATION & INTENTIONS
+
+5. Transponder .........................................................................SQUAWK 7700
+
+◆ If landing site is improved:
+
+a. Landing Gear................................................................................DOWN
+
+b. Flaps......................................................................................................A/R
+
+c. Seat Belt(s) ...............................................................................SECURED
+
+d. CABIN PRESSURE DUMP Button ............................................PRESS
+
+e. Touchdown ................................................... NORMAL TECHNIQUE
+
+• WARNING •
+Refer to Section 3: Emergency Procedures, "Flameout / Precautionary 
+Approach" checklist.
+If a safe landing is not assured by the High-Key/Low-Key approach, 
+consider CAPS procedures.
+
+After landing:
+
+f. BAT 1 and BAT 2 Switches ..............................................................OFF
+
+g. Evacuate airplane.
+
+Procedure Complete
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-25
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+◆ If landing site is unimproved:
+
+a. Landing Gear ...................................................................................... A/R
+
+b. Flaps .......................................... A/R WITHIN GLIDING DISTANCE
+
+c. Seat Belt(s) .............................................................................. SECURED
+
+d. CABIN PRESSURE DUMP Button.............................................PRESS
+
+e. Touchdown.................... MINIMUM CONTROLLABLE AIRSPEED
+
+After landing:
+
+f. BAT 1 and BAT 2 Switches ..............................................................OFF
+
+g. Evacuate airplane.
+
+Procedure Complete
+
+• WARNING •
+
+If all attempts to restart the engine fail and a forced landing is 
+imminent, select a suitable landing site and prepare for landing. As 
+forced landings on unimproved surfaces are not recommended, CAPS 
+activation may be the safest option.
+Refer to Section 3: Emergency Procedures, "CAPS Activation" checklist.
+Refer to Section 10: Safety Information, "Cirrus Airframe Parachute 
+System (CAPS)" for CAPS deployment scenarios and landing 
+considerations.
+When determined that a forced landing is the safest option, a suitable 
+landing site should be chosen as early as possible so that maximum 
+time will be available to plan and execute the forced landing. While 
+gliding, be aware that use of flaps will reduce glide distance. Flaps 
+should not be selected until landing is assured. Land on the main gear 
+and hold the nose wheel off the ground as long as possible.
+
+3-26
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Flameout / Precautionary Approach
+
+POSITION
+
+ALTITUDE
+
+AIRSPEED
+
+High-Key
+
+Low-Key
+
+Base Leg
+
+3000 ft AGL
+
+115-130 KIAS
+
+1500 ft AGL
+
+120 KIAS
+
+1000 ft AGL
+
+120 KIAS
+
+• NOTE •
+Gear down and flaps when landing is assured.
+Airspeed 110 KIAS (minimum) until short final.
+
+Figure 3-2:  Flameout / Precautionary Approach
+
+Low-Key
+1500 feet AGL
+Abeam
+Touchdown
+Point
+
+High-Key
+3000 feet AGL
+(1/3 Point On Runway)
+
+Base Leg
+1000 feet AGL
+
+Touchdown Point
+
+SF50_FM03_0019
+
+P/N 31452-002
+Revision 1
+
+3-27
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Landing Without Aileron Control
+1. Flaps ..........................................................................................................  50%
+2. Trim ........................................................................................................  VREF
+3. Thrust Lever.............................................................................................  A/R
+4. Use rudder as necessary to align the aircraft with the runway.
+
+Procedure Complete
+Landing Without Elevator Control
+
+1. Use manual trim wheel to control pitch attitude.
+2. Flaps ........................................................................................................... 50%
+3. Make small pitch and power changes and prepare for landing configu-
+
+ration early.
+
+After touchdown and after the nose wheel is on the ground:
+4. Brakes......................................................................................................... A/R
+Procedure Complete
+
+Landing Without Rudder Control
+
+• NOTE •
+
+Avoid crosswind conditions if possible.
+1. Touchdown ...........................................................................ACCOMPLISH
+2. Maintain directional control on ground, using brakes and ailerons as 
+
+required.
+
+Procedure Complete
+
+3-28
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+CAPS Activation
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+• WARNING •
+The recommended CAPS activation speed is one that is less than 
+135 KIAS and 145 KTAS, whichever is lower, which will result in 
+immediate parachute deployment once the CAPS handle is pulled. 
+It is important for the operator to make all reasonable efforts to 
+slow to the minimum possible airspeed prior to CAPS activation. 
+This is necessary to minimize loads on the airframe and aircraft 
+occupants and increase the chances of a successful outcome.
+
+If CAPS is activated at speeds higher than 135 KIAS and 145 
+KTAS, whichever is lower, the system is designed to delay 
+deployment of the parachute until the autopilot slows the airplane 
+to the parachute deployment envelope. Do not attempt to 
+overpower or disconnect the autopilot. The time required for the 
+autopilot to slow the airplane from 250 KIAS to the parachute 
+deployment airspeed has been demonstrated to be approximately 
+15-24 seconds. Flying at a slower airspeed when CAPS is activated 
+will reduce this time.
+
+If the airspeed is still above the maximum deployment speed 
+approximately 30 seconds after CAPS activation, the system will 
+automatically deploy the parachute.
+
+CAPS deployment will likely result in damage or loss to the 
+airframe and possible injury to the aircraft occupants. Seat belts 
+must be worn at all times.
+
+Jerking or rapidly pulling the CAPS activation handle will greatly 
+increase the pull forces required to activate the rocket. Use a firm and 
+steady pulling motion – a “chin-up” type pull ensures successful 
+activation.
+
+1. Activation Handle....PULL DOWN STEADILY WITH BOTH HANDS
+
+• NOTE •
+Wait for plane to stabilize beneath canopy before proceeding.
+2. Oxygen Mask (above 15,000 feet)............................................ DON, 100%
+3. PAX OXY DEPLOY Switch..................................................................... ON
+4. MIC SELECT Switch ..................................................................MASK MIC
+5. Instruct passengers to don oxygen masks.
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-29
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+6. Passenger Oxygen ............... ENSURE PASSENGERS ARE RECEIVING 
+
+OXYGEN
+
+7. ENGINE FIRE ACKNOWLEDGE Switch ...... LIFT GUARD, TOGGLE
+8. ELT .............................................................................................. VERIFY ON
+9. Landing Gear ..............................................................................................UP
+
+Turn the BAT/GEN Switches OFF after completing any necessary 
+radio communications.
+
+10.BAT/GEN Switches (below 15,000 ft) ...................................................OFF
+11.Loose Items .......................................................................................SECURE
+12.Seat Belts........................................................................................ TIGHTEN
+13.Assume emergency landing body position. 
+After airplane comes to a complete stop:
+14.Evacuate quickly and move upwind, well clear of the aircraft and para-
+
+chute.
+
+Procedure Complete
+
+• NOTE •
+In the event the cabin remains pressurized at touchdown, the 
+egress hatch may not be removable.
+ After touchdown with the landing gear up, the lower half of the 
+clamshell cabin door will not completely open with the belly of the 
+aircraft resting on the ground.
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+3-30
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Emergency Ground Egress
+
+1. Engine Knob .............................................................................................OFF
+2. Engine Button.......................................................PRESS (MOMENTARY)
+3. BAT 1 and BAT 2 Switches ....................................................................OFF
+4. Parking Brake ............................................................................................SET
+5. Egress aircraft through exits.
+
+Procedure Complete
+
+• WARNING •
+While exiting the airplane, make sure evacuation path is clear of 
+aircraft and other hazards.
+
+• NOTE •
+
+In instances when the engine cannot be shut off, and has to be left 
+running, set the parking brake prior to evacuating the airplane.
+
+Pitch Trim Runaway / Failure
+
+Red PTRM annunciator on PFD.
+
+1. Grip side stick firmly.
+2. AP DISC Button........................................................... PRESS AND HOLD
+3. Pitch Trim ............................................... A/R (MANUAL TRIM WHEEL)
+4. PITCH TRIM CB (A1)......................................................................... PULL
+5. AP DISC Button............................................................................. RELEASE
+Procedure Complete
+
+Roll Trim Runaway / Failure
+
+1. Grip side stick firmly.
+2. AP DISC Button........................................................... PRESS AND HOLD
+3. Airspeed .................................... REDUCE (A/R TO MINIMIZE FORCE)
+4. ROLL TRIM CB (A2) ........................................................................... PULL
+5. AP DISC Button............................................................................. RELEASE
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3-31
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY PROCEDURES
+
+Jammed Elevator Trim Tab
+
+◆ During Cruise:
+
+CIRRUS
+VISION SF50
+
+a. Thrust Lever........................................................................................ A/R
+
+b. Landing Gear ...................................................................................... A/R
+
+c. Airspeed ...........MAINTAIN LAST TRIMMED AIRSPEED OR A/R
+
+d. Flaps .................................................. UP OR A/R FOR CONDITIONS
+
+e. Land as soon as practicable.
+
+◆ During Takeoff or Go-Around:
+
+Procedure Complete
+
+a. Pitch and Thrust ...MAINTAIN ALTITUDE AND FLYING SPEED 
+
+AS REQUIRED
+
+• NOTE •
+Expect extremely high stick forces.
+
+When safely airborne and clear of obstacles:
+
+b. Flaps ......................PLACE IN POSITION THAT JAM OCCURRED
+
+• NOTE •
+100% flaps may alleviate excessive nose-up tendencies following a 
+normal takeoff.
+
+c. Landing Gear ........................................................ DO NOT RETRACT
+
+d. Land as soon as practicable.
+
+Procedure Complete
+
+AFCS Alerts
+
+For more information on AFCS alerts, refer to SF50 Garmin Cockpit Refer-
+ence Guide.
+
+3-32
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+Emergency CAS Procedures
+AUTO DESCENT Warning
+
+AUTO DESCENT
+
+Aircraft descending to 14,000 ft.
+
+• NOTE •
+Aircraft will descend to 14,000 feet, level off for 4 minutes, then 
+descend to 12,500 feet.
+To cancel auto descent, disconnect the autopilot:
+
+a. AP DISC Button ...............................................PRESS AND RELEASE
+
+Procedure Complete
+
+CABIN ALTITUDE HIGH Warning
+
+CABIN ALTITUDE HIGH
+
+Cabin high altitude detected.
+
+1. Oxygen Mask .............................................................................. DON, 100%
+
+2. BLEED Switch .....................................................................VERIFY BLEED
+3. MIC SELECT Switch ..................................................................MASK MIC
+4. Perform Emergency Descent checklist as required.
+5. Passenger Oxygen ............... ENSURE PASSENGERS ARE RECEIVING 
+
+OXYGEN
+
+◆ If passenger oxygen masks do not deploy:
+
+a. PAX OXY DEPLOY Switch .............................................................. ON
+
+6. Transponder .........................................................................SQUAWK 7700
+Procedure Complete
+• NOTE •
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+P/N 31452-002
+Revision 1
+
+3-33
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+CABIN DIFF PRESSURE HIGH Warning
+
+CABIN DIFF PRESSURE HIGH
+
+Cabin differential pressure is too high.
+
+1. Oxygen Mask .............................................................................. DON, 100%
+2. BLEED Switch......................................................................................FRESH
+
+3. MIC SELECT Switch ................................................................. MASK MIC
+4. Perform Emergency Descent checklist as required.
+◆ If message persists:
+
+a. Thrust Lever.............................................................................. REDUCE
+
+b. CABIN PRESSURE DUMP Button.............................................PRESS
+
+Procedure Complete
+• NOTE •
+Autopilot Emergency Descent Mode (EDM) is disabled when the 
+cabin dump switch is activated.
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+CABIN DUMP Warning
+
+CABIN DUMP
+
+Cabin pressure dump activated.
+
+• NOTE •
+
+If the CABIN PRESSURE DUMP Button was inadvertently 
+activated, it should be deactivated immediately.
+Autopilot Emergency Descent Mode (EDM) is disabled when the 
+cabin dump switch is activated.
+
+◆ If message is accompanied by CABIN ALTITUDE HIGH Warning:
+
+a. Perform CABIN ALTITUDE HIGH Warning checklist.
+
+Procedure Complete
+
+3-34
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CAPS ACTIVATED Warning
+
+CAPS ACTIVATED
+
+CAPS sequence has been activated.
+
+◆ If message is displayed due to CAPS activation (pulling of CAPS 
+Activation Handle):
+
+1. Refer to CAPS Activation procedure.
+
+Procedure Complete
+
+• WARNING •
+Do not press and hold AP DISC Button if CAPS handle has been 
+pulled; if handle has been pulled, parachute will deploy regardless and 
+pressing AP DISC will prevent the aircraft from adequately slowing 
+prior to deployment.
+
+◆ If message is displayed but CAPS handle is NOT pulled:
+
+a. AP DISC Button .............................PRESS AND HOLD 5 SECONDS
+
+Procedure Complete
+• WARNING •
+CAPS AP mode will be unavailable for remainder of flight until next 
+power cycle. If CAPS activation is necessary, the pilot must manually 
+reduce airspeed below 135 KIAS and 145 KTAS, whichever is lower, to 
+deploy the parachute.
+Refer to Section 3: Emergency Procedures, "CAPS Activation" procedure.
+
+DOOR OPEN BAGGAGE Warning
+
+DOOR OPEN BAGGAGE
+
+Baggage door is open.
+
+◆ If in flight:
+
+a. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Verify baggage door is closed.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3-35
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+DOOR OPEN MAIN Warning
+
+DOOR OPEN MAIN
+
+Main door is open.
+
+◆ If in flight:
+
+a. Airplane Control ................................................................. MAINTAIN
+
+b. Airspeed  ................................................................LIMIT TO 150 KIAS
+
+c. Altitude ........................................................AS LOW AS PRACTICAL
+
+d. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Verify main door is closed.
+
+Procedure Complete
+
+• WARNING •
+Stay clear of door if malfunction is believed to have occurred. Ensure 
+seat belts are tightened and secured in order to avoid extraction from 
+aircraft in the event of rapid door opening/decompression.
+Maneuver with care, avoiding unnecessary accelerations and abrupt 
+maneuvers.
+• NOTE •
+
+If open door is discovered on takeoff roll, abort takeoff if sufficient 
+runway remains. If already airborne, do not allow efforts to close 
+the door interfere with the primary task of maintaining control of 
+the airplane.
+
+3-36
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+EMER BUS VOLTS Warning  
+
+EMER BUS VOLTS
+
+Operating on emergency power.
+
+◆ If GENERATOR 1 CURRENT OR GENERATOR 2 CURRENT CAS is 
+also displayed:
+
+a. Perform GENERATOR 1 CURRENT OR GENERATOR 2 
+
+CURRENT procedure prior to performing remainder of EMER BUS 
+VOLTS procedure.
+
+◆ If GEN 1 and GEN 2 are not within limits:
+
+a. GEN 1 Switch .....................................................................................OFF
+
+b. GEN 2 Switch .....................................................................................OFF
+
+c.
+
+Interior Lights  ...................................................................................OFF
+
+d. BAT 1 Switch......................................................................................OFF
+
+e. BAT 2 Switch....................................................................... VERIFY ON
+
+• NOTE •
+With GEN 1, GEN 2, and BAT 1 OFF, the autopilot and the 
+displays on the MFD and GTC 3 will be unavailable.
+
+f. Land as soon as possible.
+
+Procedure Complete
+
+• NOTE •
+
+BAT 2 is designed to power the Emergency Bus for at least 60 
+minutes. 
+FADEC NO DISPATCH faults will be displayed once normal 
+power is restored. Faults can be cleared using the FADEC fault 
+reset button.
+FUEL VALVE #2 FAIL Caution will be displayed during normal 
+tank AUTO selection since the secondary valve is not powered by 
+emergency power.
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-37
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• NOTE •
+With Battery 1, Generator 1, and Generator 2 switched off, power 
+will be removed from the entire main bus, including the hydraulic 
+powerpack. The following equipment will also be inoperative: 
+Stick Pusher (Perform STICK PUSHER FAIL Caution checklist)
+
+Landing gear control (To lower landing gear, perform Alternate Gear 
+Extension checklist)
+Flaps control (Perform Flaps Inoperative Approach/Landing checklist)
+Cabin pressure control (Perform CABIN PRESSURE CTRL FAIL 
+Caution checklist)
+Engine start/shutdown control (To shutdown engine, perform 
+Abnormal Engine Shutdown On Ground checklist)
+Yaw SAS (Perform YAW SAS SERVO Caution checklist)
+Bleed air shutoff and ECS (such as AC Compressor and Fans)
+Redundant equipment (such as Fuel Valve 2,  
+AHRS 2 / ADC 2, Right Pitot Heat, COM 2, and GPS 2)
+
+•
+
+•
+
+•
+•
+
+•
+
+•
+•
+•
+
+• Non-essential equipment (such as Electric Fuel Pump, Stick Shaker, 
+Avionics Fan, Anti-collision Lights, Landing Lights, IFE USB, 
+Transponder1, Navigation Lights, Fuel Level, Oil Pressure, Intercom, 
+and Passenger Oxygen)
+
+• Optional equipment (such as Traffic/TCAS, Transponder2, Radar, 
+EVS, ADS-B/UAT,115VAC PWR, Iridium WIFI Data, DME, XM 
+Data, and Yaw Damper)
+
+•
+•
+
+Autopilot Servos, Roll Trim, and electric Pitch Trim
+Ice Protection (Engine, Windshield, WING/STAB, Ice Light, and AOA 
+Heat)
+
+3-38
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+Emergency Bus Circuit Breakers 
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+BATT1 HOT BUS
+
+CONV LIGHTS
+CAPS A
+
+Interior Lights Controller
+Primary CAPS
+
+COPILOT CIRCUIT BREAKER PANEL (ROW D)
+
+FUEL VALVE 1 (D5)
+LANDING GEAR IND (D6)
+
+STANDBY ATT (D2)
+GTC 1A (D3)
+GEA (D4)
+
+CAPS B (D1)
+
+Fuel Control Valve 1
+L MLG WOW Sensor
+R MLG WOW Sensor
+L MLG Down Sensor
+L MLG Locked Sensor
+R MLG Down Sensor
+R MLG Locked Sensor
+NLG Down Sensor
+NLG Locked Sensor
+ADAHRS 3 (MD302)
+GTC 1 (pwr A)
+RDM
+GEA 71
+Secondary CAPS
+
+PILOT CIRCUIT BREAKER PANEL (ROW A)
+
+CABIN PRESS 2 (A10)
+
+AP CTRL (A7)
+FIRE PROT 1 (A9)
+
+CREW LIGHTS (A11)
+
+PROBE HT LEFT (A8)
+
+Manual Dump SW & Controller 
+Solenoid Pwr
+AP Controller (GMC 707)
+Fire Bottle 1
+Fire Prot. CCA LED
+Task Light, Copilot
+Task Light, Pilot
+Left Pitot Heat
+
+P/N 31452-002
+Revision 1
+
+3-39
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+PILOT CIRCUIT BREAKER PANEL (ROW B)
+
+FIRE PROT 2 (B9)
+
+AHRS 1 (B10)
+ADC 1 (B11)
+GTC 2A (B5)
+GPS NAV 
+GIA 1 (B6)
+PFD A (B8)
+COM 1 (B7)
+
+Fire Bottle 2
+Fuel Shutoff Valve
+AHRS 1 (GRS79)
+GDC 1
+GTC 2 (pwr A)
+GIA 1 MAIN
+
+PFD (pwr A)
+GIA 1 COM
+
+3-40
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+ENGINE FIRE Warning - In Flight
+
+ENGINE FIRE
+
+Engine fire detected.
+
+1. Thrust Lever............................................................................................ IDLE
+2. Pitch for 120 KIAS (APPROX.)
+3. Wait 15 seconds.
+◆ If ENGINE FIRE Warning remains on, or secondary fire indications are 
+present – probable engine fire:
+
+a. ENGINE FIRE ACKNOWLEDGE Switch...................LIFT GUARD, 
+
+TOGGLE
+
+b. Left or Right PUSH TO DISCHARGE Button...........................PUSH
+
+c. Oxygen Mask........................................................................ DON, 100%
+
+d. MIC SELECT Switch............................................................MASK MIC
+
+e. Engine Knob.......................................................................................OFF
+
+f. Engine Button ................................................PRESS (MOMENTARY)
+
+g. GEN 1 and GEN 2 Switches .............................................................OFF
+h. Perform Emergency Landing w/o Power checklist.
+
+Procedure Complete
+◆ If ENGINE FIRE Warning extinguishes and secondary fire indications 
+are not present – probable bleed leak:
+
+a. Thrust Lever ..............................REDUCE (MINIMUM REQUIRED)
+
+b. Land as soon as possible.
+
+If time permits:
+
+c. BLEED Switch ...............................................................................FRESH 
+
+d. Oxygen Masks ...................................................................... DON, 100%
+
+e. L / R MIC Switches...............................................................MASK MIC
+
+f.
+
+Inlet Anti-Ice ......................................................................................OFF
+
+g. Exit icing conditions.
+
+h. Prepare for Emergency Descent, Loss of Cabin Pressure.
+
+Procedure Complete
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-41
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• NOTE •
+
+An actual engine fire may be accompanied by abnormal or failing 
+engine indications, erratic or rough engine operation, visible 
+flames, or smoke trail from aircraft.
+Secondary fire indications include N1 / N2 fluctuation, generator 
+failure, or erratic or failing engine indications.
+A sustained fire may cause the structure to be compromised. 
+Structural failure may cause significant injury or loss of life. 
+Limiting speed, if possible, and avoiding high maneuvering loads 
+may reduce the possibility of structural failure.
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+ENGINE FIRE Warning - On Ground
+
+ENGINE FIRE
+
+Engine fire detected.
+
+1. ENGINE FIRE ACKNOWLEDGE Switch ...... LIFT GUARD, TOGGLE
+2. Left or Right PUSH TO DISCHARGE Button  ............................... PUSH
+3. Engine Knob .............................................................................................OFF
+4. Engine Button .......................................................PRESS (MOMENTARY)
+5. Evacuate airplane.
+
+Procedure Complete
+• NOTE •
+Engine Knob OFF inhibits Electric Fuel Pump.
+
+3-42
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+ENGINE START N1 Warning
+
+ENGINE START N1
+
+N1 is not indicating rotation.
+
+1. ENGINE START N1 .......................................................... ABORT START
+
+◆ If in flight:
+
+a.
+
+Increase airspeed and retry start procedure.
+
+◆ If on ground:
+
+Procedure Complete
+
+b. Contact Cirrus for disposition.
+
+Procedure Complete
+
+EXTERNAL POWER CONNECTED Warning - On Ground
+
+EXTERNAL POWER CONNECTED
+
+External power is connected, set park brake.
+
+1. Parking Brake or Brakes...................................................... SET OR HOLD
+2. Disconnect external power.
+
+Procedure Complete
+
+• NOTE •
+
+Setting parking brake will extinguish CAS warning.
+
+P/N 31452-002
+Revision 1
+
+3-43
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FADEC CTRL DEGRADED Warning
+
+FADEC CTRL DEGRADED
+
+Reference FADEC Fault Code Messages.
+
+1. FADEC Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the FADEC Stale Fault Reset Button.
+
+◆ If message extinguishes:
+
+a. No further action required.
+
+◆ If message persists:
+
+Procedure Complete
+
+• WARNING •
+
+Possible inaccurate automatic power setting. The engine may exceed or 
+go below allowable engine operating parameters which could 
+ultimately result in loss of thrust. Avoid fast thrust lever movement or 
+rapid thrust setting changes.
+
+❍ If in flight:
+
+(1)ENG. IPS Switch ............................................................................ ON
+
+(a) Allow sufficient time for ice to clear from inlet probes.
+
+(2)FADEC Reset via MFD Controller:
+
+(a) From Home, touch Aircraft Systems.
+
+(b)Touch the FADEC Stale Fault Reset Button.
+
+(3)Land as soon as possible.
+
+Procedure Complete
+
+❍ If on ground:
+
+(1)Do not dispatch.
+
+Procedure Complete
+
+3-44
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+FADEC NO DISPATCH Warning - On Ground
+
+FADEC NO DISPATCH
+
+Reference FADEC Fault Code Messages.
+
+1. FADEC Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the FADEC Stale Fault Reset Button.
+
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+a. Do not dispatch.
+
+Procedure Complete
+
+FLAPS CAL MODE Warning - On Ground
+
+FLAPS CAL MODE
+
+Do not dispatch, flaps system needs service.
+
+1. Do not dispatch.
+
+Procedure Complete
+
+FLAPS ICE Warning
+
+Full flaps prohibited in icing conditions.
+
+FLAPS ICE
+
+1. Flaps ..................................................................................... SET UP OR 50%
+Procedure Complete
+• WARNING •
+Maximum flap deflection in icing conditions is limited to 50%.
+
+• NOTE •
+If pilot can verify airframe is not ice contaminated, then IPS stall 
+offset reset may be used to allow extension of flaps beyond 50%.
+
+P/N 31452-002
+Revision 1
+
+3-45
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FUEL FILTER BYPASS Warning
+
+FUEL FILTER BYPASS
+
+Fuel filter diff press too high, bypass impending.
+
+1. Thrust Lever.....................................REDUCE (MINIMUM REQUIRED)
+2. Land as soon as possible.
+
+Procedure Complete
+
+• WARNING •
+
+Plan for possible imminent engine failure.
+Refer to Section 3: Emergency Procedures, "Engine Failure In Flight" 
+procedure for more information.
+
+FUEL IMBALANCE Warning
+
+FUEL IMBALANCE
+
+Fuel imbalance is ≥ 50 gallons.
+
+• NOTE •
+
+If no roll trim imbalance exists when autopilot is disconnected, fuel 
+imbalance or fuel quantity indication may be erroneous.
+1. Fuel Quantity/Fuel Remaining..................................................COMPARE
+
+a. Refer to EIS for fuel quantity (based on level sensors).
+
+2. Fuel Control Switch .......................................................... FULLEST TANK
+3. Airspeed................... MAINTAIN FOR ADEQUATE ROLL CONTROL
+◆ If message extinguishes or imbalance decreases:
+
+a. Continue flight.
+
+b. Fuel Control Switch ...................................................................... AUTO
+
+◆ If message persists or imbalance increases:
+
+Procedure Complete
+
+a. Land as soon as possible.
+
+Procedure Complete
+
+3-46
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+FUEL LOW LEFT/RIGHT/TOTAL Warning
+
+FUEL LOW LEFT
+
+FUEL LOW RIGHT
+
+FUEL LOW TOTAL
+
+Left fuel tank is nearly empty, OR 
+Right fuel tank is nearly empty, OR 
+Total fuel quantity is low.
+
+1. Fuel Quantity..................................................................................... CHECK
+2. Fuel Control Switch .......................................................... FULLEST TANK
+3. Land as soon as possible.
+4. Avoid excessive pitch attitudes and lateral acceleration to prevent uncov-
+
+ering the fuel inlet lines and possible fuel flow interruption.
+
+Procedure Complete
+
+• NOTE •
+Warning occurs when total fuel quantity ≤ 25 U.S. gallons (95 L), 
+OR Left or Right fuel tank ≤ 5 U.S. gallons (19 L).
+
+P/N 31452-002
+Revision 1
+
+3-47
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FUEL PRESSURE LOW Warning
+
+FUEL PRESSURE LOW
+
+FDU fuel inlet pressure is low.
+
+1. Fuel Control Switch .................................... SWITCH TO OTHER TANK
+a. Refer to EIS for current tank selection (AUTO selection shown in 
+
+white; LEFT/RIGHT selection shown in cyan).
+
+◆ If message extinguishes:
+a. Continue flight.
+
+b. Fuel Quantity...................................................MAINTAIN BALANCE
+
+Procedure Complete
+
+◆ If message persists:
+
+a. Land as soon as possible.
+
+Procedure Complete
+
+• NOTE •
+
+Selecting LEFT/RIGHT will control electric pump to ON. Pump 
+latch is removed when cycling to LEFT/RIGHT tank selection, 
+then back to AUTO.
+To maintain fuel balance, monitor fuel quantity and alternate 
+LEFT/RIGHT selection as needed.
+
+3-48
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+FUEL TEMP LOW Warning
+
+FUEL TEMP LOW
+
+Fuel temperature below operating limit.
+
+1. Fuel Temperature (L / R) ................................................................. CHECK
+◆ If in flight:
+
+a. Climb or descend to warmer conditions.
+
+• NOTE •
+
+ Change altitude to increase OAT and increase fuel temperature. 
+Due to temperature inversion, warmer temperatures may be at a 
+higher altitude.
+
+❍ If message extinguishes:
+
+(1)Fuel Temperature............................................................ MONITOR
+
+❍ If message persists:
+
+Procedure Complete
+
+(1)Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Warm aircraft to increase fuel temperature.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3-49
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FUEL VALVES BOTH FAIL Warning
+
+FUEL VALVES BOTH FAIL
+
+Both fuel control valves have failed.
+
+1. Fuel Quantity .....................................................................................CHECK
+2. Airspeed................... MAINTAIN FOR ADEQUATE ROLL CONTROL
+3. Land as soon as possible.
+
+Procedure Complete
+
+• NOTE •
+
+Simultaneously failed valves will cause a fuel imbalance which will 
+increase with continued flight.
+If both fuel control valves fail, they will remain in the last 
+commanded position.
+
+3-50
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+GENERATOR 1 CURRENT Warning
+
+GENERATOR 1 CURRENT
+
+Generator 1 current is too high.
+
+1. GEN 1 Switch ...........................................................................................OFF
+2. GCU Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the GCU Reset Button.
+
+3. ECS DISABLE ...................................................................................SELECT
+4. GEN 1 Switch ............................................................................................ ON
+◆ If message extinguishes:
+
+a. ECS DISABLE ....................................................................... DESELECT
+
+◆ If message persists:
+
+Procedure Complete
+
+a. GEN 1 Switch .....................................................................................OFF
+
+b. BAT 1 Switch......................................................................................OFF
+
+c. Land as soon as practicable, avoiding IMC or night flight as able 
+
+(reduced power redundancy).
+
+Procedure Complete
+
+• NOTE •
+With Battery 1 and Generator 1 switched off, power will be 
+removed from the entire main bus, including the hydraulic 
+powerpack. The following equipment will also be inoperative:
+
+•
+
+Landing gear control (to lower landing gear, perform Alternate Gear 
+Extension checklist)
+ECS (such as AC Compressor and Fans)
+•
+•
+Redundant equipment (such as Fuel Valve 2 and AHRS 2 / ADC 2)
+• Non-essential equipment (such as Electric Fuel Pump, Stick Shaker, 
+
+Yaw SAS, Avionics Fan, Nose Landing Lights, and IFE USB)
+• Optional equipment (such as Traffic/TCAS, Transponder2, Radar, 
+
+EVS, 115VAC PWR, and Iridium WIFI Data)
+
+P/N 31452-002
+Revision 1
+
+3-51
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+GENERATOR 1 OVERVOLTAGE Warning
+
+GENERATOR 1 OVERVOLTAGE
+
+Generator 1 voltage is high.
+
+1. GEN 1 Switch............................................................................................OFF
+2. GCU Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the GCU Reset Button.
+
+3. ECS DISABLE................................................................................... SELECT
+4. GEN 1 Switch............................................................................................. ON
+◆ If message extinguishes:
+
+a. ECS DISABLE .......................................................................DESELECT
+
+◆ If message persists:
+
+Procedure Complete
+
+a. GEN 1 Switch .....................................................................................OFF
+
+b. BAT 1 Switch ......................................................................................OFF
+
+c. Land as soon as practicable, avoiding IMC or night flight as able 
+
+(reduced power redundancy).
+
+Procedure Complete
+
+• NOTE •
+With Battery 1 and Generator 1 switched off, power will be 
+removed from the entire main bus, including the hydraulic 
+powerpack. The following equipment will also be inoperative:
+
+•
+
+Landing gear control (to lower landing gear, perform Alternate Gear 
+Extension checklist)
+ECS (such as AC Compressor and Fans)
+•
+•
+Redundant equipment (such as Fuel Valve 2 and AHRS 2 / ADC 2)
+• Non-essential equipment (such as Electric Fuel Pump, Stick Shaker, 
+
+Yaw SAS, Avionics Fan, Nose Landing Lights, and IFE USB)
+• Optional equipment (such as Traffic/TCAS, Transponder2, Radar, 
+
+EVS, 115VAC PWR, and Iridium WIFI Data)
+
+3-52
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+Main Bus Circuit Breakers
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+PILOT CIRCUIT BREAKER PANEL (ROW B)
+
+BLEED AIR FLOW CTRL 
+(B2)
+
+Bleed Air Flow Control Valve
+
+STICK SHAKER (B3)
+
+Stick Shaker Motor
+
+LANDING GEAR HYD (B4) Landing Gear Hydraulics Power 
+
+Control
+
+PILOT CIRCUIT BREAKER PANEL (ROW C)
+
+PFD B 
+GTC 1B (C8)
+
+MFD B
+GTC 2B (C9)
+
+FUEL PUMP
+CTRL (C10)
+
+GTC-1 Secondary, PFD Secondary
+
+MFD-Secondary, GTC-2 Secondary
+
+Fuel Control Panel
+
+IGNITER 1 (C11)
+
+Igniter 1, Ignition Control Panel
+
+COPILOT CIRCUIT BREAKER PANEL (ROW F)
+
+YAW SAS (F8)
+
+IFE CTRL (F7)
+
+IRIDIUM
+WIFI DATA (F6)
+
+AHRS 2
+ADC 2 (F5)
+
+FUEL 
+VALVE 2 (F2)
+
+Yaw Servo
+
+Convenience Power Relay
+
+Wi-Fi Datalink, Iridium Satellite
+
+AHRS 2, ADC 2
+
+Fuel Control Valve (FCV) 2
+
+AVIONICS FAN (F1)
+
+Avionics Equipment Fan In Console
+
+P/N 31452-002
+Revision 1
+
+3-53
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+AFT CIRCUIT BREAKER PANEL (ROW K)
+
+IFE USB (K1)
+
+In-Flight Entertainment
+
+FADEC PANEL (K2)
+
+FADEC A Maintenance Panel, 
+FADEC B Maintenance Panel
+
+TRAFFIC (K3)
+
+DME (K4)
+
+TCAS-1
+
+DME
+
+FADEC B (K5)
+
+Engine Control Electronics
+
+XPONDER 2 (K6)
+
+Transponder 2
+
+PAX LIGHTS  
+LIGHT CTRL (K7)
+
+Passenger task lights
+
+AFT CIRCUIT BREAKER PANEL (ROW L)
+
+115 VAC PWR (L12)
+
+DC-AC Inverter
+
+ECS BOOST FAN (L1)
+
+ECS Booster Fan
+
+ECS GROUND FAN (L2)
+
+ECS Ground Fan
+
+NOSE CIRCUIT BREAKER PANEL (ROW M)
+
+NOSE LAND LIGHT (M2)
+
+Nose Landing Light
+
+RADAR (M3)
+
+Weather Radar
+
+EVS (M4)
+
+Enhanced Vision System
+
+AC INLET DOOR (M6)
+
+AC Door Actuator
+
+ROCKET WARMER (M7)
+
+CAPS Rocket Warmer
+
+3-54
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+GENERATOR 2 CURRENT Warning
+
+GENERATOR 2 CURRENT
+
+Generator 2 current is too high.
+
+1. GEN 2 Switch ..................................................................................... CYCLE
+2. GEN 2 Amps......................................................CHECK WITHIN LIMITS
+◆ If GEN 2 amps are within limits:
+a. No further action required.
+
+◆ If GEN 2 amps are still not within limits:
+
+Procedure Complete
+
+a. GEN 2 Switch .....................................................................................OFF
+
+• NOTE •
+GEN 1 will support GEN 2 electrical loads.
+
+b. Land as soon as practicable.
+
+Procedure Complete
+
+GENERATOR 2 OVERVOLTAGE Warning
+
+GENERATOR 2 OVERVOLTAGE
+
+Generator 2 voltage is high.
+
+1. GEN 2 Switch ..................................................................................... CYCLE
+◆ If message persists:
+
+a. GEN 2 Switch .....................................................................................OFF
+
+• NOTE •
+GEN 1 will support GEN 2 electrical loads.
+
+b. Land as soon as practicable.
+
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+• NOTE •
+Generator 2 voltage > 32 V.
+
+P/N 31452-002
+Revision 1
+
+3-55
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ITT Warning
+
+ITT limits exceeded.
+
+◆ If in flight:
+
+ITT
+
+a. Thrust Lever.............................................................................. REDUCE
+
+ITT ..........................................................................................MONITOR
+
+b.
+❍ If message persists:
+
+(1)Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Shut down engine. Do not dispatch. 
+
+Procedure Complete
+
+3-56
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+LDG GEAR IS UP Warning
+
+LDG GEAR IS UP
+
+Landing gear is not down and locked for landing.
+
+◆ If in flight:
+
+a. Landing Gear................................................................ CHECK DOWN
+❍ If message persists:
+
+(1)Perform Alternate Gear Extension checklist.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Do not taxi.
+
+b. Landing Gear................................................................ CHECK DOWN
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is inhibited at altitudes and speeds where the 
+aircraft landing gear warning system (as designed) has determined 
+that airspeed and/or altitudes are not within normal parameters to 
+require the landing gear to be down.
+The landing gear DOWN / LOCK / WOW sensors are powered 
+through the EMER BUS and the LANDING GEAR IND CB.
+
+P/N 31452-002
+Revision 1
+
+3-57
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+LDG GEAR SELECTED UP Warning
+
+LDG GEAR SELECTED UP
+
+Ldg gear should be selected down while on ground.
+
+◆ If on ground:
+
+a. Do not taxi.
+
+b. Landing Gear ............................................................... SELECT DOWN
+
+Procedure Complete
+
+◆ If in flight:
+
+a. Disregard.
+
+Procedure Complete
+• NOTE •
+This CAS message is displayed when the landing gear handle is in 
+the UP position and the aircraft incorrectly indicates it is on the 
+ground.
+This CAS message may also indicate a possible WOW sensor 
+failure.
+
+N1 Warning
+
+N1 speed exceeded.
+
+◆ If in flight:
+
+N1
+
+a. Thrust Lever.............................................................................. REDUCE
+
+b. Monitor N1.
+❍ If message persists:
+
+(1)Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Shut down engine. Do not dispatch.
+
+Procedure Complete
+
+3-58
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+N2 Warning
+
+N2 speed exceeded.
+
+◆ If in flight:
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+N2
+
+a. Thrust Lever ..............................................................................REDUCE
+
+b. Monitor N2.
+❍ If message persists:
+
+(1)Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Shut down engine. Do not dispatch.
+
+Procedure Complete
+
+OIL CHIP DETECT Warning - On Ground
+
+OIL CHIP DETECT
+
+Engine oil debris detected.
+
+1. Shut down engine. Do not dispatch.
+
+Procedure Complete
+
+• NOTE •
+ Frequent oil chip detect messages during flight may cause the OIL 
+CHIP DETECT Warning to occur on a subsequent flight. In that 
+event, dispatch is not permitted unless maintenance is performed.
+
+OIL FILTER BYPASS Warning - On Ground
+
+OIL FILTER BYPASS
+
+Oil filter diff press too high, bypass impending.
+
+1. Shut down engine. Do not dispatch.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3-59
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+OIL PRESSURE Warning
+
+OIL PRESSURE
+
+Engine oil pressure exceedance.
+
+◆ If in flight:
+
+a. Monitor oil system pressure and temperature.
+❍ If message persists:
+
+(1)Thrust Lever .........................REDUCE (MINIMUM REQUIRED)
+(2)Avoid abrupt thrust lever movements.
+(3)Land as soon as possible.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Perform Abnormal Engine Shutdown On Ground checklist.
+
+Procedure Complete
+
+OIL TEMPERATURE Warning
+
+OIL TEMPERATURE
+
+Engine oil temperature exceedance.
+
+1. Thrust Lever.....................................REDUCE (MINIMUM REQUIRED)
+2. Monitor oil system pressure and temperature.
+◆ If message persists:
+
+a. Land as soon as possible.
+
+Procedure Complete
+
+3-60
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+STALL WARNING 
+
+Stall warning active.
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+STALL WARNING
+
+1. AOA..................................................................................................REDUCE
+2. Thrust Lever.............................................................................................. T/O
+
+Procedure Complete
+
+STICK PUSHER Warning
+
+STICK PUSHER
+
+Stick pusher active.
+
+1. AOA..................................................................................................REDUCE
+2. Thrust Lever.............................................................................................. T/O
+• CAUTION •
+Do not attempt to overpower the stick pusher.
+• NOTE •
+If airspeed, altitude, power settings, and load factors are within 
+normal limits, and there is no evidence of ice contamination, 
+message should be considered a malfunction.
+
+◆ If message is determined to be a malfunction:
+
+a. Grip side stick firmly.
+
+b. AP DISC Button .................................................... PRESS AND HOLD
+
+c. Airplane Control..................................................................MAINTAIN
+
+d. AP SERVOS CB (A3) ..................................................................... PULL
+
+e. AP DISC Button ...................................................................... RELEASE
+
+f. STICK SHAKER CB (B3).............................................................. PULL
+❍ If in RVSM airspace:
+
+(1)Airplane Control ............................................................MAINTAIN
+(2)Exit RVSM airspace.
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3-61
+
+ 
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+g. Airspeed  ................................................... MAINTAIN ABOVE 1.3 Vs
+h. Avoid stalls, low airspeed, and uncoordinated or abrupt control 
+
+inputs.
+
+i. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+Autopilot, Stall Warning, and Stick Shaker will be unavailable.
+Green donut airspeed reference will be unavailable or unreliable.
+Refer to the following procedures for VREF speeds.
+Low speed awareness indications on the airspeed tape should be 
+considered unreliable and should not be referenced.
+Refer to Section 3A: Abnormal Procedures, "STICK PUSHER 
+FAIL Caution".
+Refer to Section 3A: Abnormal Procedures, "AOA FAIL Caution".
+Expect CAPS AUTOPILOT INOP CAS. Refer to Section 3A: 
+Abnormal Procedures, "CAPS AUTOPILOT INOP Advisory".
+
+VREF Speeds (KIAS)
+
+FLAPS
+
+4000 lb
+
+4500 lb
+
+5000 lb
+
+5550 lb
+
+6000 lb
+
+UP or UNKNOWN
+
+89
+
+95
+
+100
+
+104
+
+109
+
+UP (Ice 
+Contaminated 
+Airframe/ 
+STALL SPEED 
+HIGH Advisory)
+
+115
+
+122
+
+128
+
+135
+
+140
+
+50%
+
+82
+
+87
+
+91
+
+96
+
+100
+
+50% (Ice 
+Contaminated 
+Airframe /STALL 
+SPEED HIGH 
+Advisory)
+
+100%
+
+3-62
+
+98
+
+104
+
+110
+
+115
+
+120
+
+71
+
+76
+
+81
+
+85
+
+89
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3: EMERGENCY PROCEDURES
+EMERGENCY CAS PROCEDURES
+
+TAKEOFF PITCH TRIM Warning - On Ground
+
+TAKEOFF PITCH TRIM
+
+Pitch trim not in takeoff configuration.
+
+1. Takeoff.................................................................................................ABORT
+
+2. Pitch Trim .............................. ADJUST TO TAKEOFF (GREEN BAND)
+Procedure Complete
+
+THR LEVER CALIBRATION Warning - On Ground
+
+THR LEVER CALIBRATION
+
+FADEC is in TLA rigging mode.
+
+1. Do not dispatch.
+
+Procedure Complete
+
+TT2 OVERHEAT Warning
+
+TT2 OVERHEAT
+
+TT2 probes pending overheat.
+
+1. ENG. IPS Switch.......................................................................................OFF
+2. Avoid/exit icing conditions.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3-63
+
+

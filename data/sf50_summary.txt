@@ -1,0 +1,202 @@
+Section 3A: Abnormal Procedures
+
+GIA 1 Failure
+Loss of GPS Navigation
+Dry Motoring Engine - Failed Engine Start
+Flaps Inoperative Approach/Landing
+Landing With Failed Brakes
+Landing With Flat Tire
+Alternate Gear Extension
+Gear Indication(s) Not Down/Locked
+Communications Failure
+Flight Through Volcanic Ash
+Abnormal Engine Shutdown On Ground
+Wing/Stab IPS Activated in RVSM Airspace
+AFCS Alerts
+Autopilot Abnormal Disconnect
+Autopilot Failure
+Pitch Axis Failure
+Roll Axis Failure
+Yaw Axis Failure
+Autopilot Preflight Test Fail
+Elevator Mistrim Down
+Elevator Mistrim Up
+Aileron Mistrim Left/Right
+Abnormal CAS Procedures
+AOA FAIL Caution
+AOA HEAT FAIL Caution
+BLEED AIR Caution
+BLEED LEAK Caution
+BLEED OFF Caution
+BLEED OPEN Caution
+BLEED OVERPRESSURE Caution
+CABIN LFE NOT SET Caution
+CABIN PRESSURE CTRL FAIL Caution
+CAPS AUTOPILOT INOP Advisory
+CAPS MISCOMPARE Advisory
+DOOR OPEN Advisory - On Ground
+DOOR OPEN EMER EXIT Caution
+ECS BLEED HOT Caution
+ECS BLEED OVERHEAT Caution
+ECS CONTROL FAIL Caution
+ECS TEMP BACKUP Caution
+EDM DISABLED Advisory
+EMER BATTERY FAIL Caution
+EMER BATTERY FAULT Caution
+ENGINE START BAT TEMP Caution
+ENGINE START VOLTS Caution - On Ground
+ESP FAIL Advisory
+ESP OFF Advisory
+ESS BUS VOLTS Caution
+EXTERNAL POWER CONNECTED Caution - On Ground
+FADEC NO DISPATCH Caution
+FIRE DETECTOR FAIL Caution
+FIRE EXT LOW L-R Caution
+FIRE EXT LOW L Advisory
+FIRE EXT LOW R Advisory
+FLAPS AIRSPEED INHIBIT Caution
+FLAPS DISAGREE Caution
+FLAPS FAIL Caution
+FLAPS SELECTOR FAIL Caution
+FLIGHT IDLE FAIL Caution
+FUEL IMBALANCE Caution
+FUEL LOW LEFT/RIGHT/TOTAL Caution
+FUEL PUMP FAIL Caution
+FUEL PUMP ON Caution
+FUEL PUMP ON Advisory
+FUEL QTY MISCOMPARE Caution
+FUEL SELECTOR FAIL Caution
+FUEL SHUTOFF Advisory
+FUEL SHUTOFF FAIL Caution
+FUEL TANK BALANCED Advisory
+FUEL TEMP LOW Caution
+FUEL VALVE #1 FAIL Caution
+FUEL VALVE #2 FAIL Caution
+FUEL VALVE AUTO FAIL Caution
+GENERATOR 1 CURRENT Caution
+GENERATOR 2 CURRENT Caution
+GROUND IDLE FAIL Caution - On Ground
+HYDRAULIC OVERHEAT Caution
+IPS BLEED OVERHEAT Caution
+IPS ENG INLET OFF Caution
+IPS ENG INLET ON Caution
+IPS ENG INLET OVERHEAT Caution
+IPS ENG INLET UNDERPRESS Caution
+IPS ENG INLET UNDERPRESS Advisory - On Ground
+IPS FLUID LOW Caution
+IPS FLUID LOW Advisory - On Ground
+IPS WINDSHLD TIMER Caution
+IPS WING/STAB FAIL Caution
+IPS WING/STAB TEMP LOW Caution
+LDG GEAR FAIL Caution
+LDG GEAR SELECTOR FAIL Caution
+MAIN BATTERY FAIL Caution
+MAIN BATTERY FAULT Caution
+MAIN BUS VOLTS Caution
+MASK MICROPHONE Advisory
+NO ADC MODES Caution
+NO VERT MODES Caution
+OIL FILTER BYPASS Caution
+OXYGEN OFF Caution
+OXYGEN ON Caution - On Ground
+OXYGEN ON Advisory - On Ground
+OXYGEN PASSENGER FAIL Caution
+OXYGEN PRESSURE LOW Caution
+PARK BRAKE Caution - On Ground
+PITCH MET ACTIVE Caution
+PROBE HEAT FAIL L Caution
+PROBE HEAT FAIL R Caution
+PROBE HEAT OFF Caution
+SFD ALT MISCOMPARE Caution
+SFD IAS MISCOMPARE Caution
+SFD NO-COMPARE Advisory
+SFD PITCH MISCOMPARE Caution
+SFD ROLL MISCOMPARE Caution
+STALL SPEED HIGH Advisory
+STALL WARNING FAIL Caution
+STARTER ENGAGED Caution
+STARTER ENGAGED Advisory
+STICK PUSHER FAIL Caution
+SURFACEWATCH FAIL Advisory
+TAKEOFF EMER BAT Caution
+TAKEOFF FLAPS Caution - On Ground
+TAKEOFF PITCH TRIM Advisory - On Ground
+TAKEOFF THRUST Caution
+TAKEOFF THRUST Advisory
+TCV CONTROL FAIL Caution
+THROTTLE SERVO Caution
+TT2 HEAT FAIL Caution
+WOW DISAGREE Advisory
+WOW FAIL Caution
+YAW SAS SERVO Caution
+
+Section 3: Emergency Procedures
+
+Automatic Flight Control Malfunction
+Engine Emergency On Takeoff - Speed Below VR
+Engine Fire On Takeoff - Low Altitude
+Engine Failure On Takeoff - Low Altitude
+Rejected Takeoff
+Engine Failure In Flight
+Uncontained Engine Failure (Rotor Burst in Flight)
+Loss of All Flight Displays
+Loss of Thrust Control
+Loss of Reliable Airspeed Indication
+Abnormal Engine Start
+Air Start
+Smoke Removal
+Cabin Fire In Flight
+Ditching
+Emergency Descent
+Emergency Landing w/o Power
+Flameout / Precautionary Approach
+Landing Without Aileron Control
+Landing Without Elevator Control
+Landing Without Rudder Control
+CAPS Activation
+Emergency Ground Egress
+Pitch Trim Runaway / Failure
+Roll Trim Runaway / Failure
+Jammed Elevator Trim Tab
+AFCS Alerts
+Emergency CAS Procedures
+AUTO DESCENT Warning
+CABIN ALTITUDE HIGH Warning
+CABIN DIFF PRESSURE HIGH Warning
+CABIN DUMP Warning
+CAPS ACTIVATED Warning
+DOOR OPEN BAGGAGE Warning
+DOOR OPEN MAIN Warning
+EMER BUS VOLTS Warning
+ENGINE FIRE Warning - In Flight
+ENGINE FIRE Warning - On Ground
+ENGINE START N1 Warning
+EXTERNAL POWER CONNECTED Warning - On Ground
+FADEC CTRL DEGRADED Warning
+FADEC NO DISPATCH Warning - On Ground
+FLAPS CAL MODE Warning - On Ground
+FLAPS ICE Warning
+FUEL FILTER BYPASS Warning
+FUEL IMBALANCE Warning
+FUEL LOW LEFT/RIGHT/TOTAL Warning
+FUEL PRESSURE LOW Warning
+FUEL TEMP LOW Warning
+FUEL VALVES BOTH FAIL Warning
+GENERATOR 1 CURRENT Warning
+GENERATOR 1 OVERVOLTAGE Warning
+GENERATOR 2 CURRENT Warning
+GENERATOR 2 OVERVOLTAGE Warning
+ITT Warning
+LDG GEAR IS UP Warning
+LDG GEAR SELECTED UP Warning
+N1 Warning
+N2 Warning
+OIL CHIP DETECT Warning - On Ground
+OIL FILTER BYPASS Warning - On Ground
+OIL PRESSURE Warning
+OIL TEMPERATURE Warning
+STALL WARNING 
+STICK PUSHER Warning
+TAKEOFF PITCH TRIM Warning - On Ground
+THR LEVER CALIBRATION Warning - On Ground
+TT2 OVERHEAT Warning

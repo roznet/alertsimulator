@@ -1,0 +1,3800 @@
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+Abnormal Procedures
+GIA 1 Failure
+
+• NOTE •
+
+GIA 1 interfaces with many systems; multiple CAS messages and 
+synoptic X's are simultaneously presented in a GIA 1 failure. 
+Workload and stress is greatly reduced by recognizing this as a 
+single manageable failure and not multiple or cascading system 
+failures.
+The most recognizable sign of GIA 1 failure is the combined loss 
+of COM1/NAV1 and GPS1 coincident with multiple system CAS 
+messages.
+
+1. Aircraft Control .........................................................................MAINTAIN
+2. Airspeed .......................................................... MAINTAIN ABOVE 1.3 VS
+3. Avoid stalls, low airspeed, and uncoordinated or abrupt control inputs.
+4. Navigation..........................................................SELECT GPS 2 OR NAV 2
+5. Communication ....................TUNE AND SELECT COM 2 AS ACTIVE
+6. CAS Messages........................................ ASSESS AND ACKNOWLEDGE
+
+• NOTE •
+
+The following messages may result from loss of monitoring, not 
+loss of function in related systems. AFM procedures associated 
+with these conditions are not required in case of GIA 1 failure.
+
+FUEL VALVES BOTH FAIL Warning
+PROBE HEAT OFF Caution
+IPS WING/STAB FAIL Caution
+IPS ENGINE INLET OFF Caution
+CABIN PRESSURE CTRL FAIL Caution
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3A-9
+
+ 
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• NOTE •
+The following messages may be displayed, these are accurate if 
+provided, but do not require pilot action unless specifically 
+included in the action steps of the GIA 1 Failure checklist.
+FLAPS ICE Warning
+FADEC NO DISPATCH Caution
+FLAPS FAIL Caution
+LDG GEAR SELECTOR FAIL Caution
+FUEL VALVE AUTO FAIL Caution
+STICK PUSHER FAIL Caution
+SFD NO COMPARE Advisory
+STALL SPEED HIGH Advisory
+
+7. Fuel Balance ............................................................................... MAINTAIN 
+a. Fuel Quantity...............................................................................CHECK 
+
+b. Fuel Control Switch .................................................... FULLEST TANK
+
+• NOTE •
+To maintain fuel balance, monitor fuel quantity and alternate
+LEFT/RIGHT selection as needed.
+8. Altitude ..................................................................................AS REQUIRED
+• NOTE •
+Although CABIN PRESSURE CTRL FAIL Caution is 
+annunciated, only LFE functionality and depressurization on 
+landing is affected.
+
+(Continued on next page)
+
+3A-10
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+ (Continued)
+
+9. Flight into icing conditions ................................................ AS REQUIRED
+• NOTE •
+System will provide several FAIL annunciations that are result of 
+data loss, not system failure. With lack of active CAS monitor, 
+avoiding ice conditions is best advised; if transit through ice is 
+required, systems should be operated normally.
+Approach and Landing using ice contaminated approach speeds 
+will be required if STALL SPEED HIGH advisory is posted. Refer 
+to Section 5: Performance Data, "Landing Distance" for 
+appropriate Ice Contaminated landing distance chart.
+FLAPS ICE message will be provided if flaps were at 100% at the 
+time of GIA Failure. Refer to Section 5: Performance Data, "Flaps: 
+50% (Ice Contaminated)".
+
+10.Perform Alternate Gear Extension checklist.
+11.CABIN PRESSURE DUMP Button................................................... PRESS
+12.Land as soon as practicable.
+
+Loss of GPS Navigation
+
+Procedure Complete
+
+Amber GPS LOI text left of HSI and/or white system message on 
+touchscreen controller.
+
+• NOTE •
+Stick pusher function will be inoperative.
+1. Navigation...........................VISUAL, OR SELECT VOR AND/OR DME
+2. Perform STICK PUSHER FAIL Caution checklist.
+
+Procedure Complete
+• NOTE •
+ Dispatch is not authorized with inoperative GPS, predicted 
+degraded GPS (RAIM prediction), or known GPS outage 
+(NOTAM) expected during the planned flight.
+
+P/N 31452-002
+Revision 1
+
+3A-11
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Dry Motoring Engine - Failed Engine Start
+
+• NOTE •
+
+Dry motoring is used to clear the engine of residual fuel following 
+a failed engine start.
+The engine must be visually inspected after dry motoring to ensure 
+no fuel has pooled and the exhaust is dry before attempting 
+another engine start.
+
+1. Thrust Lever............................................................................................ IDLE
+2. Engine Knob .............................................................................................OFF
+3. BLEED Switch......................................................................................FRESH
+4. Engine Button ..............................PRESS AND HOLD 15 - 30 SECONDS
+Procedure Complete
+
+• NOTE •
+
+Refer to Section 2: Limitations, "Starter Generator Limits (Start 
+Mode)" for starter duty cycle limitations.
+Battery damage may occur if motoring is prolonged.
+High levels of bleed air extraction during engine start produces 
+hotter ITT and slower start.
+Engine Knob OFF inhibits Electric Fuel Pump.
+
+Flaps Inoperative Approach/Landing
+
+1. VREF  .............................................................. REFER TO GREEN DONUT
+2. Landing Gear .........................................................DOWN AND LOCKED
+Procedure Complete
+• NOTE •
+Refer to Section 5: Performance Data, "Flaps: UP" for Flaps UP 
+landing distance requirements.
+
+3A-12
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+Landing With Failed Brakes
+
+◆ If one brake is inoperative:
+
+a. Land on the side of runway corresponding to the inoperative brake.
+
+b. Maintain directional control using rudder and operational brake.
+
+c. Shut down engine as soon as practical.
+
+Procedure Complete
+
+◆ If both brakes are inoperative:
+
+a. Divert to the longest, widest runway with the most direct headwind.
+
+b. Land on downwind side of the runway.
+
+c. Use the rudder and aileron for directional control.
+
+d. Shut down engine as soon as practical.
+
+Procedure Complete
+
+• NOTE •
+
+Rudder effectiveness will decrease with decreasing airspeed. 
+
+P/N 31452-002
+Revision 1
+
+3A-13
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+Landing With Flat Tire
+
+CIRRUS
+VISION SF50
+
+• WARNING •
+If a flat tire is suspected, do not retract landing gear since it may cause 
+difficulties in extending the gear. Additionally, landings with the gear 
+up are potentially more hazardous than with the gear down. The 
+probability of aircraft damage is greater with gear up landings.
+If a flat tire or tread separation occurs during takeoff and it is not 
+possible to abort, land as soon as practicable. Tread separation could 
+damage wing-mounted fuel system components. Continued flight could 
+result in fuel imbalance or fuel exhaustion. A significant imbalance 
+and/or exhaustion can result in loss of aircraft due to loss of control or 
+loss of thrust leading to an off-airport landing.
+
+◆ If main gear tire is flat:
+
+a. Land on the side of the runway corresponding to the good tire.
+
+b. Maintain directional control with the brakes, rudder, and aileron.
+
+c. Do not taxi. Stop the airplane and perform a normal Engine Shut-
+
+down.
+
+Procedure Complete
+
+◆ If nose gear tire is flat:
+
+a. Land in the center of the runway.
+
+b. Hold the nosewheel off the ground as long as possible.
+
+c. Do not taxi. Stop the airplane and perform a normal Engine Shut-
+
+down.
+
+Procedure Complete
+
+3A-14
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+Alternate Gear Extension
+
+1. Airspeed ........................................................................... BELOW 210 KIAS
+2. LANDING GEAR HYD CB (B4)........................................................ PULL
+3. Landing Gear Handle ........................................................................DOWN
+4. Alternate Gear Extension Handle................. PULL TO STOP, RESTOW
+5. Verify 3 Green, DOWN / LOCKED indications.
+◆ If landing gear is down and locked:
+a. No further action required.
+
+◆ If landing gear is not down and locked:
+
+Procedure Complete
+
+a. Alternate Gear Extension Handle .......... PULL TO STOP, RESTOW
+
+• NOTE •
+Pull the handle to the end of its available travel to ensure landing 
+gear is fully unlocked.
+
+b. Reduce airspeed, or increase load factor (g) by increasing bank angle 
+
+to assist in extending/locking the gear.
+
+c. Check landing gear indications. If landing gear indications are still 
+not confirmed down, prepare for landing with possible gear issue.
+
+d. Perform visual verification of gear position by ATC (towered 
+
+airport), if possible.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-15
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Gear Indication(s) Not Down/Locked
+
+◆ If in flight:
+
+a. Landing Gear .............................................CYCLE UP, THEN DOWN
+❍ If Landing Gear is down and locked:
+(1)Monitor landing gear indications.
+
+Procedure Complete
+❍ If Landing Gear is not down and locked:
+
+(1)Perform Alternate Gear Extension checklist.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Do not taxi.
+
+b. Landing Gear ................................................................CHECK DOWN
+
+Procedure Complete
+
+• NOTE •
+Even though the gear assemblies are functioning properly, the 
+root cause may be a failure of the gear sensors to indicate properly 
+(Down/Up or Locked/Unlocked). If possible, visual verification by 
+ATC (towered airport) can be used to confirm gear position. 
+Failure of the gear sensors to provide proper indication could 
+cause the LDG GEAR FAIL Caution to display.
+
+3A-16
+
+P/N 31452-002
+Revision 1
+
+ 
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+Communications Failure
+
+1. Switches, Controls ............................................................................ CHECK
+2. Frequency........................................................................................CHANGE
+3. Circuit Breakers.........................................................................................SET
+4. Headset ................................................................. CHANGE OR SPEAKER
+5. Attempt to use oxygen mask microphone or hand-held microphone and 
+
+cabin speakers.
+
+◆ If Precipitation-static is experienced during flight:
+
+a. WINDSHLD IPS Switch.................................................................... ON
+
+Procedure Complete
+
+• NOTE •
+
+If, after following the checklist procedure, communication is not 
+restored, proceed with FAR/AIM lost communications 
+procedures.
+In the event of an audio panel power failure, the audio panel 
+connects COM 1 to the pilot’s headset.
+If the oxygen mask microphone is used, emergency oxygen will be 
+depleted. A hand-held microphone may optionally be furnished by 
+the operator.
+
+Flight Through Volcanic Ash
+
+• CAUTION •
+
+Avoid flying through volcanic ash where possible.
+
+1. Engine Parameters ...................................................................... MONITOR
+◆ If engine parameters cannot be kept within limits:
+
+a. Land as soon as possible.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-17
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL PROCEDURES
+
+CIRRUS
+VISION SF50
+
+Abnormal Engine Shutdown On Ground
+
+◆ If normal engine shutdown is not successful:
+
+a. Thrust Lever...................................................................................... IDLE
+b. ENGINE FIRE ACKNOWLEDGE Switch.................. LIFT GUARD, 
+
+TOGGLE
+
+Procedure Complete
+
+• CAUTION •
+
+Do not press PUSH TO DISCHARGE buttons when the ENGINE 
+FIRE ACKNOWLEDGE switch is on. Discharging the fire bottles 
+will result in the bottles requiring servicing before subsequent 
+flights.
+• NOTE •
+
+Activating the ENGINE FIRE ACKNOWLEDGE switch activates 
+the fuel shutoff valve which will remove fuel to engine and arm the 
+fire bottles.
+
+Engine Knob OFF inhibits the Electric Fuel Pump.
+
+Wing/Stab IPS Activated in RVSM Airspace
+
+◆ If activated by pilot:
+
+a. Advise ATC of non RVSM status.
+
+Procedure Complete
+
+◆ If activated uncommanded:
+
+a. Verify WING/STAB Switch OFF.
+
+b. WING/STAB IPS CB (A6)............................................................. PULL
+
+Procedure Complete
+
+3A-18
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+AFCS Alerts
+
+SECTION 3A: ABNORMAL PROCEDURES
+AFCS ALERTS
+
+For more information on AFCS alerts, refer to SF50 Garmin Cockpit 
+Reference Guide.
+
+Autopilot Abnormal Disconnect
+
+Red AP flashing on PFD; continuous high-low aural tone.
+
+1. AP DISC Button......................................................PRESS AND RELEASE
+2. Airplane Control  .......................................................................MAINTAIN
+Procedure Complete
+
+Autopilot Failure
+
+Red AFCS annunciator on PFD; red AP flashing on PFD; continuous 
+high-low aural tone.
+
+1. AP DISC Button......................................................PRESS AND RELEASE
+2. Airplane Control  .......................................................................MAINTAIN
+◆ If in RVSM airspace:
+
+a. Exit RVSM airspace.
+
+Procedure Complete
+
+Pitch Axis Failure
+
+Red PTCH annunciator on PFD.
+
+• NOTE •
+If the pitch axis fails while autopilot is engaged, the autopilot will 
+disengage as indicated by the red AP flashing on the PFD. The 
+autopilot may be re-engaged; however, vertical Flight Director 
+modes must be hand flown.
+This condition will likely be accompanied by a “STICK PUSHER 
+FAIL” CAS message.
+1. Altitude..............................MONITOR AND MAINTAIN AS POSSIBLE
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-19
+
+SECTION 3A: ABNORMAL PROCEDURES
+AFCS ALERTS
+
+Roll Axis Failure
+
+Red ROLL annunciator on PFD.
+
+CIRRUS
+VISION SF50
+
+• NOTE •
+If the roll axis fails while autopilot is engaged, the autopilot will 
+disengage as indicated by the red AP flashing on the PFD. The 
+autopilot may not be re-engaged.
+ESP is inoperative.
+1. Airplane Control ....................................................................... MAINTAIN
+Procedure Complete
+
+Yaw Axis Failure
+
+Red YAW annunciator on PFD.
+
+• NOTE •
+The yaw damper will disconnect, but the autopilot may still be 
+used for vertical and lateral guidance. Some lateral mistrim may 
+become apparent, and manual rudder inputs may be required for 
+turn coordination.
+
+1. Continue flight.
+
+Autopilot Preflight Test Fail
+
+Procedure Complete
+
+Red PFT annunciator on PFD.
+
+1. Do not dispatch.
+
+Procedure Complete
+• NOTE •
+The autopilot, stick pusher, and ESP are inoperative.
+
+3A-20
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+AFCS ALERTS
+
+Elevator Mistrim Down
+
+Yellow (down arrow) ELE annunciator on PFD.
+
+• NOTE •
+Be prepared for out of trim condition if AP is disengaged.
+
+1. Manipulate elevator trim down to eliminate the mistrim condition.
+◆ If condition persists:
+
+a. Disengage autopilot.
+
+b. Retrim aircraft as desired.
+
+Elevator Mistrim Up
+
+Procedure Complete
+
+Yellow (up arrow) ELE annunciator on PFD.
+
+• NOTE •
+Be prepared for out of trim condition if AP is disengaged.
+
+1. Manipulate elevator trim up to eliminate the mistrim condition.
+◆ If condition persists:
+
+a. Disengage autopilot.
+
+b. Retrim aircraft as desired.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-21
+
+SECTION 3A: ABNORMAL PROCEDURES
+AFCS ALERTS
+
+Aileron Mistrim Left/Right
+
+CIRRUS
+VISION SF50
+
+Yellow (left/right arrow) AIL annunciator on PFD.
+
+• NOTE •
+Be prepared for out of trim condition if AP is disengaged.
+1. Manipulate aileron trim as required to eliminate the mistrim condition.
+• NOTE •
+Momentary roll trim input in the direction of mistrim indication 
+will typically correct the condition.
+
+◆ If condition persists:
+
+a. Disengage autopilot.
+
+b. Retrim aircraft as desired.
+
+Procedure Complete
+
+3A-22
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+Abnormal CAS Procedures
+AOA FAIL Caution
+
+AOA FAIL
+
+AOA signal invalid.
+
+1. Airspeed  ............................................... REFER TO VREF SPEEDS TABLE
+2. Avoid stalls, low airspeed, and uncoordinated or abrupt control inputs.
+3. Land as soon as practicable.
+
+Procedure Complete
+
+VREF Speeds (KIAS)
+
+FLAPS
+
+4000 lb
+
+4500 lb
+
+5000 lb
+
+5550 lb
+
+6000 lb
+
+UP or UNKNOWN
+
+89
+
+95
+
+100
+
+104
+
+109
+
+UP (Ice 
+Contaminated 
+Airframe/ 
+STALL SPEED 
+HIGH Advisory)
+
+115
+
+122
+
+128
+
+135
+
+140
+
+50%
+
+82
+
+87
+
+91
+
+96
+
+100
+
+50% (Ice 
+Contaminated 
+Airframe /STALL 
+SPEED HIGH 
+Advisory)
+
+98
+
+104
+
+110
+
+115
+
+120
+
+100%
+
+71
+
+76
+
+81
+
+85
+
+89
+
+(Continued on next page)
+
+P/N 31452-002
+Revision 1
+
+3A-23
+
+ 
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ (Continued)
+
+• WARNING •
+The aircraft is not stall protected. Stalls must be avoided when the 
+AOA is inoperative. Excessive altitude loss may result if the aircraft is 
+stalled. Departure from controlled flight or spin may occur during stall 
+with uncoordinated aileron/rudder inputs.
+Stall warning is not operative or reliable.
+Stick pusher is not operative or reliable.
+Expect STALL WARNING FAIL or STICK PUSHER FAIL CAS.
+Stall speeds in turns or increased load factor are higher.
+
+Green donut airspeed reference will be unavailable or unreliable.
+
+• NOTE •
+
+3A-24
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+AOA HEAT FAIL Caution
+
+AOA HEAT FAIL
+
+AOA heat failure.
+
+1. PROBE HT RIGHT CB (E4) ............................................................ CYCLE
+2. PROBE HT LEFT CB (A8) ............................................................... CYCLE
+3. Avoid/exit icing conditions.
+
+Procedure Complete
+• NOTE •
+In case of AOA heat failure during flight in icing conditions, AOA 
+measurements may be erroneous. 
+Refer to VREF Speeds table.
+
+BLEED AIR Caution
+
+BLEED AIR
+
+ECS bleed air system pressure low or failed.
+
+1. BLEED Switch .......................CYCLE FRESH, BLEED WITHIN < 1 SEC
+2. Cabin Altitude ............................................................................. MONITOR
+◆ If message extinguishes:
+a. Continue flight.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. Land as soon as practicable.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-25
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+BLEED LEAK Caution
+
+BLEED LEAK
+
+Bleed leak detected in tailcone.
+
+CIRRUS
+VISION SF50
+
+1. Oxygen Mask .............................................................................. DON, 100%
+2. BLEED Switch......................................................................................FRESH
+3. MIC SELECT Switch ................................................................. MASK MIC
+4. Wait 15 seconds.
+◆ If message extinguishes:
+
+a. Descend and land as soon as practicable.
+
+• NOTE •
+Cabin pressurization is no longer functional.
+Procedure Complete
+
+◆ If message persists:
+
+a. Perform Emergency Descent checklist as required.
+
+b. Thrust Lever.............................. REDUCE (MINIMUM REQUIRED)
+
+c. Land as soon as possible.
+
+Procedure Complete
+• NOTE •
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+3A-26
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+BLEED OFF Caution
+
+BLEED OFF
+
+Bleed air is switched to OFF/FRESH.
+
+◆ If bleed is desired OFF:
+
+a. No further action required.
+
+◆ If bleed is not desired OFF:
+
+Procedure Complete
+
+a. BLEED Switch ......................................................... CYCLE TO BLEED
+
+b. Verify message is extinguished.
+❍ If message persists:
+
+(1)Cabin Altitude ................................................................. MONITOR
+(2)Monitor for CABIN ALTITUDE HIGH Warning.
+
+Procedure Complete
+
+BLEED OPEN Caution
+
+BLEED OPEN
+
+Shutoff solenoid failed to close.
+
+1. BLEED Switch .................................................................................... CYCLE
+2. BLEED AIR SHUTOFF CB (D7)..................................................... CYCLE
+3. Land as soon as practicable.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-27
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+BLEED OVERPRESSURE Caution
+
+BLEED OVERPRESSURE
+
+ECS bleed air system pressure high.
+
+1. Thrust .............................................................................................. REDUCE
+2. BLEED Switch....................... CYCLE FRESH, BLEED WITHIN < 1 SEC
+◆ If message extinguishes:
+a. Continue flight.
+
+◆ If message persists:
+
+Procedure Complete
+
+a. Thrust  ............................................................................MINIMIZE A/R
+
+b. Land as soon as practicable.
+
+Procedure Complete
+
+CABIN LFE NOT SET Caution
+
+CABIN LFE NOT SET
+
+Landing field elevation is not set.
+
+1. Input destination airport in flight plan.
+OR
+2. Manually set Landing Field Elevation on GTC.
+
+Procedure Complete
+
+3A-28
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CABIN PRESSURE CTRL FAIL Caution
+
+CABIN PRESSURE CTRL FAIL
+
+Detected failure of CPCS Controller.
+
+1. Cabin Altitude ............................................................................. MONITOR
+2. Monitor for CABIN ALTITUDE HIGH Warning.
+3. Land as soon as practicable.
+
+Procedure Complete
+• NOTE •
+If cabin pressure controller fails, CPCS will maintain current cabin 
+altitude.
+
+CAPS AUTOPILOT INOP Advisory
+
+CAPS AUTOPILOT INOP
+
+Minimize CAPS deployment speed.
+
+◆ If in an emergency situation:
+
+a. Airspeed ............................................MANUALLY REDUCE BELOW  
+135 KIAS AND 145 KTAS BEFORE DEPLOYING PARACHUTE
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-29
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+CAPS MISCOMPARE Advisory
+
+CAPS MISCOMPARE
+
+CAPS service required.
+
+• WARNING •
+
+CAPS may be unavailable.
+
+◆ If in flight:
+
+a. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Do not dispatch.
+
+Procedure Complete
+
+DOOR OPEN Advisory - On Ground
+
+DOOR OPEN
+
+One or more doors are open.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+3A-30
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+DOOR OPEN EMER EXIT Caution
+
+DOOR OPEN EMER EXIT
+
+Emergency exit door is open.
+
+• WARNING •
+
+Stay clear of window if malfunction is believed to have occurred. 
+Ensure seat belts are tightened and secured in order to avoid extraction 
+from aircraft in the event of rapid door opening/decompression. Do not 
+attempt to latch or unlatch the exit door or manipulate the exit door or 
+latch.
+
+◆ If in flight:
+
+a. Visually check window latch handle position.
+
+b. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Verify window is latched.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-31
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+ECS BLEED HOT Caution
+
+ECS BLEED HOT
+
+Bleed supply temperature is too hot.
+
+CIRRUS
+VISION SF50
+
+1. Cabin Temp Knob.................................................................... FULL COLD
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. TEMP BACKUP ........................................................................ SELECT
+
+b. Verify message is extinguished.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed when bleed supply temperature 
+reaches 250 °F (121 °C).
+
+3A-32
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+ECS BLEED OVERHEAT Caution
+
+ECS BLEED OVERHEAT
+
+Bleed supply temperature is too hot.
+
+1. Cabin Temp Knob ....................................................................FULL COLD
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. TEMP BACKUP .........................................................................SELECT
+
+b. Verify message is extinguished.
+❍ If message persists:
+
+(1)Thrust Lever................................................ REDUCE AS PRACTICAL
+(2)Verify message is extinguished.
+❑ If message persists or if TCV CONTROL FAIL is displayed:
+
+(a) Oxygen Mask............................................................. DON, 100%
+
+(b)BLEED Switch....................................................................FRESH
+
+(c) MIC SELECT Switch.................................................MASK MIC
+
+(d)Cabin Altitude............................................................ MONITOR
+
+(e) Monitor for CABIN ALTITUDE HIGH Warning.
+
+(f) Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed when bleed supply temperature 
+reaches 270 °F (132 °C).
+Refer to Section 2: Limitations, "Oxygen" for oxygen requirements.
+
+P/N 31452-002
+Revision 1
+
+3A-33
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ECS CONTROL FAIL Caution
+
+ECS CONTROL FAIL
+
+ECS controller has failed, OR 
+All cabin temperature sensors have failed, OR 
+All ECS fans in cabin have failed, OR 
+Bleed duct temperature sensor has failed.
+
+1. TEMP BACKUP............................................................................... SELECT
+2. Cabin Temp Knob.............................. ADJUST FOR CABIN COMFORT
+3. Monitor for ECS BLEED OVERHEAT Caution.
+4. Perform ECS BLEED OVERHEAT Caution checklist, if required.
+
+Procedure Complete
+
+3A-34
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+ECS TEMP BACKUP Caution
+
+ECS TEMP BACKUP
+
+Environmental control temperature backup mode.
+
+◆ If TEMP BACKUP mode engaged intentionally:
+
+a. Cabin Temp Knob ....................... ADJUST FOR CABIN COMFORT
+
+b. Monitor for ECS BLEED HOT or ECS BLEED OVERHEAT 
+
+cautions.
+
+❍ If ECS BLEED HOT is displayed:
+
+(1)Perform ECS BLEED HOT caution checklist.
+
+Procedure Complete
+❍ If ECS BLEED OVERHEAT is displayed:
+
+(1)Perform ECS BLEED OVERHEAT caution checklist.
+
+◆ If TEMP BACKUP mode engaged unintentionally:
+
+Procedure Complete
+
+a. TEMP BACKUP ................................................................... DESELECT
+
+b. ECS Controls .......................................................................................A/R
+
+Procedure Complete
+
+• NOTE •
+
+When in Temp Backup mode, changes in thrust and aircraft speed 
+affect incoming bleed air temperature.
+Prior to increasing thrust or reducing aircraft speed, it is 
+recommended that the temperature setting be lowered (especially 
+during low altitude level off, landing, and go-around conditions).
+
+EDM DISABLED Advisory
+
+EDM DISABLED
+
+Emergency Descent Mode is disabled.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-35
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+EMER BATTERY FAIL Caution
+
+EMER BATTERY FAIL
+
+Emergency battery (Bat 2) service is required.
+
+1. Exit IMC as soon as practicable.
+2. Land as soon as practicable.
+
+Procedure Complete
+• CAUTION •
+Emergency battery may be unavailable.
+• NOTE •
+Battery FAIL indicates an internal condition which reduces 
+capability of the battery. Possible conditions include a faulty 
+temperature sensor, disconnected heater, etc.
+
+3A-36
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+EMER BATTERY FAULT Caution
+
+EMER BATTERY FAULT
+
+Emergency battery (Bat 2) fault detected.
+
+1. BAT 2 Switch ...................................................................................... CYCLE
+◆ If message extinguishes:
+a. Continue flight.
+
+b. Service aircraft as soon as practicable.
+
+◆ If message persists:
+
+a. Exit IMC as soon as practicable.
+
+b. Land as soon as practicable.
+
+2. Contact Cirrus for corrective action.
+
+Procedure Complete
+• CAUTION •
+Emergency battery is unavailable.
+• NOTE •
+Battery FAULT indicates a condition causing battery to disable 
+charging and/or discharging until corrected. Possible conditions 
+include under-voltage, over-voltage, over-current, short-circuit, 
+and over-temperature.
+
+ENGINE START BAT TEMP Caution
+
+ENGINE START BAT TEMP
+
+Main battery (Bat 1) is below minimum start temp.
+
+1. Wait until message extinguishes before attempting start.
+
+Procedure Complete
+• CAUTION •
+If start is attempted prior to message extinguishing, the battery 
+may be temporarily inoperative, or it may result in an engine hot 
+start or other faults.
+
+P/N 31452-002
+Revision 1
+
+3A-37
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+ENGINE START VOLTS Caution - On Ground
+
+ENGINE START VOLTS
+
+Main battery (Bat 1) insufficient charge for reliable engine start.
+
+• NOTE •
+Avoid prolonged battery-only ground operation beyond 20 
+minutes combined operation, which may result in insufficient 
+capacity for engine start. 
+Attempted start with insufficient battery capacity may result in 
+battery low voltage protection circuit activation, which will 
+temporarily make main battery unavailable.
+Condition will automatically recover after main battery is 
+adequately recharged.
+
+1. Battery service, preheat and/or charging is required.
+
+Procedure Complete
+
+ESP FAIL Advisory
+
+ESP FAIL
+
+ESP is inoperative.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+ESP OFF Advisory
+
+ESP OFF
+
+ESP selected off.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+3A-38
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+ESS BUS VOLTS Caution
+
+ESS BUS VOLTS
+
+Essential power bus voltage is low, OR 
+Loss of forward essential power bus voltage.
+
+1. Perform GENERATOR 1 CURRENT Caution and GENERATOR 2 
+
+CURRENT Caution Checklists.
+
+Procedure Complete
+
+• NOTE •
+
+Indicates GEN 1 and GEN 2 failure and is associated with low 
+Main Bus and Essential Bus voltages, GEN 1 and GEN 2 current 
+indications, BAT 1 and BAT 2 discharge, and GEN 1 and GEN 2 
+Cautions.
+
+EXTERNAL POWER CONNECTED Caution - On Ground
+
+EXTERNAL POWER CONNECTED
+
+External power is connected.
+
+1. Ensure external power is removed before moving airplane.
+
+Procedure Complete
+• NOTE •
+Indicates external power is connected.
+
+P/N 31452-002
+Revision 1
+
+3A-39
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FADEC NO DISPATCH Caution
+
+FADEC NO DISPATCH
+
+Reference FADEC Fault Code Messages.
+
+1. ENG. IPS Switch (OAT < 50 °F) ............................................. VERIFY ON
+
+a. Allow sufficient time for ice to clear from inlet probes.
+
+2. FADEC Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the FADEC Stale Fault Reset Button.
+
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. Continuance of flight is permitted.
+
+Procedure Complete
+
+• NOTE •
+Consider selecting a destination where the necessary FADEC 
+maintenance can be performed. Failure to do so will prevent 
+further dispatch.
+
+FIRE DETECTOR FAIL Caution
+
+FIRE DETECTOR FAIL
+
+Engine fire detector loop low pressure.
+
+◆ If in flight:
+
+a. Land as soon as practicable.
+
+◆ If on ground:
+
+a. Do not dispatch.
+
+Procedure Complete
+
+Procedure Complete
+
+3A-40
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FIRE EXT LOW L-R Caution
+
+FIRE EXT LOW L-R
+
+Pressure is low in both fire extinguishers.
+
+◆ If in flight:
+
+a. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Do not dispatch.
+
+Procedure Complete
+
+• WARNING •
+May result in limited/reduced fire suppressant capability.
+
+FIRE EXT LOW L Advisory
+
+FIRE EXT LOW L
+
+Pressure is low in the left fire extinguisher.
+
+1. Continue flight.
+2. Service aircraft as soon as practical.
+
+Procedure Complete
+
+FIRE EXT LOW R Advisory
+
+FIRE EXT LOW R
+
+Pressure is low in the right fire extinguisher.
+
+1. Continue flight.
+2. Service aircraft as soon as practical.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-41
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FLAPS AIRSPEED INHIBIT Caution
+
+FLAPS AIRSPEED INHIBIT
+
+Flaps motion inhibited.
+
+1. Airspeed................................. INCREASE OR REDUCE, AS REQUIRED
+OR
+2. Flaps ................................................RETURN TO PREVIOUS POSITION
+Procedure Complete
+
+FLAPS DISAGREE Caution
+
+FLAPS DISAGREE
+
+Flaps are not within commanded position limits.
+
+• WARNING •
+Flaps motion is inhibited when a flap position disagree condition exists.
+
+1. Flaps ...................................................... CYCLE TO DESIRED POSITION
+◆ If message extinguishes:
+a. Continue flight.
+
+◆ If message persists:
+
+Procedure Complete
+
+a. Flaps ...................................................................MONITOR POSITION
+❍ If flap position is unknown:
+
+(1)Airspeed................................................................BELOW 150 KIAS
+
+b. Perform Flaps Inoperative Approach/Landing checklist.
+
+Procedure Complete
+
+3A-42
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FLAPS FAIL Caution
+
+FLAPS FAIL
+
+Flaps system inoperative, OR
+Flaps position sensor miscompare, OR
+Flaps sensors failed, position unknown, OR
+Flaps have not reached the selected position.
+
+1. Place flaps in last known or safe position.
+2. FLAPS CB (C2) .................................................................................. CYCLE
+◆ If message persists:
+
+a. Perform Flaps Inoperative Approach/Landing checklist.
+
+Procedure Complete
+
+FLAPS SELECTOR FAIL Caution
+
+FLAPS SELECTOR FAIL
+
+Cannot determine flaps selector position.
+
+1. Perform Flaps Inoperative Approach/Landing checklist.
+
+Procedure Complete
+
+FLIGHT IDLE FAIL Caution
+
+FLIGHT IDLE FAIL
+
+Engine idle N2 is too low.
+
+1. Maintain at least 70% N2.
+2. Land as soon as practicable.
+
+Procedure Complete
+
+• CAUTION •
+When N2 < 70%, Engine IPS and Wing/Stab IPS will be degraded.
+• NOTE •
+If N2 < 70%, expect increased engine/go-around thrust 
+acceleration time. 
+
+P/N 31452-002
+Revision 1
+
+3A-43
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL IMBALANCE Caution
+
+FUEL IMBALANCE
+
+Fuel imbalance is ≥ 15 Gallons.
+
+CIRRUS
+VISION SF50
+
+1. Fuel Control Switch ............................................................................ AUTO
+2. Fuel Quantity/Fuel Remaining..................................................COMPARE
+
+a. Refer to EIS for fuel quantity (based on level sensors).
+
+3. Fuel Control Switch .......................................................... FULLEST TANK
+4. Airspeed................... MAINTAIN FOR ADEQUATE ROLL CONTROL
+◆ If message extinguishes or imbalance decreases:
+
+a. Continue flight.
+
+b. Fuel Control Switch ...................................................................... AUTO
+
+◆ If message persists or imbalance increases:
+
+Procedure Complete
+
+a. Land as soon as possible.
+
+Procedure Complete
+
+• NOTE •
+
+To maintain fuel balance, monitor fuel quantity and alternate 
+LEFT/RIGHT selection as needed.
+
+3A-44
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL LOW LEFT/RIGHT/TOTAL Caution
+
+FUEL LOW LEFT
+
+FUEL LOW RIGHT
+
+FUEL LOW TOTAL
+
+Left fuel quantity is low, OR
+Right fuel quantity is low, OR 
+Total fuel quantity is low.
+
+1. Fuel Quantity..................................................................................... CHECK
+2. Thrust Lever.....................................REDUCE (MINIMUM REQUIRED)
+3. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+
+AUTO Fuel Control will continue to balance fuel consumption 
+during FUEL LOW LEFT/RIGHT/TOTAL caution.
+
+FUEL PUMP FAIL Caution
+
+FUEL PUMP FAIL
+
+Fuel pump has failed.
+
+1. Avoid abrupt thrust lever movements.
+2. Land as soon as practicable. 
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-45
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL PUMP ON Caution
+
+FUEL PUMP ON
+
+Fuel pump is ON due to low fuel pressure.
+
+CIRRUS
+VISION SF50
+
+1. Fuel Control Switch .................................... SWITCH TO OTHER TANK
+a. Refer to EIS for current tank selection (AUTO selection shown in 
+
+white; LEFT/RIGHT selection shown in cyan).
+
+2. Fuel Control Switch ............................................................................ AUTO
+◆ If message extinguishes and does not reappear:
+
+a. Continue flight.
+
+◆ If message persists or reappears:
+
+Procedure Complete
+
+a. Fuel Control Switch .................................................... FULLEST TANK
+
+b. Fuel Quantity...................................................MAINTAIN BALANCE
+
+c. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+
+Message indicates pump has been activated and latched ON. Latch 
+is removed by setting the Fuel Control Switch to LEFT or RIGHT, 
+then to AUTO.
+To maintain fuel balance, monitor fuel quantity and alternate 
+LEFT/RIGHT selection as needed.
+
+3A-46
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL PUMP ON Advisory
+
+FUEL PUMP ON
+
+Fuel pump is ON for normal operations.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+• NOTE •
+
+Fuel pump has been activated due to normal operations, either due 
+to pilot action (selecting L or R tank) or by the avionics due to 
+entering Start Mode.
+
+FUEL QTY MISCOMPARE Caution
+
+FUEL QTY MISCOMPARE
+
+Sensed and totalized fuel quantity disagreement.
+
+1. Fuel Quantity/Fuel Remaining ................................................. COMPARE
+
+a. Refer to EIS for fuel quantity (based on level sensors).
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-47
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FUEL SELECTOR FAIL Caution
+
+FUEL SELECTOR FAIL
+
+Cannot determine fuel selector position.
+
+1. Fuel Control Switch .................................. CHECK LEFT/AUTO/RIGHT
+◆ If control is inoperable in all switch positions:
+
+a. Land as soon as possible.
+
+Procedure Complete
+• CAUTION •
+A failed Fuel Control Switch will cause a fuel imbalance which will 
+increase with continued flight.
+◆ If LEFT and RIGHT Switch positions are operable:
+
+a. Fuel Quantity...............................................................................CHECK
+
+b. Fuel Control Switch ...... FULLEST TANK, LEFT OR RIGHT ONLY
+
+c. Fuel Quantity...................................................MAINTAIN BALANCE
+
+d. Land as soon as possible.
+
+Procedure Complete
+• NOTE •
+To maintain fuel balance, monitor fuel quantity, and alternate 
+LEFT/RIGHT selection as needed.
+
+FUEL SHUTOFF Advisory
+
+FUEL SHUTOFF
+
+Fuel shutoff valve is closed.
+
+1. ENGINE FIRE ACKNOWLEDGE Switch ..................... CLOSE GUARD
+Procedure Complete
+• NOTE •
+The above procedure opens the fuel shutoff valve. Disregard if fuel 
+shutoff has been intentionally activated.
+
+3A-48
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL SHUTOFF FAIL Caution
+
+FUEL SHUTOFF FAIL
+
+Fuel shutoff valve not in commanded position.
+
+◆ If during normal flight and engine is running:
+
+a. Land as soon as practicable.
+
+◆ If airborne, and engine has shut down:
+
+Procedure Complete
+
+a. ENGINE FIRE ACKNOWLEDGE Switch................... LIFT GUARD, 
+
+TOGGLE, CLOSE GUARD
+
+b. Perform Air Start Checklist.
+
+◆ If during Engine Fire In Flight Checklist:
+
+Procedure Complete
+
+a. ENGINE FIRE ACKNOWLEDGE Switch..... CLOSE GUARD, LIFT 
+
+GUARD, TOGGLE
+
+b. Continue with Engine Fire In Flight Checklist.
+
+Procedure Complete
+
+FUEL TANK BALANCED Advisory
+
+FUEL TANK BALANCED
+
+Fuel tank quantity balance has been detected.
+
+1. Fuel Control Switch .............................................................................AUTO
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-49
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL TEMP LOW Caution
+
+FUEL TEMP LOW
+
+Fuel temperature is low, increase OAT.
+
+CIRRUS
+VISION SF50
+
+1. Fuel Temperature (L / R) .................................................................CHECK
+◆ If in flight:
+
+a. Climb or descend to warmer conditions.
+
+• NOTE •
+
+Change altitude to increase OAT and increase fuel temperature. 
+Due to temperature inversion, warmer temperatures may be at a 
+higher altitude and cooler temperatures may be at a lower altitude.
+
+b. Fuel Temperature..................................................................MONITOR 
+❍ If message extinguishes:
+
+(1)No further action required.
+
+Procedure Complete
+
+❍ If message persists:
+
+(1)Land as soon as practicable. 
+
+Procedure Complete
+
+◆ If on ground:
+
+a. Warm aircraft to increase fuel temperature.
+
+Procedure Complete
+
+3A-50
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+FUEL VALVE #1 FAIL Caution
+
+FUEL VALVE #1 FAIL
+
+Fuel Control Valve #1 has failed.
+
+1. Fuel Quantity..................................................................................... CHECK
+2. Fuel Control Switch ...........................................................FULLEST TANK
+3. Fuel Quantity......................................................... MAINTAIN BALANCE
+4. Land as soon as practicable.
+
+Procedure Complete
+
+• CAUTION •
+Avoid AUTO selection, which will draw fuel through Fuel Valve 
+#1 (which has failed).
+• NOTE •
+To maintain fuel balance, monitor fuel quantity and alternate 
+LEFT/RIGHT selection as needed. 
+
+FUEL VALVE #2 FAIL Caution
+
+FUEL VALVE #2 FAIL
+
+Fuel Control Valve #2 has failed.
+
+1. Fuel Quantity..................................................................................... CHECK
+2. Fuel Control Switch .............................................................................AUTO
+3. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+
+The Fuel Control Switch should remain in AUTO position which 
+draws fuel through Fuel Valve #1 which is operating normally. See 
+EIS Display for selected valve position (AUTO).
+Avoid using LEFT or RIGHT selection which activates the electric 
+fuel pump and draws fuel through Fuel Valve #2 which has failed. 
+
+P/N 31452-002
+Revision 1
+
+3A-51
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+FUEL VALVE AUTO FAIL Caution
+
+FUEL VALVE AUTO FAIL
+
+Auto fuel tank selection failure, use Manual mode.
+
+1. Fuel Quantity .....................................................................................CHECK
+2. Fuel Control Switch .......................................................... FULLEST TANK
+3. Fuel Quantity .........................................................MAINTAIN BALANCE
+4. Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+
+To maintain fuel balance, monitor fuel quantity and alternate 
+LEFT/RIGHT selection as needed.
+
+3A-52
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+GENERATOR 1 CURRENT Caution
+
+GENERATOR 1 CURRENT
+
+Generator 1 current is low.
+
+1. GEN 1 Switch ...........................................................................................OFF
+2. GCU Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the GCU Reset Button.
+
+3. GEN 1 Switch ............................................................................................ ON
+◆ If GEN 1 resets:
+
+a. Continue flight.
+
+◆ If GEN 1 does not reset (low GEN 1 Current and Main Bus voltage):
+
+Procedure Complete
+
+a. GEN 1 Switch ......................................................................................OFF
+❍ If flight conditions permit:
+
+(1)BAT 1 Switch ................................................................................OFF
+(2)Land as soon as practicable, avoiding IMC or night flight as able 
+
+(reduced power redundancy).
+
+Procedure Complete
+
+• NOTE •
+With Battery 1 and Generator 1 switched off, power will be 
+removed from the entire main bus, including the hydraulic 
+powerpack. The following equipment will also be inoperative:
+
+•
+
+Landing gear control (to lower landing gear, perform Alternate Gear 
+Extension checklist)
+ECS (such as AC Compressor and Fans)
+•
+•
+Redundant equipment (such as Fuel Valve 2 and AHRS 2 / ADC 2)
+• Non-essential equipment (such as Electric Fuel Pump, Stick Shaker, 
+
+Yaw SAS, Avionics Fan, Nose Landing Lights, and IFE USB)
+• Optional equipment (such as Traffic/TCAS, Transponder2, Radar, 
+
+EVS, 115VAC PWR, and Iridium WIFI Data)
+
+.
+
+P/N 31452-002
+Revision 1
+
+3A-53
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+Main Bus Circuit Breakers
+
+CIRRUS
+VISION SF50
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+PILOT CIRCUIT BREAKER PANEL (ROW B)
+
+BLEED AIR FLOW CTRL (B2) Bleed Air Flow Control Valve
+
+STICK SHAKER (B3)
+
+Stick Shaker Motor
+
+LANDING GEAR HYD (B4)
+
+Landing Gear Hydraulics Power 
+Control
+
+PILOT CIRCUIT BREAKER PANEL (ROW C)
+
+PFD B 
+GTC 1B (C8)
+
+MFD B
+GTC 2B (C9)
+
+FUEL PUMP
+CTRL (C10)
+
+GTC-1 Secondary, PFD Secondary
+
+MFD-Secondary, GTC-2 Secondary
+
+Fuel Control Panel
+
+IGNITER 1 (C11)
+
+Igniter 1, Ignition Control Panel
+
+COPILOT CIRCUIT BREAKER PANEL (ROW F)
+
+YAW SAS (F8)
+
+IFE CTRL (F7)
+
+IRIDIUM
+WIFI DATA (F6)
+
+AHRS 2
+ADC 2 (F5)
+
+FUEL 
+VALVE 2 (F2)
+
+Yaw Servo
+
+Convenience Power Relay
+
+Wi-Fi Datalink, Iridium Satellite
+
+AHRS 2, ADC 2
+
+Fuel Control Valve (FCV) 2
+
+AVIONICS FAN (F1)
+
+Avionics Equipment Fan In Console
+
+3A-54
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+AFT CIRCUIT BREAKER PANEL (ROW K)
+
+IFE USB (K1)
+
+In-Flight Entertainment
+
+FADEC PANEL (K2)
+
+FADEC A Maintenance Panel, FADEC 
+B Maintenance Panel
+
+TRAFFIC (K3)
+
+DME (K4)
+
+FADEC B (K5)
+
+XPONDER 2 (K6)
+
+PAX LIGHTS  
+LIGHT CTRL (K7)
+
+TCAS-1
+
+DME
+
+Engine Control Electronics
+
+Transponder 2
+
+Passenger task lights
+
+AFT CIRCUIT BREAKER PANEL (ROW L)
+
+115 VAC PWR (L12)
+
+DC-AC Inverter
+
+ECS BOOST FAN (L1)
+
+ECS Booster Fan
+
+ECS GROUND FAN (L2)
+
+ECS Ground Fan
+
+NOSE CIRCUIT BREAKER PANEL (ROW M)
+
+NOSE LAND LIGHT (M2)
+
+Nose Landing Light
+
+RADAR (M3)
+
+EVS (M4)
+
+Weather Radar
+
+Enhanced Vision System
+
+AC INLET DOOR (M6)
+
+AC Door Actuator
+
+ROCKET WARMER (M7)
+
+CAPS Rocket Warmer
+
+P/N 31452-002
+Revision 1
+
+3A-55
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+GENERATOR 2 CURRENT Caution
+
+GENERATOR 2 CURRENT
+
+Generator 2 current is low.
+
+1. GEN 2 Switch...................................................................................... CYCLE
+2. GEN 2 CB (C3) .........................................................................CHECK, SET
+◆ If GEN 2 resets:
+
+a. Continue flight.
+
+Procedure Complete
+◆ If GEN 2 does not reset (low GEN 2 current):
+
+a. GEN 2 Switch ......................................................................................OFF
+
+• NOTE •
+GEN 1 will support GEN 2 electrical loads.
+b. Land as soon as practicable, avoiding IMC or night flight as able 
+
+(reduced power redundancy).
+
+Procedure Complete
+
+GROUND IDLE FAIL Caution - On Ground
+
+GROUND IDLE FAIL
+
+Ground idle is unavailable.
+
+1. Do not dispatch.
+
+Procedure Complete
+
+• CAUTION •
+
+With increased idle speed, idle thrust will be greater than normal. 
+To prevent overheating of brakes, exercise proper taxiing 
+techniques.
+Refer to Section 10: Safety Information, "Taxiing, Steering, and 
+Braking Practices".
+• NOTE •
+Idle speed is high for ground operation.
+
+3A-56
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+HYDRAULIC OVERHEAT Caution
+
+HYDRAULIC OVERHEAT
+
+Landing gear hydraulic power pack has overheated.
+
+◆ If HYDRAULIC OVERHEAT Caution CAS is accompanied by LDG 
+GEAR FAIL Caution CAS:
+
+a. Refer to LDG GEAR FAIL Caution checklist. 
+
+Procedure Complete
+
+◆ If HYDRAULIC OVERHEAT Caution CAS is not accompanied by LDG 
+GEAR FAIL Caution CAS:
+
+a. LANDING GEAR HYD CB (B4) ................................................. PULL
+
+b. Wait 2-3 minutes for HYDRAULIC OVERHEAT CAS message to 
+
+extinguish.
+
+❍ If HYDRAULIC OVERHEAT CAS message extinguishes:
+
+(1)Perform Alternate Gear Extension checklist, as required.
+Procedure Complete
+❍ If HYDRAULIC OVERHEAT CAS message persists, power pack 
+may still be operating continuously:
+
+(1)BAT 1 Switch ................................................................................OFF
+(2)GEN 1 Switch................................................................................OFF
+(3)Perform Alternate Gear Extension checklist, as required.
+(4)Land as soon as practicable.
+
+Procedure Complete
+
+• NOTE •
+FUEL VALVE #2 FAIL Caution CAS will be periodically displayed 
+during normal tank AUTO selection since the secondary valve is 
+not powered by emergency power.
+With Battery 1 and Generator 1 switched off, power will be 
+removed from the entire main bus, including the hydraulic 
+powerpack. Landing gear control will also be inoperative. To lower 
+landing gear, perform Alternate Gear Extension checklist.
+
+P/N 31452-002
+Revision 1
+
+3A-57
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+Main Bus Circuit Breakers
+
+CIRRUS
+VISION SF50
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+PILOT CIRCUIT BREAKER PANEL (ROW B)
+
+BLEED AIR FLOW CTRL 
+(B2)
+
+Bleed Air Flow Control Valve
+
+STICK SHAKER (B3)
+
+Stick Shaker Motor
+
+LANDING GEAR HYD (B4) Landing Gear Hydraulics Power Control
+
+PILOT CIRCUIT BREAKER PANEL (ROW C)
+
+PFD B 
+GTC 1B (C8)
+
+MFD B
+GTC 2B (C9)
+
+FUEL PUMP
+CTRL (C10)
+
+GTC-1 Secondary, PFD Secondary
+
+MFD-Secondary, GTC-2 Secondary
+
+Fuel Control Panel
+
+IGNITER 1 (C11)
+
+Igniter 1, Ignition Control Panel
+
+COPILOT CIRCUIT BREAKER PANEL (ROW F)
+
+YAW SAS (F8)
+
+IFE CTRL (F7)
+
+IRIDIUM
+WIFI DATA (F6)
+
+AHRS 2
+ADC 2 (F5)
+
+FUEL 
+VALVE 2 (F2)
+
+Yaw Servo
+
+Convenience Power Relay
+
+Wi-Fi Datalink, Iridium Satellite
+
+AHRS 2, ADC 2
+
+Fuel Control Valve (FCV) 2
+
+AVIONICS FAN (F1)
+
+Avionics Equipment Fan In Console
+
+3A-58
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRCUIT BREAKER
+
+CIRCUIT
+
+AFT CIRCUIT BREAKER PANEL (ROW K)
+
+IFE USB (K1)
+
+In-Flight Entertainment
+
+FADEC PANEL (K2)
+
+FADEC A Maintenance Panel, FADEC B 
+Maintenance Panel
+
+TRAFFIC (K3)
+
+DME (K4)
+
+TCAS-1
+
+DME
+
+FADEC B (K5)
+
+Engine Control Electronics
+
+XPONDER 2 (K6)
+
+Transponder 2
+
+PAX LIGHTS  
+LIGHT CTRL (K7)
+
+Passenger task lights
+
+AFT CIRCUIT BREAKER PANEL (ROW L)
+
+115 VAC PWR (L12)
+
+DC-AC Inverter
+
+ECS BOOST FAN (L1)
+
+ECS Booster Fan
+
+ECS GROUND FAN (L2)
+
+ECS Ground Fan
+
+NOSE CIRCUIT BREAKER PANEL (ROW M)
+
+NOSE LAND LIGHT (M2)
+
+Nose Landing Light
+
+RADAR (M3)
+
+Weather Radar
+
+EVS (M4)
+
+Enhanced Vision System
+
+AC INLET DOOR (M6)
+
+AC Door Actuator
+
+ROCKET WARMER (M7)
+
+CAPS Rocket Warmer
+
+P/N 31452-002
+Revision 1
+
+3A-59
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+IPS BLEED OVERHEAT Caution
+
+IPS BLEED OVERHEAT
+
+Ice protection bleed cooling failure.
+
+1. WING/STAB IPS Switch.........................................................................OFF
+2. Thrust Lever.................................................................................... REDUCE
+3. Avoid/exit icing conditions.
+
+Procedure Complete
+
+IPS ENG INLET OFF Caution
+
+IPS ENG INLET OFF
+
+Engine IPS should be on.
+
+1. ENGINE IPS Switch.................................................................................. ON
+2. Verify message is extinguished.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed when the WING/STAB IPS Switch 
+is selected ON without the ENGINE IPS Switch being selected ON.
+
+3A-60
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+IPS ENG INLET ON Caution
+
+IPS ENG INLET ON
+
+Engine IPS should be off, OR 
+Shutoff solenoid failed to close.
+
+◆ If Engine IPS should be off:
+
+a. ENGINE IPS Switch..........................................................................OFF
+
+◆ If shutoff solenoid failed to close:
+
+Procedure Complete
+
+a. ENGINE IPS Switch.................................................................... CYCLE
+
+b. ENGINE IPS Switch.......................................................... VERIFY OFF
+
+c. ENGINE IPS 1 CB (A6) .....................................................VERIFY SET
+
+d. ENGINE IPS 2 CB (D9).....................................................VERIFY SET
+
+Procedure Complete
+
+• CAUTION •
+Operation above temperature limitations may result in IPS ENG 
+INLET OVERHEAT Caution.
+
+IPS ENG INLET OVERHEAT Caution
+
+IPS ENG INLET OVERHEAT
+
+Inlet temp higher than required for anti-ice, OR 
+Inlet temp higher than safe levels.
+
+1. ENGINE IPS Switch .......................................................................... CYCLE
+◆ If message persists:
+
+a. ENGINE IPS Switch..........................................................................OFF
+
+b. Avoid/exit icing conditions.
+
+c. Reduce thrust as necessary to extinguish message.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-61
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+IPS ENG INLET UNDERPRESS Caution
+
+IPS ENG INLET UNDERPRESS
+
+Engine IPS bleed flow low.
+
+1. ENGINE IPS Switch......................... CYCLE OFF, ON WITHIN < 1 SEC
+
+◆ If message extinguishes:
+a. Continue flight.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. Avoid/exit icing conditions.
+
+Procedure Complete
+
+IPS ENG INLET UNDERPRESS Advisory - On Ground
+
+IPS ENG INLET UNDERPRESS
+
+Engine IPS bleed flow low with engine at idle.
+
+◆ If in icing conditions:
+
+a.
+
+Increase engine thrust to extinguish message.
+
+Procedure Complete
+
+IPS FLUID LOW Caution
+
+IPS FLUID LOW
+
+Less than 15 minutes of IPS fluid remaining. 
+
+1. Avoid/exit icing conditions.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed when IPS fluid quantity ≤ 0.2 U.S. 
+gallon (0.8 L).
+
+3A-62
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+IPS FLUID LOW Advisory - On Ground
+
+IPS FLUID LOW
+
+IPS fluid below minimum dispatch quantity.
+
+1. Fill IPS fluid as desired.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed when IPS fluid quantity ≤ 1 U.S. 
+gallon (4 L).
+
+IPS WINDSHLD TIMER Caution
+
+IPS WINDSHLD TIMER
+
+Loss of WS/Rad pump automatic timer control.
+
+1. WINDSHLD IPS MAX Switch ...............................................................A/R
+2. Avoid/exit icing conditions.
+
+Procedure Complete
+
+IPS WING/STAB FAIL Caution
+
+IPS WING/STAB FAIL
+
+Wing/Stabilizer IPS low system pressure, OR 
+Wing/Stabilizer IPS zonal pressure failure, OR 
+Wing/Stabilizer IPS controller failure, OR 
+Low system pressure, Wing/Stab IPS inoperative.
+
+1. Avoid/exit icing conditions.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-63
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+IPS WING/STAB TEMP LOW Caution
+
+IPS WING/STAB TEMP LOW
+
+Min temp for boot operation is -40 °F.
+
+◆ If activated by pilot:
+
+a. WING/STAB Switch .........................................................................OFF
+
+◆ If activation uncommanded:
+
+Procedure Complete
+
+a. WING/STAB IPS CB (A6)............................................................. PULL
+
+Procedure Complete
+
+3A-64
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+LDG GEAR FAIL Caution
+
+LDG GEAR FAIL
+
+Landing gear didn't reach the selected position.
+
+1. Landing Gear Indications .............................. VERIFY POSITION/LOCK
+2. Landing Gear ...................................................................................... CYCLE
+• NOTE •
+Even though the gear assemblies are functioning properly, the root 
+cause may be a failure of the gear sensors to indicate properly 
+(Down/Up or Locked/Unlocked).
+Reversing the landing gear handle to the opposite position clears 
+the inhibit of the hydraulic power pack enable (limited to 30 
+seconds of continuous operation).
+
+◆ If message extinguishes:
+
+a. Monitor landing gear indications.
+
+Procedure Complete
+
+◆ If message persists:
+
+a. Monitor for HYDRAULIC OVERHEAT Caution.
+
+b. Perform visual verification of gear position by ATC (towered 
+
+airport), if possible.
+
+c. Perform Alternate Gear Extension checklist.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-65
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+LDG GEAR SELECTOR FAIL Caution
+
+LDG GEAR SELECTOR FAIL
+
+Cannot determine landing gear selector position.
+
+1. Landing Gear ...................................................................................... CYCLE
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+◆ If message persists and landing gear is down:
+
+a. Do not cycle landing gear.
+
+b. Land as soon as practicable.
+
+◆ If message persists and landing gear is up:
+
+Procedure Complete
+
+a. Select gear down as required.
+
+◆ If message persists and landing gear does not extend:
+
+Procedure Complete
+
+a. Perform Alternate Gear Extension.
+
+Procedure Complete
+
+MAIN BATTERY FAIL Caution
+
+MAIN BATTERY FAIL
+
+Main battery (Bat 1) service is required.
+
+1. Exit IMC as soon as practicable.
+2. Land as soon as practicable.
+
+Procedure Complete
+• CAUTION •
+Air restart may not be possible.
+• NOTE •
+Battery FAIL indicates an internal condition which reduces 
+capability of the battery. Possible conditions include a faulty 
+temperature sensor, disconnected heater, etc.
+
+3A-66
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+MAIN BATTERY FAULT Caution
+
+MAIN BATTERY FAULT
+
+Main battery (Bat 1) fault detected.
+
+1. BAT 1 Switch ...................................................................................... CYCLE
+◆ If message extinguishes:
+a. Continue flight.
+
+b. Service aircraft as soon as practicable.
+
+◆ If message persists:
+
+a. Exit IMC as soon as practicable.
+
+b. Land as soon as practicable.
+
+2. Contact Cirrus for corrective action.
+
+Procedure Complete
+• CAUTION •
+Air restart is not possible.
+• NOTE •
+Battery FAULT indicates a condition causing battery to disable 
+charging and/or discharging until corrected. Possible conditions 
+include under-voltage, over-voltage, over-current, short-circuit, 
+and over-temperature.
+
+MAIN BUS VOLTS Caution
+
+MAIN BUS VOLTS
+
+Loss of forward main power bus voltage, OR 
+Main power bus voltage is low.
+
+1. Perform GENERATOR 1 CURRENT Caution Checklist.
+
+Procedure Complete
+
+• NOTE •
+
+Indicates GEN 1 failure and is associated with low Main Bus 
+voltage, GEN 1 current indications, BAT 1 discharge, and 
+GENERATOR 1 CURRENT Caution.
+
+P/N 31452-002
+Revision 1
+
+3A-67
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+MASK MICROPHONE Advisory
+
+MASK MICROPHONE
+
+A crew mask microphone is switched on.
+
+◆ If not wearing oxygen mask:
+
+a. Turn MIC selection switch to normal headset position.
+
+Procedure Complete
+
+NO ADC MODES Caution
+
+NO ADC MODES
+
+Autopilot air data modes are not available.
+
+• NOTE •
+AP may only be engaged in pitch modes.
+Procedure Complete
+
+NO VERT MODES Caution
+
+NO VERT MODES
+
+Autopilot vertical modes are not available.
+
+• NOTE •
+AP may only be engaged in lateral modes.
+Procedure Complete
+
+3A-68
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+OIL FILTER BYPASS Caution
+
+OIL FILTER BYPASS
+
+Oil filter diff press too high, bypass impending.
+
+1. Avoid abrupt thrust lever movements.
+2. Thrust Lever.....................................REDUCE (MINIMUM REQUIRED)
+3. Land as soon as practicable.
+
+Procedure Complete
+
+OXYGEN OFF Caution
+
+OXYGEN OFF
+
+Oxygen has not been turned on.
+
+1. OXYGEN MASTER Switch..................................................... VERIFY ON
+2. OXYGEN CREW CB (E7)..........................................................VERIFY SET
+3. OXYGEN CREW CB (E7).................................................................. CYCLE
+◆ If message persists:
+
+a. Altitude .......................... DESCEND (BELOW 10,000 FT), IF PRACTICAL
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-69
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+OXYGEN ON Caution - On Ground
+
+OXYGEN ON
+
+Oxygen is on.
+
+1. OXYGEN MASTER Switch ....................................................VERIFY OFF
+◆ If message persists:
+
+a. OXYGEN CREW CB (E7)................................................... VERIFY SET
+
+b. OXYGEN CREW CB (E7)............................................................CYCLE
+
+c. OXYGEN MASTER Switch..........................................................CYCLE
+❍ If message persists:
+
+(1)Service oxygen bottle as required.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed during shutdown procedures.
+
+OXYGEN ON Advisory - On Ground
+
+OXYGEN ON
+
+Oxygen is on.
+
+1. Advisory only. No further action required.
+
+Procedure Complete
+
+• NOTE •
+
+This CAS message is displayed while taxiing after landing.
+
+3A-70
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+OXYGEN PASSENGER FAIL Caution
+
+OXYGEN PASSENGER FAIL
+
+Passenger oxygen valve has failed closed.
+
+• CAUTION •
+Complete any emergency descent procedure prior to completing 
+this checklist.
+
+1. OXYGEN PAX CB (B1)...........................................................VERIFY SET
+2. OXYGEN PAX CB (B1).................................................................... CYCLE
+3. OXYGEN MASTER Switch..................................................... VERIFY ON
+◆ If message persists:
+
+a. Altitude ..............................................DESCEND (BELOW 15,000 FT)
+
+Procedure Complete
+
+OXYGEN PRESSURE LOW Caution
+
+OXYGEN PRESSURE LOW
+
+Oxygen pressure below regulator control (250 PSI), OR 
+Oxygen pressure low (500 PSI).
+
+1. Altitude...................... DESCEND (BELOW 10,000 FT), IF PRACTICAL
+2. OXYGEN PAX CB (B1)....................................................................... PULL
+Procedure Complete
+
+• CAUTION •
+If OXYGEN PAX CB is pulled, supplemental oxygen to the 
+passengers will be unavailable.
+
+PARK BRAKE Caution - On Ground
+
+PARK BRAKE
+
+Parking brake is set.
+
+1. Parking Brake ............................................................................................A/R
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-71
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+PITCH MET ACTIVE Caution
+
+PITCH MET ACTIVE
+
+Pitch manual electric trim is active.
+
+1. Prepare for abnormal pitch movement upon AP disconnect.
+2. Perform  Pitch Trim Runaway / Failure Checklist.
+
+Procedure Complete
+
+PROBE HEAT FAIL L Caution
+
+PROBE HEAT FAIL L
+
+Left probe heat failure.
+
+1. PROBE HT LEFT CB (A8) ............................................................... CYCLE
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+❍ If in flight:
+
+(1)ADC 2 .............................................................. SELECTED ACTIVE
+❑ If ADC 2 is unavailable or if PROBE HEAT FAIL R Caution is also 
+
+present, and icing encountered:
+
+(a) Perform Loss of Reliable Airspeed Indication Checklist.
+
+(b)Exit icing conditions.
+
+Procedure Complete
+
+❍ If on ground:
+
+(1)Do not dispatch.
+
+Procedure Complete
+
+3A-72
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+PROBE HEAT FAIL R Caution
+
+PROBE HEAT FAIL R
+
+Right probe heat failure.
+
+1. PROBE HT RIGHT CB (E4) ............................................................ CYCLE
+◆ If message extinguishes:
+
+a. No further action required.
+
+Procedure Complete
+
+◆ If message persists:
+❍ If in flight:
+
+(1)ADC 1 .............................................................. SELECTED ACTIVE
+❑ If ADC 1 is unavailable or if PROBE HEAT FAIL L Caution is also 
+
+present, and icing encountered:
+
+(a) Perform Loss of Reliable Airspeed Indication Checklist.
+
+(b)Exit icing conditions.
+
+Procedure Complete
+
+❍ If on ground:
+
+(1)Do not dispatch.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-73
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+PROBE HEAT OFF Caution
+
+PROBE HEAT OFF
+
+Probe heat is required.
+
+CIRRUS
+VISION SF50
+
+1. Probe Heat Switch..................................................................................... ON
+
+◆ If message extinguishes:
+
+a. No further action required.
+
+◆ If message persists, and icing encountered:
+
+Procedure Complete
+
+a. Airspeed .............................. EXPECT NO RELIABLE INDICATION
+
+b. Perform Loss of Reliable Airspeed Indication checklist.
+
+c. Exit icing conditions.
+
+Procedure Complete
+
+SFD ALT MISCOMPARE Caution
+
+SFD ALT MISCOMPARE
+
+SFD altitude miscompare.
+
+1. DISPLAY BACKUP Button ........................................................... SELECT
+
+2. Altitude  .................................................CROSS-CHECK SFD WITH PFD
+3. Altitude  ...........................CROSS-CHECK PFD ADC #1 WITH ADC #2
+• NOTE •
+Select PFD mode on GTC #2 or GTC #3 and select SENSORS 
+menu to select PFD air data source.
+
+4. Select correct sensor source, if required.
+5. Pull erroneous ADC circuit breaker, if required.
+◆ If in RVSM airspace:
+
+a. Exit RVSM airspace.
+
+6. Exit IMC as soon as practical.
+7. Land as soon as practicable.
+
+Procedure Complete
+
+3A-74
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+SFD IAS MISCOMPARE Caution
+
+SFD IAS MISCOMPARE
+
+SFD airspeed miscompare.
+
+1. DISPLAY BACKUP Button ............................................................SELECT
+
+2. Airspeed  ............................................... CROSS-CHECK SFD WITH PFD
+3. Airspeed .......................... CROSS-CHECK PFD ADC #1 WITH ADC #2
+• NOTE •
+Select PFD mode on GTC #2 or GTC #3 and select SENSORS 
+menu to select PFD air data source.
+
+4. Select correct sensor source, if required.
+5. Pull erroneous ADC circuit breaker, if required.
+6. Exit IMC as soon as practical.
+7. Land as soon as practicable.
+
+Procedure Complete
+
+SFD NO-COMPARE Advisory
+
+SFD NO-COMPARE
+
+SFD comparison data missing.
+
+1. Exit IMC.
+2. Land as soon as practicable.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-75
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+SFD PITCH MISCOMPARE Caution
+
+SFD PITCH MISCOMPARE
+
+SFD pitch miscompare.
+
+1. DISPLAY BACKUP Button............................................................ SELECT
+
+2. Attitude .................................................CROSS-CHECK SFD WITH PFD
+3. Attitude........................CROSS-CHECK PFD AHRS #1 WITH AHRS #2
+• NOTE •
+Select PFD mode on GTC #2 or GTC #3 and select SENSORS 
+menu to select PFD attitude source.
+
+4. Select correct sensor source, if required.
+5. Pull erroneous AHRS circuit breaker, if required.
+6. Exit IMC as soon as practical.
+7. Land as soon as practicable.
+
+Procedure Complete
+
+SFD ROLL MISCOMPARE Caution
+
+SFD ROLL MISCOMPARE
+
+SFD roll miscompare.
+
+1. DISPLAY BACKUP Button............................................................ SELECT
+
+2. Attitude .................................................CROSS-CHECK SFD WITH PFD
+3. Attitude........................CROSS-CHECK PFD AHRS #1 WITH AHRS #2
+• NOTE •
+Select PFD mode on GTC #2 or GTC #3 and select SENSORS 
+menu to select PFD attitude source.
+
+4. Select correct sensor source, if required.
+5. Pull erroneous AHRS circuit breaker, if required.
+6. Exit IMC as soon as practical.
+7. Land as soon as practicable.
+
+Procedure Complete
+
+3A-76
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+STALL SPEED HIGH Advisory
+
+STALL SPEED HIGH
+
+Stall protection system adjusted for icing.
+
+◆ If airframe is no longer ice contaminated:
+
+a.
+
+IPS Stall Offset Reset via MFD Controller:
+
+(1)From Home, touch Aircraft Systems.
+(2)Touch the IPS Stall Offset Reset Button.
+
+Procedure Complete
+
+STALL WARNING FAIL Caution
+
+STALL WARNING FAIL
+
+Stall warning failure.
+
+1. Airspeed  ..........................................................MAINTAIN ABOVE 1.3 Vs
+2. Avoid stalls, low airspeed, and uncoordinated or abrupt control inputs.
+3. Land as soon as practicable.
+
+Procedure Complete
+
+• WARNING •
+The aircraft may not be stall protected. Stalls must be avoided when 
+the stall warning is inoperative. Excessive altitude loss may result if the 
+aircraft is stalled. 
+Departure from controlled flight or spin may occur during stall with 
+uncoordinated aileron/rudder inputs.
+Stall warning is not operative or reliable. 
+Stick pusher may not be operative or reliable.
+Expect STICK PUSHER FAIL CAS.
+Stall speeds in turns or increased load factor are higher.
+
+• NOTE •
+Green donut airspeed reference will be unavailable or unreliable.
+
+P/N 31452-002
+Revision 1
+
+3A-77
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+STARTER ENGAGED Caution
+
+STARTER ENGAGED
+
+Starter will not disengage (start relay stuck).
+
+1. Start ..................................................................................................... ABORT
+2. GCU Reset via MFD Controller:
+
+a. From Home, touch Aircraft Systems.
+
+b. Touch the GCU Reset Button.
+
+3. BAT 1 Switch ............................................................................................OFF
+4. GEN 1 Switch............................................................................................OFF
+◆ If in flight:
+
+a.
+
+ Land as soon as practicable.
+
+◆ If on ground:
+
+a. Perform Shutdown Checklist.
+
+Procedure Complete
+
+STARTER ENGAGED Advisory
+
+STARTER ENGAGED
+
+Engine start in progress.
+
+• NOTE •
+Receiving a STARTER ENGAGED CAS Advisory is normal 
+during an engine start.
+Procedure Complete
+
+3A-78
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+STICK PUSHER FAIL Caution
+
+STICK PUSHER FAIL
+
+Stick pusher failure.
+
+1. Airspeed  ..........................................................MAINTAIN ABOVE 1.3 Vs
+2. Avoid stalls, low airspeed, and uncoordinated or abrupt control inputs.
+3. Land as soon as practicable.
+
+Procedure Complete
+
+• WARNING •
+The aircraft is not stall protected. Stalls must be avoided when the stick 
+pusher is inoperative. Excessive altitude loss may result if the aircraft 
+is stalled. 
+Departure from controlled flight or spin may occur during stall with 
+uncoordinated aileron/rudder inputs.
+Stick pusher is not operative or reliable.
+Stall speeds in turns or increased load factor are higher.
+
+SURFACEWATCH FAIL Advisory
+
+SurfaceWatch failed.
+
+SURFACEWATCH FAIL
+
+• NOTE •
+
+SurfaceWatch is unavailable.
+Procedure Complete
+
+TAKEOFF EMER BAT Caution
+
+TAKEOFF EMER BAT
+
+Emergency battery (Bat 2) is not charged. 
+Emergency battery (Bat 2) is cold.
+
+1. Delay takeoff until message extinguishes.
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-79
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+TAKEOFF FLAPS Caution - On Ground
+
+TAKEOFF FLAPS
+
+Flaps not in takeoff configuration.
+
+1. Takeoff ................................................................................................ ABORT
+2. Flaps ........................................................................................... SELECT 50%
+Procedure Complete
+
+TAKEOFF PITCH TRIM Advisory - On Ground
+
+TAKEOFF PITCH TRIM
+
+Pitch trim not in takeoff configuration.
+
+1. Pitch Trim Position................................................ WITHIN GREEN ARC
+Procedure Complete
+
+TAKEOFF THRUST Caution
+
+TAKEOFF THRUST
+
+5 minute takeoff thrust limitation exceeded.
+
+1. Thrust Lever............................................................................................ MCT
+Procedure Complete
+
+• CAUTION •
+Engine operating costs are predicated on a maximum of 2 minutes 
+of takeoff thrust on an average flight. Exceeding 5 minutes of 
+takeoff thrust may disproportionately increase engine operating 
+costs. Time at takeoff thrust is limited to 5 minutes maximum, 
+beginning when the thrust lever reaches the T/O thrust detent.
+
+3A-80
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+TAKEOFF THRUST Advisory
+
+TAKEOFF THRUST
+
+Engine is in takeoff thrust.
+
+1. Thrust Lever............................................................................................ MCT
+Procedure Complete
+
+• CAUTION •
+Engine operating costs are predicated on a maximum of 2 minutes 
+of takeoff thrust on an average flight. Exceeding 5 minutes of 
+takeoff thrust may disproportionately increase engine operating 
+costs. Time at takeoff thrust is limited to 5 minutes maximum, 
+beginning when the thrust lever reaches the T/O thrust detent.
+• NOTE •
+This CAS message indicates the engine has been producing takeoff 
+thrust for more than 2 minutes.
+
+P/N 31452-002
+Revision 1
+
+3A-81
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+CIRRUS
+VISION SF50
+
+TCV CONTROL FAIL Caution
+
+TCV CONTROL FAIL
+
+TCV motor controller has failed.
+
+1. Cabin Temperature.....................................................................MONITOR
+• NOTE •
+TCV will typically fail open resulting in colder than normal cabin 
+temperatures.
+In the unlikely event that the TCV does not open upon failure, 
+duct air temperature may be higher than desired and DUCT 
+OVERHEAT Caution may occur.
+◆ If message persists and cabin temperature is warmer than acceptable:
+
+a. Altitude................DESCEND (BELOW 10,000 FT), IF PRACTICAL
+
+b. BLEED Switch ...............................................................................FRESH
+
+c. CABIN PRESSURE DUMP Button.............................................PRESS
+
+• NOTE •
+Autopilot Emergency Descent Mode (EDM) is disabled when the 
+cabin dump switch is activated.
+
+d. Land as soon as practicable.
+
+Procedure Complete
+
+◆ If message persists and cabin temperature is colder than acceptable:
+
+a. Altitude.......DESCEND TO WARMER OUTSIDE AIR TEMPERA-
+
+TURE, IF PRACTICAL
+
+b. Land as soon as practicable.
+
+Procedure Complete
+• NOTE •
+A TCV CONTROL FAIL Caution may be followed by an ECS 
+BLEED HOT Caution or an ECS BLEED OVERHEAT Caution.
+
+3A-82
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+THROTTLE SERVO Caution
+
+THROTTLE SERVO
+
+Throttle servo has failed.
+
+• NOTE •
+Autothrottle functions, including thrust lock, will be unavailable.
+CAPS activation will require manual retard of thrust lever to IDLE.
+Procedure Complete
+
+TT2 HEAT FAIL Caution
+
+TT2 HEAT FAIL
+
+TT2 probe heater failure.
+
+1. ENG. IPS Switch................................................................................. CYCLE
+2. ENGINE IPS 1 CB (A6) ...........................................................VERIFY SET
+3. ENGINE IPS 2 CB (D9) ...........................................................VERIFY SET
+◆ If message persists:
+
+a. Avoid/exit icing conditions.
+
+Procedure Complete
+
+WOW DISAGREE Advisory
+
+WOW DISAGREE
+
+WOW indicating opposite on ground/in air states.
+
+1. Continue flight.
+
+Procedure Complete
+
+• NOTE •
+
+When WOW disagrees, avionics determines ground/in-air state 
+based on airspeed.
+Expect GROUND IDLE FAIL Caution after landing.
+
+P/N 31452-002
+Revision 1
+
+3A-83
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+WOW FAIL Caution
+
+WOW FAIL
+
+WOW is indicating on ground state.
+
+1. Maintain at least 70% N2.
+2. Land as soon as practicable.
+
+Procedure Complete
+
+• WARNING •
+If above 10,000 ft, expect CABIN ALTITUDE Warning and aircraft to 
+depressurize.
+• CAUTION •
+Minimum engine RPM will default to Ground Idle in all 
+configurations. Expect FLIGHT IDLE FAIL Caution with thrust at 
+IDLE thrust in flight.
+• NOTE •
+Bleed air ground cooling fan will run.
+The following indications should be ignored:
+OIL CHIP DETECT Warning (false indication possible if 
+in air)
+OXYGEN ON Advisory
+TAKEOFF PITCH TRIM Advisory
+
+3A-84
+
+P/N 31452-002
+Revision 1
+
+CIRRUS
+VISION SF50
+
+SECTION 3A: ABNORMAL PROCEDURES
+ABNORMAL CAS PROCEDURES
+
+YAW SAS SERVO Caution
+
+YAW SAS SERVO
+
+Yaw SAS servo has failed.
+
+◆ If in flight:
+
+a. Limit flaps to 0% or 50% in landing configuration.
+
+b. Perform Flaps Inoperative Approach/Landing checklist.
+
+c. Avoid any unnecessary maneuvers during flight. Limit maneuvers 
+
+only to those necessary to safely land the aircraft.
+
+◆ If on ground:
+
+a. Do not dispatch.
+
+Procedure Complete
+
+Procedure Complete
+
+P/N 31452-002
+Revision 1
+
+3A-85
+
+
