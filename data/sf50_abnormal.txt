@@ -2741,10 +2741,7 @@ IPS WING/STAB FAIL Caution
 
 IPS WING/STAB FAIL
 
-Wing/Stabilizer IPS low system pressure, OR 
-Wing/Stabilizer IPS zonal pressure failure, OR 
-Wing/Stabilizer IPS controller failure, OR 
-Low system pressure, Wing/Stab IPS inoperative.
+Wing/Stabilizer IPS low system pressure, OR Wing/Stabilizer IPS zonal pressure failure, OR Wing/Stabilizer IPS controller failure, OR Low system pressure, Wing/Stab IPS inoperative.
 
 1. Avoid/exit icing conditions.
 
@@ -2928,8 +2925,7 @@ MAIN BUS VOLTS Caution
 
 MAIN BUS VOLTS
 
-Loss of forward main power bus voltage, OR 
-Main power bus voltage is low.
+Loss of forward main power bus voltage, OR Main power bus voltage is low.
 
 1. Perform GENERATOR 1 CURRENT Caution Checklist.
 
@@ -3105,8 +3101,7 @@ OXYGEN PRESSURE LOW Caution
 
 OXYGEN PRESSURE LOW
 
-Oxygen pressure below regulator control (250 PSI), OR 
-Oxygen pressure low (500 PSI).
+Oxygen pressure below regulator control (250 PSI), OR Oxygen pressure low (500 PSI).
 
 1. Altitude...................... DESCEND (BELOW 10,000 FT), IF PRACTICAL
 2. OXYGEN PAX CB (B1)....................................................................... PULL

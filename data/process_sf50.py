@@ -22,12 +22,17 @@ logger = logging.getLogger(__name__)
 @dataclass
 class AlertEntry:
     """Represents a single alert entry with its properties."""
-    section: str
     category: str
     alert_type: str
-    message: str
     priority: str
+    message: str
+    action: str = "simulate"
+    aircraft_name: str = "SF50"
     submessage: Optional[str] = None
+
+    def __post_init__(self):
+        """Convert alert_type to lowercase after initialization."""
+        self.alert_type = self.alert_type.lower()
 
 class SF50Processor:
     """Processes SF50 summary text files into structured alert entries."""
@@ -92,10 +97,10 @@ class SF50Processor:
                     # Normal CAS message processing
                     if i < len(lines) - 2:  # Need at least 3 lines for a complete entry
                         # Check if this is a CAS message line with type (uppercase + Caution/Advisory)
-                        if re.match(r'^[A-Z\s]+(Caution|Advisory)$', line):
+                        if re.match(r'^[A-Z0-9\s]+(Caution|Advisory|Warning)$', line):
                             message_with_type = lines[i]
                             # Extract just the message part (remove the type)
-                            message = re.sub(r'\s+(Caution|Advisory)$', '', message_with_type)
+                            message = re.sub(r'\s+(Caution|Advisory|Warning)$', '', message_with_type)
                             
                             # Check if next line is just the message
                             if lines[i + 1] == message:
@@ -142,12 +147,20 @@ class SF50Processor:
         if is_situation:
             return "emergency" if "emergency" in self.current_section.lower() else "abnormal"
         else:
-            return "emergency" if alert_type == "Caution" else "abnormal"
+            if alert_type == "Advisory":
+                return "normal"
+            elif alert_type == "Warning":
+                return "emergency"
+            elif alert_type == "Caution":
+                return "abnormal"
+            return "abnormal"
     
     def _get_priority(self) -> str:
         """Determine the priority based on section type."""
         if "emergency" in self.current_section.lower():
             return "high"
+        if self.current_section.lower().startswith("normal"):
+            return "low"
         return "medium"
     
     def _process_cas_alert(self, line: str) -> None:
@@ -158,7 +171,7 @@ class SF50Processor:
             # Split the line at the alert type
             type_start = type_match.start()
             message = line[:type_start].strip()
-            alert_type = "cas"  # Always use lowercase 'cas'
+            alert_type = type_match.group(1)  # Get the actual type (Caution/Advisory/Warning)
             
             # Get any text after the alert type
             remaining_text = line[type_match.end():].strip()
@@ -182,11 +195,10 @@ class SF50Processor:
             submessage = None
             
         self.entries.append(AlertEntry(
-            section=self.current_section,
             category=self._get_category(alert_type),
-            alert_type=alert_type,
-            message=message,
+            alert_type="cas",  # Still use lowercase 'cas' for the output
             priority=self._get_priority(),
+            message=message,
             submessage=submessage
         ))
     
@@ -204,11 +216,10 @@ class SF50Processor:
                 logger.info(f"  Description: {submessage}")
             
         self.entries.append(AlertEntry(
-            section=self.current_section,
             category=self._get_category("", is_situation=True),
             alert_type="situation",
-            message=message,
             priority=self._get_priority(),
+            message=message,
             submessage=submessage
         ))
     
@@ -216,14 +227,15 @@ class SF50Processor:
         """Write processed entries to CSV file."""
         with open(output_file, 'w', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['section', 'category', 'alert_type', 'message', 'priority', 'submessage'])
+            writer.writerow(['category', 'alert_type', 'action', 'priority', 'aircraft_name', 'message', 'submessage'])
             for entry in self.entries:
                 writer.writerow([
-                    entry.section,
                     entry.category,
                     entry.alert_type,
-                    entry.message,
+                    entry.action,
                     entry.priority,
+                    entry.aircraft_name,
+                    entry.message,
                     entry.submessage or ''
                 ])
 

@@ -1,5 +1,5 @@
 {
-    "version": "2025.04.13.1038",
+    "version": "2025.04.13.1118",
     "alerts": [
         {
             "uid": 1,
@@ -2227,7 +2227,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GIA 1 Failure",
             "submessage": ""
         },
@@ -2237,7 +2237,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Loss of GPS Navigation",
             "submessage": ""
         },
@@ -2247,7 +2247,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Dry Motoring Engine - Failed Engine Start",
             "submessage": ""
         },
@@ -2257,7 +2257,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Flaps Inoperative Approach/Landing",
             "submessage": ""
         },
@@ -2267,7 +2267,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Landing With Failed Brakes",
             "submessage": ""
         },
@@ -2277,7 +2277,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Landing With Flat Tire",
             "submessage": ""
         },
@@ -2287,7 +2287,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Alternate Gear Extension",
             "submessage": ""
         },
@@ -2297,7 +2297,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Gear Indication(s) Not Down/Locked",
             "submessage": ""
         },
@@ -2307,7 +2307,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Communications Failure",
             "submessage": ""
         },
@@ -2317,7 +2317,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Flight Through Volcanic Ash",
             "submessage": ""
         },
@@ -2327,7 +2327,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Abnormal Engine Shutdown On Ground",
             "submessage": ""
         },
@@ -2337,7 +2337,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Wing/Stab IPS Activated in RVSM Airspace",
             "submessage": ""
         },
@@ -2347,7 +2347,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Autopilot Abnormal Disconnect",
             "submessage": ""
         },
@@ -2357,7 +2357,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Autopilot Failure",
             "submessage": "Red AFCS annunciator on PFD; red AP flashing on PFD; continuous high-low aural tone."
         },
@@ -2367,7 +2367,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Pitch Axis Failure",
             "submessage": "Red PTCH annunciator on PFD."
         },
@@ -2377,7 +2377,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Roll Axis Failure",
             "submessage": "Red ROLL annunciator on PFD."
         },
@@ -2387,7 +2387,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Yaw Axis Failure",
             "submessage": "Red YAW annunciator on PFD."
         },
@@ -2397,7 +2397,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Autopilot Preflight Test Fail",
             "submessage": "Red PFT annunciator on PFD."
         },
@@ -2407,7 +2407,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Elevator Mistrim Down",
             "submessage": "Yellow (down arrow) ELE annunciator on PFD."
         },
@@ -2417,7 +2417,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Elevator Mistrim Up",
             "submessage": "Yellow (up arrow) ELE annunciator on PFD."
         },
@@ -2427,7 +2427,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Aileron Mistrim Left/Right",
             "submessage": "Yellow (left/right arrow) AIL annunciator on PFD."
         },
@@ -2437,7 +2437,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "AOA FAIL",
             "submessage": "AOA signal invalid."
         },
@@ -2447,7 +2447,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "AOA HEAT FAIL",
             "submessage": "AOA heat failure."
         },
@@ -2457,7 +2457,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "BLEED AIR",
             "submessage": "ECS bleed air system pressure low or failed."
         },
@@ -2467,7 +2467,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "BLEED LEAK",
             "submessage": "Bleed leak detected in tailcone."
         },
@@ -2477,7 +2477,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "BLEED OFF",
             "submessage": "Bleed air is switched to OFF/FRESH."
         },
@@ -2487,7 +2487,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "BLEED OPEN",
             "submessage": "Shutoff solenoid failed to close."
         },
@@ -2497,7 +2497,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "BLEED OVERPRESSURE",
             "submessage": "ECS bleed air system pressure high."
         },
@@ -2507,7 +2507,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CABIN LFE NOT SET",
             "submessage": "Landing field elevation is not set."
         },
@@ -2517,37 +2517,37 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CABIN PRESSURE CTRL FAIL",
             "submessage": "Detected failure of CPCS Controller."
         },
         {
             "uid": 1030,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CAPS AUTOPILOT INOP",
             "submessage": "Minimize CAPS deployment speed."
         },
         {
             "uid": 1031,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CAPS MISCOMPARE",
             "submessage": "CAPS service required."
         },
         {
             "uid": 1032,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "DOOR OPEN",
             "submessage": "On Ground"
         },
@@ -2557,7 +2557,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "DOOR OPEN EMER EXIT",
             "submessage": "Emergency exit door is open."
         },
@@ -2567,7 +2567,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ECS BLEED HOT",
             "submessage": "Bleed supply temperature is too hot."
         },
@@ -2577,7 +2577,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ECS BLEED OVERHEAT",
             "submessage": "Bleed supply temperature is too hot."
         },
@@ -2587,7 +2587,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ECS CONTROL FAIL",
             "submessage": ""
         },
@@ -2597,17 +2597,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ECS TEMP BACKUP",
             "submessage": "Environmental control temperature backup mode."
         },
         {
             "uid": 1038,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EDM DISABLED",
             "submessage": "Emergency Descent Mode is disabled."
         },
@@ -2617,7 +2617,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EMER BATTERY FAIL",
             "submessage": "Emergency battery (Bat 2) service is required."
         },
@@ -2627,7 +2627,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EMER BATTERY FAULT",
             "submessage": "Emergency battery (Bat 2) fault detected."
         },
@@ -2637,7 +2637,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ENGINE START BAT TEMP",
             "submessage": "Main battery (Bat 1) is below minimum start temp."
         },
@@ -2647,27 +2647,27 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ENGINE START VOLTS",
             "submessage": "On Ground"
         },
         {
             "uid": 1043,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ESP FAIL",
             "submessage": "ESP is inoperative."
         },
         {
             "uid": 1044,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ESP OFF",
             "submessage": "ESP selected off."
         },
@@ -2677,7 +2677,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ESS BUS VOLTS",
             "submessage": ""
         },
@@ -2687,7 +2687,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EXTERNAL POWER CONNECTED",
             "submessage": "On Ground"
         },
@@ -2697,7 +2697,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FADEC NO DISPATCH",
             "submessage": "Reference FADEC Fault Code Messages."
         },
@@ -2707,7 +2707,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FIRE DETECTOR FAIL",
             "submessage": "Engine fire detector loop low pressure."
         },
@@ -2717,27 +2717,27 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FIRE EXT LOW L-R",
             "submessage": ""
         },
         {
             "uid": 1050,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FIRE EXT LOW L",
             "submessage": "Pressure is low in the left fire extinguisher."
         },
         {
             "uid": 1051,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FIRE EXT LOW R",
             "submessage": "Pressure is low in the right fire extinguisher."
         },
@@ -2747,7 +2747,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS AIRSPEED INHIBIT",
             "submessage": "Flaps motion inhibited."
         },
@@ -2757,7 +2757,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS DISAGREE",
             "submessage": "Flaps are not within commanded position limits."
         },
@@ -2767,7 +2767,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS FAIL",
             "submessage": ""
         },
@@ -2777,7 +2777,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS SELECTOR FAIL",
             "submessage": "Cannot determine flaps selector position."
         },
@@ -2787,7 +2787,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLIGHT IDLE FAIL",
             "submessage": "Engine idle N2 is too low."
         },
@@ -2797,7 +2797,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL IMBALANCE",
             "submessage": "Fuel imbalance is ‚â• 15 Gallons."
         },
@@ -2807,7 +2807,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL LOW LEFT/RIGHT/TOTAL",
             "submessage": ""
         },
@@ -2817,7 +2817,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL PUMP FAIL",
             "submessage": "Fuel pump has failed."
         },
@@ -2827,17 +2827,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL PUMP ON",
             "submessage": "Fuel pump is ON for normal operations."
         },
         {
             "uid": 1061,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL PUMP ON",
             "submessage": "Fuel pump is ON for normal operations."
         },
@@ -2847,7 +2847,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL QTY MISCOMPARE",
             "submessage": "Sensed and totalized fuel quantity disagreement."
         },
@@ -2857,17 +2857,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL SELECTOR FAIL",
             "submessage": "Cannot determine fuel selector position."
         },
         {
             "uid": 1064,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL SHUTOFF",
             "submessage": "Fuel shutoff valve is closed."
         },
@@ -2877,17 +2877,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL SHUTOFF FAIL",
             "submessage": "Fuel shutoff valve not in commanded position."
         },
         {
             "uid": 1066,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL TANK BALANCED",
             "submessage": "Fuel tank quantity balance has been detected."
         },
@@ -2897,7 +2897,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL TEMP LOW",
             "submessage": "Fuel temperature is low, increase OAT."
         },
@@ -2907,7 +2907,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL VALVE #1 FAIL",
             "submessage": ""
         },
@@ -2917,7 +2917,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL VALVE #2 FAIL",
             "submessage": ""
         },
@@ -2927,7 +2927,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL VALVE AUTO FAIL",
             "submessage": "Auto fuel tank selection failure, use Manual mode."
         },
@@ -2937,9 +2937,9 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 1 CURRENT",
-            "submessage": ""
+            "submessage": "Generator 1 current is low."
         },
         {
             "uid": 1072,
@@ -2947,9 +2947,9 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 2 CURRENT",
-            "submessage": ""
+            "submessage": "Generator 2 current is low."
         },
         {
             "uid": 1073,
@@ -2957,7 +2957,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GROUND IDLE FAIL",
             "submessage": "On Ground"
         },
@@ -2967,7 +2967,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "HYDRAULIC OVERHEAT",
             "submessage": "Landing gear hydraulic power pack has overheated."
         },
@@ -2977,7 +2977,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS BLEED OVERHEAT",
             "submessage": "Ice protection bleed cooling failure."
         },
@@ -2987,7 +2987,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS ENG INLET OFF",
             "submessage": "Engine IPS should be on."
         },
@@ -2997,7 +2997,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS ENG INLET ON",
             "submessage": ""
         },
@@ -3007,7 +3007,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS ENG INLET OVERHEAT",
             "submessage": ""
         },
@@ -3017,17 +3017,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS ENG INLET UNDERPRESS",
             "submessage": "Engine IPS bleed flow low."
         },
         {
             "uid": 1080,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS ENG INLET UNDERPRESS",
             "submessage": "On Ground - Engine IPS bleed flow low."
         },
@@ -3037,17 +3037,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS FLUID LOW",
             "submessage": "Less than 15 minutes of IPS fluid remaining."
         },
         {
             "uid": 1082,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS FLUID LOW",
             "submessage": "On Ground - Less than 15 minutes of IPS fluid remaining."
         },
@@ -3057,7 +3057,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS WINDSHLD TIMER",
             "submessage": "Loss of WS/Rad pump automatic timer control."
         },
@@ -3067,7 +3067,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS WING/STAB FAIL",
             "submessage": ""
         },
@@ -3077,7 +3077,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "IPS WING/STAB TEMP LOW",
             "submessage": ""
         },
@@ -3087,7 +3087,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "LDG GEAR FAIL",
             "submessage": "Landing gear didn't reach the selected position."
         },
@@ -3097,7 +3097,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "LDG GEAR SELECTOR FAIL",
             "submessage": "Cannot determine landing gear selector position."
         },
@@ -3107,7 +3107,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "MAIN BATTERY FAIL",
             "submessage": "Main battery (Bat 1) service is required."
         },
@@ -3117,7 +3117,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "MAIN BATTERY FAULT",
             "submessage": "Main battery (Bat 1) fault detected."
         },
@@ -3127,17 +3127,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "MAIN BUS VOLTS",
-            "submessage": ""
+            "submessage": "Loss of forward main power bus voltage, OR Main power bus voltage is low."
         },
         {
             "uid": 1091,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "MASK MICROPHONE",
             "submessage": "A crew mask microphone is switched on."
         },
@@ -3147,7 +3147,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "NO ADC MODES",
             "submessage": "Autopilot air data modes are not available."
         },
@@ -3157,7 +3157,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "NO VERT MODES",
             "submessage": "Autopilot vertical modes are not available."
         },
@@ -3167,7 +3167,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OIL FILTER BYPASS",
             "submessage": "Oil filter diff press too high, bypass impending."
         },
@@ -3177,7 +3177,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OXYGEN OFF",
             "submessage": "Oxygen has not been turned on."
         },
@@ -3187,17 +3187,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OXYGEN ON",
             "submessage": "On Ground"
         },
         {
             "uid": 1097,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OXYGEN ON",
             "submessage": "On Ground"
         },
@@ -3207,7 +3207,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OXYGEN PASSENGER FAIL",
             "submessage": "Passenger oxygen valve has failed closed."
         },
@@ -3217,9 +3217,9 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OXYGEN PRESSURE LOW",
-            "submessage": ""
+            "submessage": "Oxygen pressure below regulator control (250 PSI), OR Oxygen pressure low (500 PSI)."
         },
         {
             "uid": 1100,
@@ -3227,7 +3227,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "PARK BRAKE",
             "submessage": "On Ground"
         },
@@ -3237,7 +3237,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "PITCH MET ACTIVE",
             "submessage": "Pitch manual electric trim is active."
         },
@@ -3247,7 +3247,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "PROBE HEAT FAIL L",
             "submessage": "Left probe heat failure."
         },
@@ -3257,7 +3257,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "PROBE HEAT FAIL R",
             "submessage": "Right probe heat failure."
         },
@@ -3267,7 +3267,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "PROBE HEAT OFF",
             "submessage": "Probe heat is required."
         },
@@ -3277,7 +3277,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SFD ALT MISCOMPARE",
             "submessage": "SFD altitude miscompare."
         },
@@ -3287,17 +3287,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SFD IAS MISCOMPARE",
             "submessage": "SFD airspeed miscompare."
         },
         {
             "uid": 1107,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SFD NO-COMPARE",
             "submessage": ""
         },
@@ -3307,7 +3307,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SFD PITCH MISCOMPARE",
             "submessage": "SFD pitch miscompare."
         },
@@ -3317,17 +3317,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SFD ROLL MISCOMPARE",
             "submessage": "SFD roll miscompare."
         },
         {
             "uid": 1110,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STALL SPEED HIGH",
             "submessage": "Stall protection system adjusted for icing."
         },
@@ -3337,7 +3337,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STALL WARNING FAIL",
             "submessage": "Stall warning failure."
         },
@@ -3347,17 +3347,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STARTER ENGAGED",
             "submessage": "Engine start in progress."
         },
         {
             "uid": 1113,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STARTER ENGAGED",
             "submessage": "Engine start in progress."
         },
@@ -3367,17 +3367,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STICK PUSHER FAIL",
             "submessage": "Stick pusher failure."
         },
         {
             "uid": 1115,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "SURFACEWATCH FAIL",
             "submessage": ""
         },
@@ -3387,7 +3387,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF EMER BAT",
             "submessage": "Emergency battery (Bat 2) is not charged."
         },
@@ -3397,17 +3397,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF FLAPS",
             "submessage": "On Ground"
         },
         {
             "uid": 1118,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF PITCH TRIM",
             "submessage": "On Ground"
         },
@@ -3417,17 +3417,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF THRUST",
             "submessage": "Engine is in takeoff thrust."
         },
         {
             "uid": 1120,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF THRUST",
             "submessage": "Engine is in takeoff thrust."
         },
@@ -3437,7 +3437,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TCV CONTROL FAIL",
             "submessage": "TCV motor controller has failed."
         },
@@ -3447,7 +3447,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "THROTTLE SERVO",
             "submessage": "Throttle servo has failed."
         },
@@ -3457,17 +3457,17 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TT2 HEAT FAIL",
-            "submessage": ""
+            "submessage": "TT2 probe heater failure."
         },
         {
             "uid": 1124,
-            "category": "abnormal",
+            "category": "normal",
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "WOW DISAGREE",
             "submessage": "WOW indicating opposite on ground/in air states."
         },
@@ -3477,7 +3477,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "WOW FAIL",
             "submessage": "WOW is indicating on ground state."
         },
@@ -3487,7 +3487,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "medium",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "YAW SAS SERVO",
             "submessage": "Yaw SAS servo has failed."
         },
@@ -3497,7 +3497,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Automatic Flight Control Malfunction",
             "submessage": ""
         },
@@ -3507,7 +3507,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Engine Emergency On Takeoff - Speed Below VR",
             "submessage": ""
         },
@@ -3517,7 +3517,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Engine Fire On Takeoff - Low Altitude",
             "submessage": ""
         },
@@ -3527,7 +3527,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Engine Failure On Takeoff - Low Altitude",
             "submessage": ""
         },
@@ -3537,7 +3537,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Rejected Takeoff",
             "submessage": ""
         },
@@ -3547,7 +3547,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Engine Failure In Flight",
             "submessage": ""
         },
@@ -3557,7 +3557,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Uncontained Engine Failure (Rotor Burst in Flight)",
             "submessage": ""
         },
@@ -3567,7 +3567,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Loss of All Flight Displays",
             "submessage": ""
         },
@@ -3577,7 +3577,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Loss of Thrust Control",
             "submessage": ""
         },
@@ -3587,7 +3587,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Loss of Reliable Airspeed Indication",
             "submessage": ""
         },
@@ -3597,7 +3597,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Abnormal Engine Start",
             "submessage": ""
         },
@@ -3607,7 +3607,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Air Start",
             "submessage": ""
         },
@@ -3617,7 +3617,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Smoke Removal",
             "submessage": ""
         },
@@ -3627,7 +3627,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Cabin Fire In Flight",
             "submessage": ""
         },
@@ -3637,7 +3637,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Ditching",
             "submessage": ""
         },
@@ -3647,7 +3647,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Emergency Descent",
             "submessage": ""
         },
@@ -3657,7 +3657,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Emergency Landing w/o Power",
             "submessage": ""
         },
@@ -3667,7 +3667,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Flameout / Precautionary Approach",
             "submessage": ""
         },
@@ -3677,7 +3677,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Landing Without Aileron Control",
             "submessage": ""
         },
@@ -3687,7 +3687,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Landing Without Elevator Control",
             "submessage": ""
         },
@@ -3697,7 +3697,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Landing Without Rudder Control",
             "submessage": ""
         },
@@ -3707,7 +3707,7 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CAPS Activation",
             "submessage": ""
         },
@@ -3717,7 +3717,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Emergency Ground Egress",
             "submessage": ""
         },
@@ -3727,7 +3727,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Pitch Trim Runaway / Failure",
             "submessage": ""
         },
@@ -3737,7 +3737,7 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Roll Trim Runaway / Failure",
             "submessage": ""
         },
@@ -3747,359 +3747,359 @@
             "alertType": "situation",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "Jammed Elevator Trim Tab",
             "submessage": ""
         },
         {
             "uid": 1153,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "AUTO DESCENT",
-            "submessage": ""
+            "submessage": "Aircraft descending to 14,000 ft."
         },
         {
             "uid": 1154,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CABIN ALTITUDE HIGH",
-            "submessage": ""
+            "submessage": "Cabin high altitude detected."
         },
         {
             "uid": 1155,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CABIN DIFF PRESSURE HIGH",
-            "submessage": ""
+            "submessage": "Cabin differential pressure is too high."
         },
         {
             "uid": 1156,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CABIN DUMP",
-            "submessage": ""
+            "submessage": "Cabin pressure dump activated."
         },
         {
             "uid": 1157,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "CAPS ACTIVATED",
-            "submessage": ""
+            "submessage": "CAPS sequence has been activated."
         },
         {
             "uid": 1158,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "DOOR OPEN BAGGAGE",
-            "submessage": ""
+            "submessage": "Baggage door is open."
         },
         {
             "uid": 1159,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "DOOR OPEN MAIN",
-            "submessage": ""
+            "submessage": "Main door is open."
         },
         {
             "uid": 1160,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EMER BUS VOLTS",
-            "submessage": ""
+            "submessage": "Operating on emergency power."
         },
         {
             "uid": 1161,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ENGINE FIRE",
             "submessage": "In Flight"
         },
         {
             "uid": 1162,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ENGINE FIRE",
             "submessage": "On Ground"
         },
         {
             "uid": 1163,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ENGINE START N1",
-            "submessage": ""
+            "submessage": "N1 is not indicating rotation."
         },
         {
             "uid": 1164,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "EXTERNAL POWER CONNECTED",
             "submessage": "On Ground"
         },
         {
             "uid": 1165,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FADEC CTRL DEGRADED",
-            "submessage": ""
+            "submessage": "Reference FADEC Fault Code Messages."
         },
         {
             "uid": 1166,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FADEC NO DISPATCH",
             "submessage": "On Ground - Reference FADEC Fault Code Messages."
         },
         {
             "uid": 1167,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS CAL MODE",
             "submessage": "On Ground"
         },
         {
             "uid": 1168,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FLAPS ICE",
-            "submessage": ""
+            "submessage": "Full flaps prohibited in icing conditions."
         },
         {
             "uid": 1169,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL FILTER BYPASS",
-            "submessage": ""
+            "submessage": "Fuel filter diff press too high, bypass impending."
         },
         {
             "uid": 1170,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL IMBALANCE",
             "submessage": "Fuel imbalance is ‚â• 15 Gallons."
         },
         {
             "uid": 1171,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL LOW LEFT/RIGHT/TOTAL",
             "submessage": ""
         },
         {
             "uid": 1172,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL PRESSURE LOW",
-            "submessage": ""
+            "submessage": "FDU fuel inlet pressure is low."
         },
         {
             "uid": 1173,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL TEMP LOW",
             "submessage": "Fuel temperature is low, increase OAT."
         },
         {
             "uid": 1174,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "FUEL VALVES BOTH FAIL",
-            "submessage": ""
+            "submessage": "Both fuel control valves have failed."
         },
         {
             "uid": 1175,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 1 CURRENT",
-            "submessage": ""
+            "submessage": "Generator 1 current is low."
         },
         {
             "uid": 1176,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 1 OVERVOLTAGE",
-            "submessage": ""
+            "submessage": "Generator 1 voltage is high."
         },
         {
             "uid": 1177,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 2 CURRENT",
-            "submessage": ""
+            "submessage": "Generator 2 current is low."
         },
         {
             "uid": 1178,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "GENERATOR 2 OVERVOLTAGE",
-            "submessage": ""
+            "submessage": "Generator 2 voltage is high."
         },
         {
             "uid": 1179,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "ITT",
-            "submessage": ""
+            "submessage": "ITT limits exceeded."
         },
         {
             "uid": 1180,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "LDG GEAR IS UP",
-            "submessage": ""
+            "submessage": "Landing gear is not down and locked for landing."
         },
         {
             "uid": 1181,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "LDG GEAR SELECTED UP",
-            "submessage": ""
+            "submessage": "Ldg gear should be selected down while on ground."
         },
         {
             "uid": 1182,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "N1",
-            "submessage": ""
+            "submessage": "N1 speed exceeded."
         },
         {
             "uid": 1183,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "N2",
-            "submessage": ""
+            "submessage": "N2 speed exceeded."
         },
         {
             "uid": 1184,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OIL CHIP DETECT",
             "submessage": "On Ground"
         },
         {
             "uid": 1185,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OIL FILTER BYPASS",
             "submessage": "On Ground - Oil filter diff press too high, bypass impending."
         },
         {
             "uid": 1186,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OIL PRESSURE",
-            "submessage": ""
+            "submessage": "Engine oil pressure exceedance."
         },
         {
             "uid": 1187,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "OIL TEMPERATURE",
-            "submessage": ""
+            "submessage": "Engine oil temperature exceedance."
         },
         {
             "uid": 1188,
@@ -4107,49 +4107,49 @@
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STALL WARNING",
             "submessage": ""
         },
         {
             "uid": 1189,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "STICK PUSHER",
-            "submessage": ""
+            "submessage": "Stick pusher active."
         },
         {
             "uid": 1190,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TAKEOFF PITCH TRIM",
             "submessage": "On Ground"
         },
         {
             "uid": 1191,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "THR LEVER CALIBRATION",
             "submessage": "On Ground"
         },
         {
             "uid": 1192,
-            "category": "abnormal",
+            "category": "emergency",
             "alertType": "cas",
             "action": "simulate",
             "priority": "high",
-            "aircraftName": "sf50",
+            "aircraftName": "SF50",
             "message": "TT2 OVERHEAT",
-            "submessage": ""
+            "submessage": "TT2 probes pending overheat."
         }
     ]
 }

@@ -12,7 +12,6 @@ Communications Failure
 Flight Through Volcanic Ash
 Abnormal Engine Shutdown On Ground
 Wing/Stab IPS Activated in RVSM Airspace
-AFCS Alerts
 Autopilot Abnormal Disconnect
 Autopilot Failure
 Pitch Axis Failure
@@ -22,7 +21,6 @@ Autopilot Preflight Test Fail
 Elevator Mistrim Down
 Elevator Mistrim Up
 Aileron Mistrim Left/Right
-Abnormal CAS Procedures
 AOA FAIL Caution
 AOA HEAT FAIL Caution
 BLEED AIR Caution
@@ -158,8 +156,6 @@ Emergency Ground Egress
 Pitch Trim Runaway / Failure
 Roll Trim Runaway / Failure
 Jammed Elevator Trim Tab
-AFCS Alerts
-Emergency CAS Procedures
 AUTO DESCENT Warning
 CABIN ALTITUDE HIGH Warning
 CABIN DIFF PRESSURE HIGH Warning

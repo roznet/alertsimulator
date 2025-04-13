@@ -1,198 +1,194 @@
-section,category,alert_type,message,priority,submessage
-Abnormal Procedures,abnormal,cas,GIA 1 Failure,medium,
-Abnormal Procedures,abnormal,situation,Loss of GPS Navigation,medium,
-Abnormal Procedures,abnormal,situation,Dry Motoring Engine - Failed Engine Start,medium,
-Abnormal Procedures,abnormal,situation,Flaps Inoperative Approach/Landing,medium,
-Abnormal Procedures,abnormal,situation,Landing With Failed Brakes,medium,
-Abnormal Procedures,abnormal,situation,Landing With Flat Tire,medium,
-Abnormal Procedures,abnormal,situation,Alternate Gear Extension,medium,
-Abnormal Procedures,abnormal,situation,Gear Indication(s) Not Down/Locked,medium,
-Abnormal Procedures,abnormal,situation,Communications Failure,medium,
-Abnormal Procedures,abnormal,situation,Flight Through Volcanic Ash,medium,
-Abnormal Procedures,abnormal,situation,Abnormal Engine Shutdown On Ground,medium,
-Abnormal Procedures,abnormal,situation,Wing/Stab IPS Activated in RVSM Airspace,medium,
-Abnormal Procedures,abnormal,cas,AFCS Alerts,medium,
-Abnormal Procedures,abnormal,situation,Autopilot Abnormal Disconnect,medium,
-Abnormal Procedures,abnormal,situation,Autopilot Failure,medium,Red AFCS annunciator on PFD; red AP flashing on PFD; continuous high-low aural tone.
-Abnormal Procedures,abnormal,situation,Pitch Axis Failure,medium,Red PTCH annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Roll Axis Failure,medium,Red ROLL annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Yaw Axis Failure,medium,Red YAW annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Autopilot Preflight Test Fail,medium,Red PFT annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Elevator Mistrim Down,medium,Yellow (down arrow) ELE annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Elevator Mistrim Up,medium,Yellow (up arrow) ELE annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Aileron Mistrim Left/Right,medium,Yellow (left/right arrow) AIL annunciator on PFD.
-Abnormal Procedures,abnormal,situation,Abnormal CAS Procedures,medium,
-Abnormal Procedures,abnormal,cas,AOA FAIL,medium,AOA signal invalid.
-Abnormal Procedures,abnormal,cas,AOA HEAT FAIL,medium,AOA heat failure.
-Abnormal Procedures,abnormal,cas,BLEED AIR,medium,ECS bleed air system pressure low or failed.
-Abnormal Procedures,abnormal,cas,BLEED LEAK,medium,Bleed leak detected in tailcone.
-Abnormal Procedures,abnormal,cas,BLEED OFF,medium,Bleed air is switched to OFF/FRESH.
-Abnormal Procedures,abnormal,cas,BLEED OPEN,medium,Shutoff solenoid failed to close.
-Abnormal Procedures,abnormal,cas,BLEED OVERPRESSURE,medium,ECS bleed air system pressure high.
-Abnormal Procedures,abnormal,cas,CABIN LFE NOT SET,medium,Landing field elevation is not set.
-Abnormal Procedures,abnormal,cas,CABIN PRESSURE CTRL FAIL,medium,Detected failure of CPCS Controller.
-Abnormal Procedures,abnormal,cas,CAPS AUTOPILOT INOP,medium,Minimize CAPS deployment speed.
-Abnormal Procedures,abnormal,cas,CAPS MISCOMPARE,medium,CAPS service required.
-Abnormal Procedures,abnormal,cas,DOOR OPEN,medium,On Ground
-Abnormal Procedures,abnormal,cas,DOOR OPEN EMER EXIT,medium,Emergency exit door is open.
-Abnormal Procedures,abnormal,cas,ECS BLEED HOT,medium,Bleed supply temperature is too hot.
-Abnormal Procedures,abnormal,cas,ECS BLEED OVERHEAT,medium,Bleed supply temperature is too hot.
-Abnormal Procedures,abnormal,cas,ECS CONTROL FAIL,medium,
-Abnormal Procedures,abnormal,cas,ECS TEMP BACKUP,medium,Environmental control temperature backup mode.
-Abnormal Procedures,abnormal,cas,EDM DISABLED,medium,Emergency Descent Mode is disabled.
-Abnormal Procedures,abnormal,cas,EMER BATTERY FAIL,medium,Emergency battery (Bat 2) service is required.
-Abnormal Procedures,abnormal,cas,EMER BATTERY FAULT,medium,Emergency battery (Bat 2) fault detected.
-Abnormal Procedures,abnormal,cas,ENGINE START BAT TEMP,medium,Main battery (Bat 1) is below minimum start temp.
-Abnormal Procedures,abnormal,cas,ENGINE START VOLTS,medium,On Ground
-Abnormal Procedures,abnormal,cas,ESP FAIL,medium,ESP is inoperative.
-Abnormal Procedures,abnormal,cas,ESP OFF,medium,ESP selected off.
-Abnormal Procedures,abnormal,cas,ESS BUS VOLTS,medium,
-Abnormal Procedures,abnormal,cas,EXTERNAL POWER CONNECTED,medium,On Ground
-Abnormal Procedures,abnormal,cas,FADEC NO DISPATCH,medium,Reference FADEC Fault Code Messages.
-Abnormal Procedures,abnormal,cas,FIRE DETECTOR FAIL,medium,Engine fire detector loop low pressure.
-Abnormal Procedures,abnormal,cas,FIRE EXT LOW L-R,medium,
-Abnormal Procedures,abnormal,cas,FIRE EXT LOW L,medium,Pressure is low in the left fire extinguisher.
-Abnormal Procedures,abnormal,cas,FIRE EXT LOW R,medium,Pressure is low in the right fire extinguisher.
-Abnormal Procedures,abnormal,cas,FLAPS AIRSPEED INHIBIT,medium,Flaps motion inhibited.
-Abnormal Procedures,abnormal,cas,FLAPS DISAGREE,medium,Flaps are not within commanded position limits.
-Abnormal Procedures,abnormal,cas,FLAPS FAIL,medium,
-Abnormal Procedures,abnormal,cas,FLAPS SELECTOR FAIL,medium,Cannot determine flaps selector position.
-Abnormal Procedures,abnormal,cas,FLIGHT IDLE FAIL,medium,Engine idle N2 is too low.
-Abnormal Procedures,abnormal,cas,FUEL IMBALANCE,medium,Fuel imbalance is ≥ 15 Gallons.
-Abnormal Procedures,abnormal,cas,FUEL LOW LEFT/RIGHT/TOTAL,medium,
-Abnormal Procedures,abnormal,cas,FUEL PUMP FAIL,medium,Fuel pump has failed.
-Abnormal Procedures,abnormal,cas,FUEL PUMP ON,medium,Fuel pump is ON for normal operations.
-Abnormal Procedures,abnormal,cas,FUEL PUMP ON,medium,Fuel pump is ON for normal operations.
-Abnormal Procedures,abnormal,cas,FUEL QTY MISCOMPARE,medium,Sensed and totalized fuel quantity disagreement.
-Abnormal Procedures,abnormal,cas,FUEL SELECTOR FAIL,medium,Cannot determine fuel selector position.
-Abnormal Procedures,abnormal,cas,FUEL SHUTOFF,medium,Fuel shutoff valve is closed.
-Abnormal Procedures,abnormal,cas,FUEL SHUTOFF FAIL,medium,Fuel shutoff valve not in commanded position.
-Abnormal Procedures,abnormal,cas,FUEL TANK BALANCED,medium,Fuel tank quantity balance has been detected.
-Abnormal Procedures,abnormal,cas,FUEL TEMP LOW,medium,"Fuel temperature is low, increase OAT."
-Abnormal Procedures,abnormal,cas,FUEL VALVE #1 FAIL,medium,
-Abnormal Procedures,abnormal,cas,FUEL VALVE #2 FAIL,medium,
-Abnormal Procedures,abnormal,cas,FUEL VALVE AUTO FAIL,medium,"Auto fuel tank selection failure, use Manual mode."
-Abnormal Procedures,abnormal,cas,GENERATOR 1 CURRENT,medium,
-Abnormal Procedures,abnormal,cas,GENERATOR 2 CURRENT,medium,
-Abnormal Procedures,abnormal,cas,GROUND IDLE FAIL,medium,On Ground
-Abnormal Procedures,abnormal,cas,HYDRAULIC OVERHEAT,medium,Landing gear hydraulic power pack has overheated.
-Abnormal Procedures,abnormal,cas,IPS BLEED OVERHEAT,medium,Ice protection bleed cooling failure.
-Abnormal Procedures,abnormal,cas,IPS ENG INLET OFF,medium,Engine IPS should be on.
-Abnormal Procedures,abnormal,cas,IPS ENG INLET ON,medium,
-Abnormal Procedures,abnormal,cas,IPS ENG INLET OVERHEAT,medium,
-Abnormal Procedures,abnormal,cas,IPS ENG INLET UNDERPRESS,medium,Engine IPS bleed flow low.
-Abnormal Procedures,abnormal,cas,IPS ENG INLET UNDERPRESS,medium,On Ground - Engine IPS bleed flow low.
-Abnormal Procedures,abnormal,cas,IPS FLUID LOW,medium,Less than 15 minutes of IPS fluid remaining.
-Abnormal Procedures,abnormal,cas,IPS FLUID LOW,medium,On Ground - Less than 15 minutes of IPS fluid remaining.
-Abnormal Procedures,abnormal,cas,IPS WINDSHLD TIMER,medium,Loss of WS/Rad pump automatic timer control.
-Abnormal Procedures,abnormal,cas,IPS WING/STAB FAIL,medium,
-Abnormal Procedures,abnormal,cas,IPS WING/STAB TEMP LOW,medium,
-Abnormal Procedures,abnormal,cas,LDG GEAR FAIL,medium,Landing gear didn't reach the selected position.
-Abnormal Procedures,abnormal,cas,LDG GEAR SELECTOR FAIL,medium,Cannot determine landing gear selector position.
-Abnormal Procedures,abnormal,cas,MAIN BATTERY FAIL,medium,Main battery (Bat 1) service is required.
-Abnormal Procedures,abnormal,cas,MAIN BATTERY FAULT,medium,Main battery (Bat 1) fault detected.
-Abnormal Procedures,abnormal,cas,MAIN BUS VOLTS,medium,
-Abnormal Procedures,abnormal,cas,MASK MICROPHONE,medium,A crew mask microphone is switched on.
-Abnormal Procedures,abnormal,cas,NO ADC MODES,medium,Autopilot air data modes are not available.
-Abnormal Procedures,abnormal,cas,NO VERT MODES,medium,Autopilot vertical modes are not available.
-Abnormal Procedures,abnormal,cas,OIL FILTER BYPASS,medium,"Oil filter diff press too high, bypass impending."
-Abnormal Procedures,abnormal,cas,OXYGEN OFF,medium,Oxygen has not been turned on.
-Abnormal Procedures,abnormal,cas,OXYGEN ON,medium,On Ground
-Abnormal Procedures,abnormal,cas,OXYGEN ON,medium,On Ground
-Abnormal Procedures,abnormal,cas,OXYGEN PASSENGER FAIL,medium,Passenger oxygen valve has failed closed.
-Abnormal Procedures,abnormal,cas,OXYGEN PRESSURE LOW,medium,
-Abnormal Procedures,abnormal,cas,PARK BRAKE,medium,On Ground
-Abnormal Procedures,abnormal,cas,PITCH MET ACTIVE,medium,Pitch manual electric trim is active.
-Abnormal Procedures,abnormal,cas,PROBE HEAT FAIL L,medium,Left probe heat failure.
-Abnormal Procedures,abnormal,cas,PROBE HEAT FAIL R,medium,Right probe heat failure.
-Abnormal Procedures,abnormal,cas,PROBE HEAT OFF,medium,Probe heat is required.
-Abnormal Procedures,abnormal,cas,SFD ALT MISCOMPARE,medium,SFD altitude miscompare.
-Abnormal Procedures,abnormal,cas,SFD IAS MISCOMPARE,medium,SFD airspeed miscompare.
-Abnormal Procedures,abnormal,cas,SFD NO-COMPARE,medium,
-Abnormal Procedures,abnormal,cas,SFD PITCH MISCOMPARE,medium,SFD pitch miscompare.
-Abnormal Procedures,abnormal,cas,SFD ROLL MISCOMPARE,medium,SFD roll miscompare.
-Abnormal Procedures,abnormal,cas,STALL SPEED HIGH,medium,Stall protection system adjusted for icing.
-Abnormal Procedures,abnormal,cas,STALL WARNING FAIL,medium,Stall warning failure.
-Abnormal Procedures,abnormal,cas,STARTER ENGAGED,medium,Engine start in progress.
-Abnormal Procedures,abnormal,cas,STARTER ENGAGED,medium,Engine start in progress.
-Abnormal Procedures,abnormal,cas,STICK PUSHER FAIL,medium,Stick pusher failure.
-Abnormal Procedures,abnormal,cas,SURFACEWATCH FAIL,medium,
-Abnormal Procedures,abnormal,cas,TAKEOFF EMER BAT,medium,Emergency battery (Bat 2) is not charged.
-Abnormal Procedures,abnormal,cas,TAKEOFF FLAPS,medium,On Ground
-Abnormal Procedures,abnormal,cas,TAKEOFF PITCH TRIM,medium,On Ground
-Abnormal Procedures,abnormal,cas,TAKEOFF THRUST,medium,Engine is in takeoff thrust.
-Abnormal Procedures,abnormal,cas,TAKEOFF THRUST,medium,Engine is in takeoff thrust.
-Abnormal Procedures,abnormal,cas,TCV CONTROL FAIL,medium,TCV motor controller has failed.
-Abnormal Procedures,abnormal,cas,THROTTLE SERVO,medium,Throttle servo has failed.
-Abnormal Procedures,abnormal,cas,TT2 HEAT FAIL,medium,
-Abnormal Procedures,abnormal,cas,WOW DISAGREE,medium,WOW indicating opposite on ground/in air states.
-Abnormal Procedures,abnormal,cas,WOW FAIL,medium,WOW is indicating on ground state.
-Abnormal Procedures,abnormal,cas,YAW SAS SERVO,medium,Yaw SAS servo has failed.
-Emergency Procedures,emergency,situation,Automatic Flight Control Malfunction,high,
-Emergency Procedures,emergency,situation,Engine Emergency On Takeoff - Speed Below VR,high,
-Emergency Procedures,emergency,situation,Engine Fire On Takeoff - Low Altitude,high,
-Emergency Procedures,emergency,situation,Engine Failure On Takeoff - Low Altitude,high,
-Emergency Procedures,emergency,situation,Rejected Takeoff,high,
-Emergency Procedures,emergency,situation,Engine Failure In Flight,high,
-Emergency Procedures,emergency,situation,Uncontained Engine Failure (Rotor Burst in Flight),high,
-Emergency Procedures,emergency,situation,Loss of All Flight Displays,high,
-Emergency Procedures,emergency,situation,Loss of Thrust Control,high,
-Emergency Procedures,emergency,situation,Loss of Reliable Airspeed Indication,high,
-Emergency Procedures,emergency,situation,Abnormal Engine Start,high,
-Emergency Procedures,emergency,situation,Air Start,high,
-Emergency Procedures,emergency,situation,Smoke Removal,high,
-Emergency Procedures,emergency,situation,Cabin Fire In Flight,high,
-Emergency Procedures,emergency,situation,Ditching,high,
-Emergency Procedures,emergency,situation,Emergency Descent,high,
-Emergency Procedures,emergency,situation,Emergency Landing w/o Power,high,
-Emergency Procedures,emergency,situation,Flameout / Precautionary Approach,high,
-Emergency Procedures,emergency,situation,Landing Without Aileron Control,high,
-Emergency Procedures,emergency,situation,Landing Without Elevator Control,high,
-Emergency Procedures,emergency,situation,Landing Without Rudder Control,high,
-Emergency Procedures,abnormal,cas,CAPS Activation,high,
-Emergency Procedures,emergency,situation,Emergency Ground Egress,high,
-Emergency Procedures,emergency,situation,Pitch Trim Runaway / Failure,high,
-Emergency Procedures,emergency,situation,Roll Trim Runaway / Failure,high,
-Emergency Procedures,emergency,situation,Jammed Elevator Trim Tab,high,
-Emergency Procedures,abnormal,cas,AFCS Alerts,high,
-Emergency Procedures,emergency,situation,Emergency CAS Procedures,high,
-Emergency Procedures,abnormal,cas,AUTO DESCENT,high,
-Emergency Procedures,abnormal,cas,CABIN ALTITUDE HIGH,high,
-Emergency Procedures,abnormal,cas,CABIN DIFF PRESSURE HIGH,high,
-Emergency Procedures,abnormal,cas,CABIN DUMP,high,
-Emergency Procedures,abnormal,cas,CAPS ACTIVATED,high,
-Emergency Procedures,abnormal,cas,DOOR OPEN BAGGAGE,high,
-Emergency Procedures,abnormal,cas,DOOR OPEN MAIN,high,
-Emergency Procedures,abnormal,cas,EMER BUS VOLTS,high,
-Emergency Procedures,abnormal,cas,ENGINE FIRE,high,In Flight
-Emergency Procedures,abnormal,cas,ENGINE FIRE,high,On Ground
-Emergency Procedures,abnormal,cas,ENGINE START N1,high,
-Emergency Procedures,abnormal,cas,EXTERNAL POWER CONNECTED,high,On Ground
-Emergency Procedures,abnormal,cas,FADEC CTRL DEGRADED,high,
-Emergency Procedures,abnormal,cas,FADEC NO DISPATCH,high,On Ground - Reference FADEC Fault Code Messages.
-Emergency Procedures,abnormal,cas,FLAPS CAL MODE,high,On Ground
-Emergency Procedures,abnormal,cas,FLAPS ICE,high,
-Emergency Procedures,abnormal,cas,FUEL FILTER BYPASS,high,
-Emergency Procedures,abnormal,cas,FUEL IMBALANCE,high,Fuel imbalance is ≥ 15 Gallons.
-Emergency Procedures,abnormal,cas,FUEL LOW LEFT/RIGHT/TOTAL,high,
-Emergency Procedures,abnormal,cas,FUEL PRESSURE LOW,high,
-Emergency Procedures,abnormal,cas,FUEL TEMP LOW,high,"Fuel temperature is low, increase OAT."
-Emergency Procedures,abnormal,cas,FUEL VALVES BOTH FAIL,high,
-Emergency Procedures,abnormal,cas,GENERATOR 1 CURRENT,high,
-Emergency Procedures,abnormal,cas,GENERATOR 1 OVERVOLTAGE,high,
-Emergency Procedures,abnormal,cas,GENERATOR 2 CURRENT,high,
-Emergency Procedures,abnormal,cas,GENERATOR 2 OVERVOLTAGE,high,
-Emergency Procedures,abnormal,cas,ITT,high,
-Emergency Procedures,abnormal,cas,LDG GEAR IS UP,high,
-Emergency Procedures,abnormal,cas,LDG GEAR SELECTED UP,high,
-Emergency Procedures,abnormal,cas,N1,high,
-Emergency Procedures,abnormal,cas,N2,high,
-Emergency Procedures,abnormal,cas,OIL CHIP DETECT,high,On Ground
-Emergency Procedures,abnormal,cas,OIL FILTER BYPASS,high,"On Ground - Oil filter diff press too high, bypass impending."
-Emergency Procedures,abnormal,cas,OIL PRESSURE,high,
-Emergency Procedures,abnormal,cas,OIL TEMPERATURE,high,
-Emergency Procedures,abnormal,cas,STALL WARNING,high,
-Emergency Procedures,abnormal,cas,STICK PUSHER,high,
-Emergency Procedures,abnormal,cas,TAKEOFF PITCH TRIM,high,On Ground
-Emergency Procedures,abnormal,cas,THR LEVER CALIBRATION,high,On Ground
-Emergency Procedures,abnormal,cas,TT2 OVERHEAT,high,
+category,alert_type,action,priority,aircraft_name,message,submessage
+abnormal,cas,simulate,medium,SF50,GIA 1 Failure,
+abnormal,situation,simulate,medium,SF50,Loss of GPS Navigation,
+abnormal,situation,simulate,medium,SF50,Dry Motoring Engine - Failed Engine Start,
+abnormal,situation,simulate,medium,SF50,Flaps Inoperative Approach/Landing,
+abnormal,situation,simulate,medium,SF50,Landing With Failed Brakes,
+abnormal,situation,simulate,medium,SF50,Landing With Flat Tire,
+abnormal,situation,simulate,medium,SF50,Alternate Gear Extension,
+abnormal,situation,simulate,medium,SF50,Gear Indication(s) Not Down/Locked,
+abnormal,situation,simulate,medium,SF50,Communications Failure,
+abnormal,situation,simulate,medium,SF50,Flight Through Volcanic Ash,
+abnormal,situation,simulate,medium,SF50,Abnormal Engine Shutdown On Ground,
+abnormal,situation,simulate,medium,SF50,Wing/Stab IPS Activated in RVSM Airspace,
+abnormal,situation,simulate,medium,SF50,Autopilot Abnormal Disconnect,
+abnormal,situation,simulate,medium,SF50,Autopilot Failure,Red AFCS annunciator on PFD; red AP flashing on PFD; continuous high-low aural tone.
+abnormal,situation,simulate,medium,SF50,Pitch Axis Failure,Red PTCH annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Roll Axis Failure,Red ROLL annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Yaw Axis Failure,Red YAW annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Autopilot Preflight Test Fail,Red PFT annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Elevator Mistrim Down,Yellow (down arrow) ELE annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Elevator Mistrim Up,Yellow (up arrow) ELE annunciator on PFD.
+abnormal,situation,simulate,medium,SF50,Aileron Mistrim Left/Right,Yellow (left/right arrow) AIL annunciator on PFD.
+abnormal,cas,simulate,medium,SF50,AOA FAIL,AOA signal invalid.
+abnormal,cas,simulate,medium,SF50,AOA HEAT FAIL,AOA heat failure.
+abnormal,cas,simulate,medium,SF50,BLEED AIR,ECS bleed air system pressure low or failed.
+abnormal,cas,simulate,medium,SF50,BLEED LEAK,Bleed leak detected in tailcone.
+abnormal,cas,simulate,medium,SF50,BLEED OFF,Bleed air is switched to OFF/FRESH.
+abnormal,cas,simulate,medium,SF50,BLEED OPEN,Shutoff solenoid failed to close.
+abnormal,cas,simulate,medium,SF50,BLEED OVERPRESSURE,ECS bleed air system pressure high.
+abnormal,cas,simulate,medium,SF50,CABIN LFE NOT SET,Landing field elevation is not set.
+abnormal,cas,simulate,medium,SF50,CABIN PRESSURE CTRL FAIL,Detected failure of CPCS Controller.
+normal,cas,simulate,medium,SF50,CAPS AUTOPILOT INOP,Minimize CAPS deployment speed.
+normal,cas,simulate,medium,SF50,CAPS MISCOMPARE,CAPS service required.
+normal,cas,simulate,medium,SF50,DOOR OPEN,On Ground
+abnormal,cas,simulate,medium,SF50,DOOR OPEN EMER EXIT,Emergency exit door is open.
+abnormal,cas,simulate,medium,SF50,ECS BLEED HOT,Bleed supply temperature is too hot.
+abnormal,cas,simulate,medium,SF50,ECS BLEED OVERHEAT,Bleed supply temperature is too hot.
+abnormal,cas,simulate,medium,SF50,ECS CONTROL FAIL,
+abnormal,cas,simulate,medium,SF50,ECS TEMP BACKUP,Environmental control temperature backup mode.
+normal,cas,simulate,medium,SF50,EDM DISABLED,Emergency Descent Mode is disabled.
+abnormal,cas,simulate,medium,SF50,EMER BATTERY FAIL,Emergency battery (Bat 2) service is required.
+abnormal,cas,simulate,medium,SF50,EMER BATTERY FAULT,Emergency battery (Bat 2) fault detected.
+abnormal,cas,simulate,medium,SF50,ENGINE START BAT TEMP,Main battery (Bat 1) is below minimum start temp.
+abnormal,cas,simulate,medium,SF50,ENGINE START VOLTS,On Ground
+normal,cas,simulate,medium,SF50,ESP FAIL,ESP is inoperative.
+normal,cas,simulate,medium,SF50,ESP OFF,ESP selected off.
+abnormal,cas,simulate,medium,SF50,ESS BUS VOLTS,
+abnormal,cas,simulate,medium,SF50,EXTERNAL POWER CONNECTED,On Ground
+abnormal,cas,simulate,medium,SF50,FADEC NO DISPATCH,Reference FADEC Fault Code Messages.
+abnormal,cas,simulate,medium,SF50,FIRE DETECTOR FAIL,Engine fire detector loop low pressure.
+abnormal,cas,simulate,medium,SF50,FIRE EXT LOW L-R,
+normal,cas,simulate,medium,SF50,FIRE EXT LOW L,Pressure is low in the left fire extinguisher.
+normal,cas,simulate,medium,SF50,FIRE EXT LOW R,Pressure is low in the right fire extinguisher.
+abnormal,cas,simulate,medium,SF50,FLAPS AIRSPEED INHIBIT,Flaps motion inhibited.
+abnormal,cas,simulate,medium,SF50,FLAPS DISAGREE,Flaps are not within commanded position limits.
+abnormal,cas,simulate,medium,SF50,FLAPS FAIL,
+abnormal,cas,simulate,medium,SF50,FLAPS SELECTOR FAIL,Cannot determine flaps selector position.
+abnormal,cas,simulate,medium,SF50,FLIGHT IDLE FAIL,Engine idle N2 is too low.
+abnormal,cas,simulate,medium,SF50,FUEL IMBALANCE,Fuel imbalance is ≥ 15 Gallons.
+abnormal,cas,simulate,medium,SF50,FUEL LOW LEFT/RIGHT/TOTAL,
+abnormal,cas,simulate,medium,SF50,FUEL PUMP FAIL,Fuel pump has failed.
+abnormal,cas,simulate,medium,SF50,FUEL PUMP ON,Fuel pump is ON for normal operations.
+normal,cas,simulate,medium,SF50,FUEL PUMP ON,Fuel pump is ON for normal operations.
+abnormal,cas,simulate,medium,SF50,FUEL QTY MISCOMPARE,Sensed and totalized fuel quantity disagreement.
+abnormal,cas,simulate,medium,SF50,FUEL SELECTOR FAIL,Cannot determine fuel selector position.
+normal,cas,simulate,medium,SF50,FUEL SHUTOFF,Fuel shutoff valve is closed.
+abnormal,cas,simulate,medium,SF50,FUEL SHUTOFF FAIL,Fuel shutoff valve not in commanded position.
+normal,cas,simulate,medium,SF50,FUEL TANK BALANCED,Fuel tank quantity balance has been detected.
+abnormal,cas,simulate,medium,SF50,FUEL TEMP LOW,"Fuel temperature is low, increase OAT."
+abnormal,cas,simulate,medium,SF50,FUEL VALVE #1 FAIL,
+abnormal,cas,simulate,medium,SF50,FUEL VALVE #2 FAIL,
+abnormal,cas,simulate,medium,SF50,FUEL VALVE AUTO FAIL,"Auto fuel tank selection failure, use Manual mode."
+abnormal,cas,simulate,medium,SF50,GENERATOR 1 CURRENT,Generator 1 current is low.
+abnormal,cas,simulate,medium,SF50,GENERATOR 2 CURRENT,Generator 2 current is low.
+abnormal,cas,simulate,medium,SF50,GROUND IDLE FAIL,On Ground
+abnormal,cas,simulate,medium,SF50,HYDRAULIC OVERHEAT,Landing gear hydraulic power pack has overheated.
+abnormal,cas,simulate,medium,SF50,IPS BLEED OVERHEAT,Ice protection bleed cooling failure.
+abnormal,cas,simulate,medium,SF50,IPS ENG INLET OFF,Engine IPS should be on.
+abnormal,cas,simulate,medium,SF50,IPS ENG INLET ON,
+abnormal,cas,simulate,medium,SF50,IPS ENG INLET OVERHEAT,
+abnormal,cas,simulate,medium,SF50,IPS ENG INLET UNDERPRESS,Engine IPS bleed flow low.
+normal,cas,simulate,medium,SF50,IPS ENG INLET UNDERPRESS,On Ground - Engine IPS bleed flow low.
+abnormal,cas,simulate,medium,SF50,IPS FLUID LOW,Less than 15 minutes of IPS fluid remaining.
+normal,cas,simulate,medium,SF50,IPS FLUID LOW,On Ground - Less than 15 minutes of IPS fluid remaining.
+abnormal,cas,simulate,medium,SF50,IPS WINDSHLD TIMER,Loss of WS/Rad pump automatic timer control.
+abnormal,cas,simulate,medium,SF50,IPS WING/STAB FAIL,
+abnormal,cas,simulate,medium,SF50,IPS WING/STAB TEMP LOW,
+abnormal,cas,simulate,medium,SF50,LDG GEAR FAIL,Landing gear didn't reach the selected position.
+abnormal,cas,simulate,medium,SF50,LDG GEAR SELECTOR FAIL,Cannot determine landing gear selector position.
+abnormal,cas,simulate,medium,SF50,MAIN BATTERY FAIL,Main battery (Bat 1) service is required.
+abnormal,cas,simulate,medium,SF50,MAIN BATTERY FAULT,Main battery (Bat 1) fault detected.
+abnormal,cas,simulate,medium,SF50,MAIN BUS VOLTS,"Loss of forward main power bus voltage, OR Main power bus voltage is low."
+normal,cas,simulate,medium,SF50,MASK MICROPHONE,A crew mask microphone is switched on.
+abnormal,cas,simulate,medium,SF50,NO ADC MODES,Autopilot air data modes are not available.
+abnormal,cas,simulate,medium,SF50,NO VERT MODES,Autopilot vertical modes are not available.
+abnormal,cas,simulate,medium,SF50,OIL FILTER BYPASS,"Oil filter diff press too high, bypass impending."
+abnormal,cas,simulate,medium,SF50,OXYGEN OFF,Oxygen has not been turned on.
+abnormal,cas,simulate,medium,SF50,OXYGEN ON,On Ground
+normal,cas,simulate,medium,SF50,OXYGEN ON,On Ground
+abnormal,cas,simulate,medium,SF50,OXYGEN PASSENGER FAIL,Passenger oxygen valve has failed closed.
+abnormal,cas,simulate,medium,SF50,OXYGEN PRESSURE LOW,"Oxygen pressure below regulator control (250 PSI), OR Oxygen pressure low (500 PSI)."
+abnormal,cas,simulate,medium,SF50,PARK BRAKE,On Ground
+abnormal,cas,simulate,medium,SF50,PITCH MET ACTIVE,Pitch manual electric trim is active.
+abnormal,cas,simulate,medium,SF50,PROBE HEAT FAIL L,Left probe heat failure.
+abnormal,cas,simulate,medium,SF50,PROBE HEAT FAIL R,Right probe heat failure.
+abnormal,cas,simulate,medium,SF50,PROBE HEAT OFF,Probe heat is required.
+abnormal,cas,simulate,medium,SF50,SFD ALT MISCOMPARE,SFD altitude miscompare.
+abnormal,cas,simulate,medium,SF50,SFD IAS MISCOMPARE,SFD airspeed miscompare.
+normal,cas,simulate,medium,SF50,SFD NO-COMPARE,
+abnormal,cas,simulate,medium,SF50,SFD PITCH MISCOMPARE,SFD pitch miscompare.
+abnormal,cas,simulate,medium,SF50,SFD ROLL MISCOMPARE,SFD roll miscompare.
+normal,cas,simulate,medium,SF50,STALL SPEED HIGH,Stall protection system adjusted for icing.
+abnormal,cas,simulate,medium,SF50,STALL WARNING FAIL,Stall warning failure.
+abnormal,cas,simulate,medium,SF50,STARTER ENGAGED,Engine start in progress.
+normal,cas,simulate,medium,SF50,STARTER ENGAGED,Engine start in progress.
+abnormal,cas,simulate,medium,SF50,STICK PUSHER FAIL,Stick pusher failure.
+normal,cas,simulate,medium,SF50,SURFACEWATCH FAIL,
+abnormal,cas,simulate,medium,SF50,TAKEOFF EMER BAT,Emergency battery (Bat 2) is not charged.
+abnormal,cas,simulate,medium,SF50,TAKEOFF FLAPS,On Ground
+normal,cas,simulate,medium,SF50,TAKEOFF PITCH TRIM,On Ground
+abnormal,cas,simulate,medium,SF50,TAKEOFF THRUST,Engine is in takeoff thrust.
+normal,cas,simulate,medium,SF50,TAKEOFF THRUST,Engine is in takeoff thrust.
+abnormal,cas,simulate,medium,SF50,TCV CONTROL FAIL,TCV motor controller has failed.
+abnormal,cas,simulate,medium,SF50,THROTTLE SERVO,Throttle servo has failed.
+abnormal,cas,simulate,medium,SF50,TT2 HEAT FAIL,TT2 probe heater failure.
+normal,cas,simulate,medium,SF50,WOW DISAGREE,WOW indicating opposite on ground/in air states.
+abnormal,cas,simulate,medium,SF50,WOW FAIL,WOW is indicating on ground state.
+abnormal,cas,simulate,medium,SF50,YAW SAS SERVO,Yaw SAS servo has failed.
+emergency,situation,simulate,high,SF50,Automatic Flight Control Malfunction,
+emergency,situation,simulate,high,SF50,Engine Emergency On Takeoff - Speed Below VR,
+emergency,situation,simulate,high,SF50,Engine Fire On Takeoff - Low Altitude,
+emergency,situation,simulate,high,SF50,Engine Failure On Takeoff - Low Altitude,
+emergency,situation,simulate,high,SF50,Rejected Takeoff,
+emergency,situation,simulate,high,SF50,Engine Failure In Flight,
+emergency,situation,simulate,high,SF50,Uncontained Engine Failure (Rotor Burst in Flight),
+emergency,situation,simulate,high,SF50,Loss of All Flight Displays,
+emergency,situation,simulate,high,SF50,Loss of Thrust Control,
+emergency,situation,simulate,high,SF50,Loss of Reliable Airspeed Indication,
+emergency,situation,simulate,high,SF50,Abnormal Engine Start,
+emergency,situation,simulate,high,SF50,Air Start,
+emergency,situation,simulate,high,SF50,Smoke Removal,
+emergency,situation,simulate,high,SF50,Cabin Fire In Flight,
+emergency,situation,simulate,high,SF50,Ditching,
+emergency,situation,simulate,high,SF50,Emergency Descent,
+emergency,situation,simulate,high,SF50,Emergency Landing w/o Power,
+emergency,situation,simulate,high,SF50,Flameout / Precautionary Approach,
+emergency,situation,simulate,high,SF50,Landing Without Aileron Control,
+emergency,situation,simulate,high,SF50,Landing Without Elevator Control,
+emergency,situation,simulate,high,SF50,Landing Without Rudder Control,
+abnormal,cas,simulate,high,SF50,CAPS Activation,
+emergency,situation,simulate,high,SF50,Emergency Ground Egress,
+emergency,situation,simulate,high,SF50,Pitch Trim Runaway / Failure,
+emergency,situation,simulate,high,SF50,Roll Trim Runaway / Failure,
+emergency,situation,simulate,high,SF50,Jammed Elevator Trim Tab,
+emergency,cas,simulate,high,SF50,AUTO DESCENT,"Aircraft descending to 14,000 ft."
+emergency,cas,simulate,high,SF50,CABIN ALTITUDE HIGH,Cabin high altitude detected.
+emergency,cas,simulate,high,SF50,CABIN DIFF PRESSURE HIGH,Cabin differential pressure is too high.
+emergency,cas,simulate,high,SF50,CABIN DUMP,Cabin pressure dump activated.
+emergency,cas,simulate,high,SF50,CAPS ACTIVATED,CAPS sequence has been activated.
+emergency,cas,simulate,high,SF50,DOOR OPEN BAGGAGE,Baggage door is open.
+emergency,cas,simulate,high,SF50,DOOR OPEN MAIN,Main door is open.
+emergency,cas,simulate,high,SF50,EMER BUS VOLTS,Operating on emergency power.
+emergency,cas,simulate,high,SF50,ENGINE FIRE,In Flight
+emergency,cas,simulate,high,SF50,ENGINE FIRE,On Ground
+emergency,cas,simulate,high,SF50,ENGINE START N1,N1 is not indicating rotation.
+emergency,cas,simulate,high,SF50,EXTERNAL POWER CONNECTED,On Ground
+emergency,cas,simulate,high,SF50,FADEC CTRL DEGRADED,Reference FADEC Fault Code Messages.
+emergency,cas,simulate,high,SF50,FADEC NO DISPATCH,On Ground - Reference FADEC Fault Code Messages.
+emergency,cas,simulate,high,SF50,FLAPS CAL MODE,On Ground
+emergency,cas,simulate,high,SF50,FLAPS ICE,Full flaps prohibited in icing conditions.
+emergency,cas,simulate,high,SF50,FUEL FILTER BYPASS,"Fuel filter diff press too high, bypass impending."
+emergency,cas,simulate,high,SF50,FUEL IMBALANCE,Fuel imbalance is ≥ 15 Gallons.
+emergency,cas,simulate,high,SF50,FUEL LOW LEFT/RIGHT/TOTAL,
+emergency,cas,simulate,high,SF50,FUEL PRESSURE LOW,FDU fuel inlet pressure is low.
+emergency,cas,simulate,high,SF50,FUEL TEMP LOW,"Fuel temperature is low, increase OAT."
+emergency,cas,simulate,high,SF50,FUEL VALVES BOTH FAIL,Both fuel control valves have failed.
+emergency,cas,simulate,high,SF50,GENERATOR 1 CURRENT,Generator 1 current is low.
+emergency,cas,simulate,high,SF50,GENERATOR 1 OVERVOLTAGE,Generator 1 voltage is high.
+emergency,cas,simulate,high,SF50,GENERATOR 2 CURRENT,Generator 2 current is low.
+emergency,cas,simulate,high,SF50,GENERATOR 2 OVERVOLTAGE,Generator 2 voltage is high.
+emergency,cas,simulate,high,SF50,ITT,ITT limits exceeded.
+emergency,cas,simulate,high,SF50,LDG GEAR IS UP,Landing gear is not down and locked for landing.
+emergency,cas,simulate,high,SF50,LDG GEAR SELECTED UP,Ldg gear should be selected down while on ground.
+emergency,cas,simulate,high,SF50,N1,N1 speed exceeded.
+emergency,cas,simulate,high,SF50,N2,N2 speed exceeded.
+emergency,cas,simulate,high,SF50,OIL CHIP DETECT,On Ground
+emergency,cas,simulate,high,SF50,OIL FILTER BYPASS,"On Ground - Oil filter diff press too high, bypass impending."
+emergency,cas,simulate,high,SF50,OIL PRESSURE,Engine oil pressure exceedance.
+emergency,cas,simulate,high,SF50,OIL TEMPERATURE,Engine oil temperature exceedance.
+abnormal,cas,simulate,high,SF50,STALL WARNING,
+emergency,cas,simulate,high,SF50,STICK PUSHER,Stick pusher active.
+emergency,cas,simulate,high,SF50,TAKEOFF PITCH TRIM,On Ground
+emergency,cas,simulate,high,SF50,THR LEVER CALIBRATION,On Ground
+emergency,cas,simulate,high,SF50,TT2 OVERHEAT,TT2 probes pending overheat.

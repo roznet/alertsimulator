@@ -1943,10 +1943,10 @@ Do not dispatch, flaps system needs service.
 Procedure Complete
 
 FLAPS ICE Warning
+FLAPS ICE
 
 Full flaps prohibited in icing conditions.
 
-FLAPS ICE
 
 1. Flaps ..................................................................................... SET UP OR 50%
 Procedure Complete
@@ -2535,6 +2535,7 @@ CIRRUS
 VISION SF50
 
 ITT Warning
+ITT
 
 ITT limits exceeded.
 
@@ -2640,6 +2641,7 @@ This CAS message may also indicate a possible WOW sensor
 failure.
 
 N1 Warning
+N1
 
 N1 speed exceeded.
 
@@ -2671,6 +2673,7 @@ Revision 1
 VISION SF50
 
 N2 Warning
+N2
 
 N2 speed exceeded.
 
@@ -2777,6 +2780,7 @@ Revision 1
 CIRRUS
 VISION SF50
 
+STALL WARNING Warning
 STALL WARNING 
 
 Stall warning active.
