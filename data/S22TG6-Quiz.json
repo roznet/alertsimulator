@@ -1,0 +1,161 @@
+{
+    "version": "1.0",
+    "sections": {
+        "Weights": [
+            {
+                "question": "What is the max ramp weight?",
+                "answer": "Max takeoff weight + taxi fuel"
+            },
+            {
+                "question": "What is the max takeoff weight?",
+                "answer": "3600lb (1633kg) – Max Takeoff"
+            },
+            {
+                "question": "What is the max landing weight?",
+                "answer": "5550lb – Max Landing"
+            },
+            {
+                "question": "What is the max zero fuel weight?",
+                "answer": "3400lb (1542kg) – Max Zero Fuel"
+            },
+            {
+                "question": "What is the max baggage weight?",
+                "answer": "130lb (59kg) – Max Baggage"
+            },
+        ],
+        "Starting": [
+            {
+                "question": "What is the minimum temperature for start?",
+                "answer": "-40°F/C – Min temp start"
+            },
+            {
+                "question": "How long should you limit each cranking?",
+                "answer": "10 Seconds on per attempted start"
+            },
+            {
+                "question": "How long to wait between attempts?",
+                "answer": "20 seconds cooling period between attempts"
+            },
+            {
+                "question": "Below what temperature should you use a pre-heater?",
+                "answer": "-20°F/-7°C – Pre-heater required"
+            }
+        ],
+        "Fuel": [
+            {
+                "question": "What types of fuel are approved and what is the fuel density?",
+                "answer": "Aviation Grade 100 LL (Blue) or 100 (Green) (6.01 lb/gal or 0.72 kg/L)"
+            },
+            {
+                "question": "What is the usable fuel quantity?",
+                "answer": "92 gal – Usable Fuel"
+            },
+            {
+                "question": "What is the maximum allowable fuel imbalance?",
+                "answer": "10 gal – Max allowable fuel imbalance"
+            },
+            {
+                "question": "What is the minimum operating temperature?",
+                "answer": "-40°F/-40°C – Min operating temperature"
+            },
+        ],
+        "Engine": [
+            {
+                "question": "What engine model and thrust rating is installed?",
+                "answer": "Contential TSIO-550-K Fuel Injected Air Cooled - 315 bhp"
+            },
+            {
+                "question": "What is the total oil capacity?",
+                "answer": "8 quarts of oil total"
+            }
+        ],
+        "Takeoff and Landing": [
+            {
+                "question": "What is the maximum demonstrated crosswind with 50% flaps?",
+                "answer": "18 knots – Flaps 50% Max demonstrated crosswind"
+            },
+            {
+                "question": "What is the maximum airport elevation?",
+                "answer": "10,000' MSL – Max airport elevation"
+            },
+            {
+                "question": "What is the minimum oil temperature takeoff?",
+                "answer": "-75°F/24°C – Min oil takeoff temperature"
+            },
+            {
+                "question": "What is the approved takeoff flap setting?",
+                "answer": "Flaps 50% – only approved takeoff setting"
+            }
+        ],
+        "General Operating Limitations": [
+            {
+                "question": "What is the never exceed speed (VNE)?",
+                "answer": "VMO – 205 KIAS up to 17,500ft and 175 KIAS up to 25,000ft"
+            },
+            {
+                "question": "What is the maximum structural cruising speed (VRO)?",
+                "answer": "VNO – 175 KIAS up to 17,500ft and 150 KIAS up to 25,000ft"
+            },
+            {
+                "question": "What is the maximum operating maneuvering speed (VO)?",
+                "answer": "VO – 140 KIAS at maximum weight"
+            },
+            {
+                "question": "What is the maximum operating altitude?",
+                "answer": "25,000ft MSL – Max operating altitude"
+            },
+            {
+                "question": "What is the maximum flap extension speed with 50% flaps?",
+                "answer": "150 KIAS – VFE_50%"
+            },
+            {
+                "question": "What is the maximum flap extension speed with 100% flaps?",
+                "answer": "110 KIAS – VFE_100%"
+            }
+        ],
+        "AFCS": [
+            {
+                "question": "What is the minimum autopilot speed?",
+                "answer": "80 KIAS – Min autopilot speed"
+            },
+            {
+                "question": "What is the minimum autopilot engagement altitude?",
+                "answer": "400' AGL – Min engagement alt"
+            },
+            {
+                "question": "At what altitude should autopilot be disconnected for visual approach?",
+                "answer": "1000' AGL – Disconnect altitude for visual approach"
+            },
+            {
+                "question": "When should autopilot be disconnected on an instrument approach?",
+                "answer": "Minimums – 200ft AGL or min disconnect altitude on IAP on GP or GS Mode"
+            }
+        ],
+        "Icing": [
+            {
+                "question": "What is the total usable TKS fluid quantity?",
+                "answer": "8.0 gal usable TKS fluid"
+            },
+            {
+                "question": "What is the minimum TKS fluid quantity for dispatch?",
+                "answer": "5.0 gal minimum dispatch quantity"
+            },
+            {
+                "question": "What is the minimum airspeed in icing conditions?",
+                "answer": "95 KIAS – Min airspeed in icing"
+            },
+            {
+                "question": "What is the maximum Anti-Ice System operation?",
+                "answer": "177 KIAS – Max airspeed Anti-Ice System operation"
+            },
+            {
+                "question": "What is the maximum flap setting in icing conditions?",
+                "answer": "50% Flaps – Max deflection with ice accretion"
+            },
+            {
+                "question": "What is the minimum operating temperature for the Anti-Ice System?",
+                "answer": "-30°F/-34°C – Min operating temperature for the Anti-Ice System"
+            }
+        ]
+    }
+} 
