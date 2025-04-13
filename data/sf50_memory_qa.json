@@ -1,0 +1,280 @@
+{
+    "aircraft": {
+        "SF50": {
+            "name": "Vision Jet SF50",
+            "manufacturer": "Cirrus",
+            "memory_items": {
+                "Weights": [
+                    {
+                        "question": "What is the max ramp weight?",
+                        "answer": "6040lb – Max Ramp"
+                    },
+                    {
+                        "question": "What is the max takeoff weight?",
+                        "answer": "6000lb – Max Takeoff"
+                    },
+                    {
+                        "question": "What is the max landing weight?",
+                        "answer": "5550lb – Max Landing"
+                    },
+                    {
+                        "question": "What is the max zero fuel weight?",
+                        "answer": "4900lb – Max Zero Fuel"
+                    },
+                    {
+                        "question": "What is the max baggage weight?",
+                        "answer": "300lb – Max Baggage"
+                    },
+                    {
+                        "question": "What is the max cargo X-Tend weight?",
+                        "answer": "40lb – Max Cargo X-Tend"
+                    }
+                ],
+                "Starting": [
+                    {
+                        "question": "What is the minimum oil temperature?",
+                        "answer": "-40°F/C – Min oil temp"
+                    },
+                    {
+                        "question": "What is the minimum temperature for start?",
+                        "answer": "-40°F/C – Min temp start"
+                    },
+                    {
+                        "question": "What are the EPU power requirements?",
+                        "answer": "28 Volts and 800-1000 Amps – EPU requirements"
+                    },
+                    {
+                        "question": "What is the maximum tailwind for start?",
+                        "answer": "15 knots – Max tailwind for start"
+                    },
+                    {
+                        "question": "What is the maximum crosswind for start?",
+                        "answer": "25 knots – Max crosswind for start"
+                    },
+                    {
+                        "question": "What are the inflight air start speed and altitude limitations?",
+                        "answer": "120-200 KIAS Inflight air start and less than 18,000'"
+                    },
+                    {
+                        "question": "How long should each start attempt be?",
+                        "answer": "30 Seconds on per attempted start"
+                    },
+                    {
+                        "question": "How long to wait after first start attempt?",
+                        "answer": "1st attempt – 30 seconds off"
+                    },
+                    {
+                        "question": "How long to wait after second start attempt?",
+                        "answer": "2nd attempt – 5 minutes off"
+                    },
+                    {
+                        "question": "How long to wait after third start attempt?",
+                        "answer": "3rd attempt – 30 minutes off"
+                    },
+                    {
+                        "question": "What is required after a failed start?",
+                        "answer": "External check required after fail start"
+                    }
+                ],
+                "Fuel": [
+                    {
+                        "question": "What types of fuel are approved and what is the fuel density?",
+                        "answer": "Jet A, Jet A-1, JP-8 (6.76 lb/gal)"
+                    },
+                    {
+                        "question": "What is the usable fuel quantity?",
+                        "answer": "296 gal – Usable Fuel"
+                    },
+                    {
+                        "question": "What is the maximum allowable fuel imbalance?",
+                        "answer": "15 gal – Max allowable fuel imbalance"
+                    },
+                    {
+                        "question": "What is the minimum fuel temperature?",
+                        "answer": "-40°F/C – Min fuel temp"
+                    },
+                    {
+                        "question": "What is the maximum fuel temperature?",
+                        "answer": "122°F/50°C – Max fuel temp"
+                    }
+                ],
+                "Engine": [
+                    {
+                        "question": "What engine model and thrust rating is installed?",
+                        "answer": "Williams FJ33-5A – 1846 lbs of thrust"
+                    },
+                    {
+                        "question": "What type of oil is used?",
+                        "answer": "Mobile Jet II / Mobile 254"
+                    },
+                    {
+                        "question": "What is the total oil capacity?",
+                        "answer": "3 quarts of oil total"
+                    },
+                    {
+                        "question": "What is the full line oil quantity?",
+                        "answer": "2.2 quarts of oil to the full line"
+                    }
+                ],
+                "Takeoff and Landing": [
+                    {
+                        "question": "What is the maximum tailwind component?",
+                        "answer": "10 knot tailwind"
+                    },
+                    {
+                        "question": "What is the maximum demonstrated crosswind with 50% flaps?",
+                        "answer": "18 knots – Flaps 50% Max demonstrated crosswind"
+                    },
+                    {
+                        "question": "What is the maximum demonstrated crosswind with 100% flaps?",
+                        "answer": "16 knots – Flaps 100% Max demonstrated crosswind"
+                    },
+                    {
+                        "question": "What is the maximum airport elevation?",
+                        "answer": "10,000' MSL – Max airport elevation"
+                    },
+                    {
+                        "question": "What is the minimum airport elevation?",
+                        "answer": "-1,000' MSL – Min airport elevation"
+                    },
+                    {
+                        "question": "What is the minimum takeoff temperature?",
+                        "answer": "-40°F/C – Min takeoff temperature"
+                    },
+                    {
+                        "question": "What is the maximum takeoff temperature?",
+                        "answer": "122°F/50°C – Max takeoff temperature"
+                    },
+                    {
+                        "question": "What is the approved takeoff flap setting?",
+                        "answer": "Flaps 50% – only approved takeoff setting"
+                    }
+                ],
+                "General Operating Limitations": [
+                    {
+                        "question": "What is the maximum operating airspeed (VMO)?",
+                        "answer": "VMO – 250 KIAS"
+                    },
+                    {
+                        "question": "What is the maximum operating Mach number (MMO)?",
+                        "answer": "MMO – 0.53 Mach"
+                    },
+                    {
+                        "question": "What is the maximum operating speed (VO)?",
+                        "answer": "VO – 150 KIAS"
+                    },
+                    {
+                        "question": "What is the maximum duration for takeoff thrust?",
+                        "answer": "5 Minutes – Max duration for takeoff thrust"
+                    },
+                    {
+                        "question": "What is the maximum operating altitude?",
+                        "answer": "FL310 – Max operating altitude"
+                    },
+                    {
+                        "question": "What is the minimum operating temperature at FL310?",
+                        "answer": "-82°F/-63°C – Min operating temp @ FL310"
+                    },
+                    {
+                        "question": "What is the minimum operating temperature at FL200?",
+                        "answer": "-65°F/-54°C – Min operating temp @ FL200"
+                    },
+                    {
+                        "question": "How long is the required cool down after a high energy landing?",
+                        "answer": "30 min cool down after high energy landing event"
+                    },
+                    {
+                        "question": "What is the maximum flap extension speed with 50% flaps?",
+                        "answer": "190 KIAS – VFE_50%"
+                    },
+                    {
+                        "question": "What is the maximum flap extension speed with 100% flaps?",
+                        "answer": "150 KIAS – VFE_100%"
+                    },
+                    {
+                        "question": "What is the maximum landing gear extension speed?",
+                        "answer": "210 KIAS – VLO_EXTEND"
+                    },
+                    {
+                        "question": "What is the maximum landing gear retraction speed?",
+                        "answer": "150 KIAS – VLO_RETRACT"
+                    },
+                    {
+                        "question": "What is the maximum speed with landing gear extended?",
+                        "answer": "210 KIAS – VLE"
+                    },
+                    {
+                        "question": "What is the maximum cabin pressure differential?",
+                        "answer": "7.1 psid – Max cabin pressure differential"
+                    }
+                ],
+                "AFCS": [
+                    {
+                        "question": "What is the minimum speed with 100% flaps?",
+                        "answer": "85 KIAS – Min speed with flaps 100%"
+                    },
+                    {
+                        "question": "What is the minimum speed with 50% flaps?",
+                        "answer": "95 KIAS – Min speed with flaps 50%"
+                    },
+                    {
+                        "question": "What is the minimum speed with flaps up?",
+                        "answer": "105 KIAS – Min speed with flaps UP"
+                    },
+                    {
+                        "question": "What is the minimum autopilot engagement altitude?",
+                        "answer": "400' AGL – Min engagement alt"
+                    },
+                    {
+                        "question": "At what altitude should autopilot be disconnected for visual approach?",
+                        "answer": "1000' AGL – Disconnect altitude for visual approach"
+                    },
+                    {
+                        "question": "When should autopilot be disconnected on an instrument approach?",
+                        "answer": "Minimums – Min disconnect altitude on IAP"
+                    }
+                ],
+                "Icing": [
+                    {
+                        "question": "What is the total usable IPS fluid quantity?",
+                        "answer": "3.0 gal usable IPS fluid"
+                    },
+                    {
+                        "question": "What is the minimum IPS fluid quantity for dispatch?",
+                        "answer": "1.0 gal minimum dispatch quantity"
+                    },
+                    {
+                        "question": "What is the minimum windshield IPS temperature?",
+                        "answer": "-22°F/-30°C – Min windshield IPS temp"
+                    },
+                    {
+                        "question": "What is the minimum wing/stabilizer IPS temperature?",
+                        "answer": "-40°F/C – Min wing/stab IPS temp"
+                    },
+                    {
+                        "question": "What is the minimum airspeed in icing conditions?",
+                        "answer": "160 KIAS – Min airspeed in icing"
+                    },
+                    {
+                        "question": "What is the maximum flap setting in icing conditions?",
+                        "answer": "50% Flaps – Max deflection with ice accretion"
+                    },
+                    {
+                        "question": "What is the windshield IPS duty cycle?",
+                        "answer": "10sec on, 10sec off – Max duty cycle for windshield IPS"
+                    },
+                    {
+                        "question": "When should the tactile inspection be performed?",
+                        "answer": "5 minutes before departure – Tactile inspection"
+                    },
+                    {
+                        "question": "What is the maximum continuous probe heat time on ground?",
+                        "answer": "5 minutes – Max continuous probe heat on ground*"
+                    }
+                ]
+            }
+        }
+    },
+    "version": "1.0",
+    "last_updated": "2024-04-13"
+} 

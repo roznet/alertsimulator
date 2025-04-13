@@ -1,0 +1,80 @@
+##MEMORY ITEMS
+
+#Weights
+6040lb – Max Ramp
+6000lb – Max Takeoff
+5550lb – Max Landing
+4900lb – Max Zero Fuel
+300lb – Max Baggage
+40lb – Max Cargo X-Tend
+
+#Starting
+-40°F/C – Min oil temp
+-40°F/C – Min temp start
+28 Volts and 800-1000 Amps – EPU requirements
+15 knots – Max tailwind for start
+25 knots – Max crosswind for start
+120-200 KIAS Inflight air start and less than 18,000'
+30 Seconds on per attempted start
+1st attempt – 30 seconds off
+2nd attempt – 5 minutes off
+3rd attempt – 30 minutes off
+External check required after fail start
+
+#Fuel
+Jet A, Jet A-1, JP-8 (6.76 lb/gal)
+296 gal – Usable Fuel
+15 gal – Max allowable fuel imbalance
+-40°F/C – Min fuel temp
+122°F/50°C – Max fuel temp
+
+#Engine
+Williams FJ33-5A – 1846 lbs of thrust
+Mobile Jet II / Mobile 254
+3 quarts of oil total
+2.2 quarts of oil to the full line
+
+#Takeoff and Landing
+10 knot tailwind
+18 knots – Flaps 50% Max demonstrated crosswind
+16 knots – Flaps 100% Max demonstrated crosswind
+10,000' MSL – Max airport elevation
+-1,000' MSL – Min airport elevation
+-40°F/C – Min takeoff temperature
+122°F/50°C – Max takeoff temperature
+Flaps 50% – only approved takeoff setting
+
+#General Operating Limitations
+VMO – 250 KIAS
+MMO – 0.53 Mach
+VO – 150 KIAS
+5 Minutes – Max duration for takeoff thrust
+FL310 – Max operating altitude
+-82°F/-63°C – Min operating temp @ FL310
+-65°F/-54°C – Min operating temp @ FL200
+30 min cool down after high energy landing event
+190 KIAS – VFE_50%
+150 KIAS – VFE_100%
+210 KIAS – VLO_EXTEND
+150 KIAS – VLO_RETRACT
+210 KIAS – VLE
+7.1 psid – Max cabin pressure differential
+
+#AFCS
+85 KIAS – Min speed with flaps 100%
+95 KIAS – Min speed with flaps 50%
+105 KIAS – Min speed with flaps UP
+400' AGL – Min engagement alt
+1000' AGL – Disconnect altitude for visual approach
+Minimums – Min disconnect altitude on IAP
+
+#Icing
+3.0 gal usable IPS fluid
+1.0 gal minimum dispatch quantity
+-22°F/-30°C – Min windshield IPS temp
+-40°F/C – Min wing/stab IPS temp
+160 KIAS – Min airspeed in icing
+50% Flaps – Max deflection with ice accretion
+10sec on, 10sec off – Max duty cycle for windshield IPS
+5 minutes before departure – Tactile inspection
+5 minutes – Max continuous probe heat on ground*
