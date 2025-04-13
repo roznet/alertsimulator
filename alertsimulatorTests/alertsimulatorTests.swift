@@ -133,4 +133,42 @@ struct alertsimulatorTests {
             }
         }
     }
+    
+    @Test func testQuizFunctionality() async throws {
+        // Test loading a quiz
+        let quiz = try Quiz.load(forAircraft: "SF50")
+        #expect(quiz.version.count > 0)
+        #expect(quiz.sections.count > 0)
+        
+        // Test accessing sections
+        let sections = quiz.allSections
+        #expect(sections.count > 0)
+        
+        // Test getting questions for a section
+        if let firstSection = sections.first {
+            let questions = quiz.questionsForSection(firstSection)
+            #expect(questions.count > 0)
+            
+            // Test that questions have valid content
+            for question in questions {
+                #expect(question.question.count > 0)
+                #expect(question.answer.count > 0)
+            }
+        }
+        
+        // Test random questions
+        let randomQuestions = quiz.randomQuestions(count: 3)
+        #expect(randomQuestions.count == 3)
+        
+        // Test random questions from specific section
+        if let firstSection = sections.first {
+            let sectionQuestions = quiz.randomQuestions(count: 2, from: firstSection)
+            #expect(sectionQuestions.count == 2)
+        }
+        
+        // Test error handling for non-existent aircraft
+        #expect(throws: QuizError.fileNotFound) {
+            try Quiz.load(forAircraft: "NonExistentAircraft")
+        }
+    }
 }

@@ -1,0 +1,99 @@
+{
+    "version": "1.0",
+    "sections": {
+        "Weights": [
+            {
+                "question": "What is the max ramp weight?",
+                "answer": "6040lb – Max Ramp"
+            },
+            {
+                "question": "What is the max takeoff weight?",
+                "answer": "6000lb – Max Takeoff"
+            },
+            {
+                "question": "What is the max landing weight?",
+                "answer": "5550lb – Max Landing"
+            },
+            {
+                "question": "What is the max zero fuel weight?",
+                "answer": "4900lb – Max Zero Fuel"
+            },
+            {
+                "question": "What is the max baggage weight?",
+                "answer": "300lb – Max Baggage"
+            },
+            {
+                "question": "What is the max cargo X-Tend weight?",
+                "answer": "40lb – Max Cargo X-Tend"
+            }
+        ],
+        "Starting": [
+            {
+                "question": "What is the minimum oil temperature?",
+                "answer": "-40°F/C – Min oil temp"
+            },
+            {
+                "question": "What is the minimum temperature for start?",
+                "answer": "-40°F/C – Min temp start"
+            },
+            {
+                "question": "What are the EPU power requirements?",
+                "answer": "28 Volts and 800-1000 Amps – EPU requirements"
+            },
+            {
+                "question": "What is the maximum tailwind for start?",
+                "answer": "15 knots – Max tailwind for start"
+            },
+            {
+                "question": "What is the maximum crosswind for start?",
+                "answer": "25 knots – Max crosswind for start"
+            },
+            {
+                "question": "What are the inflight air start speed and altitude limitations?",
+                "answer": "120-200 KIAS Inflight air start and less than 18,000'"
+            },
+            {
+                "question": "How long should each start attempt be?",
+                "answer": "30 Seconds on per attempted start"
+            },
+            {
+                "question": "How long to wait after first start attempt?",
+                "answer": "1st attempt – 30 seconds off"
+            },
+            {
+                "question": "How long to wait after second start attempt?",
+                "answer": "2nd attempt – 5 minutes off"
+            },
+            {
+                "question": "How long to wait after third start attempt?",
+                "answer": "3rd attempt – 30 minutes off"
+            },
+            {
+                "question": "What is required after a failed start?",
+                "answer": "External check required after fail start"
+            }
+        ],
+        "Fuel": [
+            {
+                "question": "What types of fuel are approved and what is the fuel density?",
+                "answer": "Jet A, Jet A-1, JP-8 (6.76 lb/gal)"
+            },
+            {
+                "question": "What is the usable fuel quantity?",
+                "answer": "296 gal – Usable Fuel"
+            },
+            {
+                "question": "What is the maximum allowable fuel imbalance?",
+                "answer": "15 gal – Max allowable fuel imbalance"
+            },
+            {
+                "question": "What is the minimum fuel temperature?",
+                "answer": "-40°F/C – Min fuel temp"
+            },
+            {
+                "question": "What is the maximum fuel temperature?",
+                "answer": "122°F/50°C – Max fuel temp"
+            }
+        ]
+    }
+} 

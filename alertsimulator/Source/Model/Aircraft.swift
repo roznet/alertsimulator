@@ -47,4 +47,20 @@ struct Aircraft : Hashable, Equatable{
         }
         return checklists
     }
+    
+    var quiz: Quiz? {
+        return try? Quiz.load(forAircraft: self.aircraftName)
+    }
+    
+    func randomQuizQuestions(count: Int, from section: String? = nil) -> [QuizQuestion] {
+        return quiz?.randomQuestions(count: count, from: section) ?? []
+    }
+    
+    var quizSections: [String] {
+        return quiz?.allSections ?? []
+    }
+    
+    func quizQuestions(for section: String) -> [QuizQuestion] {
+        return quiz?.questionsForSection(section) ?? []
+    }
 }

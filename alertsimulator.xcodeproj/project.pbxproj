@@ -10,6 +10,8 @@
 		421F1EE32D916F70003BAB7B /* S22TG6-Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */; };
 		421F1EE42D916F70003BAB7B /* S22TG6-Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */; };
 		421F1EE62D91E584003BAB7B /* S22TG6-Checklists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */; };
+		427E2FB02DAC2F0C00D11793 /* SF50-Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 427E2FAF2DAC2F0C00D11793 /* SF50-Quiz.json */; };
+		427E2FB12DAC2F0C00D11793 /* SF50-Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 427E2FAF2DAC2F0C00D11793 /* SF50-Quiz.json */; };
 		42DAD7602D200DBD00BEC3C2 /* RZUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD75F2D200DBD00BEC3C2 /* RZUtils */; };
 		42DAD7622D200DBD00BEC3C2 /* RZUtilsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7612D200DBD00BEC3C2 /* RZUtilsSwift */; };
 		42DAD7642D200DBD00BEC3C2 /* RZUtilsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42DAD7632D200DBD00BEC3C2 /* RZUtilsSwiftUI */; };
@@ -30,6 +32,7 @@
 /* Begin PBXFileReference section */
 		421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "S22TG6-Checklists.json"; sourceTree = "<group>"; };
 		421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "S22TG6-Checklists.txt"; sourceTree = "<group>"; };
+		427E2FAF2DAC2F0C00D11793 /* SF50-Quiz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SF50-Quiz.json"; sourceTree = "<group>"; };
 		42DAD7302D20097D00BEC3C2 /* alertsimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertsimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7412D20097E00BEC3C2 /* alertsimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alertsimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlertsToSimulate.json; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		42DAD7D22D206D6400BEC3C2 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				427E2FAF2DAC2F0C00D11793 /* SF50-Quiz.json */,
 				421F1EE52D91E584003BAB7B /* S22TG6-Checklists.txt */,
 				421F1EE22D916F70003BAB7B /* S22TG6-Checklists.json */,
 				42DAD7DA2D25843200BEC3C2 /* AlertsToSimulate.json */,
@@ -159,7 +163,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					42DAD72F2D20097D00BEC3C2 = {
 						CreatedOnToolsVersion = 16.2;
@@ -199,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421F1EE42D916F70003BAB7B /* S22TG6-Checklists.json in Resources */,
+				427E2FB02DAC2F0C00D11793 /* SF50-Quiz.json in Resources */,
 				42DAD7DB2D25843200BEC3C2 /* AlertsToSimulate.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +214,7 @@
 			files = (
 				421F1EE32D916F70003BAB7B /* S22TG6-Checklists.json in Resources */,
 				421F1EE62D91E584003BAB7B /* S22TG6-Checklists.txt in Resources */,
+				427E2FB12DAC2F0C00D11793 /* SF50-Quiz.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +280,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M7QSSF3624;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -335,7 +343,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M7QSSF3624;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -362,8 +372,8 @@
 				CODE_SIGN_ENTITLEMENTS = alertsimulator/alertsimulator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"alertsimulator/Preview Content\"";
-				DEVELOPMENT_TEAM = M7QSSF3624;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,8 +415,8 @@
 				CODE_SIGN_ENTITLEMENTS = alertsimulator/alertsimulator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"alertsimulator/Preview Content\"";
-				DEVELOPMENT_TEAM = M7QSSF3624;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -446,7 +456,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7QSSF3624;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
@@ -469,7 +479,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7QSSF3624;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
