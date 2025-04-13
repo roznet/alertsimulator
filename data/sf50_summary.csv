@@ -13,14 +13,14 @@ Abnormal Procedures,abnormal,situation,Abnormal Engine Shutdown On Ground,medium
 Abnormal Procedures,abnormal,situation,Wing/Stab IPS Activated in RVSM Airspace,medium,
 Abnormal Procedures,abnormal,cas,AFCS Alerts,medium,
 Abnormal Procedures,abnormal,situation,Autopilot Abnormal Disconnect,medium,
-Abnormal Procedures,abnormal,situation,Autopilot Failure,medium,
-Abnormal Procedures,abnormal,situation,Pitch Axis Failure,medium,
-Abnormal Procedures,abnormal,situation,Roll Axis Failure,medium,
-Abnormal Procedures,abnormal,situation,Yaw Axis Failure,medium,
-Abnormal Procedures,abnormal,situation,Autopilot Preflight Test Fail,medium,
-Abnormal Procedures,abnormal,situation,Elevator Mistrim Down,medium,
-Abnormal Procedures,abnormal,situation,Elevator Mistrim Up,medium,
-Abnormal Procedures,abnormal,situation,Aileron Mistrim Left/Right,medium,
+Abnormal Procedures,abnormal,situation,Autopilot Failure,medium,Red AFCS annunciator on PFD; red AP flashing on PFD; continuous high-low aural tone.
+Abnormal Procedures,abnormal,situation,Pitch Axis Failure,medium,Red PTCH annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Roll Axis Failure,medium,Red ROLL annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Yaw Axis Failure,medium,Red YAW annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Autopilot Preflight Test Fail,medium,Red PFT annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Elevator Mistrim Down,medium,Yellow (down arrow) ELE annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Elevator Mistrim Up,medium,Yellow (up arrow) ELE annunciator on PFD.
+Abnormal Procedures,abnormal,situation,Aileron Mistrim Left/Right,medium,Yellow (left/right arrow) AIL annunciator on PFD.
 Abnormal Procedures,abnormal,situation,Abnormal CAS Procedures,medium,
 Abnormal Procedures,abnormal,cas,AOA FAIL,medium,AOA signal invalid.
 Abnormal Procedures,abnormal,cas,AOA HEAT FAIL,medium,AOA heat failure.

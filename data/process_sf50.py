@@ -8,8 +8,16 @@ import argparse
 import csv
 import os
 import re
+import logging
 from dataclasses import dataclass
 from typing import List, Optional, Tuple, Dict
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(message)s'
+)
+logger = logging.getLogger(__name__)
 
 @dataclass
 class AlertEntry:
@@ -24,10 +32,11 @@ class AlertEntry:
 class SF50Processor:
     """Processes SF50 summary text files into structured alert entries."""
     
-    def __init__(self):
+    def __init__(self, debug: bool = False):
         self.current_section = None
         self.entries: List[AlertEntry] = []
         self.cas_descriptions: Dict[str, str] = {}
+        self.debug = debug
     
     def load_cas_descriptions(self, file_path: str) -> None:
         """Load CAS descriptions from emergency/abnormal file.
@@ -36,24 +45,69 @@ class SF50Processor:
         1. "MESSAGE TYPE" (e.g., "AOA HEAT FAIL Caution")
         2. "MESSAGE" (e.g., "AOA HEAT FAIL")
         3. "description" (e.g., "AOA heat failure")
+        
+        Special handling for AFCS Alerts section:
+        - Lines with "annunciator on PFD" are treated as submessages for the previous line
+        - Section starts at "AFCS Alerts" and ends at "Abnormal CAS Procedures" or "Emergency CAS Procedures"
         """
+        if self.debug:
+            logger.info(f"\nProcessing file: {file_path}")
+        
         with open(file_path, 'r') as f:
-            lines = [line.strip() for line in f if line.strip()]  # Remove empty lines
+            lines = [line.strip() for line in f if line.strip() and line.strip() != "Procedure Complete"]  # Remove empty lines and "Procedure Complete"
             i = 0
-            while i < len(lines) - 2:  # Need at least 3 lines for a complete entry
-                # Check if this is a CAS message line with type (uppercase + Caution/Advisory)
-                if re.match(r'^[A-Z\s]+(Caution|Advisory)$', lines[i]):
-                    message_with_type = lines[i]
-                    # Extract just the message part (remove the type)
-                    message = re.sub(r'\s+(Caution|Advisory)$', '', message_with_type)
-                    
-                    # Check if next line is just the message
-                    if lines[i + 1] == message:
-                        # The line after that should be the description
-                        description = lines[i + 2]
-                        if description and description.endswith('.'):
-                            self.cas_descriptions[message] = description
-                        i += 2  # Skip the next two lines
+            in_afcs_section = False
+            previous_line = None
+            
+            while i < len(lines):
+                line = lines[i]
+                
+                # Check for AFCS Alerts section start/end
+                if line == "AFCS Alerts":
+                    in_afcs_section = True
+                    if self.debug:
+                        logger.info("\nEntering AFCS Alerts section")
+                    i += 1
+                    continue
+                elif line in ["Abnormal CAS Procedures", "Emergency CAS Procedures"]:
+                    in_afcs_section = False
+                    if self.debug:
+                        logger.info("Exiting AFCS Alerts section\n")
+                    i += 1
+                    continue
+                
+                if in_afcs_section:
+                    # Check for annunciator message
+                    if "annunciator on pfd" in line.lower():
+                        if previous_line :
+                            if self.debug:
+                                logger.info(f"Found AFCS description:")
+                                logger.info(f"  Message: {previous_line}")
+                                logger.info(f"  Description: {line}")
+                            self.cas_descriptions[previous_line] = line
+                        i += 1
+                        continue
+                    previous_line = line
+                else:
+                    # Normal CAS message processing
+                    if i < len(lines) - 2:  # Need at least 3 lines for a complete entry
+                        # Check if this is a CAS message line with type (uppercase + Caution/Advisory)
+                        if re.match(r'^[A-Z\s]+(Caution|Advisory)$', line):
+                            message_with_type = lines[i]
+                            # Extract just the message part (remove the type)
+                            message = re.sub(r'\s+(Caution|Advisory)$', '', message_with_type)
+                            
+                            # Check if next line is just the message
+                            if lines[i + 1] == message:
+                                # The line after that should be the description
+                                description = lines[i + 2]
+                                if description and description.endswith('.'):
+                                    if self.debug:
+                                        logger.info(f"Found CAS description:")
+                                        logger.info(f"  Message: {message}")
+                                        logger.info(f"  Description: {description}")
+                                    self.cas_descriptions[message] = description
+                                i += 2  # Skip the next two lines
                 i += 1
     
     def process_line(self, line: str) -> None:
@@ -138,12 +192,24 @@ class SF50Processor:
     
     def _process_situation_alert(self, line: str) -> None:
         """Process a situation type alert line."""
+        message = line.strip()
+        submessage = None
+        
+        # Check if this situation has an associated AFCS alert description
+        if message in self.cas_descriptions:
+            submessage = self.cas_descriptions[message]
+            if self.debug:
+                logger.info(f"Found AFCS description for situation:")
+                logger.info(f"  Situation: {message}")
+                logger.info(f"  Description: {submessage}")
+            
         self.entries.append(AlertEntry(
             section=self.current_section,
             category=self._get_category("", is_situation=True),
             alert_type="situation",
-            message=line.strip(),
-            priority=self._get_priority()
+            message=message,
+            priority=self._get_priority(),
+            submessage=submessage
         ))
     
     def write_csv(self, output_file: str) -> None:
@@ -161,12 +227,12 @@ class SF50Processor:
                     entry.submessage or ''
                 ])
 
-def process_file(input_file: str, emergency_file: str, abnormal_file: str, output_file: Optional[str] = None) -> None:
+def process_file(input_file: str, emergency_file: str, abnormal_file: str, output_file: Optional[str] = None, debug: bool = False) -> None:
     """Process input file and write results to output file."""
     if output_file is None:
         output_file = os.path.splitext(input_file)[0] + '.csv'
     
-    processor = SF50Processor()
+    processor = SF50Processor(debug=debug)
     
     # Load descriptions from emergency and abnormal files
     processor.load_cas_descriptions(emergency_file)
@@ -200,9 +266,14 @@ def main():
         '-o', '--output',
         help='Output CSV file (default: input file with .csv extension)'
     )
+    parser.add_argument(
+        '-d', '--debug',
+        action='store_true',
+        help='Enable debug logging'
+    )
     
     args = parser.parse_args()
-    process_file(args.input_file, args.emergency_file, args.abnormal_file, args.output)
+    process_file(args.input_file, args.emergency_file, args.abnormal_file, args.output, args.debug)
 
 if __name__ == '__main__':
     main() 
