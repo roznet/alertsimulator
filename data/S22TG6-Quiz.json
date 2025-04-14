@@ -11,17 +11,13 @@
                 "answer": "3600lb (1633kg) – Max Takeoff"
             },
             {
-                "question": "What is the max landing weight?",
-                "answer": "5550lb – Max Landing"
-            },
-            {
                 "question": "What is the max zero fuel weight?",
                 "answer": "3400lb (1542kg) – Max Zero Fuel"
             },
             {
                 "question": "What is the max baggage weight?",
                 "answer": "130lb (59kg) – Max Baggage"
-            },
+            }
         ],
         "Starting": [
             {
@@ -57,7 +53,7 @@
             {
                 "question": "What is the minimum operating temperature?",
                 "answer": "-40°F/-40°C – Min operating temperature"
-            },
+            }
         ],
         "Engine": [
             {
