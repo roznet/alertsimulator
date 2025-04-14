@@ -46,6 +46,7 @@ struct Settings {
         case high_priority_multiplier = "high_priority_multiplier"
         case medium_priority_multiplier = "medium_priority_multiplier"
         case low_priority_multiplier = "low_priority_multiplier"
+        case knowledge_question_proportion = "knowledge_question_proportion"
     }
     
     @UserStorage(key: Key.current_flight_start, defaultValue: Date())
@@ -86,6 +87,9 @@ struct Settings {
     
     @UserStorage(key: Key.low_priority_multiplier, defaultValue: 1.0)
     var lowPriorityMultiplier: Double
+
+    @UserStorage(key: Key.knowledge_question_proportion, defaultValue: 0.0)
+    var knowledgeQuestionProportion: Double
 
     var currentAircraft : Aircraft {
         return Aircraft(aircraftName: self.currentAircraftName)

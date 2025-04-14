@@ -6,6 +6,7 @@ struct SettingsView: View {
     @State private var highPriorityMultiplier: Double
     @State private var mediumPriorityMultiplier: Double
     @State private var lowPriorityMultiplier: Double
+    @State private var knowledgeQuestionProportion: Double
     @State private var showHelp: Bool = false
     
     // Add default values as static constants
@@ -13,12 +14,14 @@ struct SettingsView: View {
     private static let defaultHighPriorityMultiplier: Double = 10.0
     private static let defaultMediumPriorityMultiplier: Double = 5.0
     private static let defaultLowPriorityMultiplier: Double = 1.0
+    private static let defaultKnowledgeQuestionProportion: Double = 0.0
     
     init() {
         _alertRepeatThreshold = State(initialValue: Double(Settings.shared.alertRepeatThreshold))
         _highPriorityMultiplier = State(initialValue: Settings.shared.highPriorityMultiplier)
         _mediumPriorityMultiplier = State(initialValue: Settings.shared.mediumPriorityMultiplier)
         _lowPriorityMultiplier = State(initialValue: Settings.shared.lowPriorityMultiplier)
+        _knowledgeQuestionProportion = State(initialValue: Settings.shared.knowledgeQuestionProportion)
     }
     
     var body: some View {
@@ -66,6 +69,21 @@ struct SettingsView: View {
                         }
                     }
                 }
+                
+                Section(header: Text("Knowledge Questions")) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Knowledge Question Proportion")
+                        HStack {
+                            Slider(value: $knowledgeQuestionProportion, in: 0...1, step: 0.05)
+                            Text("\(Int(knowledgeQuestionProportion * 100))%")
+                        }
+                        if showHelp {
+                            Text("Controls the proportion of knowledge questions versus regular alerts. For example, setting to 20% means that 20% of the alerts will be knowledge questions and 80% will be regular alerts.")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
             }
             .navigationTitle("Alert Settings")
             .toolbar {
@@ -105,6 +123,7 @@ struct SettingsView: View {
         highPriorityMultiplier = Self.defaultHighPriorityMultiplier
         mediumPriorityMultiplier = Self.defaultMediumPriorityMultiplier
         lowPriorityMultiplier = Self.defaultLowPriorityMultiplier
+        knowledgeQuestionProportion = Self.defaultKnowledgeQuestionProportion
     }
     
     private func saveSettings() {
@@ -112,6 +131,7 @@ struct SettingsView: View {
         Settings.shared.highPriorityMultiplier = highPriorityMultiplier
         Settings.shared.mediumPriorityMultiplier = mediumPriorityMultiplier
         Settings.shared.lowPriorityMultiplier = lowPriorityMultiplier
+        Settings.shared.knowledgeQuestionProportion = knowledgeQuestionProportion
     }
 }
 
