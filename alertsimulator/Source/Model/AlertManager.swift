@@ -74,8 +74,48 @@ struct AlertManager {
         return one
     }
     
+    private func drawKnowledgeQuestion() -> FlightAlert? {
+        // Get all available quiz sections
+        let sections = aircraft.quizSections
+        guard !sections.isEmpty else { return nil }
+        
+        // Randomly select a section
+        guard let selectedSection = sections.randomElement() else { return nil }
+        
+        // Get questions from that section
+        let questions = aircraft.quizQuestions(for: selectedSection)
+        guard questions.count >= 3 else { return nil }
+        
+        // Randomly select 3 questions
+        let selectedQuestions = Array(questions.shuffled().prefix(3))
+        
+        // Format the submessage with just the questions
+        let submessage = selectedQuestions.map { "Q: \($0.question)" }.joined(separator: "\n\n")
+        
+        return FlightAlert(
+            category: .normal,
+            action: .review,
+            alertType: .situation,
+            message: "\(selectedSection) Knowledge Questions",
+            uid: -2,
+            submessage: submessage,
+            aircraftName: aircraft.aircraftName // Special UID for knowledge questions
+        )
+    }
+    
     func nextAlert() -> FlightAlert {
-        self.available.randomElement() ?? self.sampleAlert
+        // First decide if we should draw a knowledge question
+        let shouldDrawKnowledgeQuestion = Double.random(in: 0...1) < Settings.shared.knowledgeQuestionProportion
+        
+        if shouldDrawKnowledgeQuestion {
+            // Try to get a knowledge question with the new sophisticated format
+            if let knowledgeAlert = drawKnowledgeQuestion() {
+                return knowledgeAlert
+            }
+        }
+        
+        // If we didn't draw a knowledge question or couldn't get one, draw a regular alert
+        return self.drawAlert(alerts: self.available)
     }
     
     func computeProbabilities(alerts : [FlightAlert]) -> [Double] {
@@ -101,15 +141,20 @@ struct AlertManager {
     }
     
     mutating func drawNextAlert() -> FlightAlert {
-        let next = self.drawAlert(alerts: self.available)
-        self.drawnAlerts.append(next)
-        self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
+        let next = self.nextAlert()
         
-        // Use the configured threshold for alert repeats
-        if self.drawnAlerts.count > Settings.shared.alertRepeatThreshold {
-            let first = self.drawnAlerts.removeFirst()
-            self.available.append(first)
+        // Only track regular alerts for repeat prevention
+        if next.uid != -2 { // Not a knowledge question
+            self.drawnAlerts.append(next)
+            self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
+            
+            // Use the configured threshold for alert repeats
+            if self.drawnAlerts.count > Settings.shared.alertRepeatThreshold {
+                let first = self.drawnAlerts.removeFirst()
+                self.available.append(first)
+            }
         }
+        
         return next
     }
     

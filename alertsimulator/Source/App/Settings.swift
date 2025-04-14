@@ -88,7 +88,7 @@ struct Settings {
     @UserStorage(key: Key.low_priority_multiplier, defaultValue: 1.0)
     var lowPriorityMultiplier: Double
 
-    @UserStorage(key: Key.knowledge_question_proportion, defaultValue: 0.0)
+    @UserStorage(key: Key.knowledge_question_proportion, defaultValue: 0.1)
     var knowledgeQuestionProportion: Double
 
     var currentAircraft : Aircraft {
