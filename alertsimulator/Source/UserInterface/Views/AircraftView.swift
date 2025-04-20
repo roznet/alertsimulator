@@ -69,6 +69,19 @@ struct AircraftView: View {
                 .background(Color.blue.opacity(0.2))
                 .clipShape(RoundedRectangle(cornerRadius: 4))
             }
+            
+            if alertViewModel.numberOfKnowledgeQuestionsForAircraft > 0 {
+                HStack(spacing: 4) {
+                    Text("\(alertViewModel.numberOfKnowledgeQuestionsForAircraft)")
+                        .fontWeight(.medium)
+                    Text("questions")
+                }
+                .font(.caption)
+                .padding(.horizontal, 6)
+                .padding(.vertical, 3)
+                .background(Color.green.opacity(0.2))
+                .clipShape(RoundedRectangle(cornerRadius: 4))
+            }
         }
         .padding(.horizontal)
     }

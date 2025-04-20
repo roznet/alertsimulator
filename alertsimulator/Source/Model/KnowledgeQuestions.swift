@@ -47,6 +47,10 @@ struct KnowledgeQuestions: Codable {
         return sections[section]?.questions ?? []
     }
     
+    var knowledgeQuestionsCount : Int {
+        return sections.values.reduce(0) {$0 + $1.questions.count}
+    }
+    
     var allSections: [String] {
         return Array(sections.keys).sorted()
     }

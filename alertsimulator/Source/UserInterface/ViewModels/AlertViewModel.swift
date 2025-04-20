@@ -48,6 +48,7 @@ class AlertViewModel: ObservableObject {
     
     @Published var selectedAircraftName : String = FlightAlert.aircrafts.first?.aircraftName ?? "undefined"
     @Published var numberOfAlertForAircraft : Int = 0
+    @Published var numberOfKnowledgeQuestionsForAircraft : Int = 0
     
     private var duration : TimeInterval {
         get {
@@ -140,7 +141,8 @@ class AlertViewModel: ObservableObject {
         
         self.selectedAircraftName = Settings.shared.currentAircraft.aircraftName
         self.numberOfAlertForAircraft = self.aircraft.alerts.count
-        self.flight = Flight(aircraft: self.aircraft, 
+        self.numberOfKnowledgeQuestionsForAircraft = self.aircraft.knowledgeQuestions?.knowledgeQuestionsCount ?? 0
+        self.flight = Flight(aircraft: self.aircraft,
                            duration: duration, 
                            interval: interval, 
                            start: Settings.shared.currentFlightStart,
@@ -291,6 +293,7 @@ class AlertViewModel: ObservableObject {
     func updateAircraft() {
         // If aircraft change, make sure all current alerts are canceled
         self.numberOfAlertForAircraft = self.aircraft.alerts.count
+        self.numberOfKnowledgeQuestionsForAircraft = self.aircraft.knowledgeQuestions?.knowledgeQuestionsCount ?? 0
         self.stopFlight()
         self.clearAlerts()
         self.toSettings()
