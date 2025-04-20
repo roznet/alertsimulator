@@ -77,6 +77,28 @@ struct KnowledgeQuestions: Codable {
         }
         return Array(questions)
     }
+    
+    func findAnswers(for questionsText: String) -> [String] {
+        // Split the text into lines and extract questions
+        let lines = questionsText.components(separatedBy: .newlines)
+        let questions = lines.compactMap { line -> String? in
+            if line.hasPrefix("Q: ") {
+                return String(line.dropFirst(3))
+            }
+            return nil
+        }
+        
+        // Find answers for each question
+        return questions.compactMap { questionText -> String? in
+            // Search through all sections for a matching question
+            for section in sections.values {
+                if let matchingQuestion = section.questions.first(where: { $0.question == questionText }) {
+                    return matchingQuestion.answer
+                }
+            }
+            return nil
+        }
+    }
 }
 
 enum KnowledgeQuestionError: Error {

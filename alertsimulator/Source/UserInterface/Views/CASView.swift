@@ -62,13 +62,25 @@ private struct MessageHeader: View {
     let message: String
     let category: CASMessage.Category
     let onChecklistTapped: () -> Void
+    let onKnowledgeQuestionTapped: () -> Void
     let alertViewModel: AlertViewModel
+    let isKnowledgeQuestion: Bool
     
     var body: some View {
         HStack {
             Spacer()
             if alertViewModel.hasChecklist {
                 EyeButton(action: onChecklistTapped)
+            }
+            if isKnowledgeQuestion {
+                Button(action: onKnowledgeQuestionTapped) {
+                    Image(systemName: "questionmark.circle.fill")
+                        .foregroundColor(.white)
+                        .padding(8)
+                }
+                .background(Color.green.opacity(0.6))
+                .clipShape(Circle())
+                .padding(.leading, 8)
             }
             
             Text(message)
@@ -84,7 +96,9 @@ private struct AlertsSection: View {
     let submessage: String
     let category: CASMessage.Category
     let onChecklistTapped: () -> Void
+    let onKnowledgeQuestionTapped: () -> Void
     let alertViewModel: AlertViewModel
+    let isKnowledgeQuestion: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -106,6 +120,21 @@ private struct AlertsSection: View {
                         .padding(.vertical, 4)
                     }
                     .background(Color.blue.opacity(0.6))
+                    .cornerRadius(4)
+                }
+                
+                if isKnowledgeQuestion {
+                    Button(action: onKnowledgeQuestionTapped) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "questionmark.circle")
+                            Text("View Answers")
+                                .font(.caption)
+                        }
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                    }
+                    .background(Color.green.opacity(0.6))
                     .cornerRadius(4)
                 }
             }
@@ -133,7 +162,12 @@ private struct AlertsSection: View {
 struct CASView: View {
     @Binding var casMessage: CASMessage
     @State private var showingChecklist = false
+    @State private var showingKnowledgeQuestions = false
     @ObservedObject var alertViewModel: AlertViewModel
+    
+    var isKnowledgeQuestion: Bool {
+        return casMessage.message.contains("Knowledge Questions")
+    }
     
     var body: some View {
         VStack(alignment: .trailing) {
@@ -142,7 +176,9 @@ struct CASView: View {
                     message: casMessage.message,
                     category: casMessage.category,
                     onChecklistTapped: { showingChecklist = true },
-                    alertViewModel: alertViewModel
+                    onKnowledgeQuestionTapped: { showingKnowledgeQuestions = true },
+                    alertViewModel: alertViewModel,
+                    isKnowledgeQuestion: isKnowledgeQuestion
                 )
             }
             
@@ -154,7 +190,9 @@ struct CASView: View {
                     submessage: casMessage.submessage,
                     category: casMessage.category,
                     onChecklistTapped: { showingChecklist = true },
-                    alertViewModel: alertViewModel
+                    onKnowledgeQuestionTapped: { showingKnowledgeQuestions = true },
+                    alertViewModel: alertViewModel,
+                    isKnowledgeQuestion: isKnowledgeQuestion
                 )
             }
             
@@ -168,6 +206,10 @@ struct CASView: View {
             if !casMessage.message.isEmpty {
                 ChecklistView(alertMessage: casMessage.message, alertViewModel: self.alertViewModel)
             }
+        }
+        .sheet(isPresented: $showingKnowledgeQuestions) {
+            let answers = alertViewModel.findAnswers(for: casMessage.submessage)
+            KnowledgeQuestionView(questionsText: casMessage.submessage, answers: answers)
         }
     }
 }

@@ -67,8 +67,8 @@
         ],
         "Takeoff and Landing": [
             {
-                "question": "What is the maximum demonstrated crosswind with 50% flaps?",
-                "answer": "21 knots – Flaps 50% Max demonstrated crosswind"
+                "question": "What is the maximum demonstrated crosswind?",
+                "answer": "21 knots – Max demonstrated crosswind, this is not limiting"
             },
             {
                 "question": "What is the maximum airport elevation?",

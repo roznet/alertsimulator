@@ -255,6 +255,10 @@ class AlertViewModel: ObservableObject {
         return aircraft.checklists.first { $0.alert == alertMessage }
     }
     
+    func findAnswers(for questionsText: String) -> [String] {
+        return aircraft.knowledgeQuestions?.findAnswers(for: questionsText) ?? []
+    }
+    
     func checkNotifications() {
         Task {
             let notifications = await self.notificationManager.getPendingNotifications()
