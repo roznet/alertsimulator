@@ -140,7 +140,12 @@ class AlertViewModel: ObservableObject {
         
         self.selectedAircraftName = Settings.shared.currentAircraft.aircraftName
         self.numberOfAlertForAircraft = self.aircraft.alerts.count
-        self.flight = Flight(aircraft: self.aircraft, duration: duration, interval: interval, start: Settings.shared.currentFlightStart, flightAlerts: Settings.shared.currentFlightAlerts)
+        self.flight = Flight(aircraft: self.aircraft, 
+                           duration: duration, 
+                           interval: interval, 
+                           start: Settings.shared.currentFlightStart,
+                           end: Settings.shared.currentFlightEnd,
+                           flightAlerts: Settings.shared.currentFlightAlerts)
         self.notificationManager.fromSettings()
         Logger.app.info("Settings loaded")
         self.flightIsRunning = self.flight.isRunning()
@@ -161,6 +166,7 @@ class AlertViewModel: ObservableObject {
         Settings.shared.currentFlightDuration = self.duration
         Settings.shared.currentFlightInterval = self.interval
         Settings.shared.currentFlightStart = self.flight.start
+        Settings.shared.currentFlightEnd = self.flight.end
         Settings.shared.currentFlightAlerts = self.flight.flightAlerts
         Settings.shared.currentAircraftName = self.selectedAircraftName
         self.notificationManager.toSettings()
@@ -210,7 +216,9 @@ class AlertViewModel: ObservableObject {
         guard !flight.isRunning() else { return }
         
         // Calculate flight duration in seconds
-        self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
+        self.flight = Flight(aircraft: self.aircraft, 
+                           duration: self.duration, 
+                           interval: self.interval)
         // Start the flight
         self.flight.start(alertParameters: Settings.shared.alertParameters)
         self.toSettings()
@@ -226,6 +234,7 @@ class AlertViewModel: ObservableObject {
         self.flightIsRunning = self.flight.isRunning()
         flightEndTimer?.invalidate()
         flightEndTimer = nil
+        self.toSettings()
     }
     
     func generateSingleAlert() {

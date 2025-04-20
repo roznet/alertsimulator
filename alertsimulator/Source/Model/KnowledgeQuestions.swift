@@ -1,6 +1,6 @@
 import Foundation
 
-struct QuizQuestion: Codable, Identifiable, Hashable {
+struct KnowledgeQuestion: Codable, Identifiable, Hashable {
     let id = UUID()
     let question: String
     let answer: String
@@ -14,36 +14,36 @@ struct QuizQuestion: Codable, Identifiable, Hashable {
         hasher.combine(answer)
     }
     
-    static func == (lhs: QuizQuestion, rhs: QuizQuestion) -> Bool {
+    static func == (lhs: KnowledgeQuestion, rhs: KnowledgeQuestion) -> Bool {
         return lhs.question == rhs.question && lhs.answer == rhs.answer
     }
 }
 
-struct QuizSection: Codable {
-    let questions: [QuizQuestion]
+struct KnowledgeQuestionSection: Codable {
+    let questions: [KnowledgeQuestion]
     
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        questions = try container.decode([QuizQuestion].self)
+        questions = try container.decode([KnowledgeQuestion].self)
     }
 }
 
-struct Quiz: Codable {
+struct KnowledgeQuestions: Codable {
     let version: String
-    let sections: [String: QuizSection]
+    let sections: [String: KnowledgeQuestionSection]
     
-    static func load(forAircraft aircraftName: String) throws -> Quiz {
+    static func load(forAircraft aircraftName: String) throws -> KnowledgeQuestions {
         let fileName = "\(aircraftName)-Quiz"
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
-            throw QuizError.fileNotFound
+            throw KnowledgeQuestionError.fileNotFound
         }
         
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
-        return try decoder.decode(Quiz.self, from: data)
+        return try decoder.decode(KnowledgeQuestions.self, from: data)
     }
     
-    func questionsForSection(_ section: String) -> [QuizQuestion] {
+    func questionsForSection(_ section: String) -> [KnowledgeQuestion] {
         return sections[section]?.questions ?? []
     }
     
@@ -51,8 +51,8 @@ struct Quiz: Codable {
         return Array(sections.keys).sorted()
     }
     
-    func randomQuestions(count: Int, from section: String? = nil) -> [QuizQuestion] {
-        let availableQuestions: [QuizQuestion]
+    func randomQuestions(count: Int, from section: String? = nil) -> [KnowledgeQuestion] {
+        let availableQuestions: [KnowledgeQuestion]
         if let section = section {
             availableQuestions = sections[section]?.questions ?? []
         } else {
@@ -65,7 +65,7 @@ struct Quiz: Codable {
         }
         
         // Otherwise, pick 'count' random questions
-        var questions: Set<QuizQuestion> = []
+        var questions: Set<KnowledgeQuestion> = []
         while questions.count < count {
             if let question = availableQuestions.randomElement() {
                 questions.insert(question)
@@ -75,7 +75,7 @@ struct Quiz: Codable {
     }
 }
 
-enum QuizError: Error {
+enum KnowledgeQuestionError: Error {
     case fileNotFound
     case decodingError
 } 

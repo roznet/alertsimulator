@@ -76,14 +76,14 @@ struct AlertManager {
     
     private func drawKnowledgeQuestion() -> FlightAlert? {
         // Get all available quiz sections
-        let sections = aircraft.quizSections
+        let sections = aircraft.knowledgeQuestionSections
         guard !sections.isEmpty else { return nil }
         
         // Randomly select a section
         guard let selectedSection = sections.randomElement() else { return nil }
         
         // Get questions from that section
-        let questions = aircraft.quizQuestions(for: selectedSection)
+        let questions = aircraft.knowledgeQuestions(for: selectedSection)
         guard questions.count >= 3 else { return nil }
         
         // Randomly select 3 questions

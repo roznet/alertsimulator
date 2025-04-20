@@ -54,7 +54,9 @@ struct NotificationsView: View {
         .onAppear {
             self.alertViewModel.checkNotifications()
             NotificationCenter.default.addObserver(forName: .notificationWereUpdated, object: nil, queue: nil){ _ in
-                self.alertViewModel.checkNotifications()
+                Task { @MainActor in
+                    self.alertViewModel.checkNotifications()
+                }
             }
         }
         .onDisappear {

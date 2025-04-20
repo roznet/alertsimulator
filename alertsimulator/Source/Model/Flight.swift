@@ -36,7 +36,7 @@ struct Flight {
     let averageAlertInterval : TimeInterval
     
     let start : Date
-    let end : Date
+    var end : Date
     
     var flightAlerts : [TrackedAlert]
 
@@ -46,11 +46,17 @@ struct Flight {
     
     var alertManager : AlertManager
    
-    init(aircraft : Aircraft = Aircraft.defaultValue, duration : TimeInterval = 0.0, interval : TimeInterval = 0.0, start : Date? = nil, protectedStart : TimeInterval? = nil, protectedEnd : TimeInterval? = nil,
+    init(aircraft : Aircraft = Aircraft.defaultValue, 
+         duration : TimeInterval = 0.0, 
+         interval : TimeInterval = 0.0, 
+         start : Date? = nil, 
+         end : Date? = nil,
+         protectedStart : TimeInterval? = nil, 
+         protectedEnd : TimeInterval? = nil,
          flightAlerts : [TrackedAlert] = []) {
         self.aircraft = aircraft
         self.start = start ?? Date()
-        self.end = self.start.addingTimeInterval(duration)
+        self.end = end ?? self.start.addingTimeInterval(duration)
         self.duration = duration
         self.averageAlertInterval = interval
         self.protectedStart = protectedStart ?? 0.0
@@ -66,6 +72,7 @@ struct Flight {
    
     mutating func stop() {
         self.flightAlerts = []
+        self.end = Date()
     }
     
     func nextAlert(after : Date) -> TrackedAlert? {

@@ -136,9 +136,9 @@ struct alertsimulatorTests {
         }
     }
     
-    @Test func testQuizFunctionality() async throws {
+    @Test func testKnowledgeFunctionality() async throws {
         // Test loading a quiz
-        let quiz = try Quiz.load(forAircraft: "SF50")
+        let quiz = try KnowledgeQuestions.load(forAircraft: "SF50")
         #expect(quiz.version.count > 0)
         #expect(quiz.sections.count > 0)
         
@@ -169,8 +169,8 @@ struct alertsimulatorTests {
         }
         
         // Test error handling for non-existent aircraft
-        #expect(throws: QuizError.fileNotFound) {
-            try Quiz.load(forAircraft: "NonExistentAircraft")
+        #expect(throws: KnowledgeQuestionError.fileNotFound) {
+            try KnowledgeQuestions.load(forAircraft: "NonExistentAircraft")
         }
     }
 }
