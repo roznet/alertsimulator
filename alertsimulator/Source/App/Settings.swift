@@ -107,3 +107,24 @@ struct Settings {
         return Date().timeIntervalSince(lastUpdateCheck) >= Settings.updateCheckInterval
     }
 }
+
+extension Settings {
+    var alertParameters : AlertParameters {
+        get {
+            return AlertParameters(
+                knowledgeQuestionProportion: knowledgeQuestionProportion,
+                alertRepeatThreshold: alertRepeatThreshold,
+                highPriorityMultiplier: highPriorityMultiplier,
+                mediumPriorityMultiplier: mediumPriorityMultiplier,
+                lowPriorityMultiplier: lowPriorityMultiplier
+        )
+        }
+        set {
+            knowledgeQuestionProportion = newValue.knowledgeQuestionProportion
+            alertRepeatThreshold = newValue.alertRepeatThreshold
+            highPriorityMultiplier = newValue.highPriorityMultiplier
+            mediumPriorityMultiplier = newValue.mediumPriorityMultiplier
+            lowPriorityMultiplier = newValue.lowPriorityMultiplier
+        }
+    }
+}

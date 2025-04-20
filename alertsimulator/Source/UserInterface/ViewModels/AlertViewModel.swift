@@ -33,6 +33,7 @@ extension Notification.Name {
     static let aircraftChanged = Notification.Name("aircraftChanged")
 }
 
+@MainActor
 class AlertViewModel: ObservableObject {
     @Published var flightIsRunning : Bool = false
     @Published var selectedDurationHours: Int = 0
@@ -211,7 +212,7 @@ class AlertViewModel: ObservableObject {
         // Calculate flight duration in seconds
         self.flight = Flight(aircraft: self.aircraft, duration: self.duration, interval: self.interval)
         // Start the flight
-        self.flight.start()
+        self.flight.start(alertParameters: Settings.shared.alertParameters)
         self.toSettings()
         self.startTimer()
         self.notificationManager.scheduleAll(for: self.flight)
@@ -229,7 +230,7 @@ class AlertViewModel: ObservableObject {
     
     func generateSingleAlert() {
         // Generate an immediate alert and update the CAS message directly
-        let alert = self.flight.immediateAlert()
+        let alert = self.flight.immediateAlert(alertParameters: Settings.shared.alertParameters)
         // Post notification to update any observers
         NotificationCenter.default.post(name: .didReceiveSimulatedAlert, object: alert.flightAlert)
     }
@@ -244,8 +245,8 @@ class AlertViewModel: ObservableObject {
     }
     
     func checkNotifications() {
-        self.notificationManager.getPendingNotifications() {
-            notifications in
+        Task {
+            let notifications = await self.notificationManager.getPendingNotifications()
             if notifications.isEmpty {
                 Logger.app.info("No notifications")
                 DispatchQueue.main.async {

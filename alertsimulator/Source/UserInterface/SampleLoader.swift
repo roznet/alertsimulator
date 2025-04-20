@@ -58,7 +58,8 @@ struct SampleLoader {
         let flight = Flight(aircraft: aircraft, duration: 60*minute, interval: 10*minute, start: Date().addingTimeInterval(-5*minute), protectedStart: nil, protectedEnd: nil, flightAlerts: sampleAlerts)
         return flight
     }
-    
+   
+    @MainActor
     static func sampleAlertViewModel(running: Bool = false) -> AlertViewModel {
         let viewModel = AlertViewModel()
         viewModel.flight = SampleLoader.sampleRunningFlight(trackedAlertsCount: running ? 4 : 0)

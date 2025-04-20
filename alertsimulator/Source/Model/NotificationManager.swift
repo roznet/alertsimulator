@@ -32,14 +32,27 @@ extension Notification.Name {
     static let notificationWereUpdated = Notification.Name("notificationWereUpdated")
 }
 
+protocol UserNotificationCenter {
+    var delegate: UNUserNotificationCenterDelegate? { get set }
+
+    func requestAuthorization(options: UNAuthorizationOptions, completionHandler: @escaping (Bool, Error?) -> Void)
+    func add(_ request: UNNotificationRequest, withCompletionHandler completionHandler: ((Error?) -> Void)?)
+    func getPendingNotificationRequests(completionHandler: @escaping ([UNNotificationRequest]) -> Void)
+    func removeAllPendingNotificationRequests()
+}
+
+extension UNUserNotificationCenter : UserNotificationCenter {}
+
 class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
     private var trackedNotifications: [String: TrackedAlert] = [:]
     
-    private let center = UNUserNotificationCenter.current()
+    private var center : UserNotificationCenter
     
-    override init () {
+    init(center: UserNotificationCenter = UNUserNotificationCenter.current()){
+        self.center = center
         super.init()
-        UNUserNotificationCenter.current().delegate = self
+
+        self.center.delegate = self
         
         // Request notification permissions at startup
         checkAuthorization { success in
@@ -50,6 +63,7 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
             }
         }
     }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         // always display even if the app is up
         completionHandler([.banner,.sound,.badge])
@@ -117,12 +131,29 @@ class NotificationManager : NSObject, UNUserNotificationCenterDelegate {
                     NotificationCenter.default.post(name: .notificationWereUpdated, object: nil)
                 }
             }else{
-                Logger.app.error( "Delay must be greater than zero")
+                Logger.app.error( "Will note schedule alert in the past \(tracked)")
             }
         }
     }
-    
-    func getPendingNotifications(completionHandler : @escaping ([TrackedAlert]) -> Void) {
+    func getPendingNotifications() async -> [TrackedAlert] {
+        let requests = await withCheckedContinuation { continuation in
+            center.getPendingNotificationRequests { requests in
+                continuation.resume(returning: requests)
+            }
+        }
+
+        var trackedNotifications: [TrackedAlert] = []
+        for request in requests {
+            if let tracked = self.trackedNotifications[request.identifier] {
+                trackedNotifications.append(tracked)
+            } else {
+                Logger.app.error("Could not find tracked notification for \(request.identifier)")
+            }
+        }
+
+        return trackedNotifications
+    }
+    func getPendingNotificationsOLD(completionHandler : @escaping ([TrackedAlert]) -> Void) {
         center.getPendingNotificationRequests { requests in
             var trackedNotifications : [TrackedAlert] = []
             for request in requests {

@@ -59,9 +59,9 @@ struct Flight {
         self.alertManager = AlertManager(aircraft: self.aircraft)
     }
   
-    mutating func start(randomOffsetRange : TimeInterval = 0.0) {
+    mutating func start(alertParameters : AlertParameters) {
         self.alertManager.reset()
-        self.computeAlerts(randomOffsetRange: randomOffsetRange)
+        self.computeAlerts(alertParameters : alertParameters)
     }
    
     mutating func stop() {
@@ -76,8 +76,8 @@ struct Flight {
         }
     }
     
-    mutating func immediateAlert() -> TrackedAlert {
-        let tracked = TrackedAlert(date: Date().addingTimeInterval(1.0), alert: self.alertManager.drawNextAlert())
+    mutating func immediateAlert(alertParameters : AlertParameters) -> TrackedAlert {
+        let tracked = TrackedAlert(date: Date().addingTimeInterval(1.0), alert: self.alertManager.drawNextAlert(alertParameters: alertParameters))
         self.flightAlerts.append(tracked)
         self.flightAlerts.sort(by: { $0.date < $1.date })
         return tracked
@@ -85,7 +85,7 @@ struct Flight {
     
     // This should compute the next
     @discardableResult
-    mutating func computeAlerts(randomOffsetRange : TimeInterval = 0.0) -> [TrackedAlert] {
+    mutating func computeAlerts(alertParameters : AlertParameters) -> [TrackedAlert] {
 
         let protectedStartDate = start.addingTimeInterval(protectedStart)
         let protectedEndDate = end.addingTimeInterval(-protectedEnd)
@@ -95,7 +95,7 @@ struct Flight {
         self.flightAlerts = []
         if effectiveDuration > 0 && averageAlertInterval > 0 {
             var currentTime = protectedStartDate.addingTimeInterval(self.averageAlertInterval)
-            let offsetRange = randomOffsetRange
+            let offsetRange = alertParameters.randomOffsetRange
             
             while currentTime < protectedEndDate {
                 let randomOffset = TimeInterval.random(in: -offsetRange...offsetRange)
@@ -105,7 +105,7 @@ struct Flight {
                 
                 // Ensure the random alert time stays within the valid range
                 if randomAlertTime >= protectedStartDate && randomAlertTime <= protectedEndDate {
-                    self.flightAlerts.append(TrackedAlert(date: randomAlertTime, alert: self.alertManager.drawNextAlert()))
+                    self.flightAlerts.append(TrackedAlert(date: randomAlertTime, alert: self.alertManager.drawNextAlert(alertParameters: alertParameters)))
                 }
                 
                 // Move to the next regular alert time

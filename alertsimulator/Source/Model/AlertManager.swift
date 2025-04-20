@@ -103,9 +103,9 @@ struct AlertManager {
         )
     }
     
-    func nextAlert() -> FlightAlert {
+    func nextAlert(alertParameters : AlertParameters) -> FlightAlert {
         // First decide if we should draw a knowledge question
-        let shouldDrawKnowledgeQuestion = Double.random(in: 0...1) < Settings.shared.knowledgeQuestionProportion
+        let shouldDrawKnowledgeQuestion = Double.random(in: 0...1) < alertParameters.knowledgeQuestionProportion
         
         if shouldDrawKnowledgeQuestion {
             // Try to get a knowledge question with the new sophisticated format
@@ -115,16 +115,16 @@ struct AlertManager {
         }
         
         // If we didn't draw a knowledge question or couldn't get one, draw a regular alert
-        return self.drawAlert(alerts: self.available)
+        return self.drawAlert(alerts: self.available, alertParameters: alertParameters)
     }
     
-    func computeProbabilities(alerts : [FlightAlert]) -> [Double] {
+    func computeProbabilities(alerts : [FlightAlert], alertParameters : AlertParameters) -> [Double] {
         typealias Priority = FlightAlert.Priority
         let categoryCount = Dictionary(grouping: self.available, by: { $0.priority }).mapValues({$0.count})
         let multiplier : [Priority : Double] = [
-            .low : Settings.shared.lowPriorityMultiplier,
-            .medium : Settings.shared.mediumPriorityMultiplier,
-            .high : Settings.shared.highPriorityMultiplier,
+            .low : alertParameters.lowPriorityMultiplier,
+            .medium : alertParameters.mediumPriorityMultiplier,
+            .high : alertParameters.highPriorityMultiplier,
             .none : 0.0
         ]
         let total : Double = categoryCount.reduce(0) { $0 + Double($1.value) * (multiplier[$1.key] ?? 0.0)}
@@ -140,8 +140,8 @@ struct AlertManager {
         self.drawnAlerts = []
     }
     
-    mutating func drawNextAlert() -> FlightAlert {
-        let next = self.nextAlert()
+    mutating func drawNextAlert(alertParameters : AlertParameters) -> FlightAlert {
+        let next = self.nextAlert(alertParameters: alertParameters)
         
         // Only track regular alerts for repeat prevention
         if next.uid != -2 { // Not a knowledge question
@@ -149,7 +149,7 @@ struct AlertManager {
             self.available.removeAll(where: { $0.uniqueIdentifier == next.uniqueIdentifier })
             
             // Use the configured threshold for alert repeats
-            if self.drawnAlerts.count > Settings.shared.alertRepeatThreshold {
+            if self.drawnAlerts.count > alertParameters.alertRepeatThreshold {
                 let first = self.drawnAlerts.removeFirst()
                 self.available.append(first)
             }
@@ -158,8 +158,8 @@ struct AlertManager {
         return next
     }
     
-    func drawAlert(alerts : [FlightAlert]) -> FlightAlert {
-        let probabilities = self.computeProbabilities(alerts: alerts)
+    func drawAlert(alerts : [FlightAlert], alertParameters : AlertParameters) -> FlightAlert {
+        let probabilities = self.computeProbabilities(alerts: alerts, alertParameters: alertParameters)
         let next = drawRandomElement(elements: alerts, probabilities: probabilities)
         return next ?? self.sampleAlert
     }

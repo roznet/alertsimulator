@@ -16,7 +16,7 @@ struct AlertsData: Codable {
 
 typealias AlertsLoadResult = (alerts: [FlightAlert], version: String)
 
-struct FlightAlert : Codable, CustomStringConvertible {
+struct FlightAlert : Codable, CustomStringConvertible, Hashable {
     enum Category : String, Codable {
         case abnormal = "abnormal"
         case emergency = "emergency"
@@ -323,6 +323,28 @@ struct FlightAlert : Codable, CustomStringConvertible {
             return alert
         }
         return nil
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(uid)
+        hasher.combine(category)
+        hasher.combine(action)
+        hasher.combine(priority)
+        hasher.combine(alertType)
+        hasher.combine(message)
+        hasher.combine(submessage)
+        hasher.combine(aircraftName)
+    }
+    
+    static func == (lhs: FlightAlert, rhs: FlightAlert) -> Bool {
+        return lhs.uid == rhs.uid &&
+               lhs.category == rhs.category &&
+               lhs.action == rhs.action &&
+               lhs.priority == rhs.priority &&
+               lhs.alertType == rhs.alertType &&
+               lhs.message == rhs.message &&
+               lhs.submessage == rhs.submessage &&
+               lhs.aircraftName == rhs.aircraftName
     }
 }
 

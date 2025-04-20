@@ -18,6 +18,7 @@ struct alertsimulatorTests {
         // This ensures we can read the alert definition files
         // and that the default aircraft is present
         var manager = AlertManager()
+        let testParameters = AlertParameters()
         #expect(manager.available.count > 0)
         
         let aircrafts = FlightAlert.aircrafts
@@ -35,8 +36,8 @@ struct alertsimulatorTests {
         // for the first half we should never get the same twice
         var max = 0
         for counter in 1...all {
-            let alert = manager.drawNextAlert( )
-            if counter <= Settings.shared.alertRepeatThreshold {
+            let alert = manager.drawNextAlert(alertParameters: testParameters )
+            if counter <= testParameters.alertRepeatThreshold {
                 #expect(alerts[alert.uid] == nil)
             }
             alerts[alert.uid, default: 0] += 1
@@ -53,6 +54,7 @@ struct alertsimulatorTests {
         components.minute = 0
         components.second = 0
         let date = Calendar.current.date(from: components)!
+        let testParameters = AlertParameters()
         
         
         let oneHour = TimeInterval(3600)
@@ -66,7 +68,7 @@ struct alertsimulatorTests {
         ]
         for (interval,offset,protected) in tests {
             var flight = Flight(duration: oneHour, interval: interval,  start: date, protectedStart: protected, protectedEnd: protected)
-            let times = flight.computeAlerts(randomOffsetRange: offset )
+            let times = flight.computeAlerts(alertParameters: testParameters)
             let intervals = times.map { ($0.date.timeIntervalSince(date) - protected) / interval}
             let expected = Array(stride(from: 0.0, to: Double(times.count), by: 1.0)).map { $0 + 1.0}
             let tolerance = offset + 0.00001
@@ -77,7 +79,7 @@ struct alertsimulatorTests {
                 #expect(abs((value1 - value2)) < tolerance)
             }
             
-            flight.start(randomOffsetRange: offset)
+            flight.start(alertParameters: testParameters)
             #expect(flight.isRunning(at: date.addingTimeInterval(5.0)))
             var nextAlert : TrackedAlert? = flight.nextAlert(after: date)
             var extractedDates : [Date] = []
