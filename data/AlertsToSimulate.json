@@ -1,5 +1,5 @@
 {
-    "version": "2025.04.13.1118",
+    "version": "2025.04.27.0923",
     "alerts": [
         {
             "uid": 1,
@@ -4150,6 +4150,926 @@
             "aircraftName": "SF50",
             "message": "TT2 OVERHEAT",
             "submessage": "TT2 probes pending overheat."
+        },
+        {
+            "uid": 1200,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "REJECTED TAKEOFF",
+            "submessage": "Abort takeoff safely."
+        },
+        {
+            "uid": 1201,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE START ABORT",
+            "submessage": "Abort engine start."
+        },
+        {
+            "uid": 1202,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE FAILURE AFTER TAKEOFF",
+            "submessage": "Engine failure at low altitude after takeoff."
+        },
+        {
+            "uid": 1203,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE FAILURE IN FLIGHT",
+            "submessage": "Manage engine failure in flight."
+        },
+        {
+            "uid": 1204,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PARTIAL POWER LOSS",
+            "submessage": "Partial or erratic power loss."
+        },
+        {
+            "uid": 1205,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "EMERGENCY DESCENT",
+            "submessage": "Emergency descent procedure."
+        },
+        {
+            "uid": 1206,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "AIR START",
+            "submessage": "Restart engine in air."
+        },
+        {
+            "uid": 1207,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE FIRE ON GROUND",
+            "submessage": "Engine or cabin fire during start/ground."
+        },
+        {
+            "uid": 1208,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE FIRE IN FLIGHT",
+            "submessage": "Engine fire in flight."
+        },
+        {
+            "uid": 1209,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "CABIN ELECTRICAL FIRE",
+            "submessage": "Electrical fire in cabin."
+        },
+        {
+            "uid": 1210,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "CABIN NON-ELECTRICAL FIRE",
+            "submessage": "Non-electrical fire in cabin."
+        },
+        {
+            "uid": 1211,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "SMOKE EVACUATION",
+            "submessage": "Evacuate smoke from cockpit/cabin."
+        },
+        {
+            "uid": 1212,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "FORCED LANDING",
+            "submessage": "Perform forced landing."
+        },
+        {
+            "uid": 1213,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "LANDING GEAR UP",
+            "submessage": "Landing with gear up."
+        },
+        {
+            "uid": 1214,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "LANDING WITHOUT ELEVATOR CONTROL",
+            "submessage": "Landing with no elevator control."
+        },
+        {
+            "uid": 1215,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "STALL PREVENTION SYSTEM FAILURE",
+            "submessage": "Pusher/shaker system anomaly."
+        },
+        {
+            "uid": 1216,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "AUTOPILOT MALFUNCTION",
+            "submessage": "Autopilot or yaw damper malfunction."
+        },
+        {
+            "uid": 1217,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "TOTAL ELECTRICAL FAILURE",
+            "submessage": "Complete electrical system failure."
+        },
+        {
+            "uid": 1218,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PFD/MFD FAILURE",
+            "submessage": "Primary or Multi-Function Display failure."
+        },
+        {
+            "uid": 1219,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "ADAHRS FAILURE",
+            "submessage": "Air Data and Attitude Heading Reference System failure."
+        },
+        {
+            "uid": 1220,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "AIRSPEED INDICATION FAILURE",
+            "submessage": "Failure of airspeed indicator."
+        },
+        {
+            "uid": 1221,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "ALTITUDE INDICATION FAILURE",
+            "submessage": "Failure of altitude indicator."
+        },
+        {
+            "uid": 1222,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "RVSM AUTOPILOT PERFORMANCE",
+            "submessage": "Autopilot unable to maintain RVSM limits."
+        },
+        {
+            "uid": 1223,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "OXYGEN USE - FRONT SEATS",
+            "submessage": "Use oxygen system."
+        },
+        {
+            "uid": 1224,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "CRACKED WINDSHIELD",
+            "submessage": "Manage cracked/delaminated windshield."
+        },
+        {
+            "uid": 1225,
+            "category": "emergency",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "EXIT SEVERE ICING CONDITIONS",
+            "submessage": "Exit severe icing or SLD conditions."
+        },
+        {
+            "uid": 1226,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE DOES NOT SHUT DOWN",
+            "submessage": "Engine continues running after shutdown."
+        },
+        {
+            "uid": 1227,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "GEAR FAILS TO RETRACT",
+            "submessage": "Landing gear fails to retract after takeoff."
+        },
+        {
+            "uid": 1228,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "GEAR FAILS TO EXTEND",
+            "submessage": "Landing gear fails to extend before landing."
+        },
+        {
+            "uid": 1229,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "LANDING WITH MAIN GEAR UNSAFE",
+            "submessage": "Landing with main gear unsafe."
+        },
+        {
+            "uid": 1230,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "LANDING WITH NOSE GEAR UNSAFE",
+            "submessage": "Landing with nose gear unsafe."
+        },
+        {
+            "uid": 1231,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "FLAT TIRE DURING LANDING",
+            "submessage": "Landing with flat tire."
+        },
+        {
+            "uid": 1232,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "LANDING WITH BRAKE FAILURE",
+            "submessage": "Landing with failed brakes."
+        },
+        {
+            "uid": 1233,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "CABIN DOES NOT DEPRESSURIZE",
+            "submessage": "Cabin fails to depressurize before landing."
+        },
+        {
+            "uid": 1234,
+            "category": "abnormal",
+            "alertType": "situation",
+            "action": "simulate",
+            "priority": "low",
+            "aircraftName": "E1000GX",
+            "message": "INTERNAL WINDSHIELD FOGGING",
+            "submessage": "Internal windshield frosting/moisture."
+        },
+        {
+            "uid": 1235,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "AUTO DESCENT",
+            "submessage": "Aircraft descending automatically."
+        },
+        {
+            "uid": 1236,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "CABIN ALT HIGH",
+            "submessage": "Cabin altitude excessive."
+        },
+        {
+            "uid": 1237,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "CHECK GEAR",
+            "submessage": "Landing gear status warning."
+        },
+        {
+            "uid": 1238,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "DE-ICE FAIL",
+            "submessage": "De-ice system failure."
+        },
+        {
+            "uid": 1239,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "DOOR UNLOCKED",
+            "submessage": "Door is unlocked."
+        },
+        {
+            "uid": 1240,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ENGINE CHIP",
+            "submessage": "Metal detected in engine."
+        },
+        {
+            "uid": 1241,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "GEN FAIL",
+            "submessage": "Generator failure."
+        },
+        {
+            "uid": 1242,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "ITT HIGH",
+            "submessage": "Interstage turbine temperature high."
+        },
+        {
+            "uid": 1243,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "NG HIGH",
+            "submessage": "Gas generator speed high."
+        },
+        {
+            "uid": 1244,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "NP HIGH",
+            "submessage": "Propeller RPM high."
+        },
+        {
+            "uid": 1245,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "OIL PRESS LOW",
+            "submessage": "Oil pressure low."
+        },
+        {
+            "uid": 1246,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "OIL TEMP HIGH",
+            "submessage": "Oil temperature high."
+        },
+        {
+            "uid": 1247,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "OVERSPEED",
+            "submessage": "Aircraft overspeed."
+        },
+        {
+            "uid": 1248,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "PUSHER ICE MODE",
+            "submessage": "Pusher in ice mode."
+        },
+        {
+            "uid": 1249,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "RUD LIM FAIL",
+            "submessage": "Rudder limiter failure."
+        },
+        {
+            "uid": 1250,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "STICK PUSH",
+            "submessage": "Stick push activated."
+        },
+        {
+            "uid": 1251,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "STICK SHAKER",
+            "submessage": "Stick shaker activated."
+        },
+        {
+            "uid": 1252,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "TORQUE HIGH",
+            "submessage": "Engine torque high."
+        },
+        {
+            "uid": 1253,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "UNDERSPEED PROTECT ACTIVE",
+            "submessage": "Underspeed protection active."
+        },
+        {
+            "uid": 1254,
+            "category": "emergency",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "high",
+            "aircraftName": "E1000GX",
+            "message": "WSH HEAT ON",
+            "submessage": "Windshield heat on."
+        },
+        {
+            "uid": 1255,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "ALTERNATOR ON",
+            "submessage": "Alternator is online."
+        },
+        {
+            "uid": 1256,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "AUTO FUEL OFF",
+            "submessage": "Automatic fuel system off."
+        },
+        {
+            "uid": 1257,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "AUTO PTRM FAIL",
+            "submessage": "Autopilot trim fail."
+        },
+        {
+            "uid": 1258,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "BATT VOLTS LO",
+            "submessage": "Battery voltage low."
+        },
+        {
+            "uid": 1259,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "DIFF P HIGH",
+            "submessage": "Differential pressure high."
+        },
+        {
+            "uid": 1260,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "DOOR SEAL OFF",
+            "submessage": "Door seal not inflated."
+        },
+        {
+            "uid": 1261,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "DUCT TEMP HIGH",
+            "submessage": "Duct temperature high."
+        },
+        {
+            "uid": 1262,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FLAPS FAIL",
+            "submessage": "Flap system failure."
+        },
+        {
+            "uid": 1263,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FUEL FILT BLOCK",
+            "submessage": "Fuel filter blocked."
+        },
+        {
+            "uid": 1264,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FUEL IMBALANCE",
+            "submessage": "Fuel imbalance detected."
+        },
+        {
+            "uid": 1265,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FUEL PRESS LOW",
+            "submessage": "Fuel pressure low."
+        },
+        {
+            "uid": 1266,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FUEL PUMP OFF",
+            "submessage": "Fuel pump off."
+        },
+        {
+            "uid": 1267,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "FUEL QTY LOW",
+            "submessage": "Fuel quantity low."
+        },
+        {
+            "uid": 1268,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "GEAR MISCOMP",
+            "submessage": "Gear configuration mismatch."
+        },
+        {
+            "uid": 1269,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "HYD PRESS",
+            "submessage": "Hydraulic pressure abnormal."
+        },
+        {
+            "uid": 1270,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "ICE",
+            "submessage": "Icing detected."
+        },
+        {
+            "uid": 1271,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "ICE DETECT FAIL",
+            "submessage": "Ice detection system failure."
+        },
+        {
+            "uid": 1272,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "INERT SEP FAIL",
+            "submessage": "Inertial separator failure."
+        },
+        {
+            "uid": 1273,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "MAN PTRM FAIL",
+            "submessage": "Manual pitch trim fail."
+        },
+        {
+            "uid": 1274,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "MISTRIM",
+            "submessage": "Pitch mistrim detected."
+        },
+        {
+            "uid": 1275,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "NITROGEN LOW",
+            "submessage": "Windshield nitrogen low."
+        },
+        {
+            "uid": 1276,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "OAT FAIL",
+            "submessage": "Outside air temperature sensor fail."
+        },
+        {
+            "uid": 1277,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "OXY SYS OFF",
+            "submessage": "Oxygen system is off."
+        },
+        {
+            "uid": 1278,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "OXYGEN LOW",
+            "submessage": "Oxygen quantity low."
+        },
+        {
+            "uid": 1279,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PITOT HEAT OFF",
+            "submessage": "Pitot heat off."
+        },
+        {
+            "uid": 1280,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PITOT HT FAIL",
+            "submessage": "Pitot heat system fail."
+        },
+        {
+            "uid": 1281,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PITOT RELAY FAIL",
+            "submessage": "Pitot heat relay fail."
+        },
+        {
+            "uid": 1282,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PRESS AIR OFF",
+            "submessage": "Pressurization air off."
+        },
+        {
+            "uid": 1283,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PROP HEAT FAIL",
+            "submessage": "Propeller heat failure."
+        },
+        {
+            "uid": 1284,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PUSH MODE FAIL",
+            "submessage": "Pusher system fail."
+        },
+        {
+            "uid": 1285,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PUSHER ICE MODE",
+            "submessage": "Pusher in ice mode."
+        },
+        {
+            "uid": 1286,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "PUSHER OFF",
+            "submessage": "Stick pusher off."
+        },
+        {
+            "uid": 1287,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "STALL CMP FAIL",
+            "submessage": "Stall computer failure."
+        },
+        {
+            "uid": 1288,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "STALL HT FAIL",
+            "submessage": "Stall heater failure."
+        },
+        {
+            "uid": 1289,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "STARTER ON",
+            "submessage": "Starter motor engaged."
+        },
+        {
+            "uid": 1290,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "TRIM DISC",
+            "submessage": "Trim disconnect."
+        },
+        {
+            "uid": 1291,
+            "category": "abnormal",
+            "alertType": "cas",
+            "action": "simulate",
+            "priority": "medium",
+            "aircraftName": "E1000GX",
+            "message": "WSH HEAT ON",
+            "submessage": "Windshield heat active."
         }
     ]
 }
